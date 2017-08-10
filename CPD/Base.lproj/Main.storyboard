@@ -17,6 +17,9 @@
         <array key="RobotoSlab-Regular.ttf">
             <string>RobotoSlab-Regular</string>
         </array>
+        <array key="VistaSlabOT-Bold.otf">
+            <string>VistaSlabOT-Bold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Select Quiz Type View Controller-->
@@ -632,7 +635,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DO-mn-ZO7">
-                                <rect key="frame" x="107" y="502" width="180" height="36"/>
+                                <rect key="frame" x="107" y="506.5" width="180" height="31.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="7oG-9Y-vD9"/>
                                     <constraint firstAttribute="width" constant="180" id="YLT-sA-cPs"/>
@@ -642,7 +645,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-0J-xwq">
-                                <rect key="frame" x="107" y="436" width="180" height="36"/>
+                                <rect key="frame" x="107" y="440.5" width="180" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="WKT-hn-dq5"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="iZd-vc-yMN"/>
@@ -652,7 +655,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2k-SS-fUt">
-                                <rect key="frame" x="107" y="370" width="180" height="36"/>
+                                <rect key="frame" x="107" y="374.5" width="180" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="V22-5g-W8Z"/>
                                     <constraint firstAttribute="width" constant="180" id="nWL-IG-RP6"/>
@@ -714,20 +717,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where will you start your quest!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9G-gf-gsU">
-                                <rect key="frame" x="0.0" y="50" width="375" height="198"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="132" id="y3C-pd-Lbl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="50"/>
-                                <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="50"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-qJ-T33">
-                                <rect key="frame" x="16" y="270" width="359" height="63"/>
+                                <rect key="frame" x="16" y="232" width="359" height="63"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hegewish Marsh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lec-WY-RfS">
                                         <rect key="frame" x="45" y="0.0" width="314" height="63"/>
-                                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -742,11 +745,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inP-2R-PTK">
-                                <rect key="frame" x="49" y="355" width="326" height="63"/>
+                                <rect key="frame" x="49" y="317" width="326" height="63"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big March" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRr-Mz-fuO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Marsh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRr-Mz-fuO">
                                         <rect key="frame" x="45" y="0.0" width="281" height="63"/>
-                                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -761,11 +764,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDn-aw-NSH">
-                                <rect key="frame" x="82" y="435" width="293" height="63"/>
+                                <rect key="frame" x="82" y="397" width="293" height="63"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indian March" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcB-YD-7g8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indian Ridge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcB-YD-7g8">
                                         <rect key="frame" x="45" y="0.0" width="248" height="63"/>
-                                        <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -853,7 +856,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.84728167808219179" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="5za-sC-uJ4" firstAttribute="top" secondItem="f7d-q9-LF9" secondAttribute="top" id="R3j-8D-PaU"/>
                                     <constraint firstItem="5za-sC-uJ4" firstAttribute="leading" secondItem="f7d-q9-LF9" secondAttribute="leading" constant="45" id="cpj-kX-faN"/>
@@ -871,7 +874,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.84728167808219179" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="v1g-NH-8T9" secondAttribute="bottom" id="OhB-qi-WXy"/>
                                     <constraint firstAttribute="trailing" secondItem="v1g-NH-8T9" secondAttribute="trailing" id="Qzx-IB-zXf"/>
@@ -890,7 +893,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.84728167808219179" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="g2H-oX-mK1" secondAttribute="bottom" id="8md-Pr-QtI"/>
                                     <constraint firstItem="g2H-oX-mK1" firstAttribute="top" secondItem="Egs-WL-Krt" secondAttribute="top" id="9CB-Cj-rac"/>
@@ -909,7 +912,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.84728167808219179" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="eao-Pz-u1Y" firstAttribute="leading" secondItem="51E-sQ-AmO" secondAttribute="leading" constant="45" id="8R7-mb-9D9"/>
                                     <constraint firstAttribute="height" constant="63" id="LNJ-VZ-ei3"/>
@@ -939,7 +942,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.84728167808219179" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="bfs-dz-dXv" secondAttribute="trailing" id="39n-s0-kus"/>
                                     <constraint firstAttribute="bottom" secondItem="bfs-dz-dXv" secondAttribute="bottom" id="Lqs-iC-6h5"/>
@@ -997,7 +1000,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iQ7-Vl-j8b" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="qk6-fC-ypf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="qk6-fC-ypf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.20000000000000001" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>

@@ -40,6 +40,11 @@
 		<string>RobotoSlab-Regular.ttf</string>
 		<string>RobotoSlab-Thin.ttf</string>
 		<string>VistaSlabOT-Bold.otf</string>
+		<string>VistaSlabOT-RegItalic.otf</string>
+		<string>VistaSlabOT-Reg.otf</string>
+		<string>VistaSlabOT-LightItalic.otf</string>
+		<string>VistaSlabOT-Light.otf</string>
+		<string>VistaSlabOT-BoldItalic.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
