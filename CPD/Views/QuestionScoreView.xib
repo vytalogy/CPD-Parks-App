@@ -9,8 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="RobotoSlab-Bold.ttf">
-            <string>RobotoSlab-Bold</string>
+        <array key="VistaSlabOT-Bold.otf">
+            <string>VistaSlabOT-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -32,7 +32,7 @@
                         <constraint firstAttribute="width" constant="121" id="0fc-GZ-hhp"/>
                         <constraint firstAttribute="height" constant="37" id="pER-X7-rIg"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="32"/>
+                    <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="32"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -42,7 +42,7 @@
                         <constraint firstAttribute="width" constant="94" id="7Be-VR-pbA"/>
                         <constraint firstAttribute="height" constant="76" id="bI0-xs-fxx"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="90"/>
+                    <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="90"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>

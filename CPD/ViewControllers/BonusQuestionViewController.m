@@ -26,6 +26,7 @@
 @property (nonatomic,strong) BonusAnswerView *bonusView;
 @property (nonatomic,strong) BonusPointsView *bonusPointsView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *viewBackGround;
 
 
 
@@ -323,6 +324,11 @@
     
     
     [FileManager loadProfileImage:self.answerImage url:self.questionDoingOn.successImageUrl];
+    
+    
+    [FileManager loadProfileImage:self.viewBackGround url:self.questionDoingOn.imageURL];;
+
+    
     
     
     
