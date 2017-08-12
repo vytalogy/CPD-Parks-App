@@ -56,7 +56,6 @@
             self.currentNumber.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:19];
             [self.currentNumber setFrame:CGRectMake(currentView.frame.origin.x-7,
                                                     -27, 25, 19)];
-            ///currentNumber.backgroundColor = [UIColor blueColor];
             self.currentNumber.text = @"1";
             self.currentNumber.textColor = [UIColor blackColor];
             self.currentNumber.textAlignment = NSTextAlignmentCenter;

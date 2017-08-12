@@ -257,7 +257,7 @@
 		470CF6EC1F24BD1E0074A81C /* HintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HintView.xib; path = Views/HintView.xib; sourceTree = "<group>"; };
 		470CF6EE1F24DDC70074A81C /* BonusQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BonusQuestionViewController.h; path = ViewControllers/BonusQuestionViewController.h; sourceTree = "<group>"; };
 		470CF6EF1F24DDC70074A81C /* BonusQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BonusQuestionViewController.m; path = ViewControllers/BonusQuestionViewController.m; sourceTree = "<group>"; };
-		47305A881F19EA5A001CAE54 /* CPD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47305A881F19EA5A001CAE54 /* CDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47305A8C1F19EA5A001CAE54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47305A8E1F19EA5A001CAE54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47305A8F1F19EA5A001CAE54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -511,7 +511,7 @@
 		47305BB11F1A2264001CAE54 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TOCropViewControllerLocalizable.strings"; sourceTree = "<group>"; };
 		47305BB21F1A2264001CAE54 /* UIImage+LMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LMExtension.h"; sourceTree = "<group>"; };
 		47305BB31F1A2264001CAE54 /* UIImage+LMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LMExtension.m"; sourceTree = "<group>"; };
-		47305C231F1A22BF001CAE54 /* CPD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CPD-Prefix.pch"; path = "Support/CPD-Prefix.pch"; sourceTree = "<group>"; };
+		47305C231F1A22BF001CAE54 /* CDP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDP-Prefix.pch"; path = "Support/CDP-Prefix.pch"; sourceTree = "<group>"; };
 		47305C251F1A2390001CAE54 /* APTimeZones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTimeZones.h; sourceTree = "<group>"; };
 		47305C261F1A2390001CAE54 /* APTimeZones.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTimeZones.m; sourceTree = "<group>"; };
 		47305C2A1F1A2390001CAE54 /* NSString+MyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MyString.h"; sourceTree = "<group>"; };
@@ -759,7 +759,7 @@
 		47305A891F19EA5A001CAE54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47305A881F19EA5A001CAE54 /* CPD.app */,
+				47305A881F19EA5A001CAE54 /* CDP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -779,7 +779,7 @@
 				47305A991F19EA5A001CAE54 /* LaunchScreen.storyboard */,
 				47305A9C1F19EA5A001CAE54 /* Info.plist */,
 				47305A8B1F19EA5A001CAE54 /* Supporting Files */,
-				47305C231F1A22BF001CAE54 /* CPD-Prefix.pch */,
+				47305C231F1A22BF001CAE54 /* CDP-Prefix.pch */,
 			);
 			path = CPD;
 			sourceTree = "<group>";
@@ -1585,9 +1585,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		47305A871F19EA5A001CAE54 /* CPD */ = {
+		47305A871F19EA5A001CAE54 /* CDP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47305A9F1F19EA5A001CAE54 /* Build configuration list for PBXNativeTarget "CPD" */;
+			buildConfigurationList = 47305A9F1F19EA5A001CAE54 /* Build configuration list for PBXNativeTarget "CDP" */;
 			buildPhases = (
 				47305A841F19EA5A001CAE54 /* Sources */,
 				47305A851F19EA5A001CAE54 /* Frameworks */,
@@ -1597,9 +1597,9 @@
 			);
 			dependencies = (
 			);
-			name = CPD;
+			name = CDP;
 			productName = CPD;
-			productReference = 47305A881F19EA5A001CAE54 /* CPD.app */;
+			productReference = 47305A881F19EA5A001CAE54 /* CDP.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1618,7 +1618,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 47305A831F19EA5A001CAE54 /* Build configuration list for PBXProject "CPD" */;
+			buildConfigurationList = 47305A831F19EA5A001CAE54 /* Build configuration list for PBXProject "CDP" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1648,7 +1648,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				47305A871F19EA5A001CAE54 /* CPD */,
+				47305A871F19EA5A001CAE54 /* CDP */,
 			);
 		};
 /* End PBXProject section */
@@ -2055,7 +2055,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
-				GCC_PREFIX_HEADER = "CPD/Support/CPD-Prefix.pch";
+				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2073,7 +2073,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
-				GCC_PREFIX_HEADER = "CPD/Support/CPD-Prefix.pch";
+				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2087,7 +2087,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47305A831F19EA5A001CAE54 /* Build configuration list for PBXProject "CPD" */ = {
+		47305A831F19EA5A001CAE54 /* Build configuration list for PBXProject "CDP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47305A9D1F19EA5A001CAE54 /* Debug */,
@@ -2096,7 +2096,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47305A9F1F19EA5A001CAE54 /* Build configuration list for PBXNativeTarget "CPD" */ = {
+		47305A9F1F19EA5A001CAE54 /* Build configuration list for PBXNativeTarget "CDP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47305AA01F19EA5A001CAE54 /* Debug */,

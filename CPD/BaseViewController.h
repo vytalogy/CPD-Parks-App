@@ -36,6 +36,7 @@
 #import "FileManager.h"
 #import "MenuViewController.h"
 #import "UIView+MyUIView.h"
+#import <CoreText/CoreText.h>
 
 
 

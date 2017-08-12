@@ -48,6 +48,37 @@
     [self.view.layer addSublayer:shapeLayer];
     
     
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"researcher"];
+    
+    
+    
+    NSString *boldFontName = [UIFont fontWithName:self.lblOneScore.font.fontName size:30];
+    
+    NSString *normalFont = [UIFont fontWithName:self.lblOneScore.font.fontName size:30];
+    
+    
+    
+    [attrString beginEditing];
+    
+    NSRange boldedRange = NSMakeRange(2, 5);
+    NSRange normalRange2 = NSMakeRange(0, 2);
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:boldFontName
+                       range:boldedRange];
+    
+    
+    /*
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:normalFont
+                       range:normalRange2];
+    
+    [attrString endEditing];
+    */
+    
+    
+    
 }
 
 - (void)viewDidLoad {
@@ -68,7 +99,7 @@
 
     self.lblThirdScore.text = @"(28/30)\nIndian Ridge";
     
-    self.lblTwoScore.text = @"(28/30)\nBig March";
+    self.lblTwoScore.text = @"(28/30)\nBig Marsh";
     
     
     self.lblOneScore.text = @"(28/30)\nHegewisch";

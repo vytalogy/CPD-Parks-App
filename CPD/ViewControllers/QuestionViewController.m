@@ -178,6 +178,13 @@
                                                                         withWidth:self.view.frame.size.width
                                                      withHeight:self.view.frame.size.height];
        
+        
+        
+        [FileManager loadProfileImage:_questionScoreView.backGround url:self.allQuestion[self.questionIndex].imageURL];
+
+        
+
+        
         [self.view addSubview:_questionScoreView];
         
 
@@ -296,7 +303,7 @@
    AppDelegate *appDelegate =   (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     
-    self.viewTitle = @"Hegewish March";
+    self.viewTitle = @"Hegewish Marsh";
     
     self.questionView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.9];
     
@@ -390,7 +397,7 @@
     */
     
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         
         
         [self performSegueWithIdentifier:@"segueHint" sender:self];
