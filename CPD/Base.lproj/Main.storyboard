@@ -11,9 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="RobotoSlab-Bold.ttf">
-            <string>RobotoSlab-Bold</string>
-        </array>
         <array key="VistaSlabOT-Bold.otf">
             <string>VistaSlabOT-Bold</string>
         </array>
@@ -520,7 +517,7 @@
                                     <fragment content="researcher">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="33" name="HelveticaNeue-Bold"/>
+                                            <font key="NSFont" size="32" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
@@ -603,18 +600,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBg" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-bT-8j0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="37" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2g-De-OsJ">
-                                <rect key="frame" x="97" y="136" width="109" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="37" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2g-De-OsJ">
+                                <rect key="frame" x="97" y="117" width="109" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="109" id="Yef-lM-yz4"/>
-                                    <constraint firstAttribute="height" constant="65" id="ecr-tv-5Gc"/>
+                                    <constraint firstAttribute="height" constant="140" id="ecr-tv-5Gc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="78"/>
+                                <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="109"/>
                                 <color key="textColor" red="0.67567950489999995" green="0.81414395569999998" blue="0.27269250150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byS-f5-qEP">
-                                <rect key="frame" x="206" y="147" width="130" height="48"/>
+                                <rect key="frame" x="206" y="192" width="130" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="ZMq-s7-ABp"/>
                                     <constraint firstAttribute="width" constant="130" id="ZR5-Z1-4cO"/>
@@ -693,11 +690,11 @@
                             <constraint firstItem="GhU-oR-at1" firstAttribute="top" secondItem="nSr-gh-Bkp" secondAttribute="bottom" id="XTs-gI-y8H"/>
                             <constraint firstItem="dcB-0J-xwq" firstAttribute="leading" secondItem="UWF-1Y-TFj" secondAttribute="leadingMargin" constant="91" id="YHg-bW-bvi"/>
                             <constraint firstItem="3PG-bT-8j0" firstAttribute="top" secondItem="UWF-1Y-TFj" secondAttribute="top" id="YQv-gF-Av5"/>
-                            <constraint firstItem="J2g-De-OsJ" firstAttribute="top" secondItem="GhU-oR-at1" secondAttribute="bottom" constant="19" id="bFi-Yv-eKU"/>
+                            <constraint firstItem="J2g-De-OsJ" firstAttribute="top" secondItem="GhU-oR-at1" secondAttribute="bottom" id="bFi-Yv-eKU"/>
                             <constraint firstItem="s7v-uh-oJB" firstAttribute="top" secondItem="1DO-mn-ZO7" secondAttribute="bottom" constant="65" id="ce4-zx-C3n"/>
                             <constraint firstItem="s7v-uh-oJB" firstAttribute="top" secondItem="3PG-bT-8j0" secondAttribute="bottom" id="ckf-AT-DX6"/>
                             <constraint firstItem="nSr-gh-Bkp" firstAttribute="top" secondItem="gJM-Go-2LV" secondAttribute="bottom" constant="64" id="hCF-cD-rvl"/>
-                            <constraint firstItem="byS-f5-qEP" firstAttribute="top" secondItem="GhU-oR-at1" secondAttribute="bottom" constant="30" id="jUh-SA-M4r"/>
+                            <constraint firstItem="byS-f5-qEP" firstAttribute="top" secondItem="GhU-oR-at1" secondAttribute="bottom" constant="75" id="jUh-SA-M4r"/>
                             <constraint firstItem="1DO-mn-ZO7" firstAttribute="top" secondItem="dcB-0J-xwq" secondAttribute="bottom" constant="30" id="l8Q-Bq-f5O"/>
                             <constraint firstItem="byS-f5-qEP" firstAttribute="leading" secondItem="J2g-De-OsJ" secondAttribute="trailing" id="leT-2V-aCv"/>
                             <constraint firstItem="GhU-oR-at1" firstAttribute="leading" secondItem="5J2-4g-bKW" secondAttribute="trailing" id="moo-lJ-Yrv"/>
@@ -736,10 +733,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6r-42-7kS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where will you start your quest!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9G-gf-gsU">
-                                        <rect key="frame" x="0.0" y="31" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="31" width="375" height="194"/>
                                         <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="50"/>
                                         <color key="textColor" red="0.24313725490196078" green="0.21568627450980393" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -755,10 +752,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-qJ-T33">
-                                <rect key="frame" x="30" y="270" width="345" height="63"/>
+                                <rect key="frame" x="40" y="264" width="335" height="63"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hegewish Marsh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lec-WY-RfS">
-                                        <rect key="frame" x="45" y="0.0" width="300" height="63"/>
+                                        <rect key="frame" x="45" y="0.0" width="290" height="63"/>
                                         <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -774,7 +771,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inP-2R-PTK">
-                                <rect key="frame" x="70" y="355" width="305" height="63"/>
+                                <rect key="frame" x="70" y="352" width="305" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Marsh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRr-Mz-fuO">
                                         <rect key="frame" x="45" y="0.0" width="260" height="63"/>
@@ -816,9 +813,9 @@
                         <constraints>
                             <constraint firstItem="A6r-42-7kS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2ru-hO-1Gm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rDn-aw-NSH" secondAttribute="bottom" constant="100" id="9BX-eA-rWM"/>
-                            <constraint firstItem="inP-2R-PTK" firstAttribute="top" secondItem="gfX-qJ-T33" secondAttribute="bottom" constant="22" id="D1F-fY-OeW"/>
+                            <constraint firstItem="inP-2R-PTK" firstAttribute="top" secondItem="gfX-qJ-T33" secondAttribute="bottom" constant="25" id="D1F-fY-OeW"/>
                             <constraint firstItem="CYM-F5-URk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ga3-1v-l53"/>
-                            <constraint firstItem="gfX-qJ-T33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="NXg-Wc-Ldl"/>
+                            <constraint firstItem="gfX-qJ-T33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="NXg-Wc-Ldl"/>
                             <constraint firstAttribute="trailing" secondItem="A6r-42-7kS" secondAttribute="trailing" id="Paq-tu-qES"/>
                             <constraint firstAttribute="trailing" secondItem="CYM-F5-URk" secondAttribute="trailing" id="PyL-Gw-WZQ"/>
                             <constraint firstItem="A6r-42-7kS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RRf-rT-0Dc"/>
@@ -826,7 +823,7 @@
                             <constraint firstItem="inP-2R-PTK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="boo-fd-StA"/>
                             <constraint firstAttribute="trailing" secondItem="rDn-aw-NSH" secondAttribute="trailing" id="dWf-kN-ZV3"/>
                             <constraint firstItem="gfX-qJ-T33" firstAttribute="top" secondItem="A6r-42-7kS" secondAttribute="bottom" constant="8" id="gNG-Nx-hcF"/>
-                            <constraint firstItem="rDn-aw-NSH" firstAttribute="top" secondItem="inP-2R-PTK" secondAttribute="bottom" constant="22" id="ggx-2V-rBC"/>
+                            <constraint firstItem="rDn-aw-NSH" firstAttribute="top" secondItem="inP-2R-PTK" secondAttribute="bottom" constant="25" id="ggx-2V-rBC"/>
                             <constraint firstAttribute="trailing" secondItem="gfX-qJ-T33" secondAttribute="trailing" id="jIB-s9-t9W"/>
                             <constraint firstItem="rDn-aw-NSH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="naw-aw-ZjE"/>
                             <constraint firstAttribute="trailing" secondItem="inP-2R-PTK" secondAttribute="trailing" id="rAu-4N-ru0"/>
@@ -842,14 +839,20 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bottomSpacing" destination="9BX-eA-rWM" id="Lvd-mX-xXZ"/>
+                        <outlet property="firstBoxSpacing" destination="NXg-Wc-Ldl" id="kMe-qM-WHr"/>
                         <outlet property="firstItemContainer" destination="gfX-qJ-T33" id="HOS-D3-hoN"/>
+                        <outlet property="indianSpacing" destination="naw-aw-ZjE" id="dWj-xv-Q7L"/>
                         <outlet property="lblBigMarch" destination="BRr-Mz-fuO" id="5Lf-Tg-5sh"/>
                         <outlet property="lblHegewish" destination="Lec-WY-RfS" id="2zG-i6-kfV"/>
                         <outlet property="lblIndian" destination="GcB-YD-7g8" id="n8j-tn-0Rx"/>
                         <outlet property="lblTitle" destination="c9G-gf-gsU" id="RfT-8Q-Xgn"/>
                         <outlet property="lblWhere" destination="c9G-gf-gsU" id="3df-vW-e4f"/>
+                        <outlet property="secondBoxSpacing" destination="boo-fd-StA" id="KvP-7Q-6Dx"/>
                         <outlet property="secondItemContainer" destination="inP-2R-PTK" id="Nmc-vO-p9L"/>
                         <outlet property="thirdItemContainer" destination="rDn-aw-NSH" id="eEG-rN-djG"/>
+                        <outlet property="topTextAboveSpacing" destination="bBD-ac-0ep" id="TDh-gu-KB4"/>
+                        <outlet property="topTextBottomSpacing" destination="iuo-U1-n8X" id="0WC-Dm-MnQ"/>
                         <outletCollection property="ParksLabel" destination="Lec-WY-RfS" id="tZZ-fW-iTQ"/>
                         <outletCollection property="ParksLabel" destination="BRr-Mz-fuO" id="HIw-yn-aKB"/>
                         <outletCollection property="ParksLabel" destination="GcB-YD-7g8" id="cdb-Ti-4Ow"/>

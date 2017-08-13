@@ -22,9 +22,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblWhere;
 
 @property (nonatomic) int viewToOpen;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSpacing;
 
 @property (nonatomic,strong) NSArray * allParks;
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *ParksLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *indianSpacing;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *secondBoxSpacing;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstBoxSpacing;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topTextBottomSpacing;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topTextAboveSpacing;
 
 @end
 
@@ -86,6 +94,56 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    
+    if (IS_IPHONE_6) {
+     
+        
+        self.bottomSpacing.constant = self.bottomSpacing.constant - 40;
+        
+        self.secondBoxSpacing.constant = self.secondBoxSpacing.constant - 1;
+        
+        self.firstBoxSpacing.constant = self.firstBoxSpacing.constant - 5;
+        
+        
+    }
+    else if (IS_IPHONE_5 ||  IS_IPOD) {
+        
+        
+        self.bottomSpacing.constant = self.bottomSpacing.constant - 60;
+        
+        
+        
+        self.firstBoxSpacing.constant = self.firstBoxSpacing.constant - 20;
+        self.secondBoxSpacing.constant = self.secondBoxSpacing.constant - 17;
+        
+        self.indianSpacing.constant = self.indianSpacing.constant - 15;
+        
+        
+        self.topTextAboveSpacing.constant = 5;
+        
+        self.topTextBottomSpacing.constant = 5;
+        
+    }
+    else if (IS_IPad) {
+        
+        
+        self.bottomSpacing.constant = self.bottomSpacing.constant - 80;
+        
+        
+        
+        self.firstBoxSpacing.constant = self.firstBoxSpacing.constant - 20;
+        self.secondBoxSpacing.constant = self.secondBoxSpacing.constant - 17;
+        
+        self.indianSpacing.constant = self.indianSpacing.constant - 10;
+        
+        
+        self.topTextAboveSpacing.constant = 0;
+        
+        self.topTextBottomSpacing.constant = 0;
+        
+    }
     
     
     
@@ -170,32 +228,14 @@
     self.lblTitle.text = @"Where will \nyou start\nyour quest?";
     
 
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"request"];
-    NSString *boldFontName = [UIFont fontWithName:@"RobotoSlab-Bold" size:30];
 
-    NSString *normalFont = [UIFont fontWithName:@"RobotoSlab-Regular" size:30];
-    
-    [attrString beginEditing];
-
-    NSRange boldedRange = NSMakeRange(2, 5);
-    NSRange normalRange2 = NSMakeRange(0, 2);
-
-    [attrString addAttribute:kCTFontAttributeName
-                       value:boldFontName
-                       range:boldedRange];
-    
-    [attrString addAttribute:kCTFontAttributeName
-                       value:normalFont
-                       range:normalRange2];
-    
-    [attrString endEditing];
 
     
     
     UILabel *titleLabel = [UILabel new];
     [titleLabel setFrame:CGRectMake(10, 0, 250, 44)];
 
-    titleLabel.attributedText = attrString;
+    titleLabel.attributedText = self.requestText;
     
     
     [tmpView addSubview:titleLabel];
@@ -220,6 +260,14 @@
 
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    
+    
+    self.navLabel.attributedText = self.requestText;
+    
+    
+    
+}
 -(void)mainMenuButtonTapped{
     
     

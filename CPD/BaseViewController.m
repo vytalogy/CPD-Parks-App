@@ -1313,5 +1313,66 @@
 }
 
 
+-(NSAttributedString *)requestText{
+    
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"request"];
+    id boldFontName = [UIFont fontWithName:FontToUseBold size:30];
+    id normalFont = [UIFont fontWithName:FontToUseRegular size:30];
+    
+    [attrString beginEditing];
+    
+    NSRange boldedRange = NSMakeRange(2, 5);
+    NSRange normalRange2 = NSMakeRange(0, 2);
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:boldFontName
+                       range:boldedRange];
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:normalFont
+                       range:normalRange2];
+    
+    [attrString endEditing];
+    
+    return attrString;
+    
+}
 
+
+
+-(NSAttributedString *)reSearcherText{
+    
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"researcher"];
+    id boldFontName = [UIFont fontWithName:FontToUseBold size:32];
+    id normalFont = [UIFont fontWithName:FontToUseRegular size:31];
+    
+    [attrString beginEditing];
+    
+    NSRange boldedRange = NSMakeRange(2, [attrString length] -3);
+    NSRange normalRange2 = NSMakeRange(0, 2);
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:boldFontName
+                       range:boldedRange];
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:normalFont
+                       range:normalRange2];
+    
+    [attrString endEditing];
+    
+    return attrString;
+    
+}
+
+
+-(UILabel *)navLabel{
+    
+         AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+ 
+        return appDelegate.navBarTitle;
+    
+}
 @end

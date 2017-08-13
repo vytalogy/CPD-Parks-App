@@ -46,6 +46,8 @@
     //self.lblReSearcher.font = ScoreViewPlaceFont;
     
     
+    self.lblReSearcher.attributedText = self.reSearcherText;
+    
     
     for (UIButton *currentButton in self.allButtons) {
         
@@ -67,6 +69,15 @@
     
     [self.navigationItem setHidesBackButton:YES];
     self.lblScore.text = [NSString stringWithFormat:@"%d/30",self.scoredPoints];;
+    
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    self.navLabel.attributedText = self.requestText;
     
     
 }

@@ -52,36 +52,7 @@
     [self.view.layer addSublayer:shapeLayer];
     
     
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"researcher"];
-    
-    
-    
-    NSString *boldFontName = [UIFont fontWithName:self.lblOneScore.font.fontName size:30];
-    
-    NSString *normalFont = [UIFont fontWithName:self.lblOneScore.font.fontName size:30];
-    
-    
-    
-    [attrString beginEditing];
-    
-    NSRange boldedRange = NSMakeRange(2, 5);
-    NSRange normalRange2 = NSMakeRange(0, 2);
-    
-    [attrString addAttribute:kCTFontAttributeName
-                       value:boldFontName
-                       range:boldedRange];
-    
-    
-    /*
-    
-    [attrString addAttribute:kCTFontAttributeName
-                       value:normalFont
-                       range:normalRange2];
-    
-    [attrString endEditing];
-    */
-    
-    
+
     
 }
 
@@ -92,6 +63,8 @@
     
         [self.navigationItem setHidesBackButton:YES];
  
+    
+    self.lblReaSeacher.attributedText = self.reSearcherText;
     
     self.lblYouRa.font = ProfileViewYouAreA;
     
@@ -134,6 +107,13 @@
  
     
 
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    
+    self.navLabel.attributedText = self.requestText;
     
 }
 

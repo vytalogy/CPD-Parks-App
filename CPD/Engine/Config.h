@@ -59,7 +59,7 @@
 
 #define ProfileViewYouAreA [UIFont fontWithName:FontToUseBold size:19]
 #define ProfileViewTotalPointsLabelFont [UIFont fontWithName:FontToUseBold size:22]
-#define ProfileViewTotalPointsScoreFont [UIFont fontWithName:FontToUseBold size:75]
+#define ProfileViewTotalPointsScoreFont [UIFont fontWithName:FontToUseBold size:109]
 #define ProfileViewLevelScoreFont [UIFont fontWithName:FontToUseBold size:26]
 #define LightGreenTextColor [UIColor colorWithRed:182.0/255.0 green:204.0/255.0 blue:84.0/255.0 alpha:1.0]
 

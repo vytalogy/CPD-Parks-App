@@ -216,4 +216,9 @@
 -(void)showMyProfileView;
 -(UIColor *)transperancyColor;
 
+@property (nonatomic) NSAttributedString * requestText;
+@property (nonatomic) NSAttributedString * reSearcherText;
+
+@property (nonatomic) UILabel *navLabel;
+
 @end
