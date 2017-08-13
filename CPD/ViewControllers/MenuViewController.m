@@ -25,11 +25,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblWebsite;
 
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *AllLabels;
 
 
 @end
 
 @implementation MenuViewController
+
+
 - (IBAction)dismissViewController:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:^{
@@ -67,6 +70,20 @@
     // Do any additional setup after loading the view.
         [self.navigationController setNavigationBarHidden:YES animated:NO];
     
+
+    NSLog(@"%@",self.lblMap.font.fontName);
+    
+    
+    
+    for (UILabel *currentLabel in self.AllLabels) {
+        
+        [currentLabel setFont:[UIFont fontWithName:FontToUseBold size:30]];
+     
+        
+        currentLabel.textColor = HomeViewQuestionFontColor;
+        
+        
+    }
     
     [self.viewContainerFive setBackgroundColor:[UIColor clearColor]];
     [self.viewContainerOne setBackgroundColor:[UIColor clearColor]];
@@ -96,6 +113,11 @@
     [self.viewContainerFour setBackgroundColor:[UIColor clearColor]];
     
 }
+-(UIColor *)transperancyColor{
+    
+    return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.60];
+    
+}
 
 
 -(void)viewDidLayoutSubviews{
@@ -112,7 +134,7 @@
     [path closePath];
     
     layer.path = path.CGPath;
-    layer.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer.fillColor = self.transperancyColor.CGColor;
     layer.strokeColor =  nil;
     [self.viewContainerOne.layer insertSublayer:layer atIndex:0];
     
@@ -128,7 +150,7 @@
     [path2 closePath];
     
     layer2.path = path2.CGPath;
-    layer2.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer2.fillColor = self.transperancyColor.CGColor;
     layer2.strokeColor =  nil;
     [self.viewContainerTwo.layer insertSublayer:layer2 atIndex:0];
     
@@ -144,7 +166,7 @@
     [path3 closePath];
     
     layer3.path = path3.CGPath;
-    layer3.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer3.fillColor = self.transperancyColor.CGColor;
     layer3.strokeColor =  nil;
     [self.viewContainerThree.layer insertSublayer:layer3 atIndex:0];
     
@@ -159,7 +181,7 @@
     [path4 closePath];
     
     layer4.path = path4.CGPath;
-    layer4.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer4.fillColor = self.transperancyColor.CGColor;
     layer4.strokeColor =  nil;
     [self.viewContainerFour.layer insertSublayer:layer4 atIndex:0];
     
@@ -175,7 +197,7 @@
     [path5 closePath];
     
     layer5.path = path5.CGPath;
-    layer5.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer5.fillColor = self.transperancyColor.CGColor;
     layer5.strokeColor =  nil;
     [self.viewContainerFive.layer insertSublayer:layer5 atIndex:0];
     

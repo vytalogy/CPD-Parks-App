@@ -29,7 +29,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *viewBackGround;
 
 
+@property (weak, nonatomic) IBOutlet UILabel *lblYouFound;
+@property (weak, nonatomic) IBOutlet UILabel *lblAnswerTitle;
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
 
 @end
 
@@ -314,6 +317,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    for (UIButton *currentButton in self.allButtons) {
+        
+        
+        [currentButton.titleLabel setFont:QuestionViewBottomButtonFonts];
+        
+    }
+    self.lblYouFound.font = AnswerYouFoundFont;
+    self.lblYouFound.textColor = AnswerFontColor;
+    
+    self.lblAnswerTitle.font = AnswerTitleFont;
+    self.lblAnswerTitle.textColor = AnswerFontColor;
+    
+    
+    self.lblDescribtion.font = AnswerDescriptionFont;
     
     [self.navigationItem setHidesBackButton:YES];
     

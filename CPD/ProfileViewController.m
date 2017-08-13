@@ -16,6 +16,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblThirdScore;
 @property (weak, nonatomic) IBOutlet UILabel *lblTwoScore;
 @property (weak, nonatomic) IBOutlet UILabel *lblOneScore;
+@property (weak, nonatomic) IBOutlet UILabel *lblYouRa;
+@property (weak, nonatomic) IBOutlet UILabel *lblReaSeacher;
+@property (weak, nonatomic) IBOutlet UILabel *lblTotalPoints;
+
 @end
 
 @implementation ProfileViewController
@@ -88,6 +92,15 @@
     
         [self.navigationItem setHidesBackButton:YES];
  
+    
+    self.lblYouRa.font = ProfileViewYouAreA;
+    
+    self.lblTotalPointsLAbel.font = ProfileViewTotalPointsLabelFont;
+    self.lblTotalPoints.font =ProfileViewTotalPointsScoreFont;
+    
+    self.lblTotalPoints.textColor = LightGreenTextColor;
+    
+    
     NSString *labelText = @"TOTAL\nPOINTS";
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:labelText];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -99,13 +112,25 @@
 
     self.lblThirdScore.text = @"(28/30)\nIndian Ridge";
     
+    
     self.lblTwoScore.text = @"(28/30)\nBig Marsh";
+    
+    self.lblOneScore.font = ProfileViewLevelScoreFont;
+    self.lblTwoScore.textColor = LightGreenTextColor;
+    
+    
+    self.lblTwoScore.font = ProfileViewLevelScoreFont;
+    self.lblTwoScore.textColor = ProfileViewGrayColor;
+    
+    self.lblThirdScore.font = ProfileViewLevelScoreFont;
+    self.lblThirdScore.textColor = ProfileViewGrayColor;
+    
     
     
     self.lblOneScore.text = @"(28/30)\nHegewisch";
     
     
- //    self.llTotalPointsLAbel.text = @"TOTAL POINTS";
+    self.lblTotalPointsLAbel.text = @"TOTAL POINTS";
  
     
 

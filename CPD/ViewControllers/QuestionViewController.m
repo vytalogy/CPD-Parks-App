@@ -36,6 +36,7 @@
 
 @property (nonatomic) int scoredPoints;
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *bottomButtons;
 
 @end
 
@@ -303,7 +304,16 @@
    AppDelegate *appDelegate =   (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     
-    self.viewTitle = @"Hegewish Marsh";
+    
+    for (UIButton *currentButton in self.bottomButtons) {
+        
+        currentButton.titleLabel.font = QuestionViewBottomButtonFonts;
+        
+        //bottomButtons
+    }
+
+    self.viewTitle = self.parkSelected.parkName;
+    
     
     self.questionView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.9];
     
@@ -385,16 +395,7 @@
                          //Done
                      }];
     
-    /*
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        
-        
-        
-        [self.questionScoreView.imgDottedImage setHidden:NO];
-        
-        
-    });
-    */
+ 
     
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
@@ -410,20 +411,10 @@
 - (IBAction)btnSkipButtonTapped {
     
     
-    //[self performSegueWithIdentifier:@"segueHint" sender:self];
     
     [self moveToNextView];
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

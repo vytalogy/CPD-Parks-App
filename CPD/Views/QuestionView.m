@@ -22,6 +22,8 @@
     
     
     
+    self.lblQuestionText.font = QuestionFont;
+    self.lblQuestionText.textColor = QuestionFontColor;
     
     
     for (int i = 1; i < 16; i++)

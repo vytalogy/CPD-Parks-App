@@ -214,5 +214,6 @@
 @property (nonatomic,strong) UIView *panel;
 -(void)showMenuViewController;
 -(void)showMyProfileView;
+-(UIColor *)transperancyColor;
 
 @end

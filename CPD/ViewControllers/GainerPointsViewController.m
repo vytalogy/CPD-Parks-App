@@ -13,7 +13,14 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btnNext;
 @property (weak, nonatomic) IBOutlet UILabel *lblScore;
+@property (weak, nonatomic) IBOutlet UILabel *lblCongrats;
+@property (weak, nonatomic) IBOutlet UILabel *lblYouveCompleted;
+@property (weak, nonatomic) IBOutlet UILabel *lblPlaceCompleted;
+@property (weak, nonatomic) IBOutlet UILabel *lblYourScore;
+@property (weak, nonatomic) IBOutlet UILabel *lblYouAreA;
+@property (weak, nonatomic) IBOutlet UILabel *lblReSearcher;
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
 @end
 
 @implementation GainerPointsViewController
@@ -21,7 +28,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-        [self addTopBarButtonByCode];
+    
+    
+    self.lblCongrats.font = ScoreViewCongratsFont;
+    self.lblCongrats.textColor = AnswerFontColor;
+    
+    self.lblYouveCompleted.font = ScoreViewYouveCompletedFont;
+    self.lblCongrats.textColor = AnswerFontColor;
+    
+    self.lblPlaceCompleted.font = ScoreViewPlaceFont;
+    self.lblPlaceCompleted.textColor = AnswerFontColor;
+    
+    
+    self.lblYourScore.font = ScoreYourScoreFont;
+    self.lblScore.font = ScoreScoreFont;
+    self.lblYouAreA.font = ScoreYouRAFont;
+    //self.lblReSearcher.font = ScoreViewPlaceFont;
+    
+    
+    
+    for (UIButton *currentButton in self.allButtons) {
+        
+        
+        [currentButton.titleLabel setFont:QuestionViewBottomButtonFonts];
+        
+    }
+    
+    
+    
+    
+    
+    [self addTopBarButtonByCode];
     
     self.btnNext.layer.cornerRadius = 15;
     self.btnShare.layer.cornerRadius = 15;

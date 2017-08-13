@@ -31,6 +31,9 @@
 
 @property (nonatomic,strong) NSMutableArray *questionToSendForPlaying;
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *levelLabels;
+@property (weak, nonatomic) IBOutlet UILabel *lblWelcomeLabel;
+
 @end
 
 @implementation SelectQuizTypeViewController
@@ -140,9 +143,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 
-    //[self.navigationItem setHidesBackButton:YES animated:YES];
+    for (UILabel * allLabels in self.levelLabels) {
+        
+        [allLabels setFont:ParkAndLevelFont];
+        allLabels.textColor = ParkAndLevelFontColor;
+        
+    }
+   
+    
+    self.lblWelcomeLabel.font = SelectLevelWelcomeToFont;
+    self.lblTitle.font = SelectLevelNameFont;
+    self.lblDetail.font = SelectLevelTextFont;
+    
+    
+   
     [self.navigationItem setHidesBackButton:YES];
     
     

@@ -65,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vH-xx-ePj">
-                                <rect key="frame" x="49" y="338" width="326" height="63"/>
+                                <rect key="frame" x="49" y="365" width="326" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Junior Recruit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jr-jY-TUz">
                                         <rect key="frame" x="45" y="0.0" width="281" height="63"/>
@@ -84,7 +84,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vk6-Cd-bdd">
-                                <rect key="frame" x="82" y="418" width="293" height="63"/>
+                                <rect key="frame" x="82" y="445" width="293" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recruit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUs-o2-Pxr">
                                         <rect key="frame" x="45" y="0.0" width="248" height="63"/>
@@ -122,7 +122,7 @@
                             <constraint firstItem="5n3-ld-S9Q" firstAttribute="leading" secondItem="TMF-9v-lLv" secondAttribute="leading" id="sGG-I9-pVL"/>
                             <constraint firstItem="BLm-9A-RTD" firstAttribute="leading" secondItem="TMF-9v-lLv" secondAttribute="leading" constant="35" id="we3-lZ-4tY"/>
                             <constraint firstAttribute="trailing" secondItem="0vH-xx-ePj" secondAttribute="trailing" id="wnB-g1-6rq"/>
-                            <constraint firstItem="S6p-Sj-Lgg" firstAttribute="top" secondItem="vk6-Cd-bdd" secondAttribute="bottom" constant="122" id="xT9-x4-4L6"/>
+                            <constraint firstItem="S6p-Sj-Lgg" firstAttribute="top" secondItem="vk6-Cd-bdd" secondAttribute="bottom" constant="95" id="xT9-x4-4L6"/>
                             <constraint firstItem="2gS-Um-wml" firstAttribute="top" secondItem="5n3-ld-S9Q" secondAttribute="bottom" id="yBx-zh-b4S"/>
                         </constraints>
                     </view>
@@ -132,10 +132,13 @@
                         <outlet property="lblTitle" destination="2gS-Um-wml" id="dBD-Zl-hlf"/>
                         <outlet property="lblTypeOne" destination="7jr-jY-TUz" id="wSy-ym-XKB"/>
                         <outlet property="lblTypeTwo" destination="DUs-o2-Pxr" id="xJW-LS-Pvi"/>
+                        <outlet property="lblWelcomeLabel" destination="5n3-ld-S9Q" id="FvQ-EO-dvR"/>
                         <outlet property="viewContainerTypeOne" destination="0vH-xx-ePj" id="v6P-3n-oqC"/>
                         <outlet property="viewContainerTypeTwo" destination="vk6-Cd-bdd" id="tBC-bC-mIO"/>
                         <outlet property="viewLevel1DistanceFromLeft" destination="IGA-02-0Wf" id="CNb-ac-ejj"/>
                         <outlet property="viewLevel2DistanceFromLeft" destination="mIa-br-VWH" id="OoT-Ps-sle"/>
+                        <outletCollection property="levelLabels" destination="7jr-jY-TUz" id="dnL-Af-Yh7"/>
+                        <outletCollection property="levelLabels" destination="DUs-o2-Pxr" id="zWS-uR-bHL"/>
                         <segue destination="c49-ff-f6l" kind="show" identifier="segueShowQuestion" id="kFb-Lm-Rf3"/>
                     </connections>
                 </viewController>
@@ -245,6 +248,7 @@
                         <outlet property="btnSkip" destination="GKF-AN-ZxA" id="c0X-q2-Jwt"/>
                         <outlet property="scoreContainer" destination="EWe-kt-Kqg" id="In0-MZ-EfX"/>
                         <outlet property="viewQuestionContainer" destination="QVk-49-OAl" id="Toe-x8-uxq"/>
+                        <outletCollection property="bottomButtons" destination="KOx-Xa-6nn" id="kMx-56-cat"/>
                         <segue destination="i4e-ZS-RDW" kind="show" identifier="segueHint" id="V8z-it-bx2"/>
                     </connections>
                 </viewController>
@@ -292,7 +296,7 @@
                                     <constraint firstAttribute="height" constant="30" id="FXf-ii-eJV"/>
                                     <constraint firstAttribute="width" constant="305" id="dCa-gp-dln"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="21"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -390,9 +394,12 @@
                         <outlet property="bonusContainerView" destination="AH2-gv-5Yf" id="ImZ-8t-WcF"/>
                         <outlet property="btnBonus" destination="o1x-Qi-WrW" id="dVS-qw-PgI"/>
                         <outlet property="btnNext" destination="FRV-iI-bDr" id="GnE-DL-TIv"/>
+                        <outlet property="lblAnswerTitle" destination="ZmI-OW-QeS" id="SN8-v0-HTq"/>
                         <outlet property="lblDescribtion" destination="Kph-yl-Tj3" id="hWI-5s-ZU3"/>
+                        <outlet property="lblYouFound" destination="dBk-8g-5OP" id="5hs-jn-vn6"/>
                         <outlet property="pager" destination="14Z-TJ-Tn4" id="aku-h9-Utd"/>
                         <outlet property="viewBackGround" destination="IIe-x1-lRC" id="ib5-Lv-fPQ"/>
+                        <outletCollection property="allButtons" destination="o1x-Qi-WrW" id="CNU-oM-GfX"/>
                         <segue destination="c49-ff-f6l" kind="show" identifier="segueShowAgain" id="ovV-5O-zkJ"/>
                         <segue destination="Vgn-D9-Aso" kind="show" identifier="segueShowPoints" id="Jjp-ep-bsc"/>
                     </connections>
@@ -468,7 +475,7 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-9z-gLt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-9z-gLt">
                                 <rect key="frame" x="0.0" y="263" width="375" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="M1k-Qq-rcj"/>
@@ -565,7 +572,15 @@
                     <connections>
                         <outlet property="btnNext" destination="09L-EE-Btn" id="vqT-c3-TC4"/>
                         <outlet property="btnShare" destination="7Qb-7w-LLS" id="OsT-dv-FcJ"/>
+                        <outlet property="lblCongrats" destination="Q8B-2H-sSk" id="e3E-KQ-IZ1"/>
+                        <outlet property="lblPlaceCompleted" destination="0Fv-s7-0i7" id="Lce-dh-UWC"/>
+                        <outlet property="lblReSearcher" destination="f6t-jb-O4F" id="Bxt-9d-IXe"/>
                         <outlet property="lblScore" destination="Lzo-q6-ma9" id="qWz-l1-Krt"/>
+                        <outlet property="lblYouAreA" destination="cda-Bf-Ng2" id="DBR-bn-JUd"/>
+                        <outlet property="lblYourScore" destination="Vue-9z-gLt" id="mDL-JB-SeI"/>
+                        <outlet property="lblYouveCompleted" destination="Mig-O4-MzE" id="66l-9p-TsL"/>
+                        <outletCollection property="allButtons" destination="7Qb-7w-LLS" id="zn2-tA-kOf"/>
+                        <outletCollection property="allButtons" destination="09L-EE-Btn" id="00n-tP-0l3"/>
                         <segue destination="Sg3-qI-Clq" kind="show" identifier="segueMyProfile" id="80r-Lm-iEi"/>
                     </connections>
                 </viewController>
@@ -693,9 +708,12 @@
                     <connections>
                         <outlet property="imgIcon" destination="5J2-4g-bKW" id="s5w-Se-mY4"/>
                         <outlet property="lblOneScore" destination="J2k-SS-fUt" id="ynk-gh-D0c"/>
+                        <outlet property="lblReaSeacher" destination="GhU-oR-at1" id="MwQ-pE-8O7"/>
                         <outlet property="lblThirdScore" destination="1DO-mn-ZO7" id="MCc-7u-x2Y"/>
+                        <outlet property="lblTotalPoints" destination="J2g-De-OsJ" id="XzO-WU-dR8"/>
                         <outlet property="lblTotalPointsLAbel" destination="byS-f5-qEP" id="20D-dp-AHb"/>
                         <outlet property="lblTwoScore" destination="dcB-0J-xwq" id="rRR-ar-Nsq"/>
+                        <outlet property="lblYouRa" destination="nSr-gh-Bkp" id="PPY-xV-tZj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8W-GR-65Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -741,7 +759,7 @@
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hegewish Marsh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lec-WY-RfS">
                                         <rect key="frame" x="45" y="0.0" width="300" height="63"/>
-                                        <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -784,7 +802,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8032801797945206" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="GcB-YD-7g8" firstAttribute="top" secondItem="rDn-aw-NSH" secondAttribute="top" id="8HS-Fn-mi7"/>
                                     <constraint firstAttribute="height" constant="63" id="Mrp-kU-BtI"/>
@@ -832,6 +850,9 @@
                         <outlet property="lblWhere" destination="c9G-gf-gsU" id="3df-vW-e4f"/>
                         <outlet property="secondItemContainer" destination="inP-2R-PTK" id="Nmc-vO-p9L"/>
                         <outlet property="thirdItemContainer" destination="rDn-aw-NSH" id="eEG-rN-djG"/>
+                        <outletCollection property="ParksLabel" destination="Lec-WY-RfS" id="tZZ-fW-iTQ"/>
+                        <outletCollection property="ParksLabel" destination="BRr-Mz-fuO" id="HIw-yn-aKB"/>
+                        <outletCollection property="ParksLabel" destination="GcB-YD-7g8" id="cdb-Ti-4Ow"/>
                         <segue destination="SGK-f7-9DZ" kind="show" identifier="segueMenu" id="RQy-gT-oMf"/>
                         <segue destination="6QS-1u-M1E" kind="show" identifier="segueShowQuizType" id="96L-Of-wzz"/>
                     </connections>
@@ -939,7 +960,8 @@
                                     <constraint firstAttribute="width" constant="30" id="Vao-zJ-ZYB"/>
                                     <constraint firstAttribute="height" constant="30" id="kg9-l3-Bco"/>
                                 </constraints>
-                                <state key="normal" image="close"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Ｘ"/>
                                 <connections>
                                     <action selector="dismissViewController:" destination="SGK-f7-9DZ" eventType="touchUpInside" id="a95-Fv-aNo"/>
                                 </connections>
@@ -1001,6 +1023,11 @@
                         <outlet property="viewContainerOne" destination="51E-sQ-AmO" id="3r8-Kw-Tnv"/>
                         <outlet property="viewContainerThree" destination="f7d-q9-LF9" id="l8c-Zl-rbv"/>
                         <outlet property="viewContainerTwo" destination="Egs-WL-Krt" id="NYU-4G-CCf"/>
+                        <outletCollection property="AllLabels" destination="eao-Pz-u1Y" id="e0Y-cV-d8C"/>
+                        <outletCollection property="AllLabels" destination="g2H-oX-mK1" id="B4P-2c-ezA"/>
+                        <outletCollection property="AllLabels" destination="5za-sC-uJ4" id="GTz-a0-xhs"/>
+                        <outletCollection property="AllLabels" destination="v1g-NH-8T9" id="Bk2-pD-5Ou"/>
+                        <outletCollection property="AllLabels" destination="bfs-dz-dXv" id="vej-VA-GhO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DcZ-0O-LZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1033,7 +1060,6 @@
         <image name="BlueBird" width="375" height="667"/>
         <image name="answer1" width="370" height="469"/>
         <image name="bg-1 (2)" width="621" height="1104"/>
-        <image name="close" width="20" height="20"/>
         <image name="greenColorBG" width="180" height="319"/>
         <image name="mainBG" width="375" height="667"/>
         <image name="menu-button.png" width="22" height="17"/>

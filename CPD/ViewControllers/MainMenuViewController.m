@@ -24,6 +24,7 @@
 @property (nonatomic) int viewToOpen;
 
 @property (nonatomic,strong) NSArray * allParks;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *ParksLabel;
 
 @end
 
@@ -88,7 +89,19 @@
     
     
     
-    //[self showLoader];
+    
+    for (UILabel * allLabels in self.ParksLabel) {
+        
+        
+        [allLabels setFont:ParkAndLevelFont];
+        allLabels.textColor = ParkAndLevelFontColor;
+    }
+    
+    
+    [self.lblTitle setFont:HomeViewQuestionFont];
+    self.lblTitle.textColor = HomeViewQuestionFontColor;
+    
+
     
 
    [self showLoader];
@@ -102,7 +115,27 @@
         
         self.allParks = result;
         
+        
+        for (Parks *currentPark in result) {
+            
+            if (currentPark.itemId == 1) {
+                
+                self.lblHegewish.text = currentPark.parkName;
+            }
+            else if (currentPark.itemId == 2) {
 
+                self.lblBigMarch.text = currentPark.parkName;
+                
+            }
+            else if (currentPark.itemId == 3) {
+                
+            self.lblIndian.text = currentPark.parkName;
+                
+            }
+        }
+
+        
+        
         
     } withFailueHandler:^{
         [self hideLoader];
@@ -161,8 +194,7 @@
     
     UILabel *titleLabel = [UILabel new];
     [titleLabel setFrame:CGRectMake(10, 0, 250, 44)];
-    //titleLabel.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:20];
-   // titleLabel.text = @"request";
+
     titleLabel.attributedText = attrString;
     
     
@@ -219,7 +251,7 @@
     [path closePath];
     
     layer.path = path.CGPath;
-    layer.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer.fillColor = self.transperancyColor.CGColor;
     layer.strokeColor =  nil;
     [self.firstItemContainer.layer insertSublayer:layer atIndex:0];
     
@@ -237,7 +269,7 @@
     [path2 closePath];
     
     layer2.path = path2.CGPath;
-    layer2.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer2.fillColor = self.transperancyColor.CGColor;
     layer2.strokeColor =  nil;
     [self.secondItemContainer.layer insertSublayer:layer2 atIndex:0];
     
@@ -253,8 +285,12 @@
     [path3 closePath];
     
     layer3.path = path3.CGPath;
-    layer3.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    
+    
+    layer3.fillColor = self.transperancyColor.CGColor;
     layer3.strokeColor =  nil;
+    //self.thirdItemContainer.backgroundColor = self.transperancyColor;
+    
     [self.thirdItemContainer.layer insertSublayer:layer3 atIndex:0];
     
     
