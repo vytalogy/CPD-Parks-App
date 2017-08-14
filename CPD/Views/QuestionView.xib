@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can you find my hours?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Am-TY-iyS">
-                    <rect key="frame" x="16" y="45" width="268" height="36"/>
+                    <rect key="frame" x="16" y="40" width="268" height="41"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="t8r-2S-bte"/>
                     </constraints>
@@ -34,7 +34,7 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="6Am-TY-iyS" secondAttribute="bottom" constant="20" id="Sya-aa-a2a"/>
                 <constraint firstItem="6Am-TY-iyS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="XUx-hJ-L1m"/>
-                <constraint firstItem="6Am-TY-iyS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="45" id="lwb-zU-KpG"/>
+                <constraint firstItem="6Am-TY-iyS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="lwb-zU-KpG"/>
                 <constraint firstAttribute="trailing" secondItem="6Am-TY-iyS" secondAttribute="trailing" constant="16" id="xv2-pq-eyR"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

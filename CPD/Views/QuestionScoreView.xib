@@ -29,44 +29,56 @@
                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dotted-bg" translatesAutoresizingMaskIntoConstraints="NO" id="f9f-8Z-pbj">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny1-CV-oa3">
-                    <rect key="frame" x="127" y="328" width="121" height="37"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVl-8m-GL0">
+                    <rect key="frame" x="0.0" y="243" width="375" height="181"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-ok-thb">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="144" id="It8-AV-Ely"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="135"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny1-CV-oa3">
+                            <rect key="frame" x="127" y="144" width="121" height="34.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="121" id="uoi-0K-A34"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="32"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" constant="121" id="0fc-GZ-hhp"/>
-                        <constraint firstAttribute="height" constant="37" id="pER-X7-rIg"/>
+                        <constraint firstAttribute="height" constant="181" id="7FM-bw-jY6"/>
+                        <constraint firstItem="WXp-ok-thb" firstAttribute="leading" secondItem="WVl-8m-GL0" secondAttribute="leading" id="Jk1-PI-Ekh"/>
+                        <constraint firstItem="WXp-ok-thb" firstAttribute="top" secondItem="WVl-8m-GL0" secondAttribute="top" id="OFg-JF-KcW"/>
+                        <constraint firstItem="ny1-CV-oa3" firstAttribute="top" secondItem="WXp-ok-thb" secondAttribute="bottom" id="QD7-Nx-0rE"/>
+                        <constraint firstAttribute="bottom" secondItem="ny1-CV-oa3" secondAttribute="bottom" constant="2.5" id="Z2d-TL-bji"/>
+                        <constraint firstItem="ny1-CV-oa3" firstAttribute="centerX" secondItem="WVl-8m-GL0" secondAttribute="centerX" id="kK2-Ho-MY9"/>
+                        <constraint firstAttribute="trailing" secondItem="WXp-ok-thb" secondAttribute="trailing" id="mzw-RO-bPl"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="32"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="28" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-ok-thb">
-                    <rect key="frame" x="140" y="252" width="94" height="76"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="94" id="7Be-VR-pbA"/>
-                        <constraint firstAttribute="height" constant="76" id="bI0-xs-fxx"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="90"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Feo-v0-Djt" secondAttribute="trailing" id="1C4-bi-TZo"/>
                 <constraint firstAttribute="bottom" secondItem="ydD-e0-AWN" secondAttribute="bottom" id="3Lw-U7-xHe"/>
                 <constraint firstItem="Feo-v0-Djt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6do-pQ-ieJ"/>
-                <constraint firstItem="WXp-ok-thb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="252" id="7fv-E0-FIH"/>
                 <constraint firstAttribute="trailing" secondItem="f9f-8Z-pbj" secondAttribute="trailing" id="BQi-wt-7f9"/>
-                <constraint firstItem="WXp-ok-thb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CKc-eG-0mF"/>
                 <constraint firstAttribute="trailing" secondItem="ydD-e0-AWN" secondAttribute="trailing" id="CdP-Kf-MbF"/>
                 <constraint firstItem="ydD-e0-AWN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OEu-ZM-bbR"/>
                 <constraint firstItem="f9f-8Z-pbj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OX4-ho-Frz"/>
-                <constraint firstItem="ny1-CV-oa3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OmR-cq-Q9S"/>
+                <constraint firstAttribute="trailing" secondItem="WVl-8m-GL0" secondAttribute="trailing" id="PIF-49-pW6"/>
                 <constraint firstItem="f9f-8Z-pbj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tnr-nm-8Ce"/>
                 <constraint firstItem="ydD-e0-AWN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yfa-fg-n7x"/>
+                <constraint firstItem="WVl-8m-GL0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dXU-on-Prz"/>
+                <constraint firstItem="WVl-8m-GL0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dbV-tQ-efZ"/>
                 <constraint firstAttribute="bottom" secondItem="Feo-v0-Djt" secondAttribute="bottom" id="fa2-9n-KLF"/>
-                <constraint firstItem="ny1-CV-oa3" firstAttribute="top" secondItem="WXp-ok-thb" secondAttribute="bottom" id="n2x-mf-fBy"/>
                 <constraint firstItem="Feo-v0-Djt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="n50-lG-DX8"/>
+                <constraint firstItem="WVl-8m-GL0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qL1-Y5-SFY"/>
                 <constraint firstAttribute="bottom" secondItem="f9f-8Z-pbj" secondAttribute="bottom" id="sZV-I1-Ol2"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

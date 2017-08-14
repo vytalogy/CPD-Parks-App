@@ -23,7 +23,7 @@
     
 
     
-    _btnExit.layer.cornerRadius = 15;
+    _btnExit.layer.cornerRadius = 20;
     
     
 }

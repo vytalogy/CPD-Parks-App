@@ -226,7 +226,7 @@
     }
     for (UILabel *currentLabel in self.AllLabels) {
         
-        [currentLabel setFont:[UIFont fontWithName:FontToUseBold size:30]];
+        [currentLabel setFont:[UIFont fontWithName:FontToUseBold size:31]];
      
         
         currentLabel.textColor = HomeViewQuestionFontColor;
@@ -292,7 +292,7 @@
 }
 -(UIColor *)transperancyColor{
     
-    return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.70];
+    return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.75];
     
 }
 

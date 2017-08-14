@@ -109,10 +109,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@",@"1"];
-    
-    
-    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
    
     
     NSLog(@"");
@@ -148,7 +144,7 @@
     
     
     
-    if ([self.park1Score.pathExtension isEqualToString: @"0"]) {
+    if ([self.park1Score isEqualToString: @"0"]) {
         self.lblOneScore.font = ProfileViewLevelScoreFont;
         self.lblOneScore.textColor = ProfileViewGrayColor;
         
@@ -165,7 +161,7 @@
 
     
     
-    if ([self.park2Score.pathExtension isEqualToString: @"0"]) {
+    if ([self.park2Score isEqualToString: @"0"]) {
         
         self.lblTwoScore.font = ProfileViewLevelScoreFont;
         self.lblTwoScore.textColor = ProfileViewGrayColor;
@@ -179,7 +175,7 @@
 
 
     
-    if ([self.park3Score.pathExtension isEqualToString: @"0"]) {
+    if ([self.park3Score isEqualToString: @"0"]) {
         
         self.lblThirdScore.font = ProfileViewLevelScoreFont;
         self.lblThirdScore.textColor = ProfileViewGrayColor;
@@ -198,10 +194,12 @@
 
     
     
+
+    
+    int totalPoints = [self.park1Score intValue] + [self.park2Score intValue]; + [self.park3Score intValue];
     
     
-    ;
-    
+    self.lblTotalPoints.text = [NSString stringWithFormat:@"%d",totalPoints];
     
     self.lblOneScore.text = [NSString stringWithFormat:@"(%@/30)\nHegewisch",self.park1Score];
     

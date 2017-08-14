@@ -395,7 +395,7 @@
     self.lblAnswerTitle.font = AnswerTitleFont;
     self.lblAnswerTitle.textColor = AnswerFontColor;
     
-    
+   // self.lblAnswerTitle.text = self.questionDoingOn;
     self.lblDescribtion.font = AnswerDescriptionFont;
     
     [self.navigationItem setHidesBackButton:YES];

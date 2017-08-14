@@ -27,11 +27,11 @@
 #define FontToUseBold @"VistaSlabOT-Bold"
 #define FontToUseRegular @"VistaSlabOT-Reg"
 
-#define ParkAndLevelFont [UIFont fontWithName:FontToUseBold size:25]
+#define ParkAndLevelFont [UIFont fontWithName:FontToUseBold size:29]
 
 #define ParkAndLevelFontColor [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]
 
-#define HomeViewQuestionFont [UIFont fontWithName:FontToUseBold size:50]
+#define HomeViewQuestionFont [UIFont fontWithName:FontToUseBold size:55]
 #define HomeViewQuestionFontColor [UIColor colorWithRed:62.0/255.0 green:55.0/255.0 blue:63.0/255.0 alpha:1.0]
 
 #define SelectLevelWelcomeToFont [UIFont fontWithName:FontToUseBold size:28]
@@ -43,9 +43,9 @@
 #define QuestionFontColor [UIColor colorWithRed:25.0/255.0 green:25.0/255.0 blue:25.0/255.0 alpha:1.0]
 #define QuestionViewBottomButtonFonts [UIFont fontWithName:FontToUseBold size:22]
 
-#define AnswerYouFoundFont [UIFont fontWithName:FontToUseBold size:22]
+#define AnswerYouFoundFont [UIFont fontWithName:FontToUseBold size:23]
 #define AnswerFontColor [UIColor colorWithRed:50.0/255.0 green:50.0/255.0 blue:50.0/255.0 alpha:1.0]
-#define AnswerTitleFont [UIFont fontWithName:FontToUseBold size:25]
+#define AnswerTitleFont [UIFont fontWithName:FontToUseBold size:26]
 #define AnswerDescriptionFont [UIFont fontWithName:FontToUseRegular size:20]
 
 
@@ -57,10 +57,10 @@
 #define ScoreYouRAFont [UIFont fontWithName:FontToUseBold size:25]
 
 
-#define ProfileViewYouAreA [UIFont fontWithName:FontToUseBold size:19]
-#define ProfileViewTotalPointsLabelFont [UIFont fontWithName:FontToUseBold size:22]
+#define ProfileViewYouAreA [UIFont fontWithName:FontToUseBold size:21]
+#define ProfileViewTotalPointsLabelFont [UIFont fontWithName:FontToUseBold size:30]
 #define ProfileViewTotalPointsScoreFont [UIFont fontWithName:FontToUseBold size:109]
-#define ProfileViewLevelScoreFont [UIFont fontWithName:FontToUseBold size:26]
+#define ProfileViewLevelScoreFont [UIFont fontWithName:FontToUseBold size:31]
 #define LightGreenTextColor [UIColor colorWithRed:182.0/255.0 green:204.0/255.0 blue:84.0/255.0 alpha:1.0]
 
 #define ProfileViewGrayColor [UIColor colorWithRed:187.0/255.0 green:189.0/255.0 blue:191.0/255.0 alpha:1.0]

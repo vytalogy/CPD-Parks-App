@@ -1345,12 +1345,12 @@
     
     
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"researcher"];
-    id boldFontName = [UIFont fontWithName:FontToUseBold size:32];
-    id normalFont = [UIFont fontWithName:FontToUseRegular size:31];
+    id boldFontName = [UIFont fontWithName:FontToUseBold size:40];
+    id normalFont = [UIFont fontWithName:FontToUseRegular size:40];
     
     [attrString beginEditing];
     
-    NSRange boldedRange = NSMakeRange(2, [attrString length] -3);
+    NSRange boldedRange = NSMakeRange(2, [attrString length] -2);
     NSRange normalRange2 = NSMakeRange(0, 2);
     
     [attrString addAttribute:kCTFontAttributeName

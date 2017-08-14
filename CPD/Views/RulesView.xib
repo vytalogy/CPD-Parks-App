@@ -51,7 +51,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p46-8c-eRB">
-                            <rect key="frame" x="16" y="81" width="272" height="256"/>
+                            <rect key="frame" x="16" y="81" width="272" height="136"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="136" id="CEw-id-HcG"/>
+                            </constraints>
                             <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </string>
                             <fontDescription key="fontDescription" name="VistaSlabOT-Reg" family="Vista Slab OT" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,18 +62,19 @@
                         </label>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="p46-8c-eRB" secondAttribute="trailing" constant="16" id="0WX-UW-GZ7"/>
                         <constraint firstItem="le6-3F-Via" firstAttribute="centerX" secondItem="anK-hO-9wC" secondAttribute="centerX" id="3As-gB-9CQ"/>
                         <constraint firstAttribute="trailing" secondItem="3Ll-Vg-u4e" secondAttribute="trailing" constant="8" id="5Ca-rN-sJS"/>
-                        <constraint firstItem="p46-8c-eRB" firstAttribute="top" secondItem="le6-3F-Via" secondAttribute="bottom" constant="8" id="C3d-bY-KOU"/>
                         <constraint firstItem="GGW-Av-VHb" firstAttribute="top" secondItem="anK-hO-9wC" secondAttribute="top" id="PVT-Wq-5x7"/>
                         <constraint firstAttribute="bottom" secondItem="GGW-Av-VHb" secondAttribute="bottom" id="RCt-u1-eRf"/>
+                        <constraint firstItem="p46-8c-eRB" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" constant="16" id="TOd-Ja-YF1"/>
+                        <constraint firstAttribute="trailing" secondItem="p46-8c-eRB" secondAttribute="trailing" constant="16" id="WVO-i3-HAL"/>
+                        <constraint firstItem="p46-8c-eRB" firstAttribute="top" secondItem="le6-3F-Via" secondAttribute="bottom" constant="8" id="Z0Z-0h-hY2"/>
                         <constraint firstItem="GGW-Av-VHb" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" id="azF-mA-pYc"/>
-                        <constraint firstItem="p46-8c-eRB" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" constant="16" id="lEx-h7-IzC"/>
-                        <constraint firstAttribute="bottom" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="16" id="p0u-Kp-QgE"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="10" id="oRP-uc-nLm"/>
                         <constraint firstItem="3Ll-Vg-u4e" firstAttribute="top" secondItem="anK-hO-9wC" secondAttribute="top" constant="20" id="p32-LY-Klg"/>
                         <constraint firstAttribute="height" constant="353" id="vJN-mI-aeY"/>
                         <constraint firstItem="le6-3F-Via" firstAttribute="top" secondItem="anK-hO-9wC" secondAttribute="top" constant="36" id="wiJ-7v-t6Z"/>
+                        <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="136" id="yi0-DX-X18"/>
                         <constraint firstAttribute="trailing" secondItem="GGW-Av-VHb" secondAttribute="trailing" id="zgA-AT-okK"/>
                     </constraints>
                 </view>

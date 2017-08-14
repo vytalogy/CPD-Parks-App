@@ -511,7 +511,7 @@
     
     
     __block UIView *containerViewShowing = self.questionScoreView;
-    self.questionScoreView.lblScore.text = @"2";
+    self.questionScoreView.lblScore.text = @"+2";
     
     
     [containerViewShowing setFrame:self.view.frame];

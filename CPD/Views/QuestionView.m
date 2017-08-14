@@ -38,6 +38,12 @@
         
         [currentView setFrame:CGRectMake((i * (totalSize/15))-5, 15, 10, 4)];
         
+        if (self.questionNumber == 1) {
+            
+            [currentView setFrame:CGRectMake((i * (totalSize/15))+5, 15, 10, 4)];
+        
+            
+        }
         [currentView setBackgroundColor:[UIColor colorWithRed:55.0/255.0 green:55.0/255.0 blue:55.0/255.0 alpha:1.0]];
         currentView.layer.cornerRadius = 2;
         
@@ -55,7 +61,8 @@
             
             
             self.currentNumber = [UILabel new];
-            self.currentNumber.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:19];
+            
+            self.currentNumber.font = [UIFont fontWithName:FontToUseBold size:19];
             [self.currentNumber setFrame:CGRectMake(currentView.frame.origin.x-7,
                                                     -27, 25, 19)];
             self.currentNumber.text = @"1";
@@ -67,7 +74,7 @@
             
             
         }
-        else if (self.questionNumber == 2 && i == 2){
+        else if (self.questionNumber == 2 && i == 2 && (1 == 2) ){
             
             
             UIImageView *currentNumberImage = [UIImageView new];
@@ -78,7 +85,7 @@
             
             
             self.currentNumber = [UILabel new];
-            self.currentNumber.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:19];
+            self.currentNumber.font = [UIFont fontWithName:FontToUseBold size:19];
             [self.currentNumber setFrame:CGRectMake(currentView.frame.origin.x-7,
                                                     -27, 25, 19)];
             ///currentNumber.backgroundColor = [UIColor blueColor];
@@ -101,7 +108,7 @@
             
             
             self.currentNumber = [UILabel new];
-            self.currentNumber.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:19];
+            self.currentNumber.font = [UIFont fontWithName:FontToUseBold size:19];
             [self.currentNumber setFrame:CGRectMake(currentView.frame.origin.x-7,
                                                     -27, 25, 19)];
 
