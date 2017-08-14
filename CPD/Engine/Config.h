@@ -35,8 +35,8 @@
 #define HomeViewQuestionFontColor [UIColor colorWithRed:62.0/255.0 green:55.0/255.0 blue:63.0/255.0 alpha:1.0]
 
 #define SelectLevelWelcomeToFont [UIFont fontWithName:FontToUseBold size:28]
-#define SelectLevelNameFont [UIFont fontWithName:FontToUseBold size:35]
-#define SelectLevelTextFont [UIFont fontWithName:FontToUseRegular size:22]
+#define SelectLevelNameFont [UIFont fontWithName:FontToUseBold size:37]
+#define SelectLevelTextFont [UIFont fontWithName:FontToUseRegular size:23]
 
 
 #define QuestionFont [UIFont fontWithName:FontToUseRegular size:23]
@@ -64,6 +64,18 @@
 #define LightGreenTextColor [UIColor colorWithRed:182.0/255.0 green:204.0/255.0 blue:84.0/255.0 alpha:1.0]
 
 #define ProfileViewGrayColor [UIColor colorWithRed:187.0/255.0 green:189.0/255.0 blue:191.0/255.0 alpha:1.0]
+
+
+#define MapRegularTextFont [UIFont fontWithName:FontToUseRegular size:18]
+#define MapBoldTextFont [UIFont fontWithName:FontToUseBold size:20]
+
+#define RulesRegularTextFont [UIFont fontWithName:FontToUseRegular size:18]
+#define RulesBoldTextFont [UIFont fontWithName:FontToUseBold size:40]
+
+#define HintBoldFont [UIFont fontWithName:FontToUseRegular size:30]
+#define HintRegularFont [UIFont fontWithName:FontToUseBold size:18]
+
+
 
 //
 

@@ -26,4 +26,6 @@
 
 @property (nonatomic,strong) Bonus * bonusItem;
 
+@property (nonatomic) BOOL skipping;
+
 @end

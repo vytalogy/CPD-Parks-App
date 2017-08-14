@@ -243,6 +243,10 @@
 		47D8889C1F2338570068D304 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8889B1F2338570068D304 /* MainMenuViewController.m */; };
 		47D8889F1F235FEF0068D304 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8889E1F235FEF0068D304 /* MenuViewController.m */; };
 		47D888A21F2389480068D304 /* SelectQuizTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D888A11F2389480068D304 /* SelectQuizTypeViewController.m */; };
+		47ED66181F40952D00AD170E /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ED66171F40952D00AD170E /* MapView.xib */; };
+		47ED661B1F40953F00AD170E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661A1F40953F00AD170E /* MapView.m */; };
+		47ED661E1F40CE5200AD170E /* RulesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661D1F40CE5200AD170E /* RulesView.m */; };
+		47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ED661F1F40CE8C00AD170E /* RulesView.xib */; };
 		47F1FCA11F2E295B00246DD9 /* QuestionScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F1FCA01F2E295B00246DD9 /* QuestionScoreView.xib */; };
 		47F1FCA41F2E298300246DD9 /* QuestionScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F1FCA31F2E298300246DD9 /* QuestionScoreView.m */; };
 		47F1FCA71F2E32B000246DD9 /* Bonus.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F1FCA61F2E32B000246DD9 /* Bonus.m */; };
@@ -730,6 +734,12 @@
 		47D8889E1F235FEF0068D304 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewControllers/MenuViewController.m; sourceTree = "<group>"; };
 		47D888A01F2389480068D304 /* SelectQuizTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectQuizTypeViewController.h; path = ViewControllers/SelectQuizTypeViewController.h; sourceTree = "<group>"; };
 		47D888A11F2389480068D304 /* SelectQuizTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectQuizTypeViewController.m; path = ViewControllers/SelectQuizTypeViewController.m; sourceTree = "<group>"; };
+		47ED66171F40952D00AD170E /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapView.xib; path = Views/MapView.xib; sourceTree = "<group>"; };
+		47ED66191F40953F00AD170E /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapView.h; path = Views/MapView.h; sourceTree = "<group>"; };
+		47ED661A1F40953F00AD170E /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapView.m; path = Views/MapView.m; sourceTree = "<group>"; };
+		47ED661C1F40CE5200AD170E /* RulesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RulesView.h; path = Views/RulesView.h; sourceTree = "<group>"; };
+		47ED661D1F40CE5200AD170E /* RulesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RulesView.m; path = Views/RulesView.m; sourceTree = "<group>"; };
+		47ED661F1F40CE8C00AD170E /* RulesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RulesView.xib; path = Views/RulesView.xib; sourceTree = "<group>"; };
 		47F1FCA01F2E295B00246DD9 /* QuestionScoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionScoreView.xib; path = Views/QuestionScoreView.xib; sourceTree = "<group>"; };
 		47F1FCA21F2E298300246DD9 /* QuestionScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionScoreView.h; path = Views/QuestionScoreView.h; sourceTree = "<group>"; };
 		47F1FCA31F2E298300246DD9 /* QuestionScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionScoreView.m; path = Views/QuestionScoreView.m; sourceTree = "<group>"; };
@@ -1505,6 +1515,12 @@
 				47F1FCA01F2E295B00246DD9 /* QuestionScoreView.xib */,
 				47F1FCA21F2E298300246DD9 /* QuestionScoreView.h */,
 				47F1FCA31F2E298300246DD9 /* QuestionScoreView.m */,
+				47ED66171F40952D00AD170E /* MapView.xib */,
+				47ED66191F40953F00AD170E /* MapView.h */,
+				47ED661A1F40953F00AD170E /* MapView.m */,
+				47ED661F1F40CE8C00AD170E /* RulesView.xib */,
+				47ED661C1F40CE5200AD170E /* RulesView.h */,
+				47ED661D1F40CE5200AD170E /* RulesView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1667,6 +1683,7 @@
 				47C6F1151F3CDA83004C13D6 /* VistaSlabOT-BoldItalic.otf in Resources */,
 				47305AA61F1A21E5001CAE54 /* RobotoSlab-Bold.ttf in Resources */,
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
+				47ED66181F40952D00AD170E /* MapView.xib in Resources */,
 				47305BCD1F1A2264001CAE54 /* UzysAssetsPickerController.xib in Resources */,
 				47C6F1161F3CDA83004C13D6 /* VistaSlabOT-Light.otf in Resources */,
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,
@@ -1675,6 +1692,7 @@
 				47305AA71F1A21E5001CAE54 /* RobotoSlab-Light.ttf in Resources */,
 				47305CEE1F1A2390001CAE54 /* menu-button@2x.png in Resources */,
 				47C6F10F1F3CD0CA004C13D6 /* VistaSlabOT-Bold.otf in Resources */,
+				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
 				478F12C31F23B916007415C6 /* InGameScoreView.xib in Resources */,
 				47305A9B1F19EA5A001CAE54 /* LaunchScreen.storyboard in Resources */,
 				470CF6ED1F24BD1E0074A81C /* HintView.xib in Resources */,
@@ -1777,6 +1795,7 @@
 				47305C1E1F1A2264001CAE54 /* TOCropOverlayView.m in Sources */,
 				47305CCE1F1A2390001CAE54 /* CLLocation+APTimeZones.m in Sources */,
 				47988ECE1F2A3C71009F9A70 /* GainerPointsViewController.m in Sources */,
+				47ED661E1F40CE5200AD170E /* RulesView.m in Sources */,
 				47305CF31F1A2390001CAE54 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				47305BF91F1A2264001CAE54 /* ViewController+MASAdditions.m in Sources */,
 				47BABC2B1F30CC3C00EC6335 /* RTSpinKitThreeBounceAnimation.m in Sources */,
@@ -1843,6 +1862,7 @@
 				47BABC231F30CC3C00EC6335 /* RTSpinKitBounceAnimation.m in Sources */,
 				47305BE21F1A2264001CAE54 /* JotTextView.m in Sources */,
 				47305CDC1F1A2390001CAE54 /* EMCCountryManager.m in Sources */,
+				47ED661B1F40953F00AD170E /* MapView.m in Sources */,
 				47305D081F1A2390001CAE54 /* VideoMaker.m in Sources */,
 				47305BF81F1A2264001CAE54 /* View+MASAdditions.m in Sources */,
 				47305A901F19EA5A001CAE54 /* AppDelegate.m in Sources */,

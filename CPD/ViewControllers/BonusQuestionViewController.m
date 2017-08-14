@@ -277,9 +277,23 @@
     
     [super viewDidAppear:animated];
     
-    
+    if (self.skipping) {
+     
+        [self segueShowPoiints:self];
+        
+        return;
+        
+    }
+    else {
+        
+        [self.answerImage setHidden:NO];
+        [self.lblAnswerTitle setHidden:NO];
+     //   [self.lblDescribtion setHidden:NO];
+    }
     [self.bonusView setHidden:YES];
    
+    
+    
     
 }
 -(void)swipeLeft{

@@ -96,6 +96,10 @@
     
     
     
+    [self.lblTitle setFont:HomeViewQuestionFont];
+    self.lblTitle.textColor = HomeViewQuestionFontColor;
+    
+    
     
     if (IS_IPHONE_6) {
      
@@ -143,6 +147,12 @@
         
         self.topTextBottomSpacing.constant = 0;
         
+    //    [self.lblTitle setFont:HomeViewQuestionFont];
+        
+      
+        self.lblTitle.font = [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-10];
+        
+        
     }
     
     
@@ -155,9 +165,6 @@
         allLabels.textColor = ParkAndLevelFontColor;
     }
     
-    
-    [self.lblTitle setFont:HomeViewQuestionFont];
-    self.lblTitle.textColor = HomeViewQuestionFontColor;
     
 
     

@@ -7,6 +7,7 @@
 //
 
 #import "HintView.h"
+#import "Config.h"
 
 @implementation HintView
 
@@ -15,9 +16,16 @@
 -(void)setupView{
   
     
-    self.lblDetail.font = [UIFont fontWithName:@"RobotoSlab-Regular" size:20];
+    self.lblHint.font = HintBoldFont;
+    
+    self.lblDetail.font = HintRegularFont;
     
     
+    /*
+     HintBoldFont [UIFont fontWithName:FontToUseRegular size:30]
+     #define HintRegularFont [UIFont fontWithName:FontToUseBold size:18]
+
+     */
     
 }
 

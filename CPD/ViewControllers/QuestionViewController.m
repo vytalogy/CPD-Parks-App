@@ -13,6 +13,7 @@
 #import "HintView.h"
 #import "BonusQuestionViewController.h"
 #import "QuestionScoreView.h"
+#import "RulesView.h"
 
 @interface QuestionViewController ()
 @property (weak, nonatomic) IBOutlet UIView *scoreContainer;
@@ -38,9 +39,61 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *bottomButtons;
 
+@property (nonatomic,strong) RulesView * rulesViews;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *QuestionContainerConstant;
+
+@property (nonatomic) BOOL skipping;
+
 @end
 
 @implementation QuestionViewController
+
+
+-(void)closeRulesView{
+    
+    [self.rulesViews setHidden:YES];
+    
+}
+-(RulesView *)rulesViews {
+    
+    if (!_rulesViews) {
+        
+        _rulesViews =   (RulesView *)[self.view getViewFromNibName:@"RulesView"
+                                                    withWidth:self.view.frame.size.width
+                                                   withHeight:self.view.frame.size.height];
+        
+        
+        
+        
+        [_rulesViews.btnClose addTarget:self action:@selector(closeRulesView) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        
+        //_rulesViews.center = self.view.center;
+        
+        
+    
+        
+        
+        [_rulesViews setUpView];
+        
+    
+        
+        [self.view addSubview:_rulesViews];
+        
+        
+        
+    }
+    else {
+        
+        //_hintView.hidden = NO;
+        
+    }
+    return _rulesViews;
+    
+    
+}
 
 
 -(void)setupViewNextQuestion{
@@ -79,6 +132,12 @@
             BonusQuestionViewController *tmpDestination = segue.destinationViewController;
         //    tmpDestination.isQuestion2 = true;
         
+        if (self.skipping) {
+            
+            self.skipping = NO;
+            tmpDestination.skipping = YES;
+            
+        }
         tmpDestination.questionDoingOn = self.allQuestion[self.questionIndex];
         _hintView.lblDetail.text = self.allQuestion[self.questionIndex].hint;
         _questionView.lblQuestionText.text = self.allQuestion[self.questionIndex].question;
@@ -186,6 +245,7 @@
         
 
         
+
         [self.view addSubview:_questionScoreView];
         
 
@@ -213,10 +273,15 @@
     if (!_questionView) {
         
         
+        
+        
+        //_questionView =   (QuestionView *)[self.view
+          //                                 getViewFromNibName:@"QuestionView"];
+        
         _questionView =   (QuestionView *)[self.view
                                            getViewFromNibName:@"QuestionView"
-                                                              withWidth:self.viewQuestionContainer.frame.size.width
-                                                             withHeight:self.viewQuestionContainer.frame.size.height];
+                                           withWidth:self.viewQuestionContainer.frame.size.width
+                                           withHeight:self.viewQuestionContainer.frame.size.height];
         
         _questionView.questionNumber = self.questionIndex + 1;
         
@@ -227,12 +292,72 @@
         [self.viewQuestionContainer setBackgroundColor:[UIColor clearColor]];
         [self.viewQuestionContainer addSubview:_questionView];
         
-        
-
-        
         _questionView.lblQuestionText.text = self.allQuestion[self.questionIndex].question;
         
 
+        
+        
+        NSLayoutConstraint *trailing =[NSLayoutConstraint
+                                       constraintWithItem:_questionView
+                                       attribute:NSLayoutAttributeTrailing
+                                       relatedBy:NSLayoutRelationEqual
+                                       toItem:_viewQuestionContainer
+                                       attribute:NSLayoutAttributeTrailing
+                                       multiplier:1.0f
+                                       constant:0.f];
+
+        
+        NSLayoutConstraint *leading = [NSLayoutConstraint
+                                       constraintWithItem:_questionView
+                                       attribute:NSLayoutAttributeLeading
+                                       relatedBy:NSLayoutRelationEqual
+                                       toItem:_viewQuestionContainer
+                                       attribute:NSLayoutAttributeLeading
+                                       multiplier:1.0f
+                                       constant:0.f];
+        
+        
+        NSLayoutConstraint *bottom =[NSLayoutConstraint
+                                    constraintWithItem:_questionView
+                                    attribute:NSLayoutAttributeBottom
+                                    relatedBy:NSLayoutRelationEqual
+                                    toItem:_viewQuestionContainer
+                                    attribute:NSLayoutAttributeBottom
+                                    multiplier:1.0f
+                                    constant:0.f];
+        
+        
+        
+        NSLayoutConstraint *top =[NSLayoutConstraint
+                                     constraintWithItem:_questionView
+                                     attribute:NSLayoutAttributeTop
+                                     relatedBy:NSLayoutRelationEqual
+                                     toItem:_viewQuestionContainer
+                                     attribute:NSLayoutAttributeBottom
+                                     multiplier:1.0f
+                                     constant:0.f];
+        
+        
+        NSLayoutConstraint *height = [NSLayoutConstraint
+                                      constraintWithItem:_questionView
+                                      attribute:NSLayoutAttributeHeight
+                                      relatedBy:NSLayoutRelationGreaterThanOrEqual
+                                      toItem:nil
+                                      attribute:NSLayoutAttributeNotAnAttribute
+                                      multiplier:0
+                                      constant:120.f];
+        
+        
+        //[_questionView addConstraint:height];
+        
+        
+       // [_viewQuestionContainer addConstraint:top];
+       // [_viewQuestionContainer addConstraint:bottom];
+       // [_viewQuestionContainer addConstraint:leading];
+      //  [_viewQuestionContainer addConstraint:trailing];
+        
+        
+        
         
         [FileManager loadProfileImage:self.backgroundImage url:self.allQuestion[self.questionIndex].imageURL];;
 
@@ -293,7 +418,16 @@
 
     self.gameScoreView.lblScore.text = [NSString stringWithFormat:@"%d",self.scoredPoints];
     
+    if (self.questionIndex == 0) {
+        [self.rulesViews setHidden:NO];
+        [self.rulesViews bringSubviewToFront:self.rulesViews];
+     
+        self.rulesViews.lblRules.text = self.levelSelected.levelRules;
+        
+    }
     
+    
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -411,8 +545,13 @@
 - (IBAction)btnSkipButtonTapped {
     
     
+    self.skipping  = YES;
     
-    [self moveToNextView];
+
+    [self performSegueWithIdentifier:@"segueHint" sender:self];
+    
+    
+
     
 }
 

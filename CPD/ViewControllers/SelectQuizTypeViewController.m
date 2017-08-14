@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *distanceFromTop;
 @property (nonatomic,strong) NSArray<Level *> *allLevels;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpace;
 
 @property (nonatomic) int levelSelected;
 
@@ -33,6 +34,14 @@
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *levelLabels;
 @property (weak, nonatomic) IBOutlet UILabel *lblWelcomeLabel;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSpacing;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *descriptionLeftSpacing;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *descriptionRightSpacing;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *juniorSpacing;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *proSpacing;
 
 @end
 
@@ -152,12 +161,70 @@
     }
    
     
+    
+    
     self.lblWelcomeLabel.font = SelectLevelWelcomeToFont;
     self.lblTitle.font = SelectLevelNameFont;
     self.lblDetail.font = SelectLevelTextFont;
     
     
    
+    if (IS_IPHONE_6) {
+        
+        self.bottomSpacing.constant = self.bottomSpacing.constant-20;
+        
+    }
+    else if(IS_IPHONE_5){
+        
+        self.topSpace.constant = 5;
+        
+        self.descriptionLeftSpacing.constant = 5;
+        
+        self.descriptionRightSpacing.constant = 5;
+        
+        
+    
+        
+        self.lblTitle.font =  [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-2];;
+        
+        
+        self.lblDetail.font =  [UIFont fontWithName:self.lblDetail.font.fontName size:self.lblDetail.font.pointSize-3];;
+    
+        
+        self.bottomSpacing.constant = self.bottomSpacing.constant-20;
+        
+        
+        self.juniorSpacing.constant = self.juniorSpacing.constant-20;
+        self.proSpacing.constant = self.proSpacing.constant - 20;
+        
+        
+    }
+    else if(IS_IPad){
+        
+        self.topSpace.constant = 5;
+        
+        self.descriptionLeftSpacing.constant = 5;
+        
+        self.descriptionRightSpacing.constant = 5;
+        
+        
+        
+        
+        self.lblTitle.font =  [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-7];;
+        
+        
+        self.lblDetail.font =  [UIFont fontWithName:self.lblDetail.font.fontName size:self.lblDetail.font.pointSize-7];;
+        
+        
+        self.bottomSpacing.constant = self.bottomSpacing.constant-40;
+        
+        
+        self.juniorSpacing.constant = self.juniorSpacing.constant-20;
+        self.proSpacing.constant = self.proSpacing.constant - 20;
+        
+        
+    }
+    
     [self.navigationItem setHidesBackButton:YES];
     
     

@@ -52,7 +52,10 @@
     for (UIButton *currentButton in self.allButtons) {
         
         
+    
         [currentButton.titleLabel setFont:QuestionViewBottomButtonFonts];
+        
+        currentButton.layer.cornerRadius = 15;
         
     }
     
@@ -62,10 +65,7 @@
     
     [self addTopBarButtonByCode];
     
-    self.btnNext.layer.cornerRadius = 15;
-    self.btnShare.layer.cornerRadius = 15;
-  
-    //  self.btnBonus.layer.cornerRadius = 15;
+
     
     [self.navigationItem setHidesBackButton:YES];
     self.lblScore.text = [NSString stringWithFormat:@"%d/30",self.scoredPoints];;
