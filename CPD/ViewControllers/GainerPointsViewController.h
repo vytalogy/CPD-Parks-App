@@ -12,4 +12,9 @@
 
 @property (nonatomic) int scoredPoints;
 
+@property (nonatomic,strong) Level *level;
+
+@property (nonatomic,strong) Parks *currentPark
+;
+
 @end

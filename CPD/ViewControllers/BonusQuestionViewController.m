@@ -34,6 +34,7 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
 
+
 @end
 
 @implementation BonusQuestionViewController
@@ -88,24 +89,71 @@
     else if (theTextField.tag == 4) {
         
  
-        [self.view endEditing:YES];
- 
-        [self.bonusView removeFromSuperview];
-        self.bonusView = nil;
-        [self.bonusPointsView setHidden:NO];
+        NSString *currentAnswer = @"";
+        for (UITextField *currentTextBox in self.bonusView.items) {
+            
+            currentAnswer = [NSString stringWithFormat:@"%@%@",currentAnswer,currentTextBox.text];
+            
+            self.currentScore = self.currentScore + 1;
+            
+            
+        }
+        
+
+        
+        if ([currentAnswer isEqualToString:self.bonusItem.answer]) {
+            
+            [self.view endEditing:YES];
+            
+            [self.bonusView removeFromSuperview];
+            self.bonusView = nil;
+            [self.bonusPointsView setHidden:NO];
+            
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+                
+
+                
+                [self segueShowPoiints:self];
+                
+            });
+            
+            
+        
+            
+        }
+        else {
+            
+            [self showAlert:@"Incorrect Answer" message:@""];
+            
+            int i = 0;
+            
+            for (UITextField *currentTextBox in self.bonusView.items) {
+                currentTextBox.text = @"";
+                
+                if (i == 0) {
+                    [currentTextBox becomeFirstResponder];
+                    
+                }
+            
+                i++;
+                
+                
+                
+            }
+            
+        }
         
         
         
+
+        
+        
+        return;
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
             
-            
-            
             [self performSegueWithIdentifier:@"segueShowAgain" sender:self];
-            
-            
-            
-
             
         });
         
@@ -133,6 +181,8 @@
         
         GainerPointsViewController *tmpDestination = segue.destinationViewController;
         tmpDestination.scoredPoints =  self.currentScore;
+        
+        tmpDestination.currentPark = self.currentPark;
         
         
     }
@@ -182,7 +232,7 @@
         [_bonusPointsView setFrame:CGRectMake(_bonusPointsView.frame.origin.x, _bonusPointsView.frame.origin.y-75, _bonusPointsView.frame.size.width, _bonusPointsView.frame.size.height)];
         
         
-        
+        [_bonusPointsView setUpView];
         
         
         

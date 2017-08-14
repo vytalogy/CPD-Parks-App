@@ -20,6 +20,9 @@
             <rect key="frame" x="0.0" y="0.0" width="310" height="212"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hint-bg" translatesAutoresizingMaskIntoConstraints="NO" id="Aic-eY-xyg">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="212"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congrats! You've earned a bonus points!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMn-Yj-los">
                     <rect key="frame" x="12" y="97" width="286" height="115"/>
                     <constraints>
@@ -39,17 +42,28 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="cMn-Yj-los" secondAttribute="trailing" constant="12" id="Gdo-2a-urX"/>
+                <constraint firstAttribute="trailing" secondItem="Aic-eY-xyg" secondAttribute="trailing" id="Pga-Xr-qRJ"/>
+                <constraint firstAttribute="bottom" secondItem="Aic-eY-xyg" secondAttribute="bottom" id="a0h-AY-YEZ"/>
+                <constraint firstItem="Aic-eY-xyg" firstAttribute="top" secondItem="BYu-sk-Fdc" secondAttribute="top" id="cuJ-Uy-QJp"/>
                 <constraint firstItem="Qek-Wf-n90" firstAttribute="top" secondItem="BYu-sk-Fdc" secondAttribute="top" id="eQ4-0r-DTV"/>
                 <constraint firstItem="cMn-Yj-los" firstAttribute="leading" secondItem="BYu-sk-Fdc" secondAttribute="leading" constant="12" id="fI2-rM-2Em"/>
                 <constraint firstItem="Qek-Wf-n90" firstAttribute="leading" secondItem="BYu-sk-Fdc" secondAttribute="leading" id="mwP-Yr-zZc"/>
                 <constraint firstAttribute="bottom" secondItem="cMn-Yj-los" secondAttribute="bottom" id="o3h-GV-vJ6"/>
                 <constraint firstAttribute="trailing" secondItem="Qek-Wf-n90" secondAttribute="trailing" id="r8Z-1O-HYG"/>
                 <constraint firstItem="cMn-Yj-los" firstAttribute="top" secondItem="Qek-Wf-n90" secondAttribute="bottom" id="t69-dz-Zi2"/>
+                <constraint firstItem="Aic-eY-xyg" firstAttribute="leading" secondItem="BYu-sk-Fdc" secondAttribute="leading" id="zI5-Ki-WYf"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnContratsView" destination="cMn-Yj-los" id="l7A-vj-KBi"/>
+                <outlet property="lblNumberView" destination="Qek-Wf-n90" id="fJR-pB-scm"/>
+            </connections>
             <point key="canvasLocation" x="48" y="-117"/>
         </view>
     </objects>
+    <resources>
+        <image name="hint-bg" width="511" height="217"/>
+    </resources>
 </document>

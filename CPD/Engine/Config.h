@@ -76,6 +76,11 @@
 #define HintRegularFont [UIFont fontWithName:FontToUseBold size:18]
 
 
+#define BonusViewQuestionFont [UIFont fontWithName:FontToUseBold size:25]
+#define BonusViewTextFont [UIFont fontWithName:FontToUseBold size:35]
+
+#define BonusPointsCongratsViewNumberFont [UIFont fontWithName:FontToUseBold size:68]
+#define BonusPointsCongratsViewCongratsFont [UIFont fontWithName:FontToUseBold size:26]
 
 //
 

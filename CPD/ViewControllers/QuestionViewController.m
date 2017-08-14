@@ -143,6 +143,7 @@
         _questionView.lblQuestionText.text = self.allQuestion[self.questionIndex].question;
         
         
+        tmpDestination.currentPark = self.parkSelected;
         
 
         

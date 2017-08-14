@@ -20,11 +20,61 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblReaSeacher;
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalPoints;
 
+@property (nonatomic) NSString * park1Score;
+@property (nonatomic) NSString * park2Score;
+@property (nonatomic) NSString * park3Score;
+
 @end
 
 @implementation ProfileViewController
 
+-(NSString *)park1Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@",@"1"];
+    
+    
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
+-(NSString *)park2Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@",@"2"];
+    
+    
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
+-(NSString *)park3Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@",@"3"];
+    
+    
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
 -(void)viewDidAppear:(BOOL)animated{
+    
     
 
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
@@ -59,6 +109,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@",@"1"];
+    
+    
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+   
+    
+    NSLog(@"");
         [self addTopBarButtonByCode];
     
         [self.navigationItem setHidesBackButton:YES];
@@ -83,24 +140,75 @@
     self.lblTotalPointsLAbel.attributedText = attributedString ;
     
 
-    self.lblThirdScore.text = @"(28/30)\nIndian Ridge";
-    
-    
-    self.lblTwoScore.text = @"(28/30)\nBig Marsh";
-    
-    self.lblOneScore.font = ProfileViewLevelScoreFont;
-    self.lblTwoScore.textColor = LightGreenTextColor;
-    
-    
-    self.lblTwoScore.font = ProfileViewLevelScoreFont;
-    self.lblTwoScore.textColor = ProfileViewGrayColor;
-    
-    self.lblThirdScore.font = ProfileViewLevelScoreFont;
-    self.lblThirdScore.textColor = ProfileViewGrayColor;
+    self.lblThirdScore.text = [NSString stringWithFormat:@"(%@/30)\nIndian Ridge",self.park3Score];
     
     
     
-    self.lblOneScore.text = @"(28/30)\nHegewisch";
+    self.lblTwoScore.text = [NSString stringWithFormat:@"(%@/30)\nBig Marsh",self.park2Score];
+    
+    
+    
+    if ([self.park1Score.pathExtension isEqualToString: @"0"]) {
+        self.lblOneScore.font = ProfileViewLevelScoreFont;
+        self.lblOneScore.textColor = ProfileViewGrayColor;
+        
+        
+        
+    }
+    else {
+
+        self.lblOneScore.font = ProfileViewLevelScoreFont;
+        self.lblOneScore.textColor = LightGreenTextColor;
+    
+        
+    }
+
+    
+    
+    if ([self.park2Score.pathExtension isEqualToString: @"0"]) {
+        
+        self.lblTwoScore.font = ProfileViewLevelScoreFont;
+        self.lblTwoScore.textColor = ProfileViewGrayColor;
+        
+    }
+    else {
+        
+        self.lblTwoScore.font = ProfileViewLevelScoreFont;
+        self.lblTwoScore.textColor = LightGreenTextColor;
+    }
+
+
+    
+    if ([self.park3Score.pathExtension isEqualToString: @"0"]) {
+        
+        self.lblThirdScore.font = ProfileViewLevelScoreFont;
+        self.lblThirdScore.textColor = ProfileViewGrayColor;
+        
+        
+    }
+    else {
+        
+        self.lblThirdScore.font = ProfileViewLevelScoreFont;
+        self.lblThirdScore.textColor = LightGreenTextColor;
+        
+    }
+    
+
+    
+
+    
+    
+    
+    
+    ;
+    
+    
+    self.lblOneScore.text = [NSString stringWithFormat:@"(%@/30)\nHegewisch",self.park1Score];
+    
+    
+
+    
+    
     
     
     self.lblTotalPointsLAbel.text = @"TOTAL POINTS";

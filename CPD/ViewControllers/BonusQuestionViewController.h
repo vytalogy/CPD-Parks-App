@@ -28,4 +28,7 @@
 
 @property (nonatomic) BOOL skipping;
 
+
+@property (nonatomic,strong) Parks *currentPark;
+
 @end

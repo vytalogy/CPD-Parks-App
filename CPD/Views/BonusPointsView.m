@@ -8,6 +8,11 @@
 
 #import "BonusPointsView.h"
 
+
+@interface Bonus()
+
+
+@end
 @implementation BonusPointsView
 
 /*
@@ -17,5 +22,16 @@
     // Drawing code
 }
 */
+
+-(void)setUpView {
+    
+  
+    
+    self.lblNumberView.font = BonusPointsCongratsViewNumberFont;
+    
+    
+    self.btnContratsView.font =BonusPointsCongratsViewCongratsFont;
+    
+}
 
 @end

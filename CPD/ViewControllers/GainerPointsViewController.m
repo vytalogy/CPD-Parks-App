@@ -60,7 +60,15 @@
     }
     
     
+   NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%d",self.currentPark.itemId];
     
+    
+    
+    
+    [self.userDefaults setObject:[NSString stringWithFormat:@"%d",self.scoredPoints] forKey:parkIdToSave];
+    
+    
+   
     
     
     [self addTopBarButtonByCode];

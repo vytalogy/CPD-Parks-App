@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface BonusPointsView : UIView
+@property (weak, nonatomic) IBOutlet UILabel *lblNumberView;
 
+@property (weak, nonatomic) IBOutlet UILabel *btnContratsView;
+
+-(void)setUpView;
 @end

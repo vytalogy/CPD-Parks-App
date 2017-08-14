@@ -7,6 +7,7 @@
 //
 
 #import "BonusAnswerView.h"
+#import "Config.h"
 
 @interface BonusAnswerView()
 
@@ -25,6 +26,8 @@
 
 
 -(void)setupView{
+    
+    self.lblBonusQuestion.font = BonusViewQuestionFont;
     
     self.items = [NSMutableArray new];
     
@@ -54,9 +57,10 @@
         currentTextField.backgroundColor = [UIColor whiteColor];
         
         
-        currentTextField.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:30];
+        currentTextField.font = BonusViewTextFont;
         currentTextField.textAlignment = NSTextAlignmentCenter;
         currentTextField.tag = i;
+        currentTextField.font = BonusViewTextFont;
         
 
         [self.items addObject:currentTextField];
