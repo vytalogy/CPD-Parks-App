@@ -45,6 +45,9 @@
 
 @property (nonatomic) BOOL skipping;
 
+
+@property (nonatomic) int scoreToBeAdded;
+
 @end
 
 @implementation QuestionViewController
@@ -349,15 +352,7 @@
                                       constant:120.f];
         
         
-        //[_questionView addConstraint:height];
-        
-        
-       // [_viewQuestionContainer addConstraint:top];
-       // [_viewQuestionContainer addConstraint:bottom];
-       // [_viewQuestionContainer addConstraint:leading];
-      //  [_viewQuestionContainer addConstraint:trailing];
-        
-        
+      
         
         
         [FileManager loadProfileImage:self.backgroundImage url:self.allQuestion[self.questionIndex].imageURL];;
@@ -435,6 +430,9 @@
     // Do any additional setup after loading the view.
         [self addTopBarButtonByCode];
     
+    
+    self.scoreToBeAdded = 2;
+    
         [self addTopBarButtonByCode];
    AppDelegate *appDelegate =   (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
@@ -480,17 +478,24 @@
  
 
     [self.hintView setHidden:NO];
+ 
+    
+    self.scoreToBeAdded = 1;
+    
     
 }
 
 - (IBAction)btnFoundItTapped:(id)sender {
     
     
-    self.scoredPoints = self.scoredPoints + 2;
+
+    
+    
+    self.scoredPoints = self.scoredPoints + self.scoreToBeAdded;
+    
     
     
     [self moveToNextView];
-    
     
     
     
@@ -511,7 +516,9 @@
     
     
     __block UIView *containerViewShowing = self.questionScoreView;
-    self.questionScoreView.lblScore.text = @"+2";
+    self.questionScoreView.lblScore.text = [NSString stringWithFormat:@"+%d",self.scoreToBeAdded];
+    
+    
     
     
     [containerViewShowing setFrame:self.view.frame];

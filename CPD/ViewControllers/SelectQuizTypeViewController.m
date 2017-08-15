@@ -302,12 +302,15 @@
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(23, 63)]; // bottom left corner
     [path addLineToPoint:CGPointMake(0, 0)]; // top middle
+    
     [path addLineToPoint:CGPointMake(self.viewContainerTypeOne.frame.size.width, 0)]; // top right corner
     [path addLineToPoint:CGPointMake(self.viewContainerTypeOne.frame.size.width, 63)]; // bottom right corner
     [path closePath];
     
+    
+    
     layer.path = path.CGPath;
-    layer.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer.fillColor = self.transperancyColor.CGColor;
     layer.strokeColor =  nil;
     [self.viewContainerTypeOne.layer insertSublayer:layer atIndex:0];
     
@@ -323,7 +326,7 @@
     [path2 closePath];
     
     layer2.path = path2.CGPath;
-    layer2.fillColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9].CGColor;
+    layer2.fillColor = self.transperancyColor.CGColor;
     layer2.strokeColor =  nil;
     [self.viewContainerTypeTwo.layer insertSublayer:layer2 atIndex:0];
     
