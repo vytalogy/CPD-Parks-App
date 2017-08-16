@@ -133,7 +133,7 @@
     [paragraphStyle setLineSpacing:-10];
     
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [labelText length])];
-    self.lblTotalPointsLAbel.attributedText = attributedString ;
+   // self.lblTotalPointsLAbel.attributedText = attributedString ;
     
 
     self.lblThirdScore.text = [NSString stringWithFormat:@"(%@/30)\nIndian Ridge",self.park3Score];
@@ -220,6 +220,11 @@
     
     
     self.navLabel.attributedText = self.requestText;
+
+    
+    
+    self.navLabel.textColor = HomeViewQuestionFontColor;
+    
     
 }
 

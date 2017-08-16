@@ -344,7 +344,7 @@
    
     
     
-    self.lblAnswerTitle.text = self.questionDoingOn.expTitle;
+    self.lblAnswerTitle.text = self.questionDoingOn.expTitle.uppercaseString;
     
 }
 -(void)swipeLeft{

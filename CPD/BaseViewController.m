@@ -1308,7 +1308,7 @@
 
 -(UIColor *)transperancyColor{
     
-    return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.90];
+    return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.85];
     
 }
 
@@ -1317,8 +1317,8 @@
     
     
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"request"];
-    id boldFontName = [UIFont fontWithName:FontToUseBold size:30];
-    id normalFont = [UIFont fontWithName:FontToUseRegular size:30];
+    id boldFontName = [UIFont fontWithName:FontToUserBlack size:36];
+    id normalFont = [UIFont fontWithName:FontToUseRegular size:36];
     
     [attrString beginEditing];
     
@@ -1345,8 +1345,8 @@
     
     
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"researcher"];
-    id boldFontName = [UIFont fontWithName:FontToUseBold size:40];
-    id normalFont = [UIFont fontWithName:FontToUseRegular size:40];
+    id boldFontName = [UIFont fontWithName:FontToUserBlack size:45];
+    id normalFont = [UIFont fontWithName:FontToUseRegular size:45];
     
     [attrString beginEditing];
     

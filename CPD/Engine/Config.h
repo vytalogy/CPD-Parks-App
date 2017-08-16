@@ -26,53 +26,69 @@
 
 #define FontToUseBold @"VistaSlabOT-Bold"
 #define FontToUseRegular @"VistaSlabOT-Reg"
+#define FontToUserBlack @"VistaSlabOT-Black"
+#define FontToUserBook @"VistaSlabOT-Book"
+#define FontToUserMedium @"VistaSlabOT-Medium"
 
-#define ParkAndLevelFont [UIFont fontWithName:FontToUseBold size:29]
+#define ArboriaLight @"Arboria-Light"
+#define ArboriaBook @"Arboria-Book"
+#define ArboriaMedium @"Arboria-Medium"
+
+
+
+//
+//
+
+
+
+
+#define ParkAndLevelFont [UIFont fontWithName:FontToUserMedium size:27]
 
 #define ParkAndLevelFontColor [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]
 
-#define HomeViewQuestionFont [UIFont fontWithName:FontToUseBold size:55]
-#define HomeViewQuestionFontColor [UIColor colorWithRed:58.0/255.0 green:58.0/255.0 blue:60.0/255.0 alpha:1.0]
 
-#define SelectLevelWelcomeToFont [UIFont fontWithName:FontToUseBold size:28]
-#define SelectLevelNameFont [UIFont fontWithName:FontToUseBold size:37]
-#define SelectLevelTextFont [UIFont fontWithName:FontToUseRegular size:23]
+#define HomeViewQuestionFont [UIFont fontWithName:FontToUserBlack size:50]
+#define HomeViewQuestionFontColor [UIColor colorWithRed:65.0/255.0 green:64.0/255.0 blue:66.0/255.0 alpha:1.0]
 
-
-#define QuestionFont [UIFont fontWithName:FontToUseRegular size:23]
-#define QuestionFontColor [UIColor colorWithRed:25.0/255.0 green:25.0/255.0 blue:25.0/255.0 alpha:1.0]
-#define QuestionViewBottomButtonFonts [UIFont fontWithName:FontToUseBold size:22]
-
-#define AnswerYouFoundFont [UIFont fontWithName:FontToUseBold size:23]
-#define AnswerFontColor [UIColor colorWithRed:50.0/255.0 green:50.0/255.0 blue:50.0/255.0 alpha:1.0]
-#define AnswerTitleFont [UIFont fontWithName:FontToUseBold size:26]
-#define AnswerDescriptionFont [UIFont fontWithName:FontToUseRegular size:20]
+#define SelectLevelWelcomeToFont [UIFont fontWithName:FontToUserBlack size:29]
+#define SelectLevelNameFont [UIFont fontWithName:FontToUserBlack size:39]
+#define SelectLevelTextFont [UIFont fontWithName:ArboriaMedium size:21]
 
 
-#define ScoreViewCongratsFont [UIFont fontWithName:FontToUseBold size:30]
-#define ScoreViewYouveCompletedFont [UIFont fontWithName:FontToUseBold size:25]
-#define ScoreViewPlaceFont [UIFont fontWithName:FontToUseBold size:28]
-#define ScoreYourScoreFont [UIFont fontWithName:FontToUseBold size:27]
-#define ScoreScoreFont [UIFont fontWithName:FontToUseBold size:65]
-#define ScoreYouRAFont [UIFont fontWithName:FontToUseBold size:25]
+#define QuestionFont [UIFont fontWithName:ArboriaBook size:24]
+#define QuestionFontColor [UIColor colorWithRed:35.0/255.0 green:31.0/255.0 blue:32.0/255.0 alpha:1.0]
+#define QuestionViewBottomButtonFonts [UIFont fontWithName:FontToUseBold size:20]
+
+#define AnswerYouFoundFont [UIFont fontWithName:FontToUserMedium size:20]
+#define AnswerFontColor [UIColor colorWithRed:65.0/255.0 green:64.0/255.0 blue:66.0/255.0 alpha:1.0]
+#define AnswerTitleFont [UIFont fontWithName:FontToUserBlack size:26]
+#define AnswerDescriptionFont [UIFont fontWithName:ArboriaMedium size:18]
 
 
-#define ProfileViewYouAreA [UIFont fontWithName:FontToUseBold size:21]
-#define ProfileViewTotalPointsLabelFont [UIFont fontWithName:FontToUseBold size:30]
-#define ProfileViewTotalPointsScoreFont [UIFont fontWithName:FontToUseBold size:109]
-#define ProfileViewLevelScoreFont [UIFont fontWithName:FontToUseBold size:31]
-#define LightGreenTextColor [UIColor colorWithRed:182.0/255.0 green:204.0/255.0 blue:84.0/255.0 alpha:1.0]
+#define ScoreViewCongratsFont [UIFont fontWithName:FontToUserBlack size:50]
+#define ScoreViewYouveCompletedFont [UIFont fontWithName:FontToUserBlack size:25]
+#define ScoreViewPlaceFont [UIFont fontWithName:FontToUserBlack size:40]
+#define ScoreYourScoreFont [UIFont fontWithName:FontToUserBlack size:33]
+#define ScoreScoreFont [UIFont fontWithName:FontToUserBlack size:80]
+#define ScoreYouRAFont [UIFont fontWithName:FontToUserBlack size:30]
 
-#define ProfileViewGrayColor [UIColor colorWithRed:187.0/255.0 green:189.0/255.0 blue:191.0/255.0 alpha:1.0]
+
+#define ProfileViewYouAreA [UIFont fontWithName:FontToUseBold size:23]
+#define ProfileViewTotalPointsLabelFont [UIFont fontWithName:FontToUserBlack size:27]
+#define ProfileViewTotalPointsScoreFont [UIFont fontWithName:FontToUseBold size:130]
+#define ProfileViewLevelScoreFont [UIFont fontWithName:FontToUserBlack size:31]
+#define LightGreenTextColor [UIColor colorWithRed:172.0/255.0 green:209.0/255.0 blue:68.0/255.0 alpha:1.0]
+
+#define ProfileViewGrayColor [UIColor colorWithRed:182.0/255.0 green:183.0/255.0 blue:183.0/255.0 alpha:1.0]
 
 
-#define MapRegularTextFont [UIFont fontWithName:FontToUseRegular size:18]
-#define MapBoldTextFont [UIFont fontWithName:FontToUseBold size:20]
+#define MapRegularTextFont [UIFont fontWithName:FontToUserMedium size:18]
+#define MapBoldTextFont [UIFont fontWithName:FontToUserBlack size:20]
 
-#define RulesRegularTextFont [UIFont fontWithName:FontToUseRegular size:18]
-#define RulesBoldTextFont [UIFont fontWithName:FontToUseBold size:40]
+#define RulesRegularTextFont [UIFont fontWithName:FontToUserMedium size:19]
+#define RulesBoldTextFont [UIFont fontWithName:FontToUseBold size:37]
 
-#define HintBoldFont [UIFont fontWithName:FontToUseRegular size:30]
+#define HintBoldFont [UIFont fontWithName:FontToUseBold size:34]
 #define HintRegularFont [UIFont fontWithName:FontToUseBold size:18]
 
 

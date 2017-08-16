@@ -226,10 +226,10 @@
     }
     for (UILabel *currentLabel in self.AllLabels) {
         
-        [currentLabel setFont:[UIFont fontWithName:FontToUseBold size:31]];
+        [currentLabel setFont:[UIFont fontWithName:FontToUserMedium size:31]];
      
         
-        currentLabel.textColor = HomeViewQuestionFontColor;
+        currentLabel.textColor = [UIColor blackColor];;
         
         
     }

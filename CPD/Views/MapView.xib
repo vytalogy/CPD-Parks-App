@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="VistaSlabOT-Bold.otf">
+        <array key="VistaSlabOT-Bold.ttf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.otf">
+        <array key="VistaSlabOT-Reg.ttf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -39,12 +39,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="1Xf-Rn-4gh"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="45"/>
+                    <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="35"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p46-8c-eRB">
-                    <rect key="frame" x="32" y="80" width="256" height="134.5"/>
+                    <rect key="frame" x="32" y="80" width="256" height="141.5"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="uqm-Pq-7xJ"/>
                     </constraints>
@@ -54,7 +54,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to exit?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkd-ge-WxW">
-                    <rect key="frame" x="24" y="235" width="272" height="25"/>
+                    <rect key="frame" x="24" y="242" width="272" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="HCv-EL-iLX"/>
                     </constraints>
@@ -63,11 +63,11 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4D-Ld-IKN">
-                    <rect key="frame" x="108" y="282" width="104" height="42"/>
-                    <color key="backgroundColor" red="0.67567950489999995" green="0.81414395569999998" blue="0.27269250150000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="120" y="289" width="80" height="35"/>
+                    <color key="backgroundColor" red="0.67843137249999996" green="0.81960784310000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="42" id="VtD-fS-Enu"/>
-                        <constraint firstAttribute="width" constant="104" id="xP4-WQ-Ac3"/>
+                        <constraint firstAttribute="height" constant="35" id="VtD-fS-Enu"/>
+                        <constraint firstAttribute="width" constant="80" id="xP4-WQ-Ac3"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="22"/>
                     <state key="normal" title="EXIT">

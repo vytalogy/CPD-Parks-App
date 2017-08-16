@@ -166,7 +166,7 @@
     self.lblWelcomeLabel.font = SelectLevelWelcomeToFont;
     self.lblTitle.font = SelectLevelNameFont;
     self.lblDetail.font = SelectLevelTextFont;
-    
+    //
     
    
     if (IS_IPHONE_6) {
@@ -269,7 +269,7 @@
     self.lblTitle.text = self.selectedPark.parkName;
     
     self.lblDetail.text = self.selectedPark.parkDescription;
-    
+//    self.lblDetail.text =@"ipsum dolor sit amet, consec-tetuer";
 
     self.viewContainerTypeOne.backgroundColor = [UIColor clearColor];
     self.viewContainerTypeTwo.backgroundColor = [UIColor clearColor];

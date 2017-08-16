@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="VistaSlabOT-Bold.otf">
+        <array key="VistaSlabOT-Bold.ttf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.otf">
+        <array key="VistaSlabOT-Reg.ttf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -35,17 +35,17 @@
                     <state key="normal" image="close"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HINT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdl-Sp-7ue">
-                    <rect key="frame" x="99" y="24" width="102" height="35"/>
+                    <rect key="frame" x="99" y="24" width="102" height="45"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="102" id="FfZ-ID-44Z"/>
-                        <constraint firstAttribute="height" constant="35" id="zNT-67-5YH"/>
+                        <constraint firstAttribute="height" constant="45" id="zNT-67-5YH"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="30"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ede-Ic-to3">
-                    <rect key="frame" x="24" y="65" width="252" height="85"/>
+                    <rect key="frame" x="24" y="69" width="252" height="81"/>
                     <fontDescription key="fontDescription" name="VistaSlabOT-Reg" family="Vista Slab OT" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                 <constraint firstAttribute="trailing" secondItem="1GO-uh-H9h" secondAttribute="trailing" constant="16" id="061-FD-6FX"/>
                 <constraint firstItem="ede-Ic-to3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="7Aw-8p-UY0"/>
                 <constraint firstAttribute="trailing" secondItem="8I3-tm-mDY" secondAttribute="trailing" id="ACe-bF-6p0"/>
-                <constraint firstItem="ede-Ic-to3" firstAttribute="top" secondItem="rdl-Sp-7ue" secondAttribute="bottom" constant="6" id="Jcl-jl-XWT"/>
+                <constraint firstItem="ede-Ic-to3" firstAttribute="top" secondItem="rdl-Sp-7ue" secondAttribute="bottom" id="Jcl-jl-XWT"/>
                 <constraint firstAttribute="trailing" secondItem="ede-Ic-to3" secondAttribute="trailing" constant="24" id="Pf6-XX-7G2"/>
                 <constraint firstItem="8I3-tm-mDY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fAg-z0-cJa"/>
                 <constraint firstItem="8I3-tm-mDY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fJ2-Jh-KTH"/>

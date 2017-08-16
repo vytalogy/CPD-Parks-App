@@ -299,7 +299,7 @@
         _questionView.lblQuestionText.text = self.allQuestion[self.questionIndex].question;
         
 
-        
+        _questionView.lblQuestionText.text = @"Can you find my house?";
         
         NSLayoutConstraint *trailing =[NSLayoutConstraint
                                        constraintWithItem:_questionView
@@ -453,9 +453,10 @@
     
     [self.navigationItem setHidesBackButton:YES];
     
-    appDelegate.navBarTitle.text = self.viewTitle;
+   //appDelegate.navBarTitle.text = self.viewTitle;
     
-    appDelegate.navBarTitle.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:25];;
+    //appDelegate.navBarTitle.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:25];;
+    //appDelegate.navBarTitle.font = [UIFont fontWithName:@"FontToUserBlack" size:34];
     
     
     [self.scoreContainer addSubview:self.gameScoreView];

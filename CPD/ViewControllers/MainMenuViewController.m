@@ -244,6 +244,9 @@
 
     titleLabel.attributedText = self.requestText;
     
+    titleLabel.textColor = HomeViewQuestionFontColor;
+    
+    
     
     [tmpView addSubview:titleLabel];
     
@@ -271,6 +274,12 @@
     
     
     self.navLabel.attributedText = self.requestText;
+    
+    
+    
+    
+    self.navLabel.textColor = HomeViewQuestionFontColor;
+    
     
     
     

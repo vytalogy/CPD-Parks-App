@@ -18,7 +18,7 @@
     
     self.lblHint.font = HintBoldFont;
     
-    self.lblDetail.font = HintRegularFont;
+    self.lblDetail.font = RulesRegularTextFont;
     
     
     /*

@@ -86,6 +86,7 @@
     [super viewWillAppear:animated];
     
     self.navLabel.attributedText = self.requestText;
+    self.navLabel.textColor = HomeViewQuestionFontColor;
     
     
 }

@@ -23,7 +23,9 @@
     
 
     
-    _btnExit.layer.cornerRadius = 20;
+    self.btnExit.backgroundColor = LightGreenTextColor;
+    
+    _btnExit.layer.cornerRadius = 18;
     
     
 }

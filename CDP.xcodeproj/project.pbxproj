@@ -245,6 +245,12 @@
 		47EB4AC41F447C2500C4674C /* VistaSlabOT-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABE1F447C2500C4674C /* VistaSlabOT-LightItalic.otf */; };
 		47EB4AC51F447C2500C4674C /* VistaSlabOT-Reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABF1F447C2500C4674C /* VistaSlabOT-Reg.otf */; };
 		47EB4AC61F447C2500C4674C /* VistaSlabOT-RegItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AC01F447C2500C4674C /* VistaSlabOT-RegItalic.otf */; };
+		47EB4AD41F4484E000C4674C /* VistaSlabOT-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD31F4484E000C4674C /* VistaSlabOT-Black.otf */; };
+		47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD51F44862800C4674C /* VistaSlabOT-Book.otf */; };
+		47EB4AD81F4487AA00C4674C /* VistaSlabOT-Med.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD71F4487AA00C4674C /* VistaSlabOT-Med.otf */; };
+		47EB4ADB1F44A20D00C4674C /* Arboria-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD91F44A20D00C4674C /* Arboria-Book.otf */; };
+		47EB4ADC1F44A20D00C4674C /* Arboria-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ADA1F44A20D00C4674C /* Arboria-Light.otf */; };
+		47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ADD1F44A36F00C4674C /* Arboria-Medium.otf */; };
 		47ED66181F40952D00AD170E /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ED66171F40952D00AD170E /* MapView.xib */; };
 		47ED661B1F40953F00AD170E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661A1F40953F00AD170E /* MapView.m */; };
 		47ED661E1F40CE5200AD170E /* RulesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661D1F40CE5200AD170E /* RulesView.m */; };
@@ -738,6 +744,12 @@
 		47EB4ABE1F447C2500C4674C /* VistaSlabOT-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-LightItalic.otf"; sourceTree = "<group>"; };
 		47EB4ABF1F447C2500C4674C /* VistaSlabOT-Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Reg.otf"; sourceTree = "<group>"; };
 		47EB4AC01F447C2500C4674C /* VistaSlabOT-RegItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-RegItalic.otf"; sourceTree = "<group>"; };
+		47EB4AD31F4484E000C4674C /* VistaSlabOT-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Black.otf"; sourceTree = "<group>"; };
+		47EB4AD51F44862800C4674C /* VistaSlabOT-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Book.otf"; sourceTree = "<group>"; };
+		47EB4AD71F4487AA00C4674C /* VistaSlabOT-Med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Med.otf"; sourceTree = "<group>"; };
+		47EB4AD91F44A20D00C4674C /* Arboria-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arboria-Book.otf"; sourceTree = "<group>"; };
+		47EB4ADA1F44A20D00C4674C /* Arboria-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arboria-Light.otf"; sourceTree = "<group>"; };
+		47EB4ADD1F44A36F00C4674C /* Arboria-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arboria-Medium.otf"; sourceTree = "<group>"; };
 		47ED66171F40952D00AD170E /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapView.xib; path = Views/MapView.xib; sourceTree = "<group>"; };
 		47ED66191F40953F00AD170E /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapView.h; path = Views/MapView.h; sourceTree = "<group>"; };
 		47ED661A1F40953F00AD170E /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapView.m; path = Views/MapView.m; sourceTree = "<group>"; };
@@ -801,6 +813,12 @@
 		47305A8B1F19EA5A001CAE54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				47EB4ADD1F44A36F00C4674C /* Arboria-Medium.otf */,
+				47EB4AD91F44A20D00C4674C /* Arboria-Book.otf */,
+				47EB4ADA1F44A20D00C4674C /* Arboria-Light.otf */,
+				47EB4AD71F4487AA00C4674C /* VistaSlabOT-Med.otf */,
+				47EB4AD51F44862800C4674C /* VistaSlabOT-Book.otf */,
+				47EB4AD31F4484E000C4674C /* VistaSlabOT-Black.otf */,
 				47EB4ABB1F447C2500C4674C /* VistaSlabOT-Bold.otf */,
 				47EB4ABC1F447C2500C4674C /* VistaSlabOT-BoldItalic.otf */,
 				47EB4ABD1F447C2500C4674C /* VistaSlabOT-Light.otf */,
@@ -1685,19 +1703,24 @@
 				47EB4AC11F447C2500C4674C /* VistaSlabOT-Bold.otf in Resources */,
 				47EB4AB51F4479F500C4674C /* VistaSlabOT-Bold.ttf in Resources */,
 				47EB4AC41F447C2500C4674C /* VistaSlabOT-LightItalic.otf in Resources */,
+				47EB4AD81F4487AA00C4674C /* VistaSlabOT-Med.otf in Resources */,
 				47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */,
 				47305CED1F1A2390001CAE54 /* menu-button.png in Resources */,
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
+				47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */,
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
 				470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */,
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
+				47EB4ADB1F44A20D00C4674C /* Arboria-Book.otf in Resources */,
 				47ED66181F40952D00AD170E /* MapView.xib in Resources */,
+				47EB4AD41F4484E000C4674C /* VistaSlabOT-Black.otf in Resources */,
 				47305BCD1F1A2264001CAE54 /* UzysAssetsPickerController.xib in Resources */,
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,
 				47EB4AC61F447C2500C4674C /* VistaSlabOT-RegItalic.otf in Resources */,
 				47305C181F1A2264001CAE54 /* Info.plist in Resources */,
 				47305CEE1F1A2390001CAE54 /* menu-button@2x.png in Resources */,
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
+				47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */,
 				478F12C31F23B916007415C6 /* InGameScoreView.xib in Resources */,
 				47305A9B1F19EA5A001CAE54 /* LaunchScreen.storyboard in Resources */,
 				470CF6ED1F24BD1E0074A81C /* HintView.xib in Resources */,
@@ -1705,6 +1728,7 @@
 				47305A981F19EA5A001CAE54 /* Assets.xcassets in Resources */,
 				47593C601F28EA260086E27F /* BonusPointsView.xib in Resources */,
 				47305C161F1A2264001CAE54 /* TGPhotoViewController.xib in Resources */,
+				47EB4ADC1F44A20D00C4674C /* Arboria-Light.otf in Resources */,
 				475E66811F26691D002FBD29 /* BonusAnswerView.xib in Resources */,
 				47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */,
 				47EB4AC21F447C2500C4674C /* VistaSlabOT-BoldItalic.otf in Resources */,
@@ -2080,8 +2104,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2089,8 +2113,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
-				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
+				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
+				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
 			};
 			name = Debug;
 		};
@@ -2098,8 +2122,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2107,8 +2131,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
-				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
+				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
+				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
 			};
 			name = Release;
 		};

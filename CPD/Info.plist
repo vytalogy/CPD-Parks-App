@@ -35,14 +35,19 @@
 	<string>App user photos to share your photos</string>
 	<key>UIAppFonts</key>
 	<array>
-
-		<string>VistaSlabOT-Bold.otf</string>
+        <string>VistaSlabOT-Bold.otf</string>
 		<string>VistaSlabOT-RegItalic.otf</string>
 		<string>VistaSlabOT-Reg.otf</string>
 		<string>VistaSlabOT-LightItalic.otf</string>
 		<string>VistaSlabOT-Light.otf</string>
 		<string>VistaSlabOT-BoldItalic.otf</string>
-	</array>
+        <string>VistaSlabOT-Black.otf</string>
+        <string>VistaSlabOT-Book.otf</string>
+        <string>VistaSlabOT-Med.otf</string>
+        <string>Arboria-Book.otf</string>
+        <string>Arboria-Light.otf</string>
+        <string>Arboria-Medium.otf</string>
+    </array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
