@@ -35,10 +35,7 @@
 	<string>App user photos to share your photos</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>RobotoSlab-Bold.ttf</string>
-		<string>RobotoSlab-Light.ttf</string>
-		<string>RobotoSlab-Regular.ttf</string>
-		<string>RobotoSlab-Thin.ttf</string>
+
 		<string>VistaSlabOT-Bold.otf</string>
 		<string>VistaSlabOT-RegItalic.otf</string>
 		<string>VistaSlabOT-Reg.otf</string>

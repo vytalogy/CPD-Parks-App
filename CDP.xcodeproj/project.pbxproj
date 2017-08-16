@@ -239,6 +239,12 @@
 		47EB4AB81F4479F500C4674C /* VistaSlabOT-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB21F4479F500C4674C /* VistaSlabOT-Reg.ttf */; };
 		47EB4AB91F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB31F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf */; };
 		47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB41F4479F500C4674C /* VistaSlabOT-RegItalic.ttf */; };
+		47EB4AC11F447C2500C4674C /* VistaSlabOT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABB1F447C2500C4674C /* VistaSlabOT-Bold.otf */; };
+		47EB4AC21F447C2500C4674C /* VistaSlabOT-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABC1F447C2500C4674C /* VistaSlabOT-BoldItalic.otf */; };
+		47EB4AC31F447C2500C4674C /* VistaSlabOT-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABD1F447C2500C4674C /* VistaSlabOT-Light.otf */; };
+		47EB4AC41F447C2500C4674C /* VistaSlabOT-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABE1F447C2500C4674C /* VistaSlabOT-LightItalic.otf */; };
+		47EB4AC51F447C2500C4674C /* VistaSlabOT-Reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABF1F447C2500C4674C /* VistaSlabOT-Reg.otf */; };
+		47EB4AC61F447C2500C4674C /* VistaSlabOT-RegItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AC01F447C2500C4674C /* VistaSlabOT-RegItalic.otf */; };
 		47ED66181F40952D00AD170E /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ED66171F40952D00AD170E /* MapView.xib */; };
 		47ED661B1F40953F00AD170E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661A1F40953F00AD170E /* MapView.m */; };
 		47ED661E1F40CE5200AD170E /* RulesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661D1F40CE5200AD170E /* RulesView.m */; };
@@ -726,6 +732,12 @@
 		47EB4AB21F4479F500C4674C /* VistaSlabOT-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Reg.ttf"; sourceTree = "<group>"; };
 		47EB4AB31F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-BoldItalic.ttf"; sourceTree = "<group>"; };
 		47EB4AB41F4479F500C4674C /* VistaSlabOT-RegItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-RegItalic.ttf"; sourceTree = "<group>"; };
+		47EB4ABB1F447C2500C4674C /* VistaSlabOT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Bold.otf"; sourceTree = "<group>"; };
+		47EB4ABC1F447C2500C4674C /* VistaSlabOT-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-BoldItalic.otf"; sourceTree = "<group>"; };
+		47EB4ABD1F447C2500C4674C /* VistaSlabOT-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Light.otf"; sourceTree = "<group>"; };
+		47EB4ABE1F447C2500C4674C /* VistaSlabOT-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-LightItalic.otf"; sourceTree = "<group>"; };
+		47EB4ABF1F447C2500C4674C /* VistaSlabOT-Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Reg.otf"; sourceTree = "<group>"; };
+		47EB4AC01F447C2500C4674C /* VistaSlabOT-RegItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-RegItalic.otf"; sourceTree = "<group>"; };
 		47ED66171F40952D00AD170E /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapView.xib; path = Views/MapView.xib; sourceTree = "<group>"; };
 		47ED66191F40953F00AD170E /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapView.h; path = Views/MapView.h; sourceTree = "<group>"; };
 		47ED661A1F40953F00AD170E /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapView.m; path = Views/MapView.m; sourceTree = "<group>"; };
@@ -789,6 +801,12 @@
 		47305A8B1F19EA5A001CAE54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				47EB4ABB1F447C2500C4674C /* VistaSlabOT-Bold.otf */,
+				47EB4ABC1F447C2500C4674C /* VistaSlabOT-BoldItalic.otf */,
+				47EB4ABD1F447C2500C4674C /* VistaSlabOT-Light.otf */,
+				47EB4ABE1F447C2500C4674C /* VistaSlabOT-LightItalic.otf */,
+				47EB4ABF1F447C2500C4674C /* VistaSlabOT-Reg.otf */,
+				47EB4AC01F447C2500C4674C /* VistaSlabOT-RegItalic.otf */,
 				47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */,
 				47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */,
 				47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */,
@@ -1663,7 +1681,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EB4AB91F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf in Resources */,
+				47EB4AC51F447C2500C4674C /* VistaSlabOT-Reg.otf in Resources */,
+				47EB4AC11F447C2500C4674C /* VistaSlabOT-Bold.otf in Resources */,
 				47EB4AB51F4479F500C4674C /* VistaSlabOT-Bold.ttf in Resources */,
+				47EB4AC41F447C2500C4674C /* VistaSlabOT-LightItalic.otf in Resources */,
 				47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */,
 				47305CED1F1A2390001CAE54 /* menu-button.png in Resources */,
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
@@ -1673,6 +1694,7 @@
 				47ED66181F40952D00AD170E /* MapView.xib in Resources */,
 				47305BCD1F1A2264001CAE54 /* UzysAssetsPickerController.xib in Resources */,
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,
+				47EB4AC61F447C2500C4674C /* VistaSlabOT-RegItalic.otf in Resources */,
 				47305C181F1A2264001CAE54 /* Info.plist in Resources */,
 				47305CEE1F1A2390001CAE54 /* menu-button@2x.png in Resources */,
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
@@ -1685,10 +1707,12 @@
 				47305C161F1A2264001CAE54 /* TGPhotoViewController.xib in Resources */,
 				475E66811F26691D002FBD29 /* BonusAnswerView.xib in Resources */,
 				47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */,
+				47EB4AC21F447C2500C4674C /* VistaSlabOT-BoldItalic.otf in Resources */,
 				47EB4AB81F4479F500C4674C /* VistaSlabOT-Reg.ttf in Resources */,
 				47EB4AB61F4479F500C4674C /* VistaSlabOT-Light.ttf in Resources */,
 				47EB4AB71F4479F500C4674C /* VistaSlabOT-LightItalic.ttf in Resources */,
 				47305C171F1A2264001CAE54 /* TOCropViewControllerLocalizable.strings in Resources */,
+				47EB4AC31F447C2500C4674C /* VistaSlabOT-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
