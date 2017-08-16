@@ -17,10 +17,6 @@
 		47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47305A941F19EA5A001CAE54 /* Main.storyboard */; };
 		47305A981F19EA5A001CAE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47305A971F19EA5A001CAE54 /* Assets.xcassets */; };
 		47305A9B1F19EA5A001CAE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47305A991F19EA5A001CAE54 /* LaunchScreen.storyboard */; };
-		47305AA61F1A21E5001CAE54 /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47305AA21F1A21E5001CAE54 /* RobotoSlab-Bold.ttf */; };
-		47305AA71F1A21E5001CAE54 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47305AA31F1A21E5001CAE54 /* RobotoSlab-Light.ttf */; };
-		47305AA81F1A21E5001CAE54 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47305AA41F1A21E5001CAE54 /* RobotoSlab-Regular.ttf */; };
-		47305AA91F1A21E5001CAE54 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47305AA51F1A21E5001CAE54 /* RobotoSlab-Thin.ttf */; };
 		47305BB41F1A2264001CAE54 /* ADDropDownMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305AAD1F1A2264001CAE54 /* ADDropDownMenuItemView.m */; };
 		47305BB51F1A2264001CAE54 /* ADDropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305AAF1F1A2264001CAE54 /* ADDropDownMenuView.m */; };
 		47305BB61F1A2264001CAE54 /* IQDropDownTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305AB21F1A2264001CAE54 /* IQDropDownTextField.m */; };
@@ -234,15 +230,15 @@
 		47BABC2E1F30CC3C00EC6335 /* RTSpinKitWordPressAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BABC1A1F30CC3C00EC6335 /* RTSpinKitWordPressAnimation.m */; };
 		47BABC2F1F30CC3C00EC6335 /* RTSpinKitUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BABC1D1F30CC3C00EC6335 /* RTSpinKitUtils.m */; };
 		47BABC301F30CC3C00EC6335 /* RTSpinKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BABC1F1F30CC3C00EC6335 /* RTSpinKitView.m */; };
-		47C6F10F1F3CD0CA004C13D6 /* VistaSlabOT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47C6F10E1F3CD0CA004C13D6 /* VistaSlabOT-Bold.otf */; };
-		47C6F1151F3CDA83004C13D6 /* VistaSlabOT-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47C6F1101F3CDA83004C13D6 /* VistaSlabOT-BoldItalic.otf */; };
-		47C6F1161F3CDA83004C13D6 /* VistaSlabOT-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47C6F1111F3CDA83004C13D6 /* VistaSlabOT-Light.otf */; };
-		47C6F1171F3CDA83004C13D6 /* VistaSlabOT-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47C6F1121F3CDA83004C13D6 /* VistaSlabOT-LightItalic.otf */; };
-		47C6F1181F3CDA83004C13D6 /* VistaSlabOT-Reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47C6F1131F3CDA83004C13D6 /* VistaSlabOT-Reg.otf */; };
-		47C6F1191F3CDA83004C13D6 /* VistaSlabOT-RegItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47C6F1141F3CDA83004C13D6 /* VistaSlabOT-RegItalic.otf */; };
 		47D8889C1F2338570068D304 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8889B1F2338570068D304 /* MainMenuViewController.m */; };
 		47D8889F1F235FEF0068D304 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8889E1F235FEF0068D304 /* MenuViewController.m */; };
 		47D888A21F2389480068D304 /* SelectQuizTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D888A11F2389480068D304 /* SelectQuizTypeViewController.m */; };
+		47EB4AB51F4479F500C4674C /* VistaSlabOT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */; };
+		47EB4AB61F4479F500C4674C /* VistaSlabOT-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */; };
+		47EB4AB71F4479F500C4674C /* VistaSlabOT-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */; };
+		47EB4AB81F4479F500C4674C /* VistaSlabOT-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB21F4479F500C4674C /* VistaSlabOT-Reg.ttf */; };
+		47EB4AB91F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB31F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf */; };
+		47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB41F4479F500C4674C /* VistaSlabOT-RegItalic.ttf */; };
 		47ED66181F40952D00AD170E /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ED66171F40952D00AD170E /* MapView.xib */; };
 		47ED661B1F40953F00AD170E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661A1F40953F00AD170E /* MapView.m */; };
 		47ED661E1F40CE5200AD170E /* RulesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661D1F40CE5200AD170E /* RulesView.m */; };
@@ -269,10 +265,6 @@
 		47305A971F19EA5A001CAE54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47305A9A1F19EA5A001CAE54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47305A9C1F19EA5A001CAE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47305AA21F1A21E5001CAE54 /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Bold.ttf"; path = "Support/RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
-		47305AA31F1A21E5001CAE54 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Light.ttf"; path = "Support/RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
-		47305AA41F1A21E5001CAE54 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Regular.ttf"; path = "Support/RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
-		47305AA51F1A21E5001CAE54 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Thin.ttf"; path = "Support/RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
 		47305AAC1F1A2264001CAE54 /* ADDropDownMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDropDownMenuItemView.h; sourceTree = "<group>"; };
 		47305AAD1F1A2264001CAE54 /* ADDropDownMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADDropDownMenuItemView.m; sourceTree = "<group>"; };
 		47305AAE1F1A2264001CAE54 /* ADDropDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDropDownMenuView.h; sourceTree = "<group>"; };
@@ -722,18 +714,18 @@
 		47BABC1D1F30CC3C00EC6335 /* RTSpinKitUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSpinKitUtils.m; sourceTree = "<group>"; };
 		47BABC1E1F30CC3C00EC6335 /* RTSpinKitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSpinKitView.h; sourceTree = "<group>"; };
 		47BABC1F1F30CC3C00EC6335 /* RTSpinKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSpinKitView.m; sourceTree = "<group>"; };
-		47C6F10E1F3CD0CA004C13D6 /* VistaSlabOT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Bold.otf"; sourceTree = "<group>"; };
-		47C6F1101F3CDA83004C13D6 /* VistaSlabOT-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-BoldItalic.otf"; sourceTree = "<group>"; };
-		47C6F1111F3CDA83004C13D6 /* VistaSlabOT-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Light.otf"; sourceTree = "<group>"; };
-		47C6F1121F3CDA83004C13D6 /* VistaSlabOT-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-LightItalic.otf"; sourceTree = "<group>"; };
-		47C6F1131F3CDA83004C13D6 /* VistaSlabOT-Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Reg.otf"; sourceTree = "<group>"; };
-		47C6F1141F3CDA83004C13D6 /* VistaSlabOT-RegItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-RegItalic.otf"; sourceTree = "<group>"; };
 		47D8889A1F2338570068D304 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = ViewControllers/MainMenuViewController.h; sourceTree = "<group>"; };
 		47D8889B1F2338570068D304 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = ViewControllers/MainMenuViewController.m; sourceTree = "<group>"; };
 		47D8889D1F235FEF0068D304 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ViewControllers/MenuViewController.h; sourceTree = "<group>"; };
 		47D8889E1F235FEF0068D304 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewControllers/MenuViewController.m; sourceTree = "<group>"; };
 		47D888A01F2389480068D304 /* SelectQuizTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectQuizTypeViewController.h; path = ViewControllers/SelectQuizTypeViewController.h; sourceTree = "<group>"; };
 		47D888A11F2389480068D304 /* SelectQuizTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectQuizTypeViewController.m; path = ViewControllers/SelectQuizTypeViewController.m; sourceTree = "<group>"; };
+		47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Bold.ttf"; sourceTree = "<group>"; };
+		47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Light.ttf"; sourceTree = "<group>"; };
+		47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-LightItalic.ttf"; sourceTree = "<group>"; };
+		47EB4AB21F4479F500C4674C /* VistaSlabOT-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Reg.ttf"; sourceTree = "<group>"; };
+		47EB4AB31F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-BoldItalic.ttf"; sourceTree = "<group>"; };
+		47EB4AB41F4479F500C4674C /* VistaSlabOT-RegItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-RegItalic.ttf"; sourceTree = "<group>"; };
 		47ED66171F40952D00AD170E /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapView.xib; path = Views/MapView.xib; sourceTree = "<group>"; };
 		47ED66191F40953F00AD170E /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapView.h; path = Views/MapView.h; sourceTree = "<group>"; };
 		47ED661A1F40953F00AD170E /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapView.m; path = Views/MapView.m; sourceTree = "<group>"; };
@@ -797,16 +789,12 @@
 		47305A8B1F19EA5A001CAE54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				47C6F1101F3CDA83004C13D6 /* VistaSlabOT-BoldItalic.otf */,
-				47C6F1111F3CDA83004C13D6 /* VistaSlabOT-Light.otf */,
-				47C6F1121F3CDA83004C13D6 /* VistaSlabOT-LightItalic.otf */,
-				47C6F1131F3CDA83004C13D6 /* VistaSlabOT-Reg.otf */,
-				47C6F1141F3CDA83004C13D6 /* VistaSlabOT-RegItalic.otf */,
-				47C6F10E1F3CD0CA004C13D6 /* VistaSlabOT-Bold.otf */,
-				47305AA21F1A21E5001CAE54 /* RobotoSlab-Bold.ttf */,
-				47305AA31F1A21E5001CAE54 /* RobotoSlab-Light.ttf */,
-				47305AA41F1A21E5001CAE54 /* RobotoSlab-Regular.ttf */,
-				47305AA51F1A21E5001CAE54 /* RobotoSlab-Thin.ttf */,
+				47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */,
+				47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */,
+				47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */,
+				47EB4AB21F4479F500C4674C /* VistaSlabOT-Reg.ttf */,
+				47EB4AB31F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf */,
+				47EB4AB41F4479F500C4674C /* VistaSlabOT-RegItalic.ttf */,
 				47305A8C1F19EA5A001CAE54 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -1674,36 +1662,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EB4AB91F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf in Resources */,
+				47EB4AB51F4479F500C4674C /* VistaSlabOT-Bold.ttf in Resources */,
+				47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */,
 				47305CED1F1A2390001CAE54 /* menu-button.png in Resources */,
-				47305AA81F1A21E5001CAE54 /* RobotoSlab-Regular.ttf in Resources */,
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
 				470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */,
-				47C6F1181F3CDA83004C13D6 /* VistaSlabOT-Reg.otf in Resources */,
-				47C6F1151F3CDA83004C13D6 /* VistaSlabOT-BoldItalic.otf in Resources */,
-				47305AA61F1A21E5001CAE54 /* RobotoSlab-Bold.ttf in Resources */,
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
 				47ED66181F40952D00AD170E /* MapView.xib in Resources */,
 				47305BCD1F1A2264001CAE54 /* UzysAssetsPickerController.xib in Resources */,
-				47C6F1161F3CDA83004C13D6 /* VistaSlabOT-Light.otf in Resources */,
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,
-				47305AA91F1A21E5001CAE54 /* RobotoSlab-Thin.ttf in Resources */,
 				47305C181F1A2264001CAE54 /* Info.plist in Resources */,
-				47305AA71F1A21E5001CAE54 /* RobotoSlab-Light.ttf in Resources */,
 				47305CEE1F1A2390001CAE54 /* menu-button@2x.png in Resources */,
-				47C6F10F1F3CD0CA004C13D6 /* VistaSlabOT-Bold.otf in Resources */,
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
 				478F12C31F23B916007415C6 /* InGameScoreView.xib in Resources */,
 				47305A9B1F19EA5A001CAE54 /* LaunchScreen.storyboard in Resources */,
 				470CF6ED1F24BD1E0074A81C /* HintView.xib in Resources */,
-				47C6F1171F3CDA83004C13D6 /* VistaSlabOT-LightItalic.otf in Resources */,
 				47F1FCA11F2E295B00246DD9 /* QuestionScoreView.xib in Resources */,
 				47305A981F19EA5A001CAE54 /* Assets.xcassets in Resources */,
 				47593C601F28EA260086E27F /* BonusPointsView.xib in Resources */,
 				47305C161F1A2264001CAE54 /* TGPhotoViewController.xib in Resources */,
 				475E66811F26691D002FBD29 /* BonusAnswerView.xib in Resources */,
-				47C6F1191F3CDA83004C13D6 /* VistaSlabOT-RegItalic.otf in Resources */,
 				47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */,
+				47EB4AB81F4479F500C4674C /* VistaSlabOT-Reg.ttf in Resources */,
+				47EB4AB61F4479F500C4674C /* VistaSlabOT-Light.ttf in Resources */,
+				47EB4AB71F4479F500C4674C /* VistaSlabOT-LightItalic.ttf in Resources */,
 				47305C171F1A2264001CAE54 /* TOCropViewControllerLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

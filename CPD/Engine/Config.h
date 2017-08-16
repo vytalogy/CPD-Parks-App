@@ -32,7 +32,7 @@
 #define ParkAndLevelFontColor [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]
 
 #define HomeViewQuestionFont [UIFont fontWithName:FontToUseBold size:55]
-#define HomeViewQuestionFontColor [UIColor colorWithRed:62.0/255.0 green:55.0/255.0 blue:63.0/255.0 alpha:1.0]
+#define HomeViewQuestionFontColor [UIColor colorWithRed:58.0/255.0 green:58.0/255.0 blue:60.0/255.0 alpha:1.0]
 
 #define SelectLevelWelcomeToFont [UIFont fontWithName:FontToUseBold size:28]
 #define SelectLevelNameFont [UIFont fontWithName:FontToUseBold size:37]

@@ -344,6 +344,7 @@
    
     
     
+    self.lblAnswerTitle.text = self.questionDoingOn.expTitle;
     
 }
 -(void)swipeLeft{
@@ -380,6 +381,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    self.lblAnswerTitle.text = @"";
     
     
     
