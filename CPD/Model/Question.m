@@ -7,10 +7,6 @@
 //
 
 #import "Question.h"
-#import "RestCall.h"
-#import "Config.h"
-#import "DateFormatter.h"
-#import "NSString+JS.h"
 
 @implementation Question
 

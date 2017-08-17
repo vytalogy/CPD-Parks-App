@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "MapView.h"
+#import "Rules.h"
 
 @interface MenuViewController ()
 
@@ -62,8 +63,8 @@
     if (!_mapView) {
         
         _mapView =   (MapView *)[self.view getViewFromNibName:@"MapView"
-                                                    withWidth:self.view.frame.size.width-20
-                                                   withHeight:350];
+                                                    withWidth:self.view.frame.size.width
+                                                   withHeight:self.view.frame.size.height];
         
         
         
@@ -71,6 +72,14 @@
         [_mapView.btnExit addTarget:self action:@selector(closeMapView) forControlEvents:UIControlEventTouchUpInside];
         [_mapView.btnClose addTarget:self action:@selector(closeMapView) forControlEvents:UIControlEventTouchUpInside];
         
+        
+        [Rules callRulesWithComplitionHandler:^(id result) {
+          
+            _mapView.lblText.text = result;
+            
+        } withFailueHandler:^{
+            
+        }];
         
         
         _mapView.center = self.view.center;

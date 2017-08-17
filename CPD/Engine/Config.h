@@ -66,7 +66,7 @@
 
 
 #define ScoreViewCongratsFont [UIFont fontWithName:FontToUserBlack size:50]
-#define ScoreViewYouveCompletedFont [UIFont fontWithName:FontToUserBlack size:25]
+#define ScoreViewYouveCompletedFont [UIFont fontWithName:FontToUserBlack size:27]
 #define ScoreViewPlaceFont [UIFont fontWithName:FontToUserBlack size:40]
 #define ScoreYourScoreFont [UIFont fontWithName:FontToUserBlack size:33]
 #define ScoreScoreFont [UIFont fontWithName:FontToUserBlack size:80]

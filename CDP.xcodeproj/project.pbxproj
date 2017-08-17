@@ -12,6 +12,7 @@
 		470CF6EB1F24BD100074A81C /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6EA1F24BD100074A81C /* HintView.m */; };
 		470CF6ED1F24BD1E0074A81C /* HintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470CF6EC1F24BD1E0074A81C /* HintView.xib */; };
 		470CF6F01F24DDC70074A81C /* BonusQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6EF1F24DDC70074A81C /* BonusQuestionViewController.m */; };
+		470D51891F45EC4F004F74C4 /* Rules.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D51881F45EC4F004F74C4 /* Rules.m */; };
 		47305A8D1F19EA5A001CAE54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305A8C1F19EA5A001CAE54 /* main.m */; };
 		47305A901F19EA5A001CAE54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305A8F1F19EA5A001CAE54 /* AppDelegate.m */; };
 		47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47305A941F19EA5A001CAE54 /* Main.storyboard */; };
@@ -166,8 +167,6 @@
 		47305CEA1F1A2390001CAE54 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305C781F1A2390001CAE54 /* LMGeocoder.m */; };
 		47305CEB1F1A2390001CAE54 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305C7A1F1A2390001CAE54 /* MBProgressHUD.m */; };
 		47305CEC1F1A2390001CAE54 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305C7D1F1A2390001CAE54 /* LeftMenuViewController.m */; };
-		47305CED1F1A2390001CAE54 /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 47305C7E1F1A2390001CAE54 /* menu-button.png */; };
-		47305CEE1F1A2390001CAE54 /* menu-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47305C7F1F1A2390001CAE54 /* menu-button@2x.png */; };
 		47305CEF1F1A2390001CAE54 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305C811F1A2390001CAE54 /* RightMenuViewController.m */; };
 		47305CF01F1A2390001CAE54 /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305C861F1A2390001CAE54 /* SlideNavigationContorllerAnimatorFade.m */; };
 		47305CF11F1A2390001CAE54 /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305C881F1A2390001CAE54 /* SlideNavigationContorllerAnimatorScale.m */; };
@@ -269,6 +268,8 @@
 		470CF6EC1F24BD1E0074A81C /* HintView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HintView.xib; path = Views/HintView.xib; sourceTree = "<group>"; };
 		470CF6EE1F24DDC70074A81C /* BonusQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BonusQuestionViewController.h; path = ViewControllers/BonusQuestionViewController.h; sourceTree = "<group>"; };
 		470CF6EF1F24DDC70074A81C /* BonusQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BonusQuestionViewController.m; path = ViewControllers/BonusQuestionViewController.m; sourceTree = "<group>"; };
+		470D51871F45EC4F004F74C4 /* Rules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rules.h; path = Model/Rules.h; sourceTree = "<group>"; };
+		470D51881F45EC4F004F74C4 /* Rules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rules.m; path = Model/Rules.m; sourceTree = "<group>"; };
 		47305A881F19EA5A001CAE54 /* CDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47305A8C1F19EA5A001CAE54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47305A8E1F19EA5A001CAE54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -600,8 +601,6 @@
 		47305C7A1F1A2390001CAE54 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		47305C7C1F1A2390001CAE54 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		47305C7D1F1A2390001CAE54 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
-		47305C7E1F1A2390001CAE54 /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button.png"; sourceTree = "<group>"; };
-		47305C7F1F1A2390001CAE54 /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button@2x.png"; sourceTree = "<group>"; };
 		47305C801F1A2390001CAE54 /* RightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewController.h; sourceTree = "<group>"; };
 		47305C811F1A2390001CAE54 /* RightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewController.m; sourceTree = "<group>"; };
 		47305C841F1A2390001CAE54 /* SlideNavigationContorllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimator.h; sourceTree = "<group>"; };
@@ -1421,8 +1420,6 @@
 			children = (
 				47305C7C1F1A2390001CAE54 /* LeftMenuViewController.h */,
 				47305C7D1F1A2390001CAE54 /* LeftMenuViewController.m */,
-				47305C7E1F1A2390001CAE54 /* menu-button.png */,
-				47305C7F1F1A2390001CAE54 /* menu-button@2x.png */,
 				47305C801F1A2390001CAE54 /* RightMenuViewController.h */,
 				47305C811F1A2390001CAE54 /* RightMenuViewController.m */,
 				47305C821F1A2390001CAE54 /* Source */,
@@ -1512,6 +1509,8 @@
 				4737E1131F2CA3CD0010955D /* Question.m */,
 				47F1FCA51F2E32B000246DD9 /* Bonus.h */,
 				47F1FCA61F2E32B000246DD9 /* Bonus.m */,
+				470D51871F45EC4F004F74C4 /* Rules.h */,
+				470D51881F45EC4F004F74C4 /* Rules.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1705,7 +1704,6 @@
 				47EB4AC41F447C2500C4674C /* VistaSlabOT-LightItalic.otf in Resources */,
 				47EB4AD81F4487AA00C4674C /* VistaSlabOT-Med.otf in Resources */,
 				47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */,
-				47305CED1F1A2390001CAE54 /* menu-button.png in Resources */,
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
 				47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */,
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
@@ -1718,7 +1716,6 @@
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,
 				47EB4AC61F447C2500C4674C /* VistaSlabOT-RegItalic.otf in Resources */,
 				47305C181F1A2264001CAE54 /* Info.plist in Resources */,
-				47305CEE1F1A2390001CAE54 /* menu-button@2x.png in Resources */,
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
 				47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */,
 				478F12C31F23B916007415C6 /* InGameScoreView.xib in Resources */,
@@ -1885,6 +1882,7 @@
 				47305D0C1F1A2390001CAE54 /* YUPhoneFormatter.m in Sources */,
 				47305BE61F1A2264001CAE54 /* UIImage+Jot.m in Sources */,
 				47305C001F1A2264001CAE54 /* TGPhotoViewController.m in Sources */,
+				470D51891F45EC4F004F74C4 /* Rules.m in Sources */,
 				47305CE21F1A2390001CAE54 /* EventManager.m in Sources */,
 				47305BCC1F1A2264001CAE54 /* UzysAssetsPickerController.m in Sources */,
 				470CF6EB1F24BD100074A81C /* HintView.m in Sources */,

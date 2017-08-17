@@ -10,6 +10,7 @@
 #import <CoreText/CoreText.h>
 #import "AppDelegate.h"
 #import "SelectQuizTypeViewController.h"
+#import "Rules.h"
 
 @interface MainMenuViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
@@ -94,6 +95,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    [Rules callRulesWithComplitionHandler:^(id result) {
+    
+        NSLog(@"");
+        
+    } withFailueHandler:^{
+        
+    }];
     
     
     [self.lblTitle setFont:HomeViewQuestionFont];

@@ -150,7 +150,7 @@
     //
     
     UIBarButtonItem *flipButton = [[UIBarButtonItem alloc]
-                                   initWithImage:[UIImage imageNamed:@"menu-button.png"]
+                                   initWithImage:[UIImage imageNamed:@"menu-icon"]
                                    style:UIBarButtonItemStylePlain
                                    target:self
                                    action:@selector(showMenuViewController)];
