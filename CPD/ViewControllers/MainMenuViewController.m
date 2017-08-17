@@ -92,6 +92,12 @@
 
     }
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -277,6 +283,23 @@
         [self.navigationController setNavigationBarHidden:NO animated:NO];
  
 
+    
+    //[UIImage imageNamed:@"splash"];
+    
+    UIImageView *splashScreen = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    splashScreen.image = [UIImage imageNamed:@"splash"];
+    
+
+    [[[UIApplication sharedApplication] keyWindow] addSubview:splashScreen];
+    
+    
+    [UIView animateWithDuration:2 animations:^{splashScreen.alpha = 0.0;}
+                     completion:(void (^)(BOOL)) ^{
+                         [splashScreen removeFromSuperview];
+                     }
+     ];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -287,7 +310,7 @@
     
     
     
-    self.navLabel.textColor = HomeViewQuestionFontColor;
+    self.navLabel.textColor = [UIColor whiteColor];
     
     
     

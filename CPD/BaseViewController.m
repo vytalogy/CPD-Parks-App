@@ -763,7 +763,17 @@
    
     menuViewController.delegate = self;
     
-    [self presentViewController:menuViewController animated:YES completion:^{
+    
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.3;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromRight;
+    [self.view.window.layer addAnimation:transition forKey:nil];
+
+    
+    [self presentViewController:menuViewController animated:NO completion:^{
         
     }];
     

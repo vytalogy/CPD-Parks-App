@@ -220,10 +220,7 @@
     
     
     self.navLabel.attributedText = self.requestText;
-
-    
-    
-    self.navLabel.textColor = HomeViewQuestionFontColor;
+    self.navLabel.textColor = [UIColor whiteColor];
     
     
 }

@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "menuBg@2x.png",
+      "filename" : "menu-background-image-bg_side-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "menuBg@3g.png",
+      "filename" : "menu-background-image-bg_side.png",
       "scale" : "3x"
     }
   ],

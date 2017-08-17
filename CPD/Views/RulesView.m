@@ -13,7 +13,11 @@
 -(void)setUpView{
     
     
+    
+
    self.lblTitle.font = RulesBoldTextFont;
+    self.lblTitle.text = @"Ready to request through the Southeast Side Natural Areas?";
+    
    self.lblRules.font = RulesRegularTextFont;
     
     

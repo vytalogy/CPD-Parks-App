@@ -857,7 +857,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WsO-ke-zwG">
                         <barButtonItem key="rightBarButtonItem" image="menu-icon" id="p2o-fY-TH2">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="btnMenuTapped:" destination="BYZ-38-t0r" id="qqa-F8-djE"/>
                             </connections>
@@ -904,7 +904,7 @@
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenColorBG" translatesAutoresizingMaskIntoConstraints="NO" id="R56-hG-KgD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-1 (2)" translatesAutoresizingMaskIntoConstraints="NO" id="pSL-St-RwZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBg" translatesAutoresizingMaskIntoConstraints="NO" id="pSL-St-RwZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMH-bo-YfR">
@@ -1091,8 +1091,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="qk6-fC-ypf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.20000000000000001" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.67843137254901964" green="0.81960784313725488" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.25490196078431371" green="0.25098039215686274" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1108,12 +1108,11 @@
         <image name="Back" width="375" height="666"/>
         <image name="BlueBird" width="375" height="667"/>
         <image name="answer1" width="370" height="469"/>
-        <image name="bg-1 (2)" width="621" height="1104"/>
         <image name="closeIcon" width="51" height="51"/>
-        <image name="greenColorBG" width="320" height="569"/>
+        <image name="greenColorBG" width="375" height="667"/>
         <image name="mainBG" width="375" height="667"/>
         <image name="menu-icon" width="54" height="31"/>
-        <image name="menuBg" width="444" height="667"/>
+        <image name="menuBg" width="375" height="667"/>
         <image name="profileIcon" width="160" height="160"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -48,7 +48,7 @@
 
 
 #define HomeViewQuestionFont [UIFont fontWithName:FontToUserBlack size:50]
-#define HomeViewQuestionFontColor [UIColor colorWithRed:65.0/255.0 green:64.0/255.0 blue:66.0/255.0 alpha:1.0]
+#define HomeViewQuestionFontColor [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0]
 
 #define SelectLevelWelcomeToFont [UIFont fontWithName:FontToUserBlack size:29]
 #define SelectLevelNameFont [UIFont fontWithName:FontToUserBlack size:39]
@@ -85,8 +85,8 @@
 #define MapRegularTextFont [UIFont fontWithName:FontToUserMedium size:18]
 #define MapBoldTextFont [UIFont fontWithName:FontToUserBlack size:20]
 
-#define RulesRegularTextFont [UIFont fontWithName:FontToUserMedium size:19]
-#define RulesBoldTextFont [UIFont fontWithName:FontToUseBold size:37]
+#define RulesRegularTextFont [UIFont fontWithName:FontToUserMedium size:18]
+#define RulesBoldTextFont [UIFont fontWithName:FontToUseBold size:23]
 
 #define HintBoldFont [UIFont fontWithName:FontToUseBold size:34]
 #define HintRegularFont [UIFont fontWithName:FontToUseBold size:18]

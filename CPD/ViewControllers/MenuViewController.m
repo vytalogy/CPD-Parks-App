@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "MapView.h"
 #import "Rules.h"
+#import "RulesView.h"
 
 @interface MenuViewController ()
 
@@ -46,10 +47,78 @@
 
 @property (nonatomic,strong) MapView * mapView;
 
+@property (nonatomic,strong) RulesView * rulesViews;
+
+
 @end
 
 @implementation MenuViewController
 
+-(void)closeRulesView{
+    
+    [self.mapView setHidden:YES];
+
+}
+
+-(RulesView *)rulesViews {
+    
+    if (!_rulesViews) {
+        
+        _rulesViews =   (RulesView *)[self.view getViewFromNibName:@"RulesView"
+                                                         withWidth:self.view.frame.size.width
+                                                        withHeight:self.view.frame.size.height];
+        
+        
+        
+        
+        [_rulesViews.btnClose addTarget:self action:@selector(closeRulesView) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        
+        //_rulesViews.center = self.view.center;
+        
+        
+        
+        
+        
+        [_rulesViews setUpView];
+        
+        _rulesViews.lblRules.text = @"";
+        
+        
+        [Rules callRulesWithComplitionHandler:^(id result) {
+            
+            
+            result = [result stringByReplacingOccurrencesOfString:_rulesViews.lblTitle.text withString:@""];
+            
+            result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@"\n\n"];
+            
+            
+            _rulesViews.lblRules.text = result;
+        
+            
+            
+        } withFailueHandler:^{
+            
+        }];
+        
+        
+        
+        
+        [self.view addSubview:_rulesViews];
+        
+        
+        
+    }
+    else {
+        
+        //_hintView.hidden = NO;
+        
+    }
+    return _rulesViews;
+    
+    
+}
 
 -(void)closeMapView{
     
@@ -72,14 +141,6 @@
         [_mapView.btnExit addTarget:self action:@selector(closeMapView) forControlEvents:UIControlEventTouchUpInside];
         [_mapView.btnClose addTarget:self action:@selector(closeMapView) forControlEvents:UIControlEventTouchUpInside];
         
-        
-        [Rules callRulesWithComplitionHandler:^(id result) {
-          
-            _mapView.lblText.text = result;
-            
-        } withFailueHandler:^{
-            
-        }];
         
         
         _mapView.center = self.view.center;
@@ -108,7 +169,15 @@
 
 - (IBAction)dismissViewController:(id)sender {
     
-    [self dismissViewControllerAnimated:YES completion:^{
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.3;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromLeft;
+    [self.view.window.layer addAnimation:transition forKey:nil];
+    
+    [self dismissViewControllerAnimated:NO completion:^{
         
     }];
     
@@ -151,6 +220,12 @@
 
 -(void)rulesButtonTapped{
     
+    
+    [self.rulesViews setHidden:NO];
+    
+    [self.view bringSubviewToFront:self.rulesViews];
+    
+    return;
     [self.backgroundGreenView setHidden:NO];
     [self.view bringSubviewToFront:self.backgroundGreenView];
     [self.mapView setHidden:NO];

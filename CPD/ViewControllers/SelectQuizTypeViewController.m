@@ -10,6 +10,8 @@
 #import "InGameScoreView.h"
 #import "QuestionViewController.h"
 #import "FileManager.h"
+#import "RulesView.h"
+
 
 @interface SelectQuizTypeViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
@@ -43,9 +45,50 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *juniorSpacing;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *proSpacing;
 
+@property (nonatomic,strong) RulesView * rulesViews;
+
 @end
 
 @implementation SelectQuizTypeViewController
+-(RulesView *)rulesViews {
+    
+    if (!_rulesViews) {
+        
+        _rulesViews =   (RulesView *)[self.view getViewFromNibName:@"RulesView"
+                                                         withWidth:self.view.frame.size.width
+                                                        withHeight:self.view.frame.size.height];
+        
+        
+        
+        
+        [_rulesViews.btnClose addTarget:self action:@selector(closeRulesView) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        
+        //_rulesViews.center = self.view.center;
+        
+        
+        
+        
+        
+        [_rulesViews setUpView];
+        
+        
+        
+        [self.view addSubview:_rulesViews];
+        
+        
+        
+    }
+    else {
+        
+        //_hintView.hidden = NO;
+        
+    }
+    return _rulesViews;
+    
+    
+}
 
 -(void)typeOneTapped{
     

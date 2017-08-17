@@ -12,7 +12,7 @@
         <array key="VistaSlabOT-Bold.otf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.otf">
+        <array key="VistaSlabOT-Reg.ttf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -40,18 +40,23 @@
                             </constraints>
                             <state key="normal" image="closeIcon"/>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RULES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le6-3F-Via">
-                            <rect key="frame" x="38" y="36" width="228" height="37"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RULES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le6-3F-Via">
+                            <rect key="frame" x="24" y="56" width="256" height="37"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="37" id="0yA-ue-zC9"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="0yA-ue-zC9"/>
                                 <constraint firstAttribute="width" constant="228" id="Twp-2u-u99"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="45"/>
+                            <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="30"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Twp-2u-u99"/>
+                                </mask>
+                            </variation>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p46-8c-eRB">
-                            <rect key="frame" x="16" y="81" width="272" height="136"/>
+                            <rect key="frame" x="16" y="101" width="272" height="136"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="136" id="CEw-id-HcG"/>
                             </constraints>
@@ -70,10 +75,12 @@
                         <constraint firstAttribute="trailing" secondItem="p46-8c-eRB" secondAttribute="trailing" constant="16" id="WVO-i3-HAL"/>
                         <constraint firstItem="p46-8c-eRB" firstAttribute="top" secondItem="le6-3F-Via" secondAttribute="bottom" constant="8" id="Z0Z-0h-hY2"/>
                         <constraint firstItem="GGW-Av-VHb" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" id="azF-mA-pYc"/>
-                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="10" id="oRP-uc-nLm"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="30" id="oRP-uc-nLm"/>
                         <constraint firstItem="3Ll-Vg-u4e" firstAttribute="top" secondItem="anK-hO-9wC" secondAttribute="top" constant="20" id="p32-LY-Klg"/>
-                        <constraint firstAttribute="height" constant="353" id="vJN-mI-aeY"/>
-                        <constraint firstItem="le6-3F-Via" firstAttribute="top" secondItem="anK-hO-9wC" secondAttribute="top" constant="36" id="wiJ-7v-t6Z"/>
+                        <constraint firstAttribute="trailing" secondItem="le6-3F-Via" secondAttribute="trailing" constant="24" id="rH0-Jv-RIQ"/>
+                        <constraint firstItem="le6-3F-Via" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" constant="24" id="ulP-Xl-Z7E"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="353" id="vJN-mI-aeY"/>
+                        <constraint firstItem="le6-3F-Via" firstAttribute="top" secondItem="anK-hO-9wC" secondAttribute="top" constant="56" id="wiJ-7v-t6Z"/>
                         <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="136" id="yi0-DX-X18"/>
                         <constraint firstAttribute="trailing" secondItem="GGW-Av-VHb" secondAttribute="trailing" id="zgA-AT-okK"/>
                     </constraints>
@@ -105,8 +112,8 @@
         </view>
     </objects>
     <resources>
-        <image name="closeIcon" width="33" height="30"/>
-        <image name="greenColorBG" width="180" height="319"/>
+        <image name="closeIcon" width="51" height="51"/>
+        <image name="greenColorBG" width="375" height="667"/>
         <image name="hint-bg" width="511" height="217"/>
     </resources>
 </document>
