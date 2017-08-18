@@ -44,7 +44,7 @@
         
             
         }
-        [currentView setBackgroundColor:[UIColor colorWithRed:55.0/255.0 green:55.0/255.0 blue:55.0/255.0 alpha:1.0]];
+        [currentView setBackgroundColor:[UIColor colorWithRed:0.5 green:0.5 blue:.5 alpha:1.0]];
         currentView.layer.cornerRadius = 2;
         
         [self addSubview:currentView];

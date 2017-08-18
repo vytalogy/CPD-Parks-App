@@ -34,6 +34,9 @@
     self.lblCongrats.textColor = AnswerFontColor;
     
     self.lblYouveCompleted.font = ScoreViewYouveCompletedFont;
+    
+    self.lblYouveCompleted.textColor = AnswerFontColor;
+    
     self.lblCongrats.textColor = AnswerFontColor;
     
     self.lblPlaceCompleted.font = ScoreViewPlaceFont;

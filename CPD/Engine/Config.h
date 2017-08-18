@@ -60,7 +60,7 @@
 #define QuestionViewBottomButtonFonts [UIFont fontWithName:FontToUseBold size:20]
 
 #define AnswerYouFoundFont [UIFont fontWithName:FontToUserMedium size:20]
-#define AnswerFontColor [UIColor colorWithRed:65.0/255.0 green:64.0/255.0 blue:66.0/255.0 alpha:1.0]
+#define AnswerFontColor [UIColor colorWithRed:1 green:1 blue:1 alpha:1.0]
 #define AnswerTitleFont [UIFont fontWithName:FontToUserBlack size:26]
 #define AnswerDescriptionFont [UIFont fontWithName:ArboriaMedium size:18]
 

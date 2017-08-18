@@ -210,7 +210,7 @@
     if (!_hintView) {
         
         _hintView =   (HintView *)[self.view getViewFromNibName:@"HintView" withWidth:self.view.frame.size.width-30
-                                                     withHeight:150];
+                                                     withHeight:297];
         [_hintView setupView];
         
         [self.view addSubview:_hintView];
@@ -299,7 +299,7 @@
         _questionView.lblQuestionText.text = self.allQuestion[self.questionIndex].question;
         
 
-        _questionView.lblQuestionText.text = @"Can you find my house?";
+
         
         NSLayoutConstraint *trailing =[NSLayoutConstraint
                                        constraintWithItem:_questionView
@@ -515,6 +515,23 @@
     self.questionScoreView.lblScore.text = [NSString stringWithFormat:@"+%d",self.scoreToBeAdded];
     
     
+    
+    if (self.questionIndex > 0) {
+        
+        if (self.questionIndex % 2 == 1) {
+            self.questionScoreView.imgDottedImage.image = [UIImage imageNamed:@"flower"];
+            
+            
+        }
+        else
+        {
+            self.questionScoreView.imgDottedImage.image = [UIImage imageNamed:@"dotted-bg"];
+            
+            
+         //greenColorBG
+        }
+
+    }
     
     
     [containerViewShowing setFrame:self.view.frame];
