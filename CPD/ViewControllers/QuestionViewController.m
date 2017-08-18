@@ -414,13 +414,7 @@
 
     self.gameScoreView.lblScore.text = [NSString stringWithFormat:@"%d",self.scoredPoints];
     
-    if (self.questionIndex == 0) {
-        [self.rulesViews setHidden:NO];
-        [self.rulesViews bringSubviewToFront:self.rulesViews];
-     
-        self.rulesViews.lblRules.text = self.levelSelected.levelRules;
-        
-    }
+
     
     
 
@@ -453,7 +447,8 @@
     
     [self.navigationItem setHidesBackButton:YES];
     
-   //appDelegate.navBarTitle.text = self.viewTitle;
+    appDelegate.navBarTitle.attributedText = [self requestTextWithText:self.self.viewTitle];
+    
     
     //appDelegate.navBarTitle.font = [UIFont fontWithName:@"RobotoSlab-Bold" size:25];;
     //appDelegate.navBarTitle.font = [UIFont fontWithName:@"FontToUserBlack" size:34];

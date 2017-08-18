@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UIButton *btnClose;
 @property (weak, nonatomic) IBOutlet UILabel *lblRules;
+@property (weak, nonatomic) IBOutlet UIImageView *backGroundImage;
+@property (weak, nonatomic) IBOutlet UIButton *btnGetStarted;
 
 @end

@@ -1322,6 +1322,29 @@
     
 }
 
+-(NSAttributedString *)requestTextWithText:(NSString *)text{
+    
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:text];
+    
+    id normalFont = [UIFont fontWithName:FontToUserMedium size:27];
+    
+    [attrString beginEditing];
+    
+    NSRange normalRange2 = NSMakeRange(0, [text length]);
+    
+
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:normalFont
+                       range:normalRange2];
+    
+    [attrString endEditing];
+    
+    return attrString;
+    
+}
+
 
 -(NSAttributedString *)requestText{
     

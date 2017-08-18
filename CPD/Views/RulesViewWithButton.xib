@@ -27,13 +27,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="562"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neg-eU-zDm">
-                    <rect key="frame" x="20" y="85" width="280" height="393"/>
+                    <rect key="frame" x="20" y="69" width="280" height="424"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:GGW-Av-VHb:image" translatesAutoresizingMaskIntoConstraints="NO" id="GGW-Av-VHb">
-                            <rect key="frame" x="0.0" y="0.0" width="280" height="393"/>
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="424"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anK-hO-9wC">
-                            <rect key="frame" x="0.0" y="0.0" width="280" height="393"/>
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="424"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ll-Vg-u4e">
                                     <rect key="frame" x="239" y="8" width="33" height="30"/>
@@ -62,20 +62,40 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcy-62-yfn">
+                                    <rect key="frame" x="69" y="377" width="143" height="31"/>
+                                    <color key="backgroundColor" red="0.67843137249999996" green="0.81960784310000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="143" id="10J-zg-7Qt"/>
+                                        <constraint firstAttribute="height" constant="31" id="OVI-wi-9fX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="19"/>
+                                    <state key="normal" title="GET STARTED">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.55356378419999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="p46-8c-eRB" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" constant="24" id="2Zx-y4-DT8"/>
-                                <constraint firstAttribute="bottom" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="32" id="2mk-Pl-EXh"/>
+                                <constraint firstAttribute="bottom" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="85" id="2mk-Pl-EXh"/>
+                                <constraint firstItem="xcy-62-yfn" firstAttribute="centerX" secondItem="p46-8c-eRB" secondAttribute="centerX" id="Fu8-ES-w6S"/>
                                 <constraint firstItem="le6-3F-Via" firstAttribute="top" secondItem="3Ll-Vg-u4e" secondAttribute="bottom" constant="6" id="HVp-Su-BCe"/>
                                 <constraint firstItem="3Ll-Vg-u4e" firstAttribute="top" secondItem="anK-hO-9wC" secondAttribute="top" constant="8" id="RLI-y4-Bag"/>
+                                <constraint firstItem="xcy-62-yfn" firstAttribute="top" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="16" id="dIQ-pC-pKb"/>
                                 <constraint firstItem="le6-3F-Via" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" constant="32" id="djK-mo-Ebc"/>
                                 <constraint firstAttribute="trailing" secondItem="3Ll-Vg-u4e" secondAttribute="trailing" constant="8" id="gg5-oZ-GVf"/>
                                 <constraint firstAttribute="trailing" secondItem="p46-8c-eRB" secondAttribute="trailing" constant="24" id="o2l-gN-AtS"/>
                                 <constraint firstAttribute="trailing" secondItem="le6-3F-Via" secondAttribute="trailing" constant="32" id="rOS-PA-LL3"/>
                                 <constraint firstItem="p46-8c-eRB" firstAttribute="top" secondItem="le6-3F-Via" secondAttribute="bottom" constant="20" id="sEw-nh-H3H"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="393" id="scp-Da-mRD"/>
+                                <constraint firstAttribute="bottom" secondItem="xcy-62-yfn" secondAttribute="bottom" constant="16" id="xsu-jM-m3g"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="2mk-Pl-EXh"/>
+                                </mask>
+                            </variation>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,6 +126,7 @@
             <connections>
                 <outlet property="backGroundImage" destination="GGW-Av-VHb" id="jYr-3P-cel"/>
                 <outlet property="btnClose" destination="3Ll-Vg-u4e" id="qz8-Sd-XnH"/>
+                <outlet property="btnGetStarted" destination="xcy-62-yfn" id="Ghf-4E-Hvr"/>
                 <outlet property="lblRules" destination="p46-8c-eRB" id="RfD-qJ-I3v"/>
                 <outlet property="lblTitle" destination="le6-3F-Via" id="Rlg-It-0Zq"/>
             </connections>

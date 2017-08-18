@@ -220,5 +220,6 @@
 @property (nonatomic) NSAttributedString * reSearcherText;
 
 @property (nonatomic) UILabel *navLabel;
+-(NSAttributedString *)requestTextWithText:(NSString *)text;
 
 @end

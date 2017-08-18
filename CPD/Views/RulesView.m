@@ -22,6 +22,11 @@
     
     
     
+    self.backGroundImage.image = [UIImage imageNamed:@"ready-to-request-black-bg"];
+    
+    
+    self.btnGetStarted.layer.cornerRadius = 15;
+    
     
 }
 

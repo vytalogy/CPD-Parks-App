@@ -20,6 +20,9 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="101"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="can-you-find-my-house" translatesAutoresizingMaskIntoConstraints="NO" id="46h-3G-TD2">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="101"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can you find my hours?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Am-TY-iyS">
                     <rect key="frame" x="16" y="40" width="268" height="41"/>
                     <constraints>
@@ -32,8 +35,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="46h-3G-TD2" secondAttribute="trailing" id="Eis-rh-eZP"/>
+                <constraint firstItem="46h-3G-TD2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RXa-1O-zSe"/>
                 <constraint firstAttribute="bottom" secondItem="6Am-TY-iyS" secondAttribute="bottom" constant="20" id="Sya-aa-a2a"/>
                 <constraint firstItem="6Am-TY-iyS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="XUx-hJ-L1m"/>
+                <constraint firstItem="46h-3G-TD2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aqb-he-4Fp"/>
+                <constraint firstAttribute="bottom" secondItem="46h-3G-TD2" secondAttribute="bottom" id="c7a-IE-siM"/>
                 <constraint firstItem="6Am-TY-iyS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="lwb-zU-KpG"/>
                 <constraint firstAttribute="trailing" secondItem="6Am-TY-iyS" secondAttribute="trailing" constant="16" id="xv2-pq-eyR"/>
             </constraints>
@@ -45,4 +52,7 @@
             <point key="canvasLocation" x="47" y="14.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="can-you-find-my-house" width="276" height="115"/>
+    </resources>
 </document>

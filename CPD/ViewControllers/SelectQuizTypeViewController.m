@@ -11,6 +11,7 @@
 #import "QuestionViewController.h"
 #import "FileManager.h"
 #import "RulesView.h"
+#import "Rules.h"
 
 
 @interface SelectQuizTypeViewController ()
@@ -50,11 +51,68 @@
 @end
 
 @implementation SelectQuizTypeViewController
+
+-(void)closeRulesView{
+    
+    [self.rulesViews setHidden:YES];
+    
+}
+
+
+-(void)getStarted{
+    
+    [self showLoader];
+    
+    
+    
+    
+    
+    [Question callQuestionsFromLevelId:self.allLevels[self.levelSelected].itemId
+                            withParkId:self.selectedPark.itemId
+                     ComplitionHandler:^(id result) {
+                         
+                         
+                         
+                         self.questionToSendForPlaying = result;
+                         
+                         Question *firstItem = result[0];
+                         
+                         
+                         
+                         
+                         [FileManager loadProfileImageUrl:firstItem.imageURL
+                                               withLoader:nil
+                                    withComplitionHandler:^(id check) {
+                                        
+                                        [self hideLoader];
+                                        
+                                        [self performSegueWithIdentifier:@"segueShowQuestion" sender:self];
+                                        
+                                    } withFailHander:^(int f) {
+                                        
+                                        [self performSegueWithIdentifier:@"segueShowQuestion" sender:self];
+                                        
+                                        
+                                    }];
+                         
+                         
+                         
+                         
+                         
+                         
+                     } withFailueHandler:^{
+                         
+                     }];
+    
+    
+    
+}
+
 -(RulesView *)rulesViews {
     
     if (!_rulesViews) {
         
-        _rulesViews =   (RulesView *)[self.view getViewFromNibName:@"RulesView"
+        _rulesViews =   (RulesView *)[self.view getViewFromNibName:@"RulesViewWithButton"
                                                          withWidth:self.view.frame.size.width
                                                         withHeight:self.view.frame.size.height];
         
@@ -63,6 +121,8 @@
         
         [_rulesViews.btnClose addTarget:self action:@selector(closeRulesView) forControlEvents:UIControlEventTouchUpInside];
         
+        [_rulesViews.btnGetStarted addTarget:self action:@selector(getStarted) forControlEvents:UIControlEventTouchUpInside];
+        
         
         
         //_rulesViews.center = self.view.center;
@@ -70,6 +130,21 @@
         
         
         
+        [Rules callRulesWithComplitionHandler:^(id result) {
+            
+            
+            result = [result stringByReplacingOccurrencesOfString:_rulesViews.lblTitle.text withString:@""];
+            
+            result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@"\n\n"];
+            
+            
+            _rulesViews.lblRules.text = result;
+            
+            
+            
+        } withFailueHandler:^{
+            
+        }];
         
         [_rulesViews setUpView];
         
@@ -91,53 +166,13 @@
 }
 
 -(void)typeOneTapped{
+    [self.rulesViews setHidden:NO];
+    
     
     self.levelSelected = 0;
     
     
-    [self showLoader];
-    
 
-    
-    
-    
-    [Question callQuestionsFromLevelId:self.allLevels[self.levelSelected].itemId
-                            withParkId:self.selectedPark.itemId
-                     ComplitionHandler:^(id result) {
-    
-    
-
-        self.questionToSendForPlaying = result;
-                         
-                         Question *firstItem = result[0];
-                         
-                         
-
-                         
-                         [FileManager loadProfileImageUrl:firstItem.imageURL
-                                               withLoader:nil
-                                    withComplitionHandler:^(id check) {
-                             
-                                                                 [self hideLoader];
-                                        
-                                                [self performSegueWithIdentifier:@"segueShowQuestion" sender:self];
-                                        
-                         } withFailHander:^(int f) {
-                            
-                             [self performSegueWithIdentifier:@"segueShowQuestion" sender:self];
-                             
-                             
-                         }];
-                         
-                         
-
-                         
-
-        
-    } withFailueHandler:^{
-        
-    }];
-    
     return;
     
     
@@ -147,8 +182,14 @@
 }
 
 -(void)typeTwoTapped{
+    
+    
+    [self.rulesViews setHidden:NO];
+    
     self.levelSelected = 1;
     
+    
+    return;
     
     [self showLoader];
     
@@ -193,6 +234,13 @@
 
 
 
+-(void)viewDidAppear:(BOOL)animated{
+    
+    
+    
+    
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 

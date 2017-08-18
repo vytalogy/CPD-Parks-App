@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470732951F471DA3003E899C /* RulesViewWithButton.xib */; };
 		470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470CF6E41F24A6BC0074A81C /* QuestionView.xib */; };
 		470CF6E81F24A6CF0074A81C /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6E71F24A6CF0074A81C /* QuestionView.m */; };
 		470CF6EB1F24BD100074A81C /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6EA1F24BD100074A81C /* HintView.m */; };
@@ -260,6 +261,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		470732951F471DA3003E899C /* RulesViewWithButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RulesViewWithButton.xib; path = Views/RulesViewWithButton.xib; sourceTree = "<group>"; };
 		470CF6E41F24A6BC0074A81C /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionView.xib; path = Views/QuestionView.xib; sourceTree = "<group>"; };
 		470CF6E61F24A6CF0074A81C /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionView.h; path = Views/QuestionView.h; sourceTree = "<group>"; };
 		470CF6E71F24A6CF0074A81C /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionView.m; path = Views/QuestionView.m; sourceTree = "<group>"; };
@@ -1518,6 +1520,7 @@
 		478F12B91F23B7A7007415C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				470732951F471DA3003E899C /* RulesViewWithButton.xib */,
 				478F12C21F23B916007415C6 /* InGameScoreView.xib */,
 				478F12BA1F23B7D1007415C6 /* ScoreView.h */,
 				478F12BB1F23B7D1007415C6 /* ScoreView.m */,
@@ -1711,6 +1714,7 @@
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
 				47EB4ADB1F44A20D00C4674C /* Arboria-Book.otf in Resources */,
 				47ED66181F40952D00AD170E /* MapView.xib in Resources */,
+				470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */,
 				47EB4AD41F4484E000C4674C /* VistaSlabOT-Black.otf in Resources */,
 				47305BCD1F1A2264001CAE54 /* UzysAssetsPickerController.xib in Resources */,
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,

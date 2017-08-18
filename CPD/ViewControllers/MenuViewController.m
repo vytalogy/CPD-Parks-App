@@ -56,6 +56,7 @@
 
 -(void)closeRulesView{
     
+    [self.rulesViews setHidden:YES];
     [self.mapView setHidden:YES];
 
 }
