@@ -258,7 +258,7 @@
     self.lblTitle.font = SelectLevelNameFont;
     self.lblDetail.font = SelectLevelTextFont;
     //
-    
+
    
     if (IS_IPHONE_6) {
         
@@ -362,6 +362,23 @@
     self.lblDetail.text = self.selectedPark.parkDescription;
 //    self.lblDetail.text =@"ipsum dolor sit amet, consec-tetuer";
 
+
+    /*
+    NSString *string = self.selectedPark.parkDescription;
+    
+    NSMutableAttributedString* attrString = [[NSMutableAttributedString  alloc] initWithString:string];
+    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    [style setLineSpacing:+10];
+    
+    [attrString addAttribute:NSParagraphStyleAttributeName
+                       value:style
+                       range:NSMakeRange(0, string.length)];
+    
+    
+    self.lblDetail.attributedText = attrString;
+    
+    */
+    
     self.viewContainerTypeOne.backgroundColor = [UIColor clearColor];
     self.viewContainerTypeTwo.backgroundColor = [UIColor clearColor];
     

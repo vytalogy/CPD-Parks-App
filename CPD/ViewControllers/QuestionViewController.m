@@ -256,6 +256,9 @@
     }
     else {
         
+        [FileManager loadProfileImage:_questionScoreView.backGround url:self.allQuestion[self.questionIndex].imageURL];
+
+        
         //_hintView.hidden = NO;
         
     }

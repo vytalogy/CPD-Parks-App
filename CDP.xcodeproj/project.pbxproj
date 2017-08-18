@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470732951F471DA3003E899C /* RulesViewWithButton.xib */; };
+		470732991F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */; };
+		4707329A1F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */; };
 		470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470CF6E41F24A6BC0074A81C /* QuestionView.xib */; };
 		470CF6E81F24A6CF0074A81C /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6E71F24A6CF0074A81C /* QuestionView.m */; };
 		470CF6EB1F24BD100074A81C /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6EA1F24BD100074A81C /* HintView.m */; };
@@ -262,6 +264,8 @@
 
 /* Begin PBXFileReference section */
 		470732951F471DA3003E899C /* RulesViewWithButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RulesViewWithButton.xib; path = Views/RulesViewWithButton.xib; sourceTree = "<group>"; };
+		470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aktivgrotesk_trial_md-webfont2.ttf"; sourceTree = "<group>"; };
+		470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aktivgrotesk_trial_rg-webfont.ttf"; sourceTree = "<group>"; };
 		470CF6E41F24A6BC0074A81C /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionView.xib; path = Views/QuestionView.xib; sourceTree = "<group>"; };
 		470CF6E61F24A6CF0074A81C /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionView.h; path = Views/QuestionView.h; sourceTree = "<group>"; };
 		470CF6E71F24A6CF0074A81C /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionView.m; path = Views/QuestionView.m; sourceTree = "<group>"; };
@@ -814,6 +818,8 @@
 		47305A8B1F19EA5A001CAE54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */,
+				470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */,
 				47EB4ADD1F44A36F00C4674C /* Arboria-Medium.otf */,
 				47EB4AD91F44A20D00C4674C /* Arboria-Book.otf */,
 				47EB4ADA1F44A20D00C4674C /* Arboria-Light.otf */,
@@ -1707,6 +1713,7 @@
 				47EB4AC41F447C2500C4674C /* VistaSlabOT-LightItalic.otf in Resources */,
 				47EB4AD81F4487AA00C4674C /* VistaSlabOT-Med.otf in Resources */,
 				47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */,
+				470732991F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf in Resources */,
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
 				47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */,
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
@@ -1723,6 +1730,7 @@
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
 				47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */,
 				478F12C31F23B916007415C6 /* InGameScoreView.xib in Resources */,
+				4707329A1F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf in Resources */,
 				47305A9B1F19EA5A001CAE54 /* LaunchScreen.storyboard in Resources */,
 				470CF6ED1F24BD1E0074A81C /* HintView.xib in Resources */,
 				47F1FCA11F2E295B00246DD9 /* QuestionScoreView.xib in Resources */,

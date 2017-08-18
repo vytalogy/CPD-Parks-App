@@ -20,6 +20,7 @@
     
    self.lblRules.font = RulesRegularTextFont;
     
+    self.btnGetStarted.backgroundColor = LightGreenTextColor;
     
     
     self.backGroundImage.image = [UIImage imageNamed:@"ready-to-request-black-bg"];
