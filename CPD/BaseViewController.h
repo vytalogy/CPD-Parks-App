@@ -221,5 +221,6 @@
 
 @property (nonatomic) UILabel *navLabel;
 -(NSAttributedString *)requestTextWithText:(NSString *)text;
+-(NSAttributedString *)textForScoreWithScore:(NSString *)score withLevel:(int)level withPark:(int)park;
 
 @end

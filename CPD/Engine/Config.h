@@ -26,6 +26,7 @@
 
 #define FontToUseBold @"VistaSlabOT-Bold"
 #define FontToUseRegular @"VistaSlabOT-Reg"
+#define FontToUseLightItalic @"VistaSlabOT-LightItalic"
 #define FontToUserBlack @"VistaSlabOT-Black"
 #define FontToUserBook @"VistaSlabOT-Book"
 #define FontToUserMedium @"VistaSlabOT-Medium"
@@ -75,8 +76,9 @@
 
 #define ProfileViewYouAreA [UIFont fontWithName:FontToUseBold size:23]
 #define ProfileViewTotalPointsLabelFont [UIFont fontWithName:FontToUserBlack size:27]
-#define ProfileViewTotalPointsScoreFont [UIFont fontWithName:FontToUseBold size:130]
+#define ProfileViewTotalPointsScoreFont [UIFont fontWithName:FontToUseBold size:120]
 #define ProfileViewLevelScoreFont [UIFont fontWithName:FontToUserBlack size:31]
+#define ProfileViewLevelScoreRegularFont [UIFont fontWithName:FontToUseRegular size:31]
 #define LightGreenTextColor [UIColor colorWithRed:173.0/255.0 green:209.0/255.0 blue:68.0/255.0 alpha:1.0]
 
 #define ProfileViewGrayColor [UIColor colorWithRed:182.0/255.0 green:183.0/255.0 blue:183.0/255.0 alpha:1.0]

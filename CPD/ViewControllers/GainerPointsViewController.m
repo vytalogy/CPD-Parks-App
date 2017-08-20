@@ -63,7 +63,8 @@
     }
     
     
-   NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%d",self.currentPark.itemId];
+    
+   NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%d%d",self.level.itemId,self.currentPark.itemId];
     
     
     

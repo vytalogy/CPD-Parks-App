@@ -184,6 +184,8 @@
         
         tmpDestination.currentPark = self.currentPark;
         
+        tmpDestination.level = self.currentLevel;
+        
         
     }
 }

@@ -152,6 +152,7 @@
         
         
         tmpDestination.questionViewController = self;
+        tmpDestination.currentLevel = self.levelSelected;
         
         
         if (self.questionIndex+1 == [self.allQuestion count]) {

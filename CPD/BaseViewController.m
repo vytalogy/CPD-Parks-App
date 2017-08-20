@@ -1346,6 +1346,79 @@
 }
 
 
+-(NSAttributedString *)textForScoreWithScore:(NSString *)score withLevel:(int)level withPark:(int)park
+{
+    
+    
+    NSString *levelString = @"";
+    
+    NSString *parkString = @"";
+    
+    
+    NSString *scoreStinrg = [NSString stringWithFormat:@"(%@/35)\n",score];
+    
+    
+    if (level == 1) {
+        
+        levelString = @"Junior Recruit";
+        
+    }
+    else {
+        levelString = @"Recruit";
+        
+        
+    }
+    
+    if (park == 1) {
+     
+        parkString = @"Hegewish\n";
+        
+    }
+    else if (park == 2) {
+        
+        parkString = @"Big Marsh\n";
+        
+    }
+    else if (park == 2) {
+        
+        parkString = @"Indian Ridge\n";
+        
+    }
+    
+    
+    NSString *fullSting = [NSString stringWithFormat:@"%@%@%@",scoreStinrg,parkString,levelString];
+    
+    
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:fullSting];
+    
+    
+    id boldFontName = [UIFont fontWithName:FontToUserBlack size:31];
+    id normalFont = [UIFont fontWithName:FontToUseLightItalic size:24];
+    
+    
+    [attrString beginEditing];
+    
+    
+    NSRange boldedRange = NSMakeRange(0, scoreStinrg.length+parkString.length-1);
+    
+    NSRange normalRange2 = NSMakeRange(scoreStinrg.length+parkString.length, levelString.length);
+    
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:boldFontName
+                       range:boldedRange];
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:normalFont
+                       range:normalRange2];
+    
+    [attrString endEditing];
+    
+    return attrString;
+    
+}
+
 -(NSAttributedString *)requestText{
     
     

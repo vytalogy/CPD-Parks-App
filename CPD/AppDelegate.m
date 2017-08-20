@@ -19,9 +19,9 @@
     // Override point for customization after application launch.
 
     for (NSString *familyName in [UIFont familyNames]){
-        NSLog(@"Family name: %@", familyName);
+   //     NSLog(@"Family name: %@", familyName);
         for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
-            NSLog(@"--Font name: %@", fontName);
+ //           NSLog(@"--Font name: %@", fontName);
         }
     }
     
@@ -32,8 +32,7 @@
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+ 
 }
 
 

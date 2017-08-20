@@ -31,4 +31,6 @@
 
 @property (nonatomic,strong) Parks *currentPark;
 
+@property (nonatomic,strong) Level *currentLevel;
+
 @end

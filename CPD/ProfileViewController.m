@@ -13,39 +13,38 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgIcon;
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalPointsLAbel;
-@property (weak, nonatomic) IBOutlet UILabel *lblThirdScore;
-@property (weak, nonatomic) IBOutlet UILabel *lblTwoScore;
-@property (weak, nonatomic) IBOutlet UILabel *lblOneScore;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblLevel1ThirdScore;
+@property (weak, nonatomic) IBOutlet UILabel *lblLevel2ThirdScore;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *lblLevel1TwoScore;
+@property (weak, nonatomic) IBOutlet UILabel *lblLevel2TwoScore;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblLevel1OneScore;
+@property (weak, nonatomic) IBOutlet UILabel *lblLevel2OneScore;
+
 @property (weak, nonatomic) IBOutlet UILabel *lblYouRa;
 @property (weak, nonatomic) IBOutlet UILabel *lblReaSeacher;
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalPoints;
 
-@property (nonatomic) NSString * park1Score;
-@property (nonatomic) NSString * park2Score;
-@property (nonatomic) NSString * park3Score;
+@property (nonatomic) NSString * park1Level1Score;
+@property (nonatomic) NSString * park1Level2Score;
+@property (nonatomic) NSString * park2Level1Score;
+@property (nonatomic) NSString * park2Level2Score;
+@property (nonatomic) NSString * park3Level1Score;
+@property (nonatomic) NSString * park3Level2Score;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundWidth;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @end
 
 @implementation ProfileViewController
 
--(NSString *)park1Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@",@"1"];
-    
-    
-    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
-    
-    if (parkInfo) {
-        return parkInfo;
-        
-    }
-    
-    return @"0";
-    
-}
-
--(NSString *)park2Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@",@"2"];
-    
+-(NSString *)park1Level1Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"1"];
     
     id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
     
@@ -58,9 +57,8 @@
     
 }
 
--(NSString *)park3Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@",@"3"];
-    
+-(NSString *)park1Level2Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"1"];
     
     id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
     
@@ -72,8 +70,60 @@
     return @"0";
     
 }
+
+
+-(NSString *)park2Level1Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"2"];
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
+-(NSString *)park2Level2Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"2"];
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
+
+
+
+-(NSString *)park3Level1Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"3"];
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    if (parkInfo) {
+        return parkInfo;
+    }
+    
+    return @"0";
+    
+}
+
+-(NSString *)park3Level2Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"3"];
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    if (parkInfo) {
+        return parkInfo;
+    }
+    
+    return @"0";
+    
+}
+
 
 -(void)viewDidAppear:(BOOL)animated{
+    
     
     
 
@@ -85,8 +135,9 @@
     [shapeLayer setLineWidth:3.0f];
     [shapeLayer setLineJoin:kCALineJoinRound];
     [shapeLayer setLineDashPattern:
-     [NSArray arrayWithObjects:[NSNumber numberWithInt:10],
-      [NSNumber numberWithInt:5],nil]];
+     
+     [NSArray arrayWithObjects:[NSNumber numberWithInt:15],
+      [NSNumber numberWithInt:10],nil]];
     
     // Setup the path
     CGMutablePathRef path = CGPathCreateMutable();
@@ -94,12 +145,12 @@
     CGPathMoveToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.imgIcon.frame.origin.y+self.imgIcon.frame.size.height-54);
     
     
-    CGPathAddLineToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.view.frame.size.height);
+    CGPathAddLineToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.scrollView.frame.size.height+250);
     
     [shapeLayer setPath:path];
     CGPathRelease(path);
     
-    [self.view.layer addSublayer:shapeLayer];
+    [self.scrollView.layer addSublayer:shapeLayer];
     
     
 
@@ -108,6 +159,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     
    
     
@@ -136,85 +189,142 @@
    // self.lblTotalPointsLAbel.attributedText = attributedString ;
     
 
-    self.lblThirdScore.text = [NSString stringWithFormat:@"(%@/30)\nIndian Ridge",self.park3Score];
+   // self.lblLevel1OneScore.text = [NSString stringWithFormat:@"(%@/30)\nHegewisch",self.park1Level1Score];
+    
+    self.lblLevel1OneScore.attributedText = [self textForScoreWithScore:self.park1Level1Score withLevel:1 withPark:1];
+    self.lblLevel2OneScore.attributedText = [self textForScoreWithScore:self.park1Level2Score withLevel:2 withPark:1];
     
     
     
-    self.lblTwoScore.text = [NSString stringWithFormat:@"(%@/30)\nBig Marsh",self.park2Score];
+    self.lblLevel1TwoScore.attributedText = [self textForScoreWithScore:self.park2Level1Score withLevel:1 withPark:1];
+    self.lblLevel2TwoScore.attributedText = [self textForScoreWithScore:self.park2Level1Score withLevel:2 withPark:1];
     
     
     
-    if ([self.park1Score isEqualToString: @"0"]) {
-        self.lblOneScore.font = ProfileViewLevelScoreFont;
-        self.lblOneScore.textColor = ProfileViewGrayColor;
+    self.lblLevel1ThirdScore.attributedText = [self textForScoreWithScore:self.park3Level1Score withLevel:1 withPark:1];
+    self.lblLevel2ThirdScore.attributedText = [self textForScoreWithScore:self.park3Level2Score withLevel:2 withPark:1];
+    
+    
+    
+    
+    
+
+    
+    
+    if ([self.park1Level1Score isEqualToString: @"0"]) {
+
+        self.lblLevel1OneScore.textColor = ProfileViewGrayColor;
         
         
         
     }
     else {
 
-        self.lblOneScore.font = ProfileViewLevelScoreFont;
-        self.lblOneScore.textColor = LightGreenTextColor;
+
+        self.lblLevel1OneScore.textColor = LightGreenTextColor;
     
         
     }
-
     
-    
-    if ([self.park2Score isEqualToString: @"0"]) {
+    if ([self.park1Level2Score isEqualToString: @"0"]) {
         
-        self.lblTwoScore.font = ProfileViewLevelScoreFont;
-        self.lblTwoScore.textColor = ProfileViewGrayColor;
+        self.lblLevel2OneScore.textColor = ProfileViewGrayColor;
         
-    }
-    else {
-        
-        self.lblTwoScore.font = ProfileViewLevelScoreFont;
-        self.lblTwoScore.textColor = LightGreenTextColor;
-    }
-
-
-    
-    if ([self.park3Score isEqualToString: @"0"]) {
-        
-        self.lblThirdScore.font = ProfileViewLevelScoreFont;
-        self.lblThirdScore.textColor = ProfileViewGrayColor;
         
         
     }
     else {
         
-        self.lblThirdScore.font = ProfileViewLevelScoreFont;
-        self.lblThirdScore.textColor = LightGreenTextColor;
+        
+        self.lblLevel2OneScore.textColor = LightGreenTextColor;
+        
         
     }
     
 
     
+    
+    
+    if ([self.park2Level1Score isEqualToString: @"0"]) {
+        
+
+        self.lblLevel1TwoScore.textColor = ProfileViewGrayColor;
+        
+    }
+    else {
+        
+        self.lblLevel1TwoScore.textColor = LightGreenTextColor;
+    }
+    if ([self.park2Level2Score isEqualToString: @"0"]) {
+        
+        
+        self.lblLevel2TwoScore.textColor = ProfileViewGrayColor;
+        
+    }
+    else {
+        
+        self.lblLevel2TwoScore.textColor = LightGreenTextColor;
+    }
+    
+
+
+    
+    if ([self.park3Level1Score isEqualToString: @"0"]) {
+        
+
+        self.lblLevel1ThirdScore.textColor = ProfileViewGrayColor;
+        
+        
+    }
+    else {
+        
+
+        self.lblLevel1ThirdScore.textColor = LightGreenTextColor;
+        
+    }
+    
+    
+    if ([self.park3Level2Score isEqualToString: @"0"]) {
+        
+        
+        self.lblLevel2ThirdScore.textColor = ProfileViewGrayColor;
+        
+        
+    }
+    else {
+        
+        
+        self.lblLevel2ThirdScore.textColor = LightGreenTextColor;
+        
+    }
+    
+    
+
+    
 
     
     
 
     
-    int totalPoints = [self.park1Score intValue] + [self.park2Score intValue]; + [self.park3Score intValue];
+    int totalPoints = [self.park1Level1Score intValue] + [self.park2Level1Score intValue]; + [self.park3Level1Score intValue];
     
     
     self.lblTotalPoints.text = [NSString stringWithFormat:@"%d",totalPoints];
     
-    self.lblOneScore.text = [NSString stringWithFormat:@"(%@/30)\nHegewisch",self.park1Score];
-    
+
     
 
     
     
     
     
-    self.lblTotalPointsLAbel.text = @"TOTAL POINTS";
+    self.lblTotalPointsLAbel.text = @"TOTAL\nPOINTS";
  
     
 
     
 }
+
 
 -(void)viewWillAppear:(BOOL)animated{
     
@@ -225,19 +335,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
