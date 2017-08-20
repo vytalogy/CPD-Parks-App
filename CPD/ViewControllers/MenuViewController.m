@@ -49,6 +49,10 @@
 
 @property (nonatomic,strong) RulesView * rulesViews;
 
+@property (nonatomic) NSString *bigMapUrl;
+@property (nonatomic) NSString *indianMapUrl;
+@property (nonatomic) NSString *hegwishMapUrl;
+
 
 @end
 
@@ -242,10 +246,57 @@
     [self.view bringSubviewToFront:self.mapView];
     
 }
+
+-(NSString *)hegwishMapUrl{
+    
+    
+    
+    return [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/staticmap?center=41.655496,%%20-87.564370&zoom=15&size=640x640"];
+    
+    
+}
+
+-(NSString *)bigMapUrl{
+    
+    
+    
+    return [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/staticmap?center=41.690329,-87.5705071&zoom=15&size=640x640"];
+    
+    
+}
+
+-(NSString *)indianMapUrl{
+    
+    
+    
+    return [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/staticmap?center=41.6800257,-87.5606165&zoom=15&size=640x640"];
+    
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-        [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
+    NSUserDefaults *currentDefault = [NSUserDefaults standardUserDefaults];
+    
+    if ([currentDefault objectForKey:@"hasitBeenDone"]) {
+        
+        [FileManager loadProfileImage:nil url:self.hegwishMapUrl];
+        [FileManager loadProfileImage:nil url:self.hegwishMapUrl];
+        [FileManager loadProfileImage:nil url:self.indianMapUrl];
+        
+        [currentDefault setObject:@"1" forKey:@"hasitBeenDone"];
+        
+        
+        
+    }
+    
+
+    
+    
+    
+    
+[self.navigationController setNavigationBarHidden:YES animated:NO];
     
 
     NSLog(@"%@",self.lblMap.font.fontName);

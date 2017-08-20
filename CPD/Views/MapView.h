@@ -18,4 +18,9 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btnExit;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mapHeight;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mapWidth;
+@property (weak, nonatomic) IBOutlet UIImageView *mapImageView;
+
 @end

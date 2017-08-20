@@ -245,7 +245,8 @@
        
         
         
-        [FileManager loadProfileImage:_questionScoreView.backGround url:self.allQuestion[self.questionIndex].imageURL];
+        [FileManager loadProfileImage:_questionScoreView.backGround
+                                  url:self.allQuestion[self.questionIndex].imageURL];
 
         
 
@@ -376,6 +377,16 @@
         else {
          
             [FileManager loadProfileImageUrl:self.allQuestion[self.questionIndex+1].imageURL
+                                  withLoader:nil
+                       withComplitionHandler:^(id c) {
+                           
+                           
+                       } withFailHander:^(int d) {
+                           
+                       }];
+            
+            
+            [FileManager loadProfileImageUrl:self.allQuestion[self.questionIndex+1].successImageUrl
                                   withLoader:nil
                        withComplitionHandler:^(id c) {
                            
