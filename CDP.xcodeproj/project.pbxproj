@@ -235,6 +235,8 @@
 		47D8889C1F2338570068D304 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8889B1F2338570068D304 /* MainMenuViewController.m */; };
 		47D8889F1F235FEF0068D304 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D8889E1F235FEF0068D304 /* MenuViewController.m */; };
 		47D888A21F2389480068D304 /* SelectQuizTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D888A11F2389480068D304 /* SelectQuizTypeViewController.m */; };
+		47E449EC1F4B37DD0090C117 /* WarningLeaving.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E449EB1F4B37DD0090C117 /* WarningLeaving.m */; };
+		47E449EE1F4B37ED0090C117 /* WarningLeaving.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47E449ED1F4B37ED0090C117 /* WarningLeaving.xib */; };
 		47EB4AB51F4479F500C4674C /* VistaSlabOT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */; };
 		47EB4AB61F4479F500C4674C /* VistaSlabOT-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */; };
 		47EB4AB71F4479F500C4674C /* VistaSlabOT-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */; };
@@ -737,6 +739,9 @@
 		47D8889E1F235FEF0068D304 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewControllers/MenuViewController.m; sourceTree = "<group>"; };
 		47D888A01F2389480068D304 /* SelectQuizTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectQuizTypeViewController.h; path = ViewControllers/SelectQuizTypeViewController.h; sourceTree = "<group>"; };
 		47D888A11F2389480068D304 /* SelectQuizTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectQuizTypeViewController.m; path = ViewControllers/SelectQuizTypeViewController.m; sourceTree = "<group>"; };
+		47E449EA1F4B37DD0090C117 /* WarningLeaving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WarningLeaving.h; path = Views/WarningLeaving.h; sourceTree = "<group>"; };
+		47E449EB1F4B37DD0090C117 /* WarningLeaving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WarningLeaving.m; path = Views/WarningLeaving.m; sourceTree = "<group>"; };
+		47E449ED1F4B37ED0090C117 /* WarningLeaving.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WarningLeaving.xib; path = Views/WarningLeaving.xib; sourceTree = "<group>"; };
 		47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Bold.ttf"; sourceTree = "<group>"; };
 		47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Light.ttf"; sourceTree = "<group>"; };
 		47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -1553,6 +1558,9 @@
 				47ED661F1F40CE8C00AD170E /* RulesView.xib */,
 				47ED661C1F40CE5200AD170E /* RulesView.h */,
 				47ED661D1F40CE5200AD170E /* RulesView.m */,
+				47E449EA1F4B37DD0090C117 /* WarningLeaving.h */,
+				47E449EB1F4B37DD0090C117 /* WarningLeaving.m */,
+				47E449ED1F4B37ED0090C117 /* WarningLeaving.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1726,6 +1734,7 @@
 				47305BCD1F1A2264001CAE54 /* UzysAssetsPickerController.xib in Resources */,
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,
 				47EB4AC61F447C2500C4674C /* VistaSlabOT-RegItalic.otf in Resources */,
+				47E449EE1F4B37ED0090C117 /* WarningLeaving.xib in Resources */,
 				47305C181F1A2264001CAE54 /* Info.plist in Resources */,
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
 				47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */,
@@ -1895,6 +1904,7 @@
 				47305BE61F1A2264001CAE54 /* UIImage+Jot.m in Sources */,
 				47305C001F1A2264001CAE54 /* TGPhotoViewController.m in Sources */,
 				470D51891F45EC4F004F74C4 /* Rules.m in Sources */,
+				47E449EC1F4B37DD0090C117 /* WarningLeaving.m in Sources */,
 				47305CE21F1A2390001CAE54 /* EventManager.m in Sources */,
 				47305BCC1F1A2264001CAE54 /* UzysAssetsPickerController.m in Sources */,
 				470CF6EB1F24BD100074A81C /* HintView.m in Sources */,

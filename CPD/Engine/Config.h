@@ -87,8 +87,8 @@
 #define MapRegularTextFont [UIFont fontWithName:FontToUserMedium size:18]
 #define MapBoldTextFont [UIFont fontWithName:FontToUserBlack size:20]
 
-#define RulesRegularTextFont [UIFont fontWithName:FontToUserMedium size:18]
-#define RulesBoldTextFont [UIFont fontWithName:FontToUseBold size:23]
+#define RulesRegularTextFont [UIFont fontWithName:FontToUserMedium size:17]
+#define RulesBoldTextFont [UIFont fontWithName:FontToUseBold size:21]
 
 #define HintBoldFont [UIFont fontWithName:FontToUseBold size:34]
 #define HintRegularFont [UIFont fontWithName:FontToUseBold size:18]

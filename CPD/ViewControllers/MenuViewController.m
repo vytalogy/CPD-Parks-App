@@ -10,6 +10,7 @@
 #import "MapView.h"
 #import "Rules.h"
 #import "RulesView.h"
+#import "WarningLeaving.h"
 
 @interface MenuViewController ()
 
@@ -49,6 +50,8 @@
 
 @property (nonatomic,strong) RulesView * rulesViews;
 
+@property (nonatomic,strong) WarningLeaving *warningView;
+
 @property (nonatomic) NSString *bigMapUrl;
 @property (nonatomic) NSString *indianMapUrl;
 @property (nonatomic) NSString *hegwishMapUrl;
@@ -64,6 +67,42 @@
     [self.mapView setHidden:YES];
 
 }
+
+-(void)cancelWarningView{
+    
+    
+    [self.warningView setHidden:YES];
+    [self.view bringSubviewToFront:self.warningView];
+    
+}
+-(WarningLeaving *)warningView {
+    
+    if (!_warningView) {
+        
+        _warningView =   (WarningLeaving *)[self.view getViewFromNibName:@"WarningLeaving"
+                                                         withWidth:self.view.frame.size.width
+                                                        withHeight:self.view.frame.size.height];
+        
+        
+        
+        
+        [_warningView.btnCancel addTarget:self action:@selector(cancelWarningView) forControlEvents:UIControlEventTouchUpInside];
+        [_warningView setupView];
+        [self.view addSubview:_warningView];
+        
+        
+        
+    }
+    else {
+        
+        //_hintView.hidden = NO;
+        
+    }
+    return _warningView;
+    
+    
+}
+
 
 -(RulesView *)rulesViews {
     
@@ -216,6 +255,11 @@
 
 -(void)showWebSiteButtonTapped{
     
+    
+    
+    [self.warningView setHidden:NO];
+    
+    return;
     [self.backgroundGreenView setHidden:NO];
     [self.view bringSubviewToFront:self.backgroundGreenView];
     [self.mapView setHidden:NO];

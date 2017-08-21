@@ -615,11 +615,11 @@
                         <viewControllerLayoutGuide type="bottom" id="s7v-uh-oJB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWF-1Y-TFj">
-                        <rect key="frame" x="0.0" y="64" width="375" height="712"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="776"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdC-YF-oIU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="712"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="756"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large-background" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-bT-8j0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="882"/>
@@ -1152,7 +1152,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iQ7-Vl-j8b" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="qk6-fC-ypf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="qk6-fC-ypf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1181,6 +1181,6 @@
         <image name="profileIcon" width="160" height="160"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kFb-Lm-Rf3"/>
+        <segue reference="ovV-5O-zkJ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="VistaSlabOT-Bold.ttf">
+        <array key="VistaSlabOT-Bold.otf">
             <string>VistaSlabOT-Bold</string>
         </array>
         <array key="VistaSlabOT-Reg.ttf">
@@ -27,13 +27,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="562"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neg-eU-zDm">
-                    <rect key="frame" x="20" y="85" width="280" height="393"/>
+                    <rect key="frame" x="20" y="52.5" width="280" height="458"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:GGW-Av-VHb:image" translatesAutoresizingMaskIntoConstraints="NO" id="GGW-Av-VHb">
-                            <rect key="frame" x="0.0" y="0.0" width="280" height="393"/>
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="458"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anK-hO-9wC">
-                            <rect key="frame" x="0.0" y="0.0" width="280" height="393"/>
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="458"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ll-Vg-u4e">
                                     <rect key="frame" x="239" y="8" width="33" height="30"/>
@@ -43,19 +43,19 @@
                                     </constraints>
                                     <state key="normal" image="closeIcon"/>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RULES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le6-3F-Via">
-                                    <rect key="frame" x="32" y="44" width="216" height="37"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="RULES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le6-3F-Via">
+                                    <rect key="frame" x="32" y="38" width="216" height="50"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="yOK-Ba-I9f"/>
+                                        <constraint firstAttribute="height" constant="50" id="yOK-Ba-I9f"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="30"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p46-8c-eRB">
-                                    <rect key="frame" x="24" y="101" width="232" height="260"/>
+                                    <rect key="frame" x="24" y="96" width="232" height="330"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="260" id="pAv-ek-qx2"/>
+                                        <constraint firstAttribute="height" constant="330" id="pAv-ek-qx2"/>
                                     </constraints>
                                     <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </string>
                                     <fontDescription key="fontDescription" name="VistaSlabOT-Reg" family="Vista Slab OT" pointSize="18"/>
@@ -63,17 +63,17 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.55356378419999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="p46-8c-eRB" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" constant="24" id="2Zx-y4-DT8"/>
                                 <constraint firstAttribute="bottom" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="32" id="2mk-Pl-EXh"/>
-                                <constraint firstItem="le6-3F-Via" firstAttribute="top" secondItem="3Ll-Vg-u4e" secondAttribute="bottom" constant="6" id="HVp-Su-BCe"/>
+                                <constraint firstItem="le6-3F-Via" firstAttribute="top" secondItem="3Ll-Vg-u4e" secondAttribute="bottom" id="HVp-Su-BCe"/>
                                 <constraint firstItem="3Ll-Vg-u4e" firstAttribute="top" secondItem="anK-hO-9wC" secondAttribute="top" constant="8" id="RLI-y4-Bag"/>
                                 <constraint firstItem="le6-3F-Via" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" constant="32" id="djK-mo-Ebc"/>
                                 <constraint firstAttribute="trailing" secondItem="3Ll-Vg-u4e" secondAttribute="trailing" constant="8" id="gg5-oZ-GVf"/>
                                 <constraint firstAttribute="trailing" secondItem="p46-8c-eRB" secondAttribute="trailing" constant="24" id="o2l-gN-AtS"/>
                                 <constraint firstAttribute="trailing" secondItem="le6-3F-Via" secondAttribute="trailing" constant="32" id="rOS-PA-LL3"/>
-                                <constraint firstItem="p46-8c-eRB" firstAttribute="top" secondItem="le6-3F-Via" secondAttribute="bottom" constant="20" id="sEw-nh-H3H"/>
+                                <constraint firstItem="p46-8c-eRB" firstAttribute="top" secondItem="le6-3F-Via" secondAttribute="bottom" constant="8" id="sEw-nh-H3H"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="393" id="scp-Da-mRD"/>
                             </constraints>
                         </view>
@@ -113,7 +113,7 @@
         </view>
     </objects>
     <resources>
-        <image name="closeIcon" width="51" height="51"/>
+        <image name="closeIcon" width="53" height="53"/>
         <image name="greenColorBG" width="375" height="667"/>
         <image name="imageView:GGW-Av-VHb:image" width="511" height="217">
             <mutableData key="keyedArchiveRepresentation">
