@@ -12,6 +12,8 @@
 
 @interface FileManager : NSObject
 
++(void)saveProfileImageToDisk :(NSData *)imageToSave fileName:(NSString *)fileName;
+
 +(UIImage *)getImage:(NSString *)directory;
 
 +(NSString *)saveImageToDisk :(UIImage *)imageToSave;
@@ -150,6 +152,7 @@
 
 +(void)loadProfileImageUrl:(NSString *)urlToLoad withLoader:(UIActivityIndicatorView *)loader  withComplitionHandler:(void(^)(id))completionHandler
             withFailHander:(void(^)(int))failureHandler;
++(UIImage *)getImage;
 
 
 @end

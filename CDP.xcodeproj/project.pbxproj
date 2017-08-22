@@ -7,6 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4706DCAD1F4C8840002A0E68 /* IQAlbumAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC3F1F4C883F002A0E68 /* IQAlbumAssetsViewController.m */; };
+		4706DCAE1F4C8840002A0E68 /* IQAssetsAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC421F4C883F002A0E68 /* IQAssetsAlbumViewCell.m */; };
+		4706DCAF1F4C8840002A0E68 /* IQAssetsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC441F4C883F002A0E68 /* IQAssetsCell.m */; };
+		4706DCB01F4C8840002A0E68 /* IQAssetsPickerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC471F4C883F002A0E68 /* IQAssetsPickerShadowView.m */; };
+		4706DCB11F4C8840002A0E68 /* IQCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC491F4C883F002A0E68 /* IQCheckmarkView.m */; };
+		4706DCB21F4C8840002A0E68 /* IQAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC4B1F4C883F002A0E68 /* IQAssetsPickerController.m */; };
+		4706DCB31F4C8840002A0E68 /* IQAudioPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC4E1F4C883F002A0E68 /* IQAudioPickerController.m */; };
+		4706DCB41F4C8840002A0E68 /* IQAudioPickerController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4706DC4F1F4C883F002A0E68 /* IQAudioPickerController.xcassets */; };
+		4706DCB51F4C8840002A0E68 /* IQAudioPickerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC521F4C883F002A0E68 /* IQAudioPickerUtility.m */; };
+		4706DCB61F4C8840002A0E68 /* IQAudioPickerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC561F4C883F002A0E68 /* IQAudioPickerShadowView.m */; };
+		4706DCB71F4C8840002A0E68 /* IQSongsAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC591F4C883F002A0E68 /* IQSongsAlbumViewCell.m */; };
+		4706DCB81F4C8840002A0E68 /* IQSongsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC5B1F4C883F002A0E68 /* IQSongsCell.m */; };
+		4706DCB91F4C8840002A0E68 /* IQSongsListTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC5E1F4C883F002A0E68 /* IQSongsListTableHeaderView.m */; };
+		4706DCBA1F4C8840002A0E68 /* IQSongsAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC601F4C883F002A0E68 /* IQSongsAlbumListViewController.m */; };
+		4706DCBB1F4C8840002A0E68 /* IQSongsArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC621F4C883F002A0E68 /* IQSongsArtistListViewController.m */; };
+		4706DCBC1F4C8840002A0E68 /* IQSongsCompilationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC641F4C883F002A0E68 /* IQSongsCompilationsViewController.m */; };
+		4706DCBD1F4C8840002A0E68 /* IQSongsComposersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC661F4C883F002A0E68 /* IQSongsComposersViewController.m */; };
+		4706DCBE1F4C8840002A0E68 /* IQSongsGenreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC681F4C883F002A0E68 /* IQSongsGenreViewController.m */; };
+		4706DCBF1F4C8840002A0E68 /* IQSongsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC6A1F4C883F002A0E68 /* IQSongsListViewController.m */; };
+		4706DCC01F4C8840002A0E68 /* IQSongsPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC6C1F4C883F002A0E68 /* IQSongsPlaylistViewController.m */; };
+		4706DCC11F4C8840002A0E68 /* IQImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC6F1F4C883F002A0E68 /* IQImagePreviewViewController.m */; };
+		4706DCC21F4C8840002A0E68 /* IQMediaCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC711F4C883F002A0E68 /* IQMediaCaptureController.m */; };
+		4706DCC31F4C8840002A0E68 /* IQMediaCaptureController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4706DC721F4C883F002A0E68 /* IQMediaCaptureController.xcassets */; };
+		4706DCC41F4C8840002A0E68 /* IQAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC771F4C883F002A0E68 /* IQAudioSession.m */; };
+		4706DCC51F4C8840002A0E68 /* IQCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC791F4C883F002A0E68 /* IQCaptureSession.m */; };
+		4706DCC61F4C8840002A0E68 /* IQFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC7C1F4C883F002A0E68 /* IQFileManager.m */; };
+		4706DCC71F4C8840002A0E68 /* IQBottomContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC801F4C883F002A0E68 /* IQBottomContainerView.m */; };
+		4706DCC81F4C8840002A0E68 /* IQCaptureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC831F4C883F002A0E68 /* IQCaptureButton.m */; };
+		4706DCC91F4C8840002A0E68 /* IQFeatureOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC871F4C883F002A0E68 /* IQFeatureOverlay.m */; };
+		4706DCCA1F4C8840002A0E68 /* IQMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC891F4C883F002A0E68 /* IQMediaView.m */; };
+		4706DCCB1F4C8840002A0E68 /* IQAudioSettingsContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC8C1F4C883F002A0E68 /* IQAudioSettingsContainerView.m */; };
+		4706DCCC1F4C8840002A0E68 /* IQPhotoSettingsContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC8E1F4C883F002A0E68 /* IQPhotoSettingsContainerView.m */; };
+		4706DCCD1F4C8840002A0E68 /* IQSettingsContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC901F4C883F002A0E68 /* IQSettingsContainerView.m */; };
+		4706DCCE1F4C8840002A0E68 /* IQVideoSettingsContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC921F4C883F002A0E68 /* IQVideoSettingsContainerView.m */; };
+		4706DCCF1F4C8840002A0E68 /* IQSelectedMediaAudioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC951F4C883F002A0E68 /* IQSelectedMediaAudioCell.m */; };
+		4706DCD01F4C8840002A0E68 /* IQSelectedMediaPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC971F4C883F002A0E68 /* IQSelectedMediaPhotoCell.m */; };
+		4706DCD11F4C8840002A0E68 /* IQSelectedMediaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC991F4C883F002A0E68 /* IQSelectedMediaVideoCell.m */; };
+		4706DCD21F4C8840002A0E68 /* IQSelectedMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC9B1F4C883F002A0E68 /* IQSelectedMediaViewController.m */; };
+		4706DCD31F4C8840002A0E68 /* IQNSArray+Remove.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC9E1F4C883F002A0E68 /* IQNSArray+Remove.m */; };
+		4706DCD41F4C8840002A0E68 /* NSString+IQTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCA11F4C883F002A0E68 /* NSString+IQTimeIntervalFormatter.m */; };
+		4706DCD51F4C8840002A0E68 /* IQAKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCA51F4C883F002A0E68 /* IQAKPickerView.m */; };
+		4706DCD61F4C8840002A0E68 /* IQ_SCSiriWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCA81F4C883F002A0E68 /* IQ_SCSiriWaveformView.m */; };
+		4706DCD71F4C8840002A0E68 /* IQMediaPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCAA1F4C883F002A0E68 /* IQMediaPickerController.m */; };
+		4706DCD81F4C8840002A0E68 /* IQMediaPickerControllerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCAC1F4C883F002A0E68 /* IQMediaPickerControllerConstants.m */; };
+		4706DCDB1F4C8BAF002A0E68 /* CropImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCDA1F4C8BAF002A0E68 /* CropImage.m */; };
 		470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470732951F471DA3003E899C /* RulesViewWithButton.xib */; };
 		470732991F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */; };
 		4707329A1F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */; };
@@ -265,6 +310,94 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4706DC3E1F4C883F002A0E68 /* IQAlbumAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAlbumAssetsViewController.h; sourceTree = "<group>"; };
+		4706DC3F1F4C883F002A0E68 /* IQAlbumAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAlbumAssetsViewController.m; sourceTree = "<group>"; };
+		4706DC411F4C883F002A0E68 /* IQAssetsAlbumViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsAlbumViewCell.h; sourceTree = "<group>"; };
+		4706DC421F4C883F002A0E68 /* IQAssetsAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsAlbumViewCell.m; sourceTree = "<group>"; };
+		4706DC431F4C883F002A0E68 /* IQAssetsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsCell.h; sourceTree = "<group>"; };
+		4706DC441F4C883F002A0E68 /* IQAssetsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsCell.m; sourceTree = "<group>"; };
+		4706DC461F4C883F002A0E68 /* IQAssetsPickerShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsPickerShadowView.h; sourceTree = "<group>"; };
+		4706DC471F4C883F002A0E68 /* IQAssetsPickerShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsPickerShadowView.m; sourceTree = "<group>"; };
+		4706DC481F4C883F002A0E68 /* IQCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQCheckmarkView.h; sourceTree = "<group>"; };
+		4706DC491F4C883F002A0E68 /* IQCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQCheckmarkView.m; sourceTree = "<group>"; };
+		4706DC4A1F4C883F002A0E68 /* IQAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsPickerController.h; sourceTree = "<group>"; };
+		4706DC4B1F4C883F002A0E68 /* IQAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsPickerController.m; sourceTree = "<group>"; };
+		4706DC4D1F4C883F002A0E68 /* IQAudioPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerController.h; sourceTree = "<group>"; };
+		4706DC4E1F4C883F002A0E68 /* IQAudioPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerController.m; sourceTree = "<group>"; };
+		4706DC4F1F4C883F002A0E68 /* IQAudioPickerController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IQAudioPickerController.xcassets; sourceTree = "<group>"; };
+		4706DC511F4C883F002A0E68 /* IQAudioPickerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerUtility.h; sourceTree = "<group>"; };
+		4706DC521F4C883F002A0E68 /* IQAudioPickerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerUtility.m; sourceTree = "<group>"; };
+		4706DC551F4C883F002A0E68 /* IQAudioPickerShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerShadowView.h; sourceTree = "<group>"; };
+		4706DC561F4C883F002A0E68 /* IQAudioPickerShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerShadowView.m; sourceTree = "<group>"; };
+		4706DC581F4C883F002A0E68 /* IQSongsAlbumViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsAlbumViewCell.h; sourceTree = "<group>"; };
+		4706DC591F4C883F002A0E68 /* IQSongsAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsAlbumViewCell.m; sourceTree = "<group>"; };
+		4706DC5A1F4C883F002A0E68 /* IQSongsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsCell.h; sourceTree = "<group>"; };
+		4706DC5B1F4C883F002A0E68 /* IQSongsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsCell.m; sourceTree = "<group>"; };
+		4706DC5D1F4C883F002A0E68 /* IQSongsListTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsListTableHeaderView.h; sourceTree = "<group>"; };
+		4706DC5E1F4C883F002A0E68 /* IQSongsListTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsListTableHeaderView.m; sourceTree = "<group>"; };
+		4706DC5F1F4C883F002A0E68 /* IQSongsAlbumListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsAlbumListViewController.h; sourceTree = "<group>"; };
+		4706DC601F4C883F002A0E68 /* IQSongsAlbumListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsAlbumListViewController.m; sourceTree = "<group>"; };
+		4706DC611F4C883F002A0E68 /* IQSongsArtistListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsArtistListViewController.h; sourceTree = "<group>"; };
+		4706DC621F4C883F002A0E68 /* IQSongsArtistListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsArtistListViewController.m; sourceTree = "<group>"; };
+		4706DC631F4C883F002A0E68 /* IQSongsCompilationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsCompilationsViewController.h; sourceTree = "<group>"; };
+		4706DC641F4C883F002A0E68 /* IQSongsCompilationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsCompilationsViewController.m; sourceTree = "<group>"; };
+		4706DC651F4C883F002A0E68 /* IQSongsComposersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsComposersViewController.h; sourceTree = "<group>"; };
+		4706DC661F4C883F002A0E68 /* IQSongsComposersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsComposersViewController.m; sourceTree = "<group>"; };
+		4706DC671F4C883F002A0E68 /* IQSongsGenreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsGenreViewController.h; sourceTree = "<group>"; };
+		4706DC681F4C883F002A0E68 /* IQSongsGenreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsGenreViewController.m; sourceTree = "<group>"; };
+		4706DC691F4C883F002A0E68 /* IQSongsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsListViewController.h; sourceTree = "<group>"; };
+		4706DC6A1F4C883F002A0E68 /* IQSongsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsListViewController.m; sourceTree = "<group>"; };
+		4706DC6B1F4C883F002A0E68 /* IQSongsPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsPlaylistViewController.h; sourceTree = "<group>"; };
+		4706DC6C1F4C883F002A0E68 /* IQSongsPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsPlaylistViewController.m; sourceTree = "<group>"; };
+		4706DC6E1F4C883F002A0E68 /* IQImagePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQImagePreviewViewController.h; sourceTree = "<group>"; };
+		4706DC6F1F4C883F002A0E68 /* IQImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQImagePreviewViewController.m; sourceTree = "<group>"; };
+		4706DC701F4C883F002A0E68 /* IQMediaCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaCaptureController.h; sourceTree = "<group>"; };
+		4706DC711F4C883F002A0E68 /* IQMediaCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaCaptureController.m; sourceTree = "<group>"; };
+		4706DC721F4C883F002A0E68 /* IQMediaCaptureController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IQMediaCaptureController.xcassets; sourceTree = "<group>"; };
+		4706DC761F4C883F002A0E68 /* IQAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioSession.h; sourceTree = "<group>"; };
+		4706DC771F4C883F002A0E68 /* IQAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioSession.m; sourceTree = "<group>"; };
+		4706DC781F4C883F002A0E68 /* IQCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQCaptureSession.h; sourceTree = "<group>"; };
+		4706DC791F4C883F002A0E68 /* IQCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQCaptureSession.m; sourceTree = "<group>"; };
+		4706DC7B1F4C883F002A0E68 /* IQFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQFileManager.h; sourceTree = "<group>"; };
+		4706DC7C1F4C883F002A0E68 /* IQFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQFileManager.m; sourceTree = "<group>"; };
+		4706DC7F1F4C883F002A0E68 /* IQBottomContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBottomContainerView.h; sourceTree = "<group>"; };
+		4706DC801F4C883F002A0E68 /* IQBottomContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBottomContainerView.m; sourceTree = "<group>"; };
+		4706DC821F4C883F002A0E68 /* IQCaptureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQCaptureButton.h; sourceTree = "<group>"; };
+		4706DC831F4C883F002A0E68 /* IQCaptureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQCaptureButton.m; sourceTree = "<group>"; };
+		4706DC861F4C883F002A0E68 /* IQFeatureOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQFeatureOverlay.h; sourceTree = "<group>"; };
+		4706DC871F4C883F002A0E68 /* IQFeatureOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQFeatureOverlay.m; sourceTree = "<group>"; };
+		4706DC881F4C883F002A0E68 /* IQMediaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaView.h; sourceTree = "<group>"; };
+		4706DC891F4C883F002A0E68 /* IQMediaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaView.m; sourceTree = "<group>"; };
+		4706DC8B1F4C883F002A0E68 /* IQAudioSettingsContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioSettingsContainerView.h; sourceTree = "<group>"; };
+		4706DC8C1F4C883F002A0E68 /* IQAudioSettingsContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioSettingsContainerView.m; sourceTree = "<group>"; };
+		4706DC8D1F4C883F002A0E68 /* IQPhotoSettingsContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPhotoSettingsContainerView.h; sourceTree = "<group>"; };
+		4706DC8E1F4C883F002A0E68 /* IQPhotoSettingsContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPhotoSettingsContainerView.m; sourceTree = "<group>"; };
+		4706DC8F1F4C883F002A0E68 /* IQSettingsContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSettingsContainerView.h; sourceTree = "<group>"; };
+		4706DC901F4C883F002A0E68 /* IQSettingsContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSettingsContainerView.m; sourceTree = "<group>"; };
+		4706DC911F4C883F002A0E68 /* IQVideoSettingsContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQVideoSettingsContainerView.h; sourceTree = "<group>"; };
+		4706DC921F4C883F002A0E68 /* IQVideoSettingsContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQVideoSettingsContainerView.m; sourceTree = "<group>"; };
+		4706DC941F4C883F002A0E68 /* IQSelectedMediaAudioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSelectedMediaAudioCell.h; sourceTree = "<group>"; };
+		4706DC951F4C883F002A0E68 /* IQSelectedMediaAudioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSelectedMediaAudioCell.m; sourceTree = "<group>"; };
+		4706DC961F4C883F002A0E68 /* IQSelectedMediaPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSelectedMediaPhotoCell.h; sourceTree = "<group>"; };
+		4706DC971F4C883F002A0E68 /* IQSelectedMediaPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSelectedMediaPhotoCell.m; sourceTree = "<group>"; };
+		4706DC981F4C883F002A0E68 /* IQSelectedMediaVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSelectedMediaVideoCell.h; sourceTree = "<group>"; };
+		4706DC991F4C883F002A0E68 /* IQSelectedMediaVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSelectedMediaVideoCell.m; sourceTree = "<group>"; };
+		4706DC9A1F4C883F002A0E68 /* IQSelectedMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSelectedMediaViewController.h; sourceTree = "<group>"; };
+		4706DC9B1F4C883F002A0E68 /* IQSelectedMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSelectedMediaViewController.m; sourceTree = "<group>"; };
+		4706DC9D1F4C883F002A0E68 /* IQNSArray+Remove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Remove.h"; sourceTree = "<group>"; };
+		4706DC9E1F4C883F002A0E68 /* IQNSArray+Remove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Remove.m"; sourceTree = "<group>"; };
+		4706DCA01F4C883F002A0E68 /* NSString+IQTimeIntervalFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IQTimeIntervalFormatter.h"; sourceTree = "<group>"; };
+		4706DCA11F4C883F002A0E68 /* NSString+IQTimeIntervalFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IQTimeIntervalFormatter.m"; sourceTree = "<group>"; };
+		4706DCA41F4C883F002A0E68 /* IQAKPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAKPickerView.h; sourceTree = "<group>"; };
+		4706DCA51F4C883F002A0E68 /* IQAKPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAKPickerView.m; sourceTree = "<group>"; };
+		4706DCA71F4C883F002A0E68 /* IQ_SCSiriWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQ_SCSiriWaveformView.h; sourceTree = "<group>"; };
+		4706DCA81F4C883F002A0E68 /* IQ_SCSiriWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQ_SCSiriWaveformView.m; sourceTree = "<group>"; };
+		4706DCA91F4C883F002A0E68 /* IQMediaPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaPickerController.h; sourceTree = "<group>"; };
+		4706DCAA1F4C883F002A0E68 /* IQMediaPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaPickerController.m; sourceTree = "<group>"; };
+		4706DCAB1F4C883F002A0E68 /* IQMediaPickerControllerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaPickerControllerConstants.h; sourceTree = "<group>"; };
+		4706DCAC1F4C883F002A0E68 /* IQMediaPickerControllerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQMediaPickerControllerConstants.m; sourceTree = "<group>"; };
+		4706DCD91F4C8BAF002A0E68 /* CropImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImage.h; sourceTree = "<group>"; };
+		4706DCDA1F4C8BAF002A0E68 /* CropImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImage.m; sourceTree = "<group>"; };
 		470732951F471DA3003E899C /* RulesViewWithButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RulesViewWithButton.xib; path = Views/RulesViewWithButton.xib; sourceTree = "<group>"; };
 		470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aktivgrotesk_trial_md-webfont2.ttf"; sourceTree = "<group>"; };
 		470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aktivgrotesk_trial_rg-webfont.ttf"; sourceTree = "<group>"; };
@@ -784,6 +917,307 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4706DC3C1F4C883F002A0E68 /* IQMediaPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC3D1F4C883F002A0E68 /* IQAssetsPickerController */,
+				4706DC4C1F4C883F002A0E68 /* IQAudioPickerController */,
+				4706DC6D1F4C883F002A0E68 /* IQMediaCaptureController */,
+				4706DCA91F4C883F002A0E68 /* IQMediaPickerController.h */,
+				4706DCAA1F4C883F002A0E68 /* IQMediaPickerController.m */,
+				4706DCAB1F4C883F002A0E68 /* IQMediaPickerControllerConstants.h */,
+				4706DCAC1F4C883F002A0E68 /* IQMediaPickerControllerConstants.m */,
+			);
+			path = IQMediaPickerController;
+			sourceTree = "<group>";
+		};
+		4706DC3D1F4C883F002A0E68 /* IQAssetsPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC3E1F4C883F002A0E68 /* IQAlbumAssetsViewController.h */,
+				4706DC3F1F4C883F002A0E68 /* IQAlbumAssetsViewController.m */,
+				4706DC401F4C883F002A0E68 /* IQAssetPickerCell */,
+				4706DC451F4C883F002A0E68 /* IQAssetPickerView */,
+				4706DC4A1F4C883F002A0E68 /* IQAssetsPickerController.h */,
+				4706DC4B1F4C883F002A0E68 /* IQAssetsPickerController.m */,
+			);
+			path = IQAssetsPickerController;
+			sourceTree = "<group>";
+		};
+		4706DC401F4C883F002A0E68 /* IQAssetPickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC411F4C883F002A0E68 /* IQAssetsAlbumViewCell.h */,
+				4706DC421F4C883F002A0E68 /* IQAssetsAlbumViewCell.m */,
+				4706DC431F4C883F002A0E68 /* IQAssetsCell.h */,
+				4706DC441F4C883F002A0E68 /* IQAssetsCell.m */,
+			);
+			path = IQAssetPickerCell;
+			sourceTree = "<group>";
+		};
+		4706DC451F4C883F002A0E68 /* IQAssetPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC461F4C883F002A0E68 /* IQAssetsPickerShadowView.h */,
+				4706DC471F4C883F002A0E68 /* IQAssetsPickerShadowView.m */,
+				4706DC481F4C883F002A0E68 /* IQCheckmarkView.h */,
+				4706DC491F4C883F002A0E68 /* IQCheckmarkView.m */,
+			);
+			path = IQAssetPickerView;
+			sourceTree = "<group>";
+		};
+		4706DC4C1F4C883F002A0E68 /* IQAudioPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC4D1F4C883F002A0E68 /* IQAudioPickerController.h */,
+				4706DC4E1F4C883F002A0E68 /* IQAudioPickerController.m */,
+				4706DC4F1F4C883F002A0E68 /* IQAudioPickerController.xcassets */,
+				4706DC501F4C883F002A0E68 /* IQAudioPickerUtility */,
+				4706DC531F4C883F002A0E68 /* IQAudioPIckerViewControllers */,
+			);
+			path = IQAudioPickerController;
+			sourceTree = "<group>";
+		};
+		4706DC501F4C883F002A0E68 /* IQAudioPickerUtility */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC511F4C883F002A0E68 /* IQAudioPickerUtility.h */,
+				4706DC521F4C883F002A0E68 /* IQAudioPickerUtility.m */,
+			);
+			path = IQAudioPickerUtility;
+			sourceTree = "<group>";
+		};
+		4706DC531F4C883F002A0E68 /* IQAudioPIckerViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC541F4C883F002A0E68 /* IQAudioCellShadowView */,
+				4706DC571F4C883F002A0E68 /* IQAudioPickerTableViewCell */,
+				4706DC5C1F4C883F002A0E68 /* IQAudioPickerTableViewHeader */,
+				4706DC5F1F4C883F002A0E68 /* IQSongsAlbumListViewController.h */,
+				4706DC601F4C883F002A0E68 /* IQSongsAlbumListViewController.m */,
+				4706DC611F4C883F002A0E68 /* IQSongsArtistListViewController.h */,
+				4706DC621F4C883F002A0E68 /* IQSongsArtistListViewController.m */,
+				4706DC631F4C883F002A0E68 /* IQSongsCompilationsViewController.h */,
+				4706DC641F4C883F002A0E68 /* IQSongsCompilationsViewController.m */,
+				4706DC651F4C883F002A0E68 /* IQSongsComposersViewController.h */,
+				4706DC661F4C883F002A0E68 /* IQSongsComposersViewController.m */,
+				4706DC671F4C883F002A0E68 /* IQSongsGenreViewController.h */,
+				4706DC681F4C883F002A0E68 /* IQSongsGenreViewController.m */,
+				4706DC691F4C883F002A0E68 /* IQSongsListViewController.h */,
+				4706DC6A1F4C883F002A0E68 /* IQSongsListViewController.m */,
+				4706DC6B1F4C883F002A0E68 /* IQSongsPlaylistViewController.h */,
+				4706DC6C1F4C883F002A0E68 /* IQSongsPlaylistViewController.m */,
+			);
+			path = IQAudioPIckerViewControllers;
+			sourceTree = "<group>";
+		};
+		4706DC541F4C883F002A0E68 /* IQAudioCellShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC551F4C883F002A0E68 /* IQAudioPickerShadowView.h */,
+				4706DC561F4C883F002A0E68 /* IQAudioPickerShadowView.m */,
+			);
+			path = IQAudioCellShadowView;
+			sourceTree = "<group>";
+		};
+		4706DC571F4C883F002A0E68 /* IQAudioPickerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC581F4C883F002A0E68 /* IQSongsAlbumViewCell.h */,
+				4706DC591F4C883F002A0E68 /* IQSongsAlbumViewCell.m */,
+				4706DC5A1F4C883F002A0E68 /* IQSongsCell.h */,
+				4706DC5B1F4C883F002A0E68 /* IQSongsCell.m */,
+			);
+			path = IQAudioPickerTableViewCell;
+			sourceTree = "<group>";
+		};
+		4706DC5C1F4C883F002A0E68 /* IQAudioPickerTableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC5D1F4C883F002A0E68 /* IQSongsListTableHeaderView.h */,
+				4706DC5E1F4C883F002A0E68 /* IQSongsListTableHeaderView.m */,
+			);
+			path = IQAudioPickerTableViewHeader;
+			sourceTree = "<group>";
+		};
+		4706DC6D1F4C883F002A0E68 /* IQMediaCaptureController */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC6E1F4C883F002A0E68 /* IQImagePreviewViewController.h */,
+				4706DC6F1F4C883F002A0E68 /* IQImagePreviewViewController.m */,
+				4706DC701F4C883F002A0E68 /* IQMediaCaptureController.h */,
+				4706DC711F4C883F002A0E68 /* IQMediaCaptureController.m */,
+				4706DC721F4C883F002A0E68 /* IQMediaCaptureController.xcassets */,
+				4706DC731F4C883F002A0E68 /* IQMediaCaptureUtility */,
+				4706DC7D1F4C883F002A0E68 /* IQMediaCaptureView */,
+				4706DC931F4C883F002A0E68 /* IQSelectedMediaCell */,
+				4706DC9A1F4C883F002A0E68 /* IQSelectedMediaViewController.h */,
+				4706DC9B1F4C883F002A0E68 /* IQSelectedMediaViewController.m */,
+				4706DC9C1F4C883F002A0E68 /* NSArray+Remove */,
+				4706DC9F1F4C883F002A0E68 /* NSString + Time Formatter */,
+				4706DCA21F4C883F002A0E68 /* Third Party */,
+			);
+			path = IQMediaCaptureController;
+			sourceTree = "<group>";
+		};
+		4706DC731F4C883F002A0E68 /* IQMediaCaptureUtility */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC741F4C883F002A0E68 /* IQCaptureSession */,
+				4706DC7A1F4C883F002A0E68 /* IQFileManager */,
+			);
+			path = IQMediaCaptureUtility;
+			sourceTree = "<group>";
+		};
+		4706DC741F4C883F002A0E68 /* IQCaptureSession */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC751F4C883F002A0E68 /* IQAudioSession */,
+				4706DC781F4C883F002A0E68 /* IQCaptureSession.h */,
+				4706DC791F4C883F002A0E68 /* IQCaptureSession.m */,
+			);
+			path = IQCaptureSession;
+			sourceTree = "<group>";
+		};
+		4706DC751F4C883F002A0E68 /* IQAudioSession */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC761F4C883F002A0E68 /* IQAudioSession.h */,
+				4706DC771F4C883F002A0E68 /* IQAudioSession.m */,
+			);
+			path = IQAudioSession;
+			sourceTree = "<group>";
+		};
+		4706DC7A1F4C883F002A0E68 /* IQFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC7B1F4C883F002A0E68 /* IQFileManager.h */,
+				4706DC7C1F4C883F002A0E68 /* IQFileManager.m */,
+			);
+			path = IQFileManager;
+			sourceTree = "<group>";
+		};
+		4706DC7D1F4C883F002A0E68 /* IQMediaCaptureView */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC7E1F4C883F002A0E68 /* IQBottomContainerView */,
+				4706DC811F4C883F002A0E68 /* IQCaptureButton */,
+				4706DC841F4C883F002A0E68 /* IQMediaView */,
+				4706DC8A1F4C883F002A0E68 /* SettingsContainerView */,
+			);
+			path = IQMediaCaptureView;
+			sourceTree = "<group>";
+		};
+		4706DC7E1F4C883F002A0E68 /* IQBottomContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC7F1F4C883F002A0E68 /* IQBottomContainerView.h */,
+				4706DC801F4C883F002A0E68 /* IQBottomContainerView.m */,
+			);
+			path = IQBottomContainerView;
+			sourceTree = "<group>";
+		};
+		4706DC811F4C883F002A0E68 /* IQCaptureButton */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC821F4C883F002A0E68 /* IQCaptureButton.h */,
+				4706DC831F4C883F002A0E68 /* IQCaptureButton.m */,
+			);
+			path = IQCaptureButton;
+			sourceTree = "<group>";
+		};
+		4706DC841F4C883F002A0E68 /* IQMediaView */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC851F4C883F002A0E68 /* IQFeatureOverlay */,
+				4706DC881F4C883F002A0E68 /* IQMediaView.h */,
+				4706DC891F4C883F002A0E68 /* IQMediaView.m */,
+			);
+			path = IQMediaView;
+			sourceTree = "<group>";
+		};
+		4706DC851F4C883F002A0E68 /* IQFeatureOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC861F4C883F002A0E68 /* IQFeatureOverlay.h */,
+				4706DC871F4C883F002A0E68 /* IQFeatureOverlay.m */,
+			);
+			path = IQFeatureOverlay;
+			sourceTree = "<group>";
+		};
+		4706DC8A1F4C883F002A0E68 /* SettingsContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC8B1F4C883F002A0E68 /* IQAudioSettingsContainerView.h */,
+				4706DC8C1F4C883F002A0E68 /* IQAudioSettingsContainerView.m */,
+				4706DC8D1F4C883F002A0E68 /* IQPhotoSettingsContainerView.h */,
+				4706DC8E1F4C883F002A0E68 /* IQPhotoSettingsContainerView.m */,
+				4706DC8F1F4C883F002A0E68 /* IQSettingsContainerView.h */,
+				4706DC901F4C883F002A0E68 /* IQSettingsContainerView.m */,
+				4706DC911F4C883F002A0E68 /* IQVideoSettingsContainerView.h */,
+				4706DC921F4C883F002A0E68 /* IQVideoSettingsContainerView.m */,
+			);
+			path = SettingsContainerView;
+			sourceTree = "<group>";
+		};
+		4706DC931F4C883F002A0E68 /* IQSelectedMediaCell */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC941F4C883F002A0E68 /* IQSelectedMediaAudioCell.h */,
+				4706DC951F4C883F002A0E68 /* IQSelectedMediaAudioCell.m */,
+				4706DC961F4C883F002A0E68 /* IQSelectedMediaPhotoCell.h */,
+				4706DC971F4C883F002A0E68 /* IQSelectedMediaPhotoCell.m */,
+				4706DC981F4C883F002A0E68 /* IQSelectedMediaVideoCell.h */,
+				4706DC991F4C883F002A0E68 /* IQSelectedMediaVideoCell.m */,
+			);
+			path = IQSelectedMediaCell;
+			sourceTree = "<group>";
+		};
+		4706DC9C1F4C883F002A0E68 /* NSArray+Remove */ = {
+			isa = PBXGroup;
+			children = (
+				4706DC9D1F4C883F002A0E68 /* IQNSArray+Remove.h */,
+				4706DC9E1F4C883F002A0E68 /* IQNSArray+Remove.m */,
+			);
+			path = "NSArray+Remove";
+			sourceTree = "<group>";
+		};
+		4706DC9F1F4C883F002A0E68 /* NSString + Time Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				4706DCA01F4C883F002A0E68 /* NSString+IQTimeIntervalFormatter.h */,
+				4706DCA11F4C883F002A0E68 /* NSString+IQTimeIntervalFormatter.m */,
+			);
+			path = "NSString + Time Formatter";
+			sourceTree = "<group>";
+		};
+		4706DCA21F4C883F002A0E68 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				4706DCA31F4C883F002A0E68 /* AKPickerView */,
+				4706DCA61F4C883F002A0E68 /* SCSiriWaveformView */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		4706DCA31F4C883F002A0E68 /* AKPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				4706DCA41F4C883F002A0E68 /* IQAKPickerView.h */,
+				4706DCA51F4C883F002A0E68 /* IQAKPickerView.m */,
+			);
+			path = AKPickerView;
+			sourceTree = "<group>";
+		};
+		4706DCA61F4C883F002A0E68 /* SCSiriWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				4706DCA71F4C883F002A0E68 /* IQ_SCSiriWaveformView.h */,
+				4706DCA81F4C883F002A0E68 /* IQ_SCSiriWaveformView.m */,
+			);
+			path = SCSiriWaveformView;
+			sourceTree = "<group>";
+		};
 		47305A7F1F19EA5A001CAE54 = {
 			isa = PBXGroup;
 			children = (
@@ -851,6 +1285,9 @@
 		47305AAA1F1A2263001CAE54 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				4706DCD91F4C8BAF002A0E68 /* CropImage.h */,
+				4706DCDA1F4C8BAF002A0E68 /* CropImage.m */,
+				4706DC3C1F4C883F002A0E68 /* IQMediaPickerController */,
 				47BABBFB1F30CC3C00EC6335 /* SpinKit */,
 				47305AAB1F1A2264001CAE54 /* ADDrop */,
 				47305AB51F1A2264001CAE54 /* AF */,
@@ -1724,6 +2161,7 @@
 				470732991F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf in Resources */,
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
 				47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */,
+				4706DCB41F4C8840002A0E68 /* IQAudioPickerController.xcassets in Resources */,
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
 				470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */,
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
@@ -1736,6 +2174,7 @@
 				47EB4AC61F447C2500C4674C /* VistaSlabOT-RegItalic.otf in Resources */,
 				47E449EE1F4B37ED0090C117 /* WarningLeaving.xib in Resources */,
 				47305C181F1A2264001CAE54 /* Info.plist in Resources */,
+				4706DCC31F4C8840002A0E68 /* IQMediaCaptureController.xcassets in Resources */,
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
 				47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */,
 				478F12C31F23B916007415C6 /* InGameScoreView.xib in Resources */,
@@ -1766,8 +2205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47305D051F1A2390001CAE54 /* TWMessageBarManager.m in Sources */,
+				4706DCB11F4C8840002A0E68 /* IQCheckmarkView.m in Sources */,
 				47305BD71F1A2264001CAE54 /* HRColorInfoView.m in Sources */,
 				47305C191F1A2264001CAE54 /* TOActivityCroppedImageProvider.m in Sources */,
+				4706DCD61F4C8840002A0E68 /* IQ_SCSiriWaveformView.m in Sources */,
 				47305C041F1A2264001CAE54 /* TGCameraColor.m in Sources */,
 				47BABC211F30CC3C00EC6335 /* RTSpinKitArcAltAnimation.m in Sources */,
 				47BABC201F30CC3C00EC6335 /* RTSpinKit9CubeGridAnimation.m in Sources */,
@@ -1781,21 +2222,27 @@
 				47305BD91F1A2264001CAE54 /* HRColorPickerView.m in Sources */,
 				47305BE11F1A2264001CAE54 /* JotTextEditView.m in Sources */,
 				47305CE41F1A2390001CAE54 /* GTMNSString+HTML.m in Sources */,
+				4706DCB51F4C8840002A0E68 /* IQAudioPickerUtility.m in Sources */,
 				47305BDD1F1A2264001CAE54 /* UIView+Snapshot.m in Sources */,
 				47305BC71F1A2264001CAE54 /* UIRefreshControl+AFNetworking.m in Sources */,
+				4706DCC21F4C8840002A0E68 /* IQMediaCaptureController.m in Sources */,
 				47305BBD1F1A2264001CAE54 /* AFURLConnectionOperation.m in Sources */,
 				47305CFF1F1A2390001CAE54 /* RACollectionViewTripletLayout.m in Sources */,
 				478F12C11F23B904007415C6 /* InGameScoreView.m in Sources */,
 				47305CC61F1A2390001CAE54 /* APTimeZones.m in Sources */,
+				4706DCD11F4C8840002A0E68 /* IQSelectedMediaVideoCell.m in Sources */,
 				4737E10A1F2C8E020010955D /* BaseViewController.m in Sources */,
 				47305D031F1A2390001CAE54 /* ESImageViewController.m in Sources */,
 				47305D0A1F1A2390001CAE54 /* XMLDictionary.m in Sources */,
 				47305BD11F1A2264001CAE54 /* UzysWrapperPickerController.m in Sources */,
+				4706DCCA1F4C8840002A0E68 /* IQMediaView.m in Sources */,
+				4706DCCD1F4C8840002A0E68 /* IQSettingsContainerView.m in Sources */,
 				47305CFD1F1A2390001CAE54 /* PrayTime.m in Sources */,
 				47305C1C1F1A2264001CAE54 /* UIImage+CropRotate.m in Sources */,
 				4737E10E1F2C8F1F0010955D /* Parks.m in Sources */,
 				47305D021F1A2390001CAE54 /* TextFieldValidator.m in Sources */,
 				47305CE01F1A2390001CAE54 /* NSArray+NullReplacement.m in Sources */,
+				4706DCB71F4C8840002A0E68 /* IQSongsAlbumViewCell.m in Sources */,
 				47305BB61F1A2264001CAE54 /* IQDropDownTextField.m in Sources */,
 				47305BDF1F1A2264001CAE54 /* JotDrawingContainer.m in Sources */,
 				47305BE01F1A2264001CAE54 /* JotDrawView.m in Sources */,
@@ -1806,8 +2253,12 @@
 				47305C1B1F1A2264001CAE54 /* TOCropViewControllerTransitioning.m in Sources */,
 				47305BF61F1A2264001CAE54 /* NSArray+MASAdditions.m in Sources */,
 				47305CFE1F1A2390001CAE54 /* RACollectionViewReorderableTripletLayout.m in Sources */,
+				4706DCC61F4C8840002A0E68 /* IQFileManager.m in Sources */,
 				47305BD61F1A2264001CAE54 /* HRColorCursor.m in Sources */,
 				47305C051F1A2264001CAE54 /* TGCameraFlash.m in Sources */,
+				4706DCC41F4C8840002A0E68 /* IQAudioSession.m in Sources */,
+				4706DCBC1F4C8840002A0E68 /* IQSongsCompilationsViewController.m in Sources */,
+				4706DCAE1F4C8840002A0E68 /* IQAssetsAlbumViewCell.m in Sources */,
 				47305C201F1A2264001CAE54 /* TOCropToolbar.m in Sources */,
 				47305BCE1F1A2264001CAE54 /* UzysAssetsViewCell.m in Sources */,
 				47305CC91F1A2390001CAE54 /* UIButton+MyButton.m in Sources */,
@@ -1815,11 +2266,15 @@
 				47305CCF1F1A2390001CAE54 /* CLPlacemark+APTimeZones.m in Sources */,
 				47305CEB1F1A2390001CAE54 /* MBProgressHUD.m in Sources */,
 				47305BB51F1A2264001CAE54 /* ADDropDownMenuView.m in Sources */,
+				4706DCBB1F4C8840002A0E68 /* IQSongsArtistListViewController.m in Sources */,
 				47305BCF1F1A2264001CAE54 /* UzysGroupPickerView.m in Sources */,
 				47305CD11F1A2390001CAE54 /* NBAsYouTypeFormatter.m in Sources */,
 				47305BDA1F1A2264001CAE54 /* HRHSVColorUtil.m in Sources */,
+				4706DCD71F4C8840002A0E68 /* IQMediaPickerController.m in Sources */,
 				47305BC31F1A2264001CAE54 /* UIAlertView+AFNetworking.m in Sources */,
+				4706DCCF1F4C8840002A0E68 /* IQSelectedMediaAudioCell.m in Sources */,
 				47305CDD1F1A2390001CAE54 /* UIImage+UIImage_EMCImageResize.m in Sources */,
+				4706DCB91F4C8840002A0E68 /* IQSongsListTableHeaderView.m in Sources */,
 				47305BB41F1A2264001CAE54 /* ADDropDownMenuItemView.m in Sources */,
 				47305CF11F1A2390001CAE54 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				47305D091F1A2390001CAE54 /* Wrapper.m in Sources */,
@@ -1827,6 +2282,7 @@
 				47305C011F1A2264001CAE54 /* TGAlbum.m in Sources */,
 				47305BFF1F1A2264001CAE54 /* TGCameraViewController.m in Sources */,
 				47305BDB1F1A2264001CAE54 /* UIImage+CoreGraphics.m in Sources */,
+				4706DCD81F4C8840002A0E68 /* IQMediaPickerControllerConstants.m in Sources */,
 				47305BC91F1A2264001CAE54 /* UIImage+UzysExtension.m in Sources */,
 				47305CD51F1A2390001CAE54 /* NBPhoneMetaDataGenerator.m in Sources */,
 				47305CD61F1A2390001CAE54 /* NBPhoneNumber.m in Sources */,
@@ -1834,11 +2290,13 @@
 				47305CEC1F1A2390001CAE54 /* LeftMenuViewController.m in Sources */,
 				47305C1F1F1A2264001CAE54 /* TOCropScrollView.m in Sources */,
 				47305C091F1A2264001CAE54 /* TGCameraToggle.m in Sources */,
+				4706DCBA1F4C8840002A0E68 /* IQSongsAlbumListViewController.m in Sources */,
 				47305BC41F1A2264001CAE54 /* UIButton+AFNetworking.m in Sources */,
 				47305BF41F1A2264001CAE54 /* MASViewAttribute.m in Sources */,
 				47305C1D1F1A2264001CAE54 /* TOCropViewController.m in Sources */,
 				47D888A21F2389480068D304 /* SelectQuizTypeViewController.m in Sources */,
 				47305CD31F1A2390001CAE54 /* NBPhoneMetaClassGenerator.m in Sources */,
+				4706DCC91F4C8840002A0E68 /* IQFeatureOverlay.m in Sources */,
 				47305CE81F1A2390001CAE54 /* JSONKit.m in Sources */,
 				47305CF01F1A2390001CAE54 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				47305BC21F1A2264001CAE54 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -1848,15 +2306,18 @@
 				47ED661E1F40CE5200AD170E /* RulesView.m in Sources */,
 				47305CF31F1A2390001CAE54 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				47305BF91F1A2264001CAE54 /* ViewController+MASAdditions.m in Sources */,
+				4706DCCC1F4C8840002A0E68 /* IQPhotoSettingsContainerView.m in Sources */,
 				47BABC2B1F30CC3C00EC6335 /* RTSpinKitThreeBounceAnimation.m in Sources */,
 				47305BBE1F1A2264001CAE54 /* AFURLRequestSerialization.m in Sources */,
 				47305BE41F1A2264001CAE54 /* JotTouchPoint.m in Sources */,
 				47305D011F1A2390001CAE54 /* RestCall.m in Sources */,
 				47305BC11F1A2264001CAE54 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				4706DCAD1F4C8840002A0E68 /* IQAlbumAssetsViewController.m in Sources */,
 				47305BFB1F1A2264001CAE54 /* NIDropDown.m in Sources */,
 				47305C121F1A2264001CAE54 /* TGTintedButton.m in Sources */,
 				47305BCA1F1A2264001CAE54 /* UzysAppearanceConfig.m in Sources */,
 				47305CCD1F1A2390001CAE54 /* UIView+MyUIView.m in Sources */,
+				4706DCDB1F4C8BAF002A0E68 /* CropImage.m in Sources */,
 				47305BBC1F1A2264001CAE54 /* AFSecurityPolicy.m in Sources */,
 				47BABC2C1F30CC3C00EC6335 /* RTSpinKitWanderingCubesAnimation.m in Sources */,
 				47305BD31F1A2264001CAE54 /* StyleKit.m in Sources */,
@@ -1869,20 +2330,29 @@
 				47305C131F1A2264001CAE54 /* TGTintedLabel.m in Sources */,
 				47305C1A1F1A2264001CAE54 /* TOCroppedImageAttributes.m in Sources */,
 				47305D0B1F1A2390001CAE54 /* YLTextView.m in Sources */,
+				4706DCD41F4C8840002A0E68 /* NSString+IQTimeIntervalFormatter.m in Sources */,
 				47305CFC1F1A2390001CAE54 /* NSString+JS.m in Sources */,
+				4706DCC71F4C8840002A0E68 /* IQBottomContainerView.m in Sources */,
 				470CF6F01F24DDC70074A81C /* BonusQuestionViewController.m in Sources */,
 				47305CD41F1A2390001CAE54 /* NBPhoneMetaData.m in Sources */,
 				47305CE51F1A2390001CAE54 /* HJImagesToVideo.m in Sources */,
+				4706DCBF1F4C8840002A0E68 /* IQSongsListViewController.m in Sources */,
 				47305C0A1F1A2264001CAE54 /* TGAssetImageFile.m in Sources */,
+				4706DCB31F4C8840002A0E68 /* IQAudioPickerController.m in Sources */,
 				47305BD51F1A2264001CAE54 /* HRBrightnessSlider.m in Sources */,
 				47BABC241F30CC3C00EC6335 /* RTSpinKitChasingDotsAnimation.m in Sources */,
 				47305C0D1F1A2264001CAE54 /* TGCameraFocusView.m in Sources */,
+				4706DCBE1F4C8840002A0E68 /* IQSongsGenreViewController.m in Sources */,
 				47D8889C1F2338570068D304 /* MainMenuViewController.m in Sources */,
 				47305BB81F1A2264001CAE54 /* AFHTTPRequestOperation.m in Sources */,
 				47978C3A1F35FD8F0091EAD7 /* ProfileViewController.m in Sources */,
 				47BABC2F1F30CC3C00EC6335 /* RTSpinKitUtils.m in Sources */,
+				4706DCC01F4C8840002A0E68 /* IQSongsPlaylistViewController.m in Sources */,
+				4706DCD31F4C8840002A0E68 /* IQNSArray+Remove.m in Sources */,
+				4706DCD01F4C8840002A0E68 /* IQSelectedMediaPhotoCell.m in Sources */,
 				47305BE91F1A2264001CAE54 /* JTSImageViewController.m in Sources */,
 				47305BE31F1A2264001CAE54 /* JotTouchBezier.m in Sources */,
+				4706DCBD1F4C8840002A0E68 /* IQSongsComposersViewController.m in Sources */,
 				47305BFE1F1A2264001CAE54 /* TGCameraNavigationController.m in Sources */,
 				47305BDE1F1A2264001CAE54 /* EDStarRating.m in Sources */,
 				47305C221F1A2264001CAE54 /* UIImage+LMExtension.m in Sources */,
@@ -1898,6 +2368,7 @@
 				47305CE11F1A2390001CAE54 /* NSDictionary+NullReplacement.m in Sources */,
 				47305C211F1A2264001CAE54 /* TOCropView.m in Sources */,
 				47305BF01F1A2264001CAE54 /* MASCompositeConstraint.m in Sources */,
+				4706DCD51F4C8840002A0E68 /* IQAKPickerView.m in Sources */,
 				47305BB71F1A2264001CAE54 /* UIView+Toast.m in Sources */,
 				47305C111F1A2264001CAE54 /* TGCameraSlideView.m in Sources */,
 				47305D0C1F1A2390001CAE54 /* YUPhoneFormatter.m in Sources */,
@@ -1908,12 +2379,16 @@
 				47305CE21F1A2390001CAE54 /* EventManager.m in Sources */,
 				47305BCC1F1A2264001CAE54 /* UzysAssetsPickerController.m in Sources */,
 				470CF6EB1F24BD100074A81C /* HintView.m in Sources */,
+				4706DCD21F4C8840002A0E68 /* IQSelectedMediaViewController.m in Sources */,
 				478F12BC1F23B7D1007415C6 /* ScoreView.m in Sources */,
 				47305BD81F1A2264001CAE54 /* HRColorMapView.m in Sources */,
 				47BABC281F30CC3C00EC6335 /* RTSpinKitFadingCircleAnimation.m in Sources */,
+				4706DCC51F4C8840002A0E68 /* IQCaptureSession.m in Sources */,
 				47BABC231F30CC3C00EC6335 /* RTSpinKitBounceAnimation.m in Sources */,
+				4706DCC81F4C8840002A0E68 /* IQCaptureButton.m in Sources */,
 				47305BE21F1A2264001CAE54 /* JotTextView.m in Sources */,
 				47305CDC1F1A2390001CAE54 /* EMCCountryManager.m in Sources */,
+				4706DCCE1F4C8840002A0E68 /* IQVideoSettingsContainerView.m in Sources */,
 				47ED661B1F40953F00AD170E /* MapView.m in Sources */,
 				47305D081F1A2390001CAE54 /* VideoMaker.m in Sources */,
 				47305BF81F1A2264001CAE54 /* View+MASAdditions.m in Sources */,
@@ -1933,6 +2408,7 @@
 				47305D001F1A2390001CAE54 /* Reachability.m in Sources */,
 				47305CF51F1A2390001CAE54 /* SlideNavigationController.m in Sources */,
 				47BABC221F30CC3C00EC6335 /* RTSpinKitArcAnimation.m in Sources */,
+				4706DCB81F4C8840002A0E68 /* IQSongsCell.m in Sources */,
 				47305CF21F1A2390001CAE54 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				47305CFA1F1A2390001CAE54 /* NSString+extension.m in Sources */,
 				47305BF71F1A2264001CAE54 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -1942,6 +2418,8 @@
 				47305C031F1A2264001CAE54 /* TGCamera.m in Sources */,
 				4737E1111F2C9D140010955D /* Level.m in Sources */,
 				47305BD01F1A2264001CAE54 /* UzysGroupViewCell.m in Sources */,
+				4706DCB01F4C8840002A0E68 /* IQAssetsPickerShadowView.m in Sources */,
+				4706DCC11F4C8840002A0E68 /* IQImagePreviewViewController.m in Sources */,
 				47305BD41F1A2264001CAE54 /* HRBrightnessCursor.m in Sources */,
 				47BABC261F30CC3C00EC6335 /* RTSpinKitCircleFlipAnimation.m in Sources */,
 				47305BBA1F1A2264001CAE54 /* AFHTTPSessionManager.m in Sources */,
@@ -1966,6 +2444,7 @@
 				470CF6E81F24A6CF0074A81C /* QuestionView.m in Sources */,
 				47305C101F1A2264001CAE54 /* TGCameraSlideUpView.m in Sources */,
 				47305BEA1F1A2264001CAE54 /* JTSSimpleImageDownloader.m in Sources */,
+				4706DCB61F4C8840002A0E68 /* IQAudioPickerShadowView.m in Sources */,
 				47305CF71F1A2390001CAE54 /* UIViewController+MJPopupViewController.m in Sources */,
 				47305C061F1A2264001CAE54 /* TGCameraFocus.m in Sources */,
 				47305CD91F1A2390001CAE54 /* NSArray+NBAdditions.m in Sources */,
@@ -1973,12 +2452,15 @@
 				47305CCB1F1A2390001CAE54 /* UILabel+MyLabel.m in Sources */,
 				47305BD21F1A2264001CAE54 /* CircleAnimationView.m in Sources */,
 				47305BC51F1A2264001CAE54 /* UIImageView+AFNetworking.m in Sources */,
+				4706DCB21F4C8840002A0E68 /* IQAssetsPickerController.m in Sources */,
+				4706DCCB1F4C8840002A0E68 /* IQAudioSettingsContainerView.m in Sources */,
 				47305BE71F1A2264001CAE54 /* JTSAnimatedGIFUtility.m in Sources */,
 				47305BB91F1A2264001CAE54 /* AFHTTPRequestOperationManager.m in Sources */,
 				47BABC271F30CC3C00EC6335 /* RTSpinKitFadingCircleAltAnimation.m in Sources */,
 				4737E1141F2CA3CD0010955D /* Question.m in Sources */,
 				47305CE71F1A2390001CAE54 /* IGLDropDownMenu.m in Sources */,
 				47305CCC1F1A2390001CAE54 /* UITextField+MyTextField.m in Sources */,
+				4706DCAF1F4C8840002A0E68 /* IQAssetsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

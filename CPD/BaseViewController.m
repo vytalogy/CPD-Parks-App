@@ -1445,6 +1445,64 @@
     
 }
 
+//
+
+//
+
+
+
+-(NSAttributedString *)Rewilder{
+    
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"rewilder"];
+    id boldFontName = [UIFont fontWithName:FontToUserBlack size:45];
+    id normalFont = [UIFont fontWithName:FontToUseRegular size:45];
+    
+    [attrString beginEditing];
+    
+    NSRange boldedRange = NSMakeRange(2, [attrString length] -2);
+    NSRange normalRange2 = NSMakeRange(0, 2);
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:boldFontName
+                       range:boldedRange];
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:normalFont
+                       range:normalRange2];
+    
+    [attrString endEditing];
+    
+    return attrString;
+    
+}
+
+
+-(NSAttributedString *)revisitorText{
+    
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"revisitor"];
+    id boldFontName = [UIFont fontWithName:FontToUserBlack size:45];
+    id normalFont = [UIFont fontWithName:FontToUseRegular size:45];
+    
+    [attrString beginEditing];
+    
+    NSRange boldedRange = NSMakeRange(2, [attrString length] -2);
+    NSRange normalRange2 = NSMakeRange(0, 2);
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:boldFontName
+                       range:boldedRange];
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:normalFont
+                       range:normalRange2];
+    
+    [attrString endEditing];
+    
+    return attrString;
+    
+}
 
 
 -(NSAttributedString *)reSearcherText{

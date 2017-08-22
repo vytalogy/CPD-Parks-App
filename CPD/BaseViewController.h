@@ -219,6 +219,10 @@
 @property (nonatomic) NSAttributedString * requestText;
 @property (nonatomic) NSAttributedString * reSearcherText;
 
+@property (nonatomic) NSAttributedString *revisitorText;
+@property (nonatomic) NSAttributedString *Rewilder;
+
+
 @property (nonatomic) UILabel *navLabel;
 -(NSAttributedString *)requestTextWithText:(NSString *)text;
 -(NSAttributedString *)textForScoreWithScore:(NSString *)score withLevel:(int)level withPark:(int)park;

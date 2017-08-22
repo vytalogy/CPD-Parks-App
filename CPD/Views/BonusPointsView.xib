@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="VistaSlabOT-Bold.otf">
+        <array key="VistaSlabOT-Bold.ttf">
             <string>VistaSlabOT-Bold</string>
         </array>
     </customFonts>
@@ -39,7 +39,6 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="cMn-Yj-los" secondAttribute="trailing" constant="12" id="Gdo-2a-urX"/>
                 <constraint firstAttribute="trailing" secondItem="Aic-eY-xyg" secondAttribute="trailing" id="Pga-Xr-qRJ"/>
@@ -64,6 +63,6 @@
         </view>
     </objects>
     <resources>
-        <image name="hint-bg" width="511" height="217"/>
+        <image name="hint-bg" width="297" height="124"/>
     </resources>
 </document>

@@ -7,8 +7,14 @@
 //
 
 #import "ProfileViewController.h"
+#import "IQMediaPickerController.h"
+#import "IQFileManager.h"
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import "IQImagePreviewViewController.h"
+#import "CropImage.h"
 
-@interface ProfileViewController ()
+@interface ProfileViewController ()<IQMediaPickerControllerDelegate,UINavigationControllerDelegate,CropImageDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgIcon;
 
@@ -38,6 +44,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundWidth;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic) BOOL pickerHasAlreadyBeenShown;
 
 @end
 
@@ -155,7 +162,99 @@
     
 
     
+    id c = [FileManager getImage];
+    
+    if (c) {
+        
+        self.pickerHasAlreadyBeenShown = true;
+        
+        [self.imgIcon setImage:c];
+        
+    }
+    if (!self.pickerHasAlreadyBeenShown) {
+        
+        self.pickerHasAlreadyBeenShown = YES;
+        IQMediaPickerController *controller = [[IQMediaPickerController alloc] init];
+        controller.delegate = self;
+        
+        [controller setSourceType:IQMediaPickerControllerSourceTypeLibrary];
+        
+        NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
+        
+        
+        
+        
+        [mediaTypes addObject:@(IQMediaPickerControllerMediaTypePhoto)];
+        
+        [controller setMediaTypes:mediaTypes];
+        controller.captureDevice = IQMediaPickerControllerCameraDeviceFront;
+        
+        //    controller.flashMode = self.flashOffSwitch.on ? IQMediaPickerControllerCameraFlashModeOff : IQMediaPickerControllerCameraFlashModeOn;
+        controller.allowsPickingMultipleItems = NO;
+        controller.maximumItemCount = 1;
+        
+        
+        [self presentViewController:controller animated:YES completion:nil];
+
+        
+        
+    }
+    
+    
+    
+    
 }
+
+- (void) imageCropedInCircle : (UIImage *) Croppedimage{
+    
+    
+    [self.imgIcon setImage:Croppedimage];
+    
+    
+    NSData *imageData = UIImagePNGRepresentation(Croppedimage);
+
+    
+    [FileManager saveProfileImageToDisk:imageData fileName:@"Photo"];
+    
+    
+
+    
+    NSLog(@"");;
+
+    
+    
+    
+    
+}
+- (void)mediaPickerController:(IQMediaPickerController*)controller didFinishMediaWithInfo:(NSDictionary *)info;
+{
+    NSLog(@"Info: %@",info);
+    
+
+    
+    
+    id image = [[[info objectForKey:@"IQMediaTypeImage"] firstObject] objectForKey:@"IQMediaImage"];
+    
+    
+    NSLog(@"");
+    
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        CropImage *destination = (CropImage *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"CropImage"];
+        
+        [destination setOrigionalImage:image];
+        destination.delegate= self;
+        
+        
+        [self presentViewController:destination animated:YES completion:^{
+            
+            
+        }];
+    }];
+    
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -306,8 +405,32 @@
     
 
     
-    int totalPoints = [self.park1Level1Score intValue] + [self.park2Level1Score intValue]; + [self.park3Level1Score intValue];
+    int totalPoints = [self.park1Level1Score intValue] + [self.park2Level1Score intValue]; + [self.park3Level1Score intValue]+[self.park1Level2Score intValue] + [self.park2Level2Score intValue]; + [self.park3Level2Score intValue];
     
+    
+    
+    if (totalPoints < 45) {
+        
+        //Revisitor
+        
+        
+        self.lblReaSeacher.attributedText = self.revisitorText;
+        
+        
+    }
+    else if (totalPoints < 90) {
+        
+        //Researcher
+    }
+    else {
+        
+        //Rewilder
+        
+        self.lblReaSeacher.attributedText = self.Rewilder;
+        
+        
+        
+    }
     
     self.lblTotalPoints.text = [NSString stringWithFormat:@"%d",totalPoints];
     

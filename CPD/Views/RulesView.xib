@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="VistaSlabOT-Bold.otf">
+        <array key="VistaSlabOT-Bold.ttf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.ttf">
+        <array key="VistaSlabOT-Reg.otf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -63,7 +63,6 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="p46-8c-eRB" firstAttribute="leading" secondItem="anK-hO-9wC" secondAttribute="leading" constant="24" id="2Zx-y4-DT8"/>
                                 <constraint firstAttribute="bottom" secondItem="p46-8c-eRB" secondAttribute="bottom" constant="32" id="2mk-Pl-EXh"/>
@@ -113,7 +112,7 @@
         </view>
     </objects>
     <resources>
-        <image name="closeIcon" width="53" height="53"/>
+        <image name="closeIcon" width="26" height="26"/>
         <image name="greenColorBG" width="375" height="667"/>
         <image name="imageView:GGW-Av-VHb:image" width="511" height="217">
             <mutableData key="keyedArchiveRepresentation">

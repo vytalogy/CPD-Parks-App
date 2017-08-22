@@ -13,10 +13,10 @@
         <array key="SFUIText.ttf">
             <string>.SFUIText</string>
         </array>
-        <array key="VistaSlabOT-Bold.otf">
+        <array key="VistaSlabOT-Bold.ttf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.ttf">
+        <array key="VistaSlabOT-Reg.otf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -615,11 +615,11 @@
                         <viewControllerLayoutGuide type="bottom" id="s7v-uh-oJB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWF-1Y-TFj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="776"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="712"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdC-YF-oIU">
-                                <rect key="frame" x="0.0" y="20" width="375" height="756"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="712"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large-background" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-bT-8j0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="882"/>
@@ -628,13 +628,13 @@
                                         <rect key="frame" x="97" y="146" width="278" height="141"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byS-f5-qEP">
-                                                <rect key="frame" x="83" y="0.0" width="187" height="141"/>
+                                                <rect key="frame" x="89" y="0.0" width="181" height="141"/>
                                                 <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2g-De-OsJ">
-                                                <rect key="frame" x="20" y="0.0" width="55" height="140"/>
+                                                <rect key="frame" x="20" y="0.0" width="61" height="140"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="140" id="MCX-2Q-BgK"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="aUq-Ln-zeA"/>
@@ -664,7 +664,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU ARE A" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSr-gh-Bkp">
-                                        <rect key="frame" x="144" y="65" width="114" height="23"/>
+                                        <rect key="frame" x="144" y="63" width="114" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="23" id="MHi-pm-KkQ"/>
                                             <constraint firstAttribute="width" constant="114" id="dMK-jc-ZTD"/>
@@ -734,10 +734,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="researcher" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhU-oR-at1">
-                                        <rect key="frame" x="127" y="86" width="170" height="28"/>
+                                        <rect key="frame" x="127" y="86" width="170" height="36.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="94N-nu-qPp"/>
-                                            <constraint firstAttribute="height" constant="28" id="LAS-pQ-9j1"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="LAS-pQ-9j1"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="VistaSlabOT-Reg" family="Vista Slab OT" pointSize="31"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -750,7 +750,7 @@
                                     <constraint firstItem="3PG-bT-8j0" firstAttribute="leading" secondItem="fdC-YF-oIU" secondAttribute="leading" id="5y9-cE-ogO"/>
                                     <constraint firstItem="5J2-4g-bKW" firstAttribute="top" secondItem="fdC-YF-oIU" secondAttribute="top" constant="52" id="64Z-Wi-7PE"/>
                                     <constraint firstItem="Nid-f1-TBQ" firstAttribute="top" secondItem="1DO-mn-ZO7" secondAttribute="bottom" constant="24" id="93B-Wc-Zsc"/>
-                                    <constraint firstItem="nSr-gh-Bkp" firstAttribute="top" secondItem="fdC-YF-oIU" secondAttribute="top" constant="65" id="H7y-fm-ccK"/>
+                                    <constraint firstItem="nSr-gh-Bkp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fdC-YF-oIU" secondAttribute="top" constant="55" id="H7y-fm-ccK"/>
                                     <constraint firstItem="5J2-4g-bKW" firstAttribute="leading" secondItem="fdC-YF-oIU" secondAttribute="leading" constant="47" id="Hei-4W-arB"/>
                                     <constraint firstItem="9an-84-Bau" firstAttribute="top" secondItem="KJC-lv-Yo8" secondAttribute="bottom" constant="24" id="LlJ-pk-ipb"/>
                                     <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="9an-84-Bau" secondAttribute="bottom" constant="83" id="MOR-pV-IBg"/>
@@ -764,6 +764,7 @@
                                     <constraint firstItem="J2k-SS-fUt" firstAttribute="leading" secondItem="fdC-YF-oIU" secondAttribute="leading" constant="127" id="cO1-u3-qUo"/>
                                     <constraint firstItem="3PG-bT-8j0" firstAttribute="top" secondItem="fdC-YF-oIU" secondAttribute="top" id="cfv-nV-jC8"/>
                                     <constraint firstAttribute="trailing" secondItem="E4V-bU-Fzw" secondAttribute="trailing" id="dfF-kd-Fld"/>
+                                    <constraint firstItem="GhU-oR-at1" firstAttribute="top" secondItem="nSr-gh-Bkp" secondAttribute="bottom" id="gES-ES-Dl9"/>
                                     <constraint firstItem="E4V-bU-Fzw" firstAttribute="leading" secondItem="fdC-YF-oIU" secondAttribute="leading" constant="97" id="h4w-A6-z8m"/>
                                     <constraint firstItem="KJC-lv-Yo8" firstAttribute="leading" secondItem="fdC-YF-oIU" secondAttribute="leading" constant="127" id="jXT-Xs-Mwi"/>
                                     <constraint firstItem="GhU-oR-at1" firstAttribute="top" secondItem="fdC-YF-oIU" secondAttribute="top" constant="86" id="jqu-uq-jDf"/>
@@ -1152,7 +1153,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iQ7-Vl-j8b" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="qk6-fC-ypf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="qk6-fC-ypf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1167,12 +1168,64 @@
             </objects>
             <point key="canvasLocation" x="5.5999999999999996" y="-543.77811094452773"/>
         </scene>
+        <!--Image Circle Cropper-->
+        <scene sceneID="dIJ-q9-34W">
+            <objects>
+                <viewController restorationIdentifier="CropImage" storyboardIdentifier="CropImage" id="Ugm-GA-2eJ" customClass="CropImage" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FcB-Gh-AVc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhg-wm-E1f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J7G-in-wL5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pce-Dk-EVN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.33725490200000002" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4BY-WS-9Mb"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Crop Image" id="MbF-Q4-JCa">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="Tl7-KA-Xea">
+                                            <connections>
+                                                <action selector="didTouchUpInsideSaveButton:" destination="Ugm-GA-2eJ" id="fIm-qt-e9p"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gno-lk-2cd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67843137249999996" green="0.81960784310000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gno-lk-2cd" firstAttribute="top" secondItem="pce-Dk-EVN" secondAttribute="bottom" id="2SO-iM-4Dq"/>
+                            <constraint firstItem="pce-Dk-EVN" firstAttribute="leading" secondItem="J7G-in-wL5" secondAttribute="leading" id="VbD-HQ-M2W"/>
+                            <constraint firstItem="gno-lk-2cd" firstAttribute="leading" secondItem="J7G-in-wL5" secondAttribute="leading" id="YYQ-xn-i7F"/>
+                            <constraint firstAttribute="trailing" secondItem="pce-Dk-EVN" secondAttribute="trailing" id="aPT-rQ-9ER"/>
+                            <constraint firstItem="pce-Dk-EVN" firstAttribute="top" secondItem="FcB-Gh-AVc" secondAttribute="bottom" id="eSN-KX-FDJ"/>
+                            <constraint firstAttribute="trailing" secondItem="gno-lk-2cd" secondAttribute="trailing" id="pOM-2v-KDR"/>
+                            <constraint firstItem="Uhg-wm-E1f" firstAttribute="top" secondItem="gno-lk-2cd" secondAttribute="bottom" id="yYR-Mv-WZZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image Circle Cropper" id="4H6-8q-F7Q"/>
+                    <connections>
+                        <outlet property="imageView" destination="gno-lk-2cd" id="nDq-ma-hiK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJl-XN-6Y0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="-779"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Back" width="375" height="666"/>
         <image name="BlueBird" width="375" height="667"/>
         <image name="answer1" width="370" height="469"/>
-        <image name="closeIcon" width="51" height="51"/>
+        <image name="closeIcon" width="26" height="26"/>
         <image name="greenColorBG" width="375" height="667"/>
         <image name="large-background" width="320" height="882"/>
         <image name="mainBG" width="375" height="667"/>
@@ -1181,6 +1234,6 @@
         <image name="profileIcon" width="160" height="160"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ovV-5O-zkJ"/>
+        <segue reference="kFb-Lm-Rf3"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,7 +12,7 @@
         <array key="VistaSlabOT-Bold.ttf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.ttf">
+        <array key="VistaSlabOT-Reg.otf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -67,7 +67,6 @@
                             <state key="normal" image="close"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.50754494863013699" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="1GO-uh-H9h" firstAttribute="top" secondItem="fc5-yH-eOO" secondAttribute="top" constant="8" id="1nc-Av-V0M"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="124" id="5gR-us-IUf"/>
@@ -109,7 +108,7 @@
         </view>
     </objects>
     <resources>
-        <image name="close" width="53" height="53"/>
+        <image name="close" width="26" height="26"/>
         <image name="hint-bg" width="297" height="124"/>
     </resources>
 </document>

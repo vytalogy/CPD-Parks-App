@@ -12,7 +12,7 @@
         <array key="VistaSlabOT-Bold.ttf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.ttf">
+        <array key="VistaSlabOT-Reg.otf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -27,13 +27,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbp-eb-den">
-                    <rect key="frame" x="16" y="172" width="343" height="324"/>
+                    <rect key="frame" x="16" y="177.5" width="343" height="313.5"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="you-are-about-bg" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-Hz-KE3">
-                            <rect key="frame" x="0.0" y="0.0" width="343" height="324"/>
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="313.5"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yED-fB-7og">
-                            <rect key="frame" x="0.0" y="0.0" width="343" height="324"/>
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="313.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFg-Qm-ZsV">
                                     <rect key="frame" x="301" y="8" width="33" height="30"/>
@@ -53,7 +53,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hja-BB-TsI">
-                                    <rect key="frame" x="24" y="101" width="294" height="126"/>
+                                    <rect key="frame" x="24" y="101" width="294" height="115.5"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="73" id="iGL-DX-rby"/>
                                     </constraints>
@@ -63,7 +63,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtM-be-T7X">
-                                    <rect key="frame" x="123" y="260" width="96" height="36"/>
+                                    <rect key="frame" x="123" y="249.5" width="96" height="36"/>
                                     <color key="backgroundColor" red="0.67843137249999996" green="0.81960784310000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="36" id="28z-Nq-d2U"/>
@@ -75,7 +75,6 @@
                                     </state>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" red="0.13725490196078433" green="0.12156862745098039" blue="0.12549019607843137" alpha="0.6128424657534246" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="Hja-BB-TsI" firstAttribute="leading" secondItem="yED-fB-7og" secondAttribute="leading" constant="24" id="1AE-OM-e8u"/>
                                 <constraint firstAttribute="trailing" secondItem="Hja-BB-TsI" secondAttribute="trailing" constant="25" id="1WM-CZ-mbC"/>
@@ -125,7 +124,7 @@
         </view>
     </objects>
     <resources>
-        <image name="closeIcon" width="53" height="53"/>
+        <image name="closeIcon" width="26" height="26"/>
         <image name="greenColorBG" width="375" height="667"/>
         <image name="you-are-about-bg" width="297" height="228"/>
     </resources>
