@@ -656,7 +656,7 @@
                                             <constraint firstItem="J2g-De-OsJ" firstAttribute="leading" secondItem="E4V-bU-Fzw" secondAttribute="leading" constant="20" id="fFr-py-QDs"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5J2-4g-bKW">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5J2-4g-bKW">
                                         <rect key="frame" x="47" y="52" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="PBw-HH-OB5"/>
@@ -1231,7 +1231,6 @@
         <image name="mainBG" width="375" height="667"/>
         <image name="menu-icon" width="54" height="31"/>
         <image name="menuBg" width="375" height="667"/>
-        <image name="profileIcon" width="160" height="160"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kFb-Lm-Rf3"/>
