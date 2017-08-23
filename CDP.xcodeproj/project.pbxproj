@@ -13,20 +13,6 @@
 		4706DCB01F4C8840002A0E68 /* IQAssetsPickerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC471F4C883F002A0E68 /* IQAssetsPickerShadowView.m */; };
 		4706DCB11F4C8840002A0E68 /* IQCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC491F4C883F002A0E68 /* IQCheckmarkView.m */; };
 		4706DCB21F4C8840002A0E68 /* IQAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC4B1F4C883F002A0E68 /* IQAssetsPickerController.m */; };
-		4706DCB31F4C8840002A0E68 /* IQAudioPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC4E1F4C883F002A0E68 /* IQAudioPickerController.m */; };
-		4706DCB41F4C8840002A0E68 /* IQAudioPickerController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4706DC4F1F4C883F002A0E68 /* IQAudioPickerController.xcassets */; };
-		4706DCB51F4C8840002A0E68 /* IQAudioPickerUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC521F4C883F002A0E68 /* IQAudioPickerUtility.m */; };
-		4706DCB61F4C8840002A0E68 /* IQAudioPickerShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC561F4C883F002A0E68 /* IQAudioPickerShadowView.m */; };
-		4706DCB71F4C8840002A0E68 /* IQSongsAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC591F4C883F002A0E68 /* IQSongsAlbumViewCell.m */; };
-		4706DCB81F4C8840002A0E68 /* IQSongsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC5B1F4C883F002A0E68 /* IQSongsCell.m */; };
-		4706DCB91F4C8840002A0E68 /* IQSongsListTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC5E1F4C883F002A0E68 /* IQSongsListTableHeaderView.m */; };
-		4706DCBA1F4C8840002A0E68 /* IQSongsAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC601F4C883F002A0E68 /* IQSongsAlbumListViewController.m */; };
-		4706DCBB1F4C8840002A0E68 /* IQSongsArtistListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC621F4C883F002A0E68 /* IQSongsArtistListViewController.m */; };
-		4706DCBC1F4C8840002A0E68 /* IQSongsCompilationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC641F4C883F002A0E68 /* IQSongsCompilationsViewController.m */; };
-		4706DCBD1F4C8840002A0E68 /* IQSongsComposersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC661F4C883F002A0E68 /* IQSongsComposersViewController.m */; };
-		4706DCBE1F4C8840002A0E68 /* IQSongsGenreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC681F4C883F002A0E68 /* IQSongsGenreViewController.m */; };
-		4706DCBF1F4C8840002A0E68 /* IQSongsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC6A1F4C883F002A0E68 /* IQSongsListViewController.m */; };
-		4706DCC01F4C8840002A0E68 /* IQSongsPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC6C1F4C883F002A0E68 /* IQSongsPlaylistViewController.m */; };
 		4706DCC11F4C8840002A0E68 /* IQImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC6F1F4C883F002A0E68 /* IQImagePreviewViewController.m */; };
 		4706DCC21F4C8840002A0E68 /* IQMediaCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DC711F4C883F002A0E68 /* IQMediaCaptureController.m */; };
 		4706DCC31F4C8840002A0E68 /* IQMediaCaptureController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4706DC721F4C883F002A0E68 /* IQMediaCaptureController.xcassets */; };
@@ -322,33 +308,6 @@
 		4706DC491F4C883F002A0E68 /* IQCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQCheckmarkView.m; sourceTree = "<group>"; };
 		4706DC4A1F4C883F002A0E68 /* IQAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAssetsPickerController.h; sourceTree = "<group>"; };
 		4706DC4B1F4C883F002A0E68 /* IQAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAssetsPickerController.m; sourceTree = "<group>"; };
-		4706DC4D1F4C883F002A0E68 /* IQAudioPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerController.h; sourceTree = "<group>"; };
-		4706DC4E1F4C883F002A0E68 /* IQAudioPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerController.m; sourceTree = "<group>"; };
-		4706DC4F1F4C883F002A0E68 /* IQAudioPickerController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IQAudioPickerController.xcassets; sourceTree = "<group>"; };
-		4706DC511F4C883F002A0E68 /* IQAudioPickerUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerUtility.h; sourceTree = "<group>"; };
-		4706DC521F4C883F002A0E68 /* IQAudioPickerUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerUtility.m; sourceTree = "<group>"; };
-		4706DC551F4C883F002A0E68 /* IQAudioPickerShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQAudioPickerShadowView.h; sourceTree = "<group>"; };
-		4706DC561F4C883F002A0E68 /* IQAudioPickerShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQAudioPickerShadowView.m; sourceTree = "<group>"; };
-		4706DC581F4C883F002A0E68 /* IQSongsAlbumViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsAlbumViewCell.h; sourceTree = "<group>"; };
-		4706DC591F4C883F002A0E68 /* IQSongsAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsAlbumViewCell.m; sourceTree = "<group>"; };
-		4706DC5A1F4C883F002A0E68 /* IQSongsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsCell.h; sourceTree = "<group>"; };
-		4706DC5B1F4C883F002A0E68 /* IQSongsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsCell.m; sourceTree = "<group>"; };
-		4706DC5D1F4C883F002A0E68 /* IQSongsListTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsListTableHeaderView.h; sourceTree = "<group>"; };
-		4706DC5E1F4C883F002A0E68 /* IQSongsListTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsListTableHeaderView.m; sourceTree = "<group>"; };
-		4706DC5F1F4C883F002A0E68 /* IQSongsAlbumListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsAlbumListViewController.h; sourceTree = "<group>"; };
-		4706DC601F4C883F002A0E68 /* IQSongsAlbumListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsAlbumListViewController.m; sourceTree = "<group>"; };
-		4706DC611F4C883F002A0E68 /* IQSongsArtistListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsArtistListViewController.h; sourceTree = "<group>"; };
-		4706DC621F4C883F002A0E68 /* IQSongsArtistListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsArtistListViewController.m; sourceTree = "<group>"; };
-		4706DC631F4C883F002A0E68 /* IQSongsCompilationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsCompilationsViewController.h; sourceTree = "<group>"; };
-		4706DC641F4C883F002A0E68 /* IQSongsCompilationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsCompilationsViewController.m; sourceTree = "<group>"; };
-		4706DC651F4C883F002A0E68 /* IQSongsComposersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsComposersViewController.h; sourceTree = "<group>"; };
-		4706DC661F4C883F002A0E68 /* IQSongsComposersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsComposersViewController.m; sourceTree = "<group>"; };
-		4706DC671F4C883F002A0E68 /* IQSongsGenreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsGenreViewController.h; sourceTree = "<group>"; };
-		4706DC681F4C883F002A0E68 /* IQSongsGenreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsGenreViewController.m; sourceTree = "<group>"; };
-		4706DC691F4C883F002A0E68 /* IQSongsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsListViewController.h; sourceTree = "<group>"; };
-		4706DC6A1F4C883F002A0E68 /* IQSongsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsListViewController.m; sourceTree = "<group>"; };
-		4706DC6B1F4C883F002A0E68 /* IQSongsPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSongsPlaylistViewController.h; sourceTree = "<group>"; };
-		4706DC6C1F4C883F002A0E68 /* IQSongsPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSongsPlaylistViewController.m; sourceTree = "<group>"; };
 		4706DC6E1F4C883F002A0E68 /* IQImagePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQImagePreviewViewController.h; sourceTree = "<group>"; };
 		4706DC6F1F4C883F002A0E68 /* IQImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQImagePreviewViewController.m; sourceTree = "<group>"; };
 		4706DC701F4C883F002A0E68 /* IQMediaCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQMediaCaptureController.h; sourceTree = "<group>"; };
@@ -921,7 +880,6 @@
 			isa = PBXGroup;
 			children = (
 				4706DC3D1F4C883F002A0E68 /* IQAssetsPickerController */,
-				4706DC4C1F4C883F002A0E68 /* IQAudioPickerController */,
 				4706DC6D1F4C883F002A0E68 /* IQMediaCaptureController */,
 				4706DCA91F4C883F002A0E68 /* IQMediaPickerController.h */,
 				4706DCAA1F4C883F002A0E68 /* IQMediaPickerController.m */,
@@ -964,80 +922,6 @@
 				4706DC491F4C883F002A0E68 /* IQCheckmarkView.m */,
 			);
 			path = IQAssetPickerView;
-			sourceTree = "<group>";
-		};
-		4706DC4C1F4C883F002A0E68 /* IQAudioPickerController */ = {
-			isa = PBXGroup;
-			children = (
-				4706DC4D1F4C883F002A0E68 /* IQAudioPickerController.h */,
-				4706DC4E1F4C883F002A0E68 /* IQAudioPickerController.m */,
-				4706DC4F1F4C883F002A0E68 /* IQAudioPickerController.xcassets */,
-				4706DC501F4C883F002A0E68 /* IQAudioPickerUtility */,
-				4706DC531F4C883F002A0E68 /* IQAudioPIckerViewControllers */,
-			);
-			path = IQAudioPickerController;
-			sourceTree = "<group>";
-		};
-		4706DC501F4C883F002A0E68 /* IQAudioPickerUtility */ = {
-			isa = PBXGroup;
-			children = (
-				4706DC511F4C883F002A0E68 /* IQAudioPickerUtility.h */,
-				4706DC521F4C883F002A0E68 /* IQAudioPickerUtility.m */,
-			);
-			path = IQAudioPickerUtility;
-			sourceTree = "<group>";
-		};
-		4706DC531F4C883F002A0E68 /* IQAudioPIckerViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				4706DC541F4C883F002A0E68 /* IQAudioCellShadowView */,
-				4706DC571F4C883F002A0E68 /* IQAudioPickerTableViewCell */,
-				4706DC5C1F4C883F002A0E68 /* IQAudioPickerTableViewHeader */,
-				4706DC5F1F4C883F002A0E68 /* IQSongsAlbumListViewController.h */,
-				4706DC601F4C883F002A0E68 /* IQSongsAlbumListViewController.m */,
-				4706DC611F4C883F002A0E68 /* IQSongsArtistListViewController.h */,
-				4706DC621F4C883F002A0E68 /* IQSongsArtistListViewController.m */,
-				4706DC631F4C883F002A0E68 /* IQSongsCompilationsViewController.h */,
-				4706DC641F4C883F002A0E68 /* IQSongsCompilationsViewController.m */,
-				4706DC651F4C883F002A0E68 /* IQSongsComposersViewController.h */,
-				4706DC661F4C883F002A0E68 /* IQSongsComposersViewController.m */,
-				4706DC671F4C883F002A0E68 /* IQSongsGenreViewController.h */,
-				4706DC681F4C883F002A0E68 /* IQSongsGenreViewController.m */,
-				4706DC691F4C883F002A0E68 /* IQSongsListViewController.h */,
-				4706DC6A1F4C883F002A0E68 /* IQSongsListViewController.m */,
-				4706DC6B1F4C883F002A0E68 /* IQSongsPlaylistViewController.h */,
-				4706DC6C1F4C883F002A0E68 /* IQSongsPlaylistViewController.m */,
-			);
-			path = IQAudioPIckerViewControllers;
-			sourceTree = "<group>";
-		};
-		4706DC541F4C883F002A0E68 /* IQAudioCellShadowView */ = {
-			isa = PBXGroup;
-			children = (
-				4706DC551F4C883F002A0E68 /* IQAudioPickerShadowView.h */,
-				4706DC561F4C883F002A0E68 /* IQAudioPickerShadowView.m */,
-			);
-			path = IQAudioCellShadowView;
-			sourceTree = "<group>";
-		};
-		4706DC571F4C883F002A0E68 /* IQAudioPickerTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				4706DC581F4C883F002A0E68 /* IQSongsAlbumViewCell.h */,
-				4706DC591F4C883F002A0E68 /* IQSongsAlbumViewCell.m */,
-				4706DC5A1F4C883F002A0E68 /* IQSongsCell.h */,
-				4706DC5B1F4C883F002A0E68 /* IQSongsCell.m */,
-			);
-			path = IQAudioPickerTableViewCell;
-			sourceTree = "<group>";
-		};
-		4706DC5C1F4C883F002A0E68 /* IQAudioPickerTableViewHeader */ = {
-			isa = PBXGroup;
-			children = (
-				4706DC5D1F4C883F002A0E68 /* IQSongsListTableHeaderView.h */,
-				4706DC5E1F4C883F002A0E68 /* IQSongsListTableHeaderView.m */,
-			);
-			path = IQAudioPickerTableViewHeader;
 			sourceTree = "<group>";
 		};
 		4706DC6D1F4C883F002A0E68 /* IQMediaCaptureController */ = {
@@ -2161,7 +2045,6 @@
 				470732991F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf in Resources */,
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
 				47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */,
-				4706DCB41F4C8840002A0E68 /* IQAudioPickerController.xcassets in Resources */,
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
 				470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */,
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
@@ -2222,7 +2105,6 @@
 				47305BD91F1A2264001CAE54 /* HRColorPickerView.m in Sources */,
 				47305BE11F1A2264001CAE54 /* JotTextEditView.m in Sources */,
 				47305CE41F1A2390001CAE54 /* GTMNSString+HTML.m in Sources */,
-				4706DCB51F4C8840002A0E68 /* IQAudioPickerUtility.m in Sources */,
 				47305BDD1F1A2264001CAE54 /* UIView+Snapshot.m in Sources */,
 				47305BC71F1A2264001CAE54 /* UIRefreshControl+AFNetworking.m in Sources */,
 				4706DCC21F4C8840002A0E68 /* IQMediaCaptureController.m in Sources */,
@@ -2242,7 +2124,6 @@
 				4737E10E1F2C8F1F0010955D /* Parks.m in Sources */,
 				47305D021F1A2390001CAE54 /* TextFieldValidator.m in Sources */,
 				47305CE01F1A2390001CAE54 /* NSArray+NullReplacement.m in Sources */,
-				4706DCB71F4C8840002A0E68 /* IQSongsAlbumViewCell.m in Sources */,
 				47305BB61F1A2264001CAE54 /* IQDropDownTextField.m in Sources */,
 				47305BDF1F1A2264001CAE54 /* JotDrawingContainer.m in Sources */,
 				47305BE01F1A2264001CAE54 /* JotDrawView.m in Sources */,
@@ -2257,7 +2138,6 @@
 				47305BD61F1A2264001CAE54 /* HRColorCursor.m in Sources */,
 				47305C051F1A2264001CAE54 /* TGCameraFlash.m in Sources */,
 				4706DCC41F4C8840002A0E68 /* IQAudioSession.m in Sources */,
-				4706DCBC1F4C8840002A0E68 /* IQSongsCompilationsViewController.m in Sources */,
 				4706DCAE1F4C8840002A0E68 /* IQAssetsAlbumViewCell.m in Sources */,
 				47305C201F1A2264001CAE54 /* TOCropToolbar.m in Sources */,
 				47305BCE1F1A2264001CAE54 /* UzysAssetsViewCell.m in Sources */,
@@ -2266,7 +2146,6 @@
 				47305CCF1F1A2390001CAE54 /* CLPlacemark+APTimeZones.m in Sources */,
 				47305CEB1F1A2390001CAE54 /* MBProgressHUD.m in Sources */,
 				47305BB51F1A2264001CAE54 /* ADDropDownMenuView.m in Sources */,
-				4706DCBB1F4C8840002A0E68 /* IQSongsArtistListViewController.m in Sources */,
 				47305BCF1F1A2264001CAE54 /* UzysGroupPickerView.m in Sources */,
 				47305CD11F1A2390001CAE54 /* NBAsYouTypeFormatter.m in Sources */,
 				47305BDA1F1A2264001CAE54 /* HRHSVColorUtil.m in Sources */,
@@ -2274,7 +2153,6 @@
 				47305BC31F1A2264001CAE54 /* UIAlertView+AFNetworking.m in Sources */,
 				4706DCCF1F4C8840002A0E68 /* IQSelectedMediaAudioCell.m in Sources */,
 				47305CDD1F1A2390001CAE54 /* UIImage+UIImage_EMCImageResize.m in Sources */,
-				4706DCB91F4C8840002A0E68 /* IQSongsListTableHeaderView.m in Sources */,
 				47305BB41F1A2264001CAE54 /* ADDropDownMenuItemView.m in Sources */,
 				47305CF11F1A2390001CAE54 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				47305D091F1A2390001CAE54 /* Wrapper.m in Sources */,
@@ -2290,7 +2168,6 @@
 				47305CEC1F1A2390001CAE54 /* LeftMenuViewController.m in Sources */,
 				47305C1F1F1A2264001CAE54 /* TOCropScrollView.m in Sources */,
 				47305C091F1A2264001CAE54 /* TGCameraToggle.m in Sources */,
-				4706DCBA1F4C8840002A0E68 /* IQSongsAlbumListViewController.m in Sources */,
 				47305BC41F1A2264001CAE54 /* UIButton+AFNetworking.m in Sources */,
 				47305BF41F1A2264001CAE54 /* MASViewAttribute.m in Sources */,
 				47305C1D1F1A2264001CAE54 /* TOCropViewController.m in Sources */,
@@ -2336,23 +2213,18 @@
 				470CF6F01F24DDC70074A81C /* BonusQuestionViewController.m in Sources */,
 				47305CD41F1A2390001CAE54 /* NBPhoneMetaData.m in Sources */,
 				47305CE51F1A2390001CAE54 /* HJImagesToVideo.m in Sources */,
-				4706DCBF1F4C8840002A0E68 /* IQSongsListViewController.m in Sources */,
 				47305C0A1F1A2264001CAE54 /* TGAssetImageFile.m in Sources */,
-				4706DCB31F4C8840002A0E68 /* IQAudioPickerController.m in Sources */,
 				47305BD51F1A2264001CAE54 /* HRBrightnessSlider.m in Sources */,
 				47BABC241F30CC3C00EC6335 /* RTSpinKitChasingDotsAnimation.m in Sources */,
 				47305C0D1F1A2264001CAE54 /* TGCameraFocusView.m in Sources */,
-				4706DCBE1F4C8840002A0E68 /* IQSongsGenreViewController.m in Sources */,
 				47D8889C1F2338570068D304 /* MainMenuViewController.m in Sources */,
 				47305BB81F1A2264001CAE54 /* AFHTTPRequestOperation.m in Sources */,
 				47978C3A1F35FD8F0091EAD7 /* ProfileViewController.m in Sources */,
 				47BABC2F1F30CC3C00EC6335 /* RTSpinKitUtils.m in Sources */,
-				4706DCC01F4C8840002A0E68 /* IQSongsPlaylistViewController.m in Sources */,
 				4706DCD31F4C8840002A0E68 /* IQNSArray+Remove.m in Sources */,
 				4706DCD01F4C8840002A0E68 /* IQSelectedMediaPhotoCell.m in Sources */,
 				47305BE91F1A2264001CAE54 /* JTSImageViewController.m in Sources */,
 				47305BE31F1A2264001CAE54 /* JotTouchBezier.m in Sources */,
-				4706DCBD1F4C8840002A0E68 /* IQSongsComposersViewController.m in Sources */,
 				47305BFE1F1A2264001CAE54 /* TGCameraNavigationController.m in Sources */,
 				47305BDE1F1A2264001CAE54 /* EDStarRating.m in Sources */,
 				47305C221F1A2264001CAE54 /* UIImage+LMExtension.m in Sources */,
@@ -2408,7 +2280,6 @@
 				47305D001F1A2390001CAE54 /* Reachability.m in Sources */,
 				47305CF51F1A2390001CAE54 /* SlideNavigationController.m in Sources */,
 				47BABC221F30CC3C00EC6335 /* RTSpinKitArcAnimation.m in Sources */,
-				4706DCB81F4C8840002A0E68 /* IQSongsCell.m in Sources */,
 				47305CF21F1A2390001CAE54 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				47305CFA1F1A2390001CAE54 /* NSString+extension.m in Sources */,
 				47305BF71F1A2264001CAE54 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -2444,7 +2315,6 @@
 				470CF6E81F24A6CF0074A81C /* QuestionView.m in Sources */,
 				47305C101F1A2264001CAE54 /* TGCameraSlideUpView.m in Sources */,
 				47305BEA1F1A2264001CAE54 /* JTSSimpleImageDownloader.m in Sources */,
-				4706DCB61F4C8840002A0E68 /* IQAudioPickerShadowView.m in Sources */,
 				47305CF71F1A2390001CAE54 /* UIViewController+MJPopupViewController.m in Sources */,
 				47305C061F1A2264001CAE54 /* TGCameraFocus.m in Sources */,
 				47305CD91F1A2390001CAE54 /* NSArray+NBAdditions.m in Sources */,
@@ -2606,8 +2476,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2615,8 +2485,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
-				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
+				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
+				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
 			};
 			name = Debug;
 		};
@@ -2624,8 +2494,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2633,8 +2503,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
-				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
+				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
+				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
 			};
 			name = Release;
 		};

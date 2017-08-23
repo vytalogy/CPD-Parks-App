@@ -25,11 +25,10 @@
 #import "IQMediaPickerController.h"
 #import "IQMediaCaptureController.h"
 #import "IQAssetsPickerController.h"
-#import "IQAudioPickerController.h"
 #import "IQMediaPickerControllerConstants.h"
 #import "IQCaptureSession.h"
 
-@interface IQMediaPickerController ()<IQMediaCaptureControllerDelegate,IQAssetsPickerControllerDelegate,IQAudioPickerControllerDelegate,UITabBarControllerDelegate>
+@interface IQMediaPickerController ()<IQMediaCaptureControllerDelegate,IQAssetsPickerControllerDelegate,UITabBarControllerDelegate>
 
 @property BOOL isFirstTimeAppearing;
 
@@ -88,14 +87,7 @@
                     controller.mediaTypes = self.mediaTypes;
                     self.viewControllers = @[controller];
                 }
-                else if ([self.mediaTypes containsObject:@(IQMediaPickerControllerMediaTypeAudio)])
-                {
-                    IQAudioPickerController *controller = [[IQAudioPickerController alloc] init];
-                    controller.allowsPickingMultipleItems = self.allowsPickingMultipleItems;
-                    controller.maximumItemCount = self.maximumItemCount;
-                    controller.delegate = self;
-                    self.viewControllers = @[controller];
-                }
+
             }
                 break;
             case IQMediaPickerControllerSourceTypeCameraMicrophone:
@@ -325,24 +317,7 @@
     }
 }
 
-#pragma mark - IQAudioPickerControllerDelegate
-- (void)audioPickerController:(IQAudioPickerController *)mediaPicker didPickMediaItems:(NSArray*)mediaItems
-{
-    if ([self.delegate respondsToSelector:@selector(mediaPickerController:didFinishMediaWithInfo:)])
-    {
-        NSDictionary *info = [NSDictionary dictionaryWithObject:mediaItems forKey:IQMediaTypeAudio];
-        
-        [self.delegate mediaPickerController:self didFinishMediaWithInfo:info];
-    }
-}
 
-- (void)audioPickerControllerDidCancel:(IQAudioPickerController *)mediaPicker
-{
-    if ([self.delegate respondsToSelector:@selector(mediaPickerControllerDidCancel:)])
-    {
-        [self.delegate mediaPickerControllerDidCancel:self];
-    }
-}
 
 @end
 
