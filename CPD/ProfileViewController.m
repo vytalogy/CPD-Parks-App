@@ -33,6 +33,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblYouRa;
 @property (weak, nonatomic) IBOutlet UILabel *lblReaSeacher;
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalPoints;
+@property (weak, nonatomic) IBOutlet UIImageView *viewStart;
 
 @property (nonatomic) NSString * park1Level1Score;
 @property (nonatomic) NSString * park1Level2Score;
@@ -45,6 +46,10 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic) BOOL pickerHasAlreadyBeenShown;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpacingForStar;
+
+
 
 @end
 
@@ -171,34 +176,146 @@
         [self.imgIcon setImage:c];
         
     }
+
+    
     if (!self.pickerHasAlreadyBeenShown) {
         
-        self.pickerHasAlreadyBeenShown = YES;
-        IQMediaPickerController *controller = [[IQMediaPickerController alloc] init];
-        controller.delegate = self;
+        [self callAlertViewControllerWithTitle:@"" withMessage:@"Select your avator Picture" withOkButtonTitle:@"OK" withCancleTitle:nil withOKHandler:^{
+            
+            self.pickerHasAlreadyBeenShown = YES;
+            IQMediaPickerController *controller = [[IQMediaPickerController alloc] init];
+            controller.delegate = self;
+            
+            [controller setSourceType:IQMediaPickerControllerSourceTypeLibrary];
+            
+            NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
+            
+            
+            
+            
+            [mediaTypes addObject:@(IQMediaPickerControllerMediaTypePhoto)];
+            
+            [controller setMediaTypes:mediaTypes];
+            controller.captureDevice = IQMediaPickerControllerCameraDeviceFront;
+            
+            //    controller.flashMode = self.flashOffSwitch.on ? IQMediaPickerControllerCameraFlashModeOff : IQMediaPickerControllerCameraFlashModeOn;
+            controller.allowsPickingMultipleItems = NO;
+            controller.maximumItemCount = 1;
+            
+            
+            [self presentViewController:controller animated:YES completion:nil];
+            
+            
+            
+        } withCancelHandler:^{
+            
+        }];
         
-        [controller setSourceType:IQMediaPickerControllerSourceTypeLibrary];
-        
-        NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
-        
-        
-        
-        
-        [mediaTypes addObject:@(IQMediaPickerControllerMediaTypePhoto)];
-        
-        [controller setMediaTypes:mediaTypes];
-        controller.captureDevice = IQMediaPickerControllerCameraDeviceFront;
-        
-        //    controller.flashMode = self.flashOffSwitch.on ? IQMediaPickerControllerCameraFlashModeOff : IQMediaPickerControllerCameraFlashModeOn;
-        controller.allowsPickingMultipleItems = NO;
-        controller.maximumItemCount = 1;
-        
-        
-        [self presentViewController:controller animated:YES completion:nil];
 
         
-        
     }
+    
+    
+
+ 
+    if ([self.park1Level1Score intValue] > [self.park2Level1Score intValue] &&
+        [self.park1Level1Score intValue] > [self.park3Level1Score intValue] &&
+        [self.park1Level1Score intValue] > [self.park1Level2Score intValue] &&
+        [self.park1Level1Score intValue] > [self.park2Level2Score intValue] &&
+        [self.park1Level1Score intValue] > [self.park3Level2Score intValue]
+        ) {
+        
+        
+        
+        
+        self.topSpacingForStar.constant = self.lblLevel1OneScore.frame.origin.y;
+        
+        [self.viewStart setHidden:NO];
+        
+        
+        [self.scrollView bringSubviewToFront:self.viewStart];
+    }
+    else if ([self.park2Level1Score intValue] > [self.park1Level1Score intValue] &&
+                 [self.park2Level1Score intValue] > [self.park3Level1Score intValue] &&
+                 [self.park2Level1Score intValue] > [self.park1Level2Score intValue] &&
+                 [self.park2Level1Score intValue] > [self.park2Level2Score intValue] &&
+                 [self.park2Level1Score intValue] > [self.park3Level2Score intValue]
+                 ) {
+        
+        
+        
+        
+        self.topSpacingForStar.constant = self.lblLevel1TwoScore.frame.origin.y;
+        
+        [self.viewStart setHidden:NO];
+        
+        
+        [self.scrollView bringSubviewToFront:self.viewStart];
+    }
+    else
+        if ([self.park1Level2Score intValue] > [self.park2Level1Score intValue] &&
+            [self.park1Level2Score intValue] > [self.park3Level1Score intValue] &&
+            [self.park1Level2Score intValue] > [self.park1Level1Score intValue] &&
+            [self.park1Level2Score intValue] > [self.park2Level2Score intValue] &&
+            [self.park1Level2Score intValue] > [self.park3Level2Score intValue]
+            ) {
+            
+            
+            
+            
+            self.topSpacingForStar.constant = self.lblLevel2OneScore.frame.origin.y;
+            
+            [self.viewStart setHidden:NO];
+            
+            
+            [self.scrollView bringSubviewToFront:self.viewStart];
+        }
+        else if ([self.park2Level2Score intValue] > [self.park1Level1Score intValue] &&
+                 [self.park2Level2Score intValue] > [self.park3Level1Score intValue] &&
+                 [self.park2Level2Score intValue] > [self.park1Level2Score intValue] &&
+                 [self.park2Level2Score intValue] > [self.park2Level1Score intValue] &&
+                 [self.park2Level2Score intValue] > [self.park3Level2Score intValue]
+                 ) {
+            
+            
+            
+            
+            self.topSpacingForStar.constant = self.lblLevel2TwoScore.frame.origin.y;
+            
+            [self.viewStart setHidden:NO];
+            
+            
+            [self.scrollView bringSubviewToFront:self.viewStart];
+        }
+        else if ([self.park3Level1Score intValue] > [self.park1Level1Score intValue] &&
+                 [self.park3Level1Score intValue] > [self.park2Level1Score intValue] &&
+                 [self.park3Level1Score intValue] > [self.park1Level2Score intValue] &&
+                 [self.park3Level1Score intValue] > [self.park2Level2Score intValue] &&
+                 [self.park3Level1Score intValue] > [self.park3Level2Score intValue]
+                 ) {
+            
+            
+            
+            
+            self.topSpacingForStar.constant = self.lblLevel1ThirdScore.frame.origin.y;
+            
+            [self.viewStart setHidden:NO];
+            
+            
+            [self.scrollView bringSubviewToFront:self.viewStart];
+        }
+        else if ([self.park3Level2Score intValue] > [self.park1Level1Score intValue] &&
+                 [self.park3Level2Score intValue] > [self.park2Level1Score intValue] &&
+                 [self.park3Level2Score intValue] > [self.park1Level2Score intValue] &&
+                 [self.park3Level2Score intValue] > [self.park2Level2Score intValue] &&
+                 [self.park3Level2Score intValue] > [self.park3Level1Score intValue]
+                 ) {
+            
+            self.topSpacingForStar.constant = self.lblLevel2ThirdScore.frame.origin.y;
+            [self.viewStart setHidden:NO];
+            [self.scrollView bringSubviewToFront:self.viewStart];
+        }
+    
     
     
     
@@ -206,6 +323,7 @@
 }
 
 - (void) imageCropedInCircle : (UIImage *) Croppedimage{
+    
     
     
     [self.imgIcon setImage:Croppedimage];
@@ -409,6 +527,8 @@
     
     
     
+    
+    
     if (totalPoints < 45) {
         
         //Revisitor
@@ -434,14 +554,8 @@
     
     self.lblTotalPoints.text = [NSString stringWithFormat:@"%d",totalPoints];
     
-
-    
-
-    
-    
-    
-    
     self.lblTotalPointsLAbel.text = @"TOTAL\nPOINTS";
+ 
  
     
 
