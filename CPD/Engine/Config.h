@@ -75,7 +75,7 @@
 
 
 #define ProfileViewYouAreA [UIFont fontWithName:FontToUseBold size:23]
-#define ProfileViewTotalPointsLabelFont [UIFont fontWithName:FontToUserBlack size:27]
+#define ProfileViewTotalPointsLabelFont [UIFont fontWithName:FontToUserBlack size:22]
 #define ProfileViewTotalPointsScoreFont [UIFont fontWithName:FontToUseBold size:120]
 #define ProfileViewLevelScoreFont [UIFont fontWithName:FontToUserBlack size:31]
 #define ProfileViewLevelScoreRegularFont [UIFont fontWithName:FontToUseRegular size:31]

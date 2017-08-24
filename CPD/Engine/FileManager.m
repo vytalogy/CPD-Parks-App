@@ -417,6 +417,20 @@
 }
 
 
++(UIImage *)getImage:(NSString *)directory{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    documentsDirectory = [documentsDirectory stringByAppendingPathComponent:@"UserProfileImage"];
+    NSString *dataPath = [[documentsDirectory stringByAppendingString:@"/"] stringByAppendingString:directory];
+    
+    UIImage *graphImage = [[UIImage alloc] initWithContentsOfFile: dataPath];
+    
+    return graphImage;
+    
+
+}
+
 +(void)loadProfileImage : (UIImageView *)imageToBeLoaded url:(NSString *)urlToLoad withLoader:(UIActivityIndicatorView *)loader
 {
     if (!urlToLoad) {

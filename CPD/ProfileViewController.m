@@ -50,7 +50,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpacingForStar;
 
 
+@property (weak, nonatomic) IBOutlet UIStackView *stackView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *eyeGlass;
 @end
 
 @implementation ProfileViewController
@@ -198,7 +200,7 @@
             [controller setMediaTypes:mediaTypes];
             controller.captureDevice = IQMediaPickerControllerCameraDeviceFront;
             
-            //    controller.flashMode = self.flashOffSwitch.on ? IQMediaPickerControllerCameraFlashModeOff : IQMediaPickerControllerCameraFlashModeOn;
+
             controller.allowsPickingMultipleItems = NO;
             controller.maximumItemCount = 1;
             
@@ -216,7 +218,7 @@
     }
     
     
-
+        [self.scrollView bringSubviewToFront:self.eyeGlass];
  
     if ([self.park1Level1Score intValue] > [self.park2Level1Score intValue] &&
         [self.park1Level1Score intValue] > [self.park3Level1Score intValue] &&
@@ -228,7 +230,7 @@
         
         
         
-        self.topSpacingForStar.constant = self.lblLevel1OneScore.frame.origin.y;
+        self.topSpacingForStar.constant = self.stackView.frame.origin.y+5;
         
         [self.viewStart setHidden:NO];
         
@@ -245,12 +247,14 @@
         
         
         
-        self.topSpacingForStar.constant = self.lblLevel1TwoScore.frame.origin.y;
+        self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel1TwoScore.frame.origin.y;
+        
         
         [self.viewStart setHidden:NO];
         
         
         [self.scrollView bringSubviewToFront:self.viewStart];
+       // [self.scrollView bringSubviewToFront:self.viewStart];
     }
     else
         if ([self.park1Level2Score intValue] > [self.park2Level1Score intValue] &&
@@ -263,7 +267,8 @@
             
             
             
-            self.topSpacingForStar.constant = self.lblLevel2OneScore.frame.origin.y;
+            self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel2OneScore.frame.origin.y;
+            
             
             [self.viewStart setHidden:NO];
             
@@ -280,7 +285,8 @@
             
             
             
-            self.topSpacingForStar.constant = self.lblLevel2TwoScore.frame.origin.y;
+            self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel2TwoScore.frame.origin.y;
+            
             
             [self.viewStart setHidden:NO];
             
@@ -297,7 +303,9 @@
             
             
             
-            self.topSpacingForStar.constant = self.lblLevel1ThirdScore.frame.origin.y;
+            
+            self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel1ThirdScore.frame.origin.y;
+            
             
             [self.viewStart setHidden:NO];
             
@@ -311,7 +319,8 @@
                  [self.park3Level2Score intValue] > [self.park3Level1Score intValue]
                  ) {
             
-            self.topSpacingForStar.constant = self.lblLevel2ThirdScore.frame.origin.y;
+            self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel2ThirdScore.frame.origin.y;
+            
             [self.viewStart setHidden:NO];
             [self.scrollView bringSubviewToFront:self.viewStart];
         }
