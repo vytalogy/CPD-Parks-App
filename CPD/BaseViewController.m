@@ -1379,7 +1379,7 @@
         parkString = @"Big Marsh\n";
         
     }
-    else if (park == 2) {
+    else if (park == 3) {
         
         parkString = @"Indian Ridge\n";
         

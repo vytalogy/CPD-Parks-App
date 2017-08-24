@@ -53,6 +53,27 @@
 @property (weak, nonatomic) IBOutlet UIStackView *stackView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *eyeGlass;
+
+@property (weak, nonatomic) IBOutlet UIImageView *badgeLevel1One;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constantLevel1One;
+
+@property (weak, nonatomic) IBOutlet UIImageView *badgeLevel2One;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constantLevel2One;
+
+@property (weak, nonatomic) IBOutlet UIImageView *badgeLevel1Two;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constantLevel1Two;
+
+@property (weak, nonatomic) IBOutlet UIImageView *badgeLevel2Two;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constantLevel2Two;
+
+@property (weak, nonatomic) IBOutlet UIImageView *badgeLevel1Three;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constantLevel1Three;
+
+@property (weak, nonatomic) IBOutlet UIImageView *badgeLevel2Three;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constantLevel2Three;
+
+
+
 @end
 
 @implementation ProfileViewController
@@ -220,109 +241,83 @@
     
         [self.scrollView bringSubviewToFront:self.eyeGlass];
  
-    if ([self.park1Level1Score intValue] > [self.park2Level1Score intValue] &&
-        [self.park1Level1Score intValue] > [self.park3Level1Score intValue] &&
-        [self.park1Level1Score intValue] > [self.park1Level2Score intValue] &&
-        [self.park1Level1Score intValue] > [self.park2Level2Score intValue] &&
-        [self.park1Level1Score intValue] > [self.park3Level2Score intValue]
-        ) {
+    if ([self.park1Level1Score intValue] > 0) {
         
         
         
         
-        self.topSpacingForStar.constant = self.stackView.frame.origin.y+5;
+        self.constantLevel1One.constant = self.stackView.frame.origin.y+5;
         
-        [self.viewStart setHidden:NO];
+        [self.badgeLevel1One setHidden:NO];
         
         
-        [self.scrollView bringSubviewToFront:self.viewStart];
+        [self.scrollView bringSubviewToFront:self.badgeLevel1One];
     }
-    else if ([self.park2Level1Score intValue] > [self.park1Level1Score intValue] &&
-                 [self.park2Level1Score intValue] > [self.park3Level1Score intValue] &&
-                 [self.park2Level1Score intValue] > [self.park1Level2Score intValue] &&
-                 [self.park2Level1Score intValue] > [self.park2Level2Score intValue] &&
-                 [self.park2Level1Score intValue] > [self.park3Level2Score intValue]
-                 ) {
+     if ([self.park2Level1Score intValue] > 0) {
+        
+
+         
+         
+        
+        self.constantLevel1Two.constant = self.stackView.frame.origin.y+self.lblLevel1TwoScore.frame.origin.y+5;
         
         
+        [self.badgeLevel1Two setHidden:NO];
         
         
-        self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel1TwoScore.frame.origin.y;
-        
-        
-        [self.viewStart setHidden:NO];
-        
-        
-        [self.scrollView bringSubviewToFront:self.viewStart];
+        [self.scrollView bringSubviewToFront:self.badgeLevel1Two];
+         
        // [self.scrollView bringSubviewToFront:self.viewStart];
     }
-    else
-        if ([self.park1Level2Score intValue] > [self.park2Level1Score intValue] &&
-            [self.park1Level2Score intValue] > [self.park3Level1Score intValue] &&
-            [self.park1Level2Score intValue] > [self.park1Level1Score intValue] &&
-            [self.park1Level2Score intValue] > [self.park2Level2Score intValue] &&
-            [self.park1Level2Score intValue] > [self.park3Level2Score intValue]
-            ) {
+    
+        if ([self.park1Level2Score intValue] > 0) {
             
             
             
             
-            self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel2OneScore.frame.origin.y;
+            self.constantLevel2One.constant = self.stackView.frame.origin.y+self.lblLevel2OneScore.frame.origin.y;
             
             
-            [self.viewStart setHidden:NO];
+            [self.badgeLevel2One setHidden:NO];
             
             
-            [self.scrollView bringSubviewToFront:self.viewStart];
+            [self.scrollView bringSubviewToFront:self.badgeLevel2One];
+            
         }
-        else if ([self.park2Level2Score intValue] > [self.park1Level1Score intValue] &&
-                 [self.park2Level2Score intValue] > [self.park3Level1Score intValue] &&
-                 [self.park2Level2Score intValue] > [self.park1Level2Score intValue] &&
-                 [self.park2Level2Score intValue] > [self.park2Level1Score intValue] &&
-                 [self.park2Level2Score intValue] > [self.park3Level2Score intValue]
-                 ) {
+         if ([self.park2Level2Score intValue] > 0) {
+            
+       
+            self.constantLevel2Two.constant = self.stackView.frame.origin.y+self.lblLevel2TwoScore.frame.origin.y+5;
             
             
+            [self.badgeLevel2Two setHidden:NO];
             
             
-            self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel2TwoScore.frame.origin.y;
-            
-            
-            [self.viewStart setHidden:NO];
-            
-            
-            [self.scrollView bringSubviewToFront:self.viewStart];
+            [self.scrollView bringSubviewToFront:self.badgeLevel2Two];
         }
-        else if ([self.park3Level1Score intValue] > [self.park1Level1Score intValue] &&
-                 [self.park3Level1Score intValue] > [self.park2Level1Score intValue] &&
-                 [self.park3Level1Score intValue] > [self.park1Level2Score intValue] &&
-                 [self.park3Level1Score intValue] > [self.park2Level2Score intValue] &&
-                 [self.park3Level1Score intValue] > [self.park3Level2Score intValue]
-                 ) {
+         if ([self.park3Level1Score intValue] > 0 ){
             
             
             
             
-            
-            self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel1ThirdScore.frame.origin.y;
-            
-            
-            [self.viewStart setHidden:NO];
+
+             
+            self.constantLevel1Three.constant = self.stackView.frame.origin.y+self.lblLevel1ThirdScore.frame.origin.y+5;
             
             
-            [self.scrollView bringSubviewToFront:self.viewStart];
+            [self.badgeLevel1Three setHidden:NO];
+            
+            
+            [self.scrollView bringSubviewToFront:self.badgeLevel1Three];
         }
-        else if ([self.park3Level2Score intValue] > [self.park1Level1Score intValue] &&
-                 [self.park3Level2Score intValue] > [self.park2Level1Score intValue] &&
-                 [self.park3Level2Score intValue] > [self.park1Level2Score intValue] &&
-                 [self.park3Level2Score intValue] > [self.park2Level2Score intValue] &&
-                 [self.park3Level2Score intValue] > [self.park3Level1Score intValue]
-                 ) {
+         if ([self.park3Level2Score intValue] > 0) {
             
-            self.topSpacingForStar.constant = self.stackView.frame.origin.y+self.lblLevel2ThirdScore.frame.origin.y;
+
+
+            self.constantLevel2Three.constant = self.stackView.frame.origin.y+self.lblLevel2ThirdScore.frame.origin.y+5;
             
-            [self.viewStart setHidden:NO];
-            [self.scrollView bringSubviewToFront:self.viewStart];
+            [self.badgeLevel2Three setHidden:NO];
+            [self.scrollView bringSubviewToFront:self.badgeLevel2Three];
         }
     
     
@@ -412,23 +407,19 @@
     [paragraphStyle setLineSpacing:-10];
     
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [labelText length])];
-   // self.lblTotalPointsLAbel.attributedText = attributedString ;
-    
-
-   // self.lblLevel1OneScore.text = [NSString stringWithFormat:@"(%@/30)\nHegewisch",self.park1Level1Score];
-    
+   
     self.lblLevel1OneScore.attributedText = [self textForScoreWithScore:self.park1Level1Score withLevel:1 withPark:1];
     self.lblLevel2OneScore.attributedText = [self textForScoreWithScore:self.park1Level2Score withLevel:2 withPark:1];
     
     
     
-    self.lblLevel1TwoScore.attributedText = [self textForScoreWithScore:self.park2Level1Score withLevel:1 withPark:1];
-    self.lblLevel2TwoScore.attributedText = [self textForScoreWithScore:self.park2Level1Score withLevel:2 withPark:1];
+    self.lblLevel1TwoScore.attributedText = [self textForScoreWithScore:self.park2Level1Score withLevel:1 withPark:2];
+    self.lblLevel2TwoScore.attributedText = [self textForScoreWithScore:self.park2Level1Score withLevel:2 withPark:2];
     
     
     
-    self.lblLevel1ThirdScore.attributedText = [self textForScoreWithScore:self.park3Level1Score withLevel:1 withPark:1];
-    self.lblLevel2ThirdScore.attributedText = [self textForScoreWithScore:self.park3Level2Score withLevel:2 withPark:1];
+    self.lblLevel1ThirdScore.attributedText = [self textForScoreWithScore:self.park3Level1Score withLevel:1 withPark:3];
+    self.lblLevel2ThirdScore.attributedText = [self textForScoreWithScore:self.park3Level2Score withLevel:2 withPark:3];
     
     
     
@@ -532,7 +523,9 @@
     
 
     
-    int totalPoints = [self.park1Level1Score intValue] + [self.park2Level1Score intValue]; + [self.park3Level1Score intValue]+[self.park1Level2Score intValue] + [self.park2Level2Score intValue]; + [self.park3Level2Score intValue];
+    int totalPoints = [self.park1Level1Score intValue] + [self.park1Level2Score intValue] +
+    [self.park2Level1Score intValue] + [self.park2Level2Score intValue] +
+    [self.park3Level1Score intValue] + [self.park3Level2Score intValue];
     
     
     
