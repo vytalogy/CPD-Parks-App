@@ -35,12 +35,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalPoints;
 @property (weak, nonatomic) IBOutlet UIImageView *viewStart;
 
-@property (nonatomic) NSString * park1Level1Score;
-@property (nonatomic) NSString * park1Level2Score;
-@property (nonatomic) NSString * park2Level1Score;
-@property (nonatomic) NSString * park2Level2Score;
-@property (nonatomic) NSString * park3Level1Score;
-@property (nonatomic) NSString * park3Level2Score;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *backgroundWidth;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -78,83 +73,6 @@
 
 @implementation ProfileViewController
 
--(NSString *)park1Level1Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"1"];
-    
-    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
-    
-    if (parkInfo) {
-        return parkInfo;
-        
-    }
-    
-    return @"0";
-    
-}
-
--(NSString *)park1Level2Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"1"];
-    
-    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
-    
-    if (parkInfo) {
-        return parkInfo;
-        
-    }
-    
-    return @"0";
-    
-}
-
-
--(NSString *)park2Level1Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"2"];
-    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
-    if (parkInfo) {
-        return parkInfo;
-        
-    }
-    
-    return @"0";
-    
-}
-
--(NSString *)park2Level2Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"2"];
-    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
-    if (parkInfo) {
-        return parkInfo;
-        
-    }
-    
-    return @"0";
-    
-}
-
-
-
-
--(NSString *)park3Level1Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"3"];
-    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
-    if (parkInfo) {
-        return parkInfo;
-    }
-    
-    return @"0";
-    
-}
-
--(NSString *)park3Level2Score {
-    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"3"];
-    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
-    if (parkInfo) {
-        return parkInfo;
-    }
-    
-    return @"0";
-    
-}
 
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -523,36 +441,11 @@
     
 
     
-    int totalPoints = [self.park1Level1Score intValue] + [self.park1Level2Score intValue] +
-    [self.park2Level1Score intValue] + [self.park2Level2Score intValue] +
-    [self.park3Level1Score intValue] + [self.park3Level2Score intValue];
+    int totalPoints = self.totalPoints;
     
     
     
-    
-    
-    if (totalPoints < 45) {
-        
-        //Revisitor
-        
-        
-        self.lblReaSeacher.attributedText = self.revisitorText;
-        
-        
-    }
-    else if (totalPoints < 90) {
-        
-        //Researcher
-    }
-    else {
-        
-        //Rewilder
-        
-        self.lblReaSeacher.attributedText = self.Rewilder;
-        
-        
-        
-    }
+    self.lblReaSeacher.attributedText = self.attributedTextPointsTitle;
     
     self.lblTotalPoints.text = [NSString stringWithFormat:@"%d",totalPoints];
     

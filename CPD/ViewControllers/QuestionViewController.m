@@ -549,6 +549,8 @@
 
 -(void)moveToNextView{
     
+    self.scoreToBeAdded = 2;
+    
     [self.btnHint setHidden:YES];
     [self.btnSkip setHidden:YES];
     [self.btnFoundIT setHidden:YES];

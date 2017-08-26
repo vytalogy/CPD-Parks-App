@@ -126,6 +126,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="TitleContraint" destination="3bH-UH-CSL" id="SVv-5I-mGc"/>
+                        <outlet property="backgroundImage" destination="Vxi-LS-PH9" id="Jgk-WB-NgR"/>
                         <outlet property="bottomSpacing" destination="xT9-x4-4L6" id="Ta5-CN-zLp"/>
                         <outlet property="descriptionLeftSpacing" destination="we3-lZ-4tY" id="gDb-md-bsn"/>
                         <outlet property="descriptionRightSpacing" destination="C9X-vd-oIt" id="4Ee-eD-2zt"/>
@@ -137,11 +139,13 @@
                         <outlet property="lblTypeTwo" destination="DUs-o2-Pxr" id="xJW-LS-Pvi"/>
                         <outlet property="lblWelcomeLabel" destination="5n3-ld-S9Q" id="FvQ-EO-dvR"/>
                         <outlet property="proSpacing" destination="mIa-br-VWH" id="ssB-u7-Cak"/>
+                        <outlet property="titleAndExplainationGap" destination="39H-1v-a0n" id="sRb-WB-Gir"/>
                         <outlet property="topSpace" destination="ckz-MY-z1y" id="vC1-Og-W3j"/>
                         <outlet property="viewContainerTypeOne" destination="0vH-xx-ePj" id="v6P-3n-oqC"/>
                         <outlet property="viewContainerTypeTwo" destination="vk6-Cd-bdd" id="tBC-bC-mIO"/>
                         <outlet property="viewLevel1DistanceFromLeft" destination="IGA-02-0Wf" id="CNb-ac-ejj"/>
                         <outlet property="viewLevel2DistanceFromLeft" destination="mIa-br-VWH" id="OoT-Ps-sle"/>
+                        <outlet property="welcomeContstant" destination="DVN-O7-NQd" id="5vN-gb-vVN"/>
                         <outletCollection property="levelLabels" destination="7jr-jY-TUz" id="dnL-Af-Yh7"/>
                         <outletCollection property="levelLabels" destination="DUs-o2-Pxr" id="zWS-uR-bHL"/>
                         <segue destination="c49-ff-f6l" kind="show" identifier="segueShowQuestion" id="kFb-Lm-Rf3"/>
@@ -615,11 +619,11 @@
                         <viewControllerLayoutGuide type="bottom" id="s7v-uh-oJB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWF-1Y-TFj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="871"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="807"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdC-YF-oIU">
-                                <rect key="frame" x="0.0" y="20" width="375" height="850"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="806"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large-background" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-bT-8j0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="882"/>
@@ -1713,6 +1717,6 @@
         <image name="star-icon" width="74" height="74"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ovV-5O-zkJ"/>
+        <segue reference="kFb-Lm-Rf3"/>
     </inferredMetricsTieBreakers>
 </document>

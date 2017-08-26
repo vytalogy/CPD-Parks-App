@@ -293,6 +293,10 @@
 		47F1FCA11F2E295B00246DD9 /* QuestionScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F1FCA01F2E295B00246DD9 /* QuestionScoreView.xib */; };
 		47F1FCA41F2E298300246DD9 /* QuestionScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F1FCA31F2E298300246DD9 /* QuestionScoreView.m */; };
 		47F1FCA71F2E32B000246DD9 /* Bonus.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F1FCA61F2E32B000246DD9 /* Bonus.m */; };
+		47FD73F41F50A45F00194E02 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47FD73F31F50A45F00194E02 /* Raleway-Medium.ttf */; };
+		47FD73F71F50A65C00194E02 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47FD73F51F50A65C00194E02 /* Raleway-Light.ttf */; };
+		47FD73F81F50A65C00194E02 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47FD73F61F50A65C00194E02 /* Raleway-Regular.ttf */; };
+		47FD73FA1F50A9C700194E02 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47FD73F91F50A9C700194E02 /* Raleway-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -863,6 +867,10 @@
 		47F1FCA31F2E298300246DD9 /* QuestionScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionScoreView.m; path = Views/QuestionScoreView.m; sourceTree = "<group>"; };
 		47F1FCA51F2E32B000246DD9 /* Bonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bonus.h; path = Model/Bonus.h; sourceTree = "<group>"; };
 		47F1FCA61F2E32B000246DD9 /* Bonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bonus.m; path = Model/Bonus.m; sourceTree = "<group>"; };
+		47FD73F31F50A45F00194E02 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		47FD73F51F50A65C00194E02 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		47FD73F61F50A65C00194E02 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		47FD73F91F50A9C700194E02 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1141,6 +1149,10 @@
 		47305A8B1F19EA5A001CAE54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				47FD73F91F50A9C700194E02 /* Raleway-SemiBold.ttf */,
+				47FD73F51F50A65C00194E02 /* Raleway-Light.ttf */,
+				47FD73F61F50A65C00194E02 /* Raleway-Regular.ttf */,
+				47FD73F31F50A45F00194E02 /* Raleway-Medium.ttf */,
 				470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */,
 				470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */,
 				47EB4ADD1F44A36F00C4674C /* Arboria-Medium.otf */,
@@ -2046,11 +2058,13 @@
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
 				47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */,
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
+				47FD73F71F50A65C00194E02 /* Raleway-Light.ttf in Resources */,
 				470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */,
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
 				47EB4ADB1F44A20D00C4674C /* Arboria-Book.otf in Resources */,
 				47ED66181F40952D00AD170E /* MapView.xib in Resources */,
 				470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */,
+				47FD73FA1F50A9C700194E02 /* Raleway-SemiBold.ttf in Resources */,
 				47EB4AD41F4484E000C4674C /* VistaSlabOT-Black.otf in Resources */,
 				47305BCD1F1A2264001CAE54 /* UzysAssetsPickerController.xib in Resources */,
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,
@@ -2065,6 +2079,8 @@
 				47305A9B1F19EA5A001CAE54 /* LaunchScreen.storyboard in Resources */,
 				470CF6ED1F24BD1E0074A81C /* HintView.xib in Resources */,
 				47F1FCA11F2E295B00246DD9 /* QuestionScoreView.xib in Resources */,
+				47FD73F81F50A65C00194E02 /* Raleway-Regular.ttf in Resources */,
+				47FD73F41F50A45F00194E02 /* Raleway-Medium.ttf in Resources */,
 				47305A981F19EA5A001CAE54 /* Assets.xcassets in Resources */,
 				47593C601F28EA260086E27F /* BonusPointsView.xib in Resources */,
 				47305C161F1A2264001CAE54 /* TGPhotoViewController.xib in Resources */,

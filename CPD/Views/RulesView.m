@@ -23,10 +23,27 @@
     self.btnGetStarted.backgroundColor = LightGreenTextColor;
     
     
+    if (IS_IPHONE_6) {
+   
+        self.lblRules.font = [UIFont fontWithName:self.lblRules.font.fontName size:self.lblRules.font.pointSize-1];
+        
+        self.lblTitle.font = [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-2];
+        
+    }
+    else if(IS_IPHONE_5) {
+        
+        self.lblRules.font = [UIFont fontWithName:self.lblRules.font.fontName size:self.lblRules.font.pointSize-4];
+        
+        self.lblTitle.font = [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-5];
+        
+        
+        
+    }
     self.backGroundImage.image = [UIImage imageNamed:@"ready-to-request-black-bg"];
     
     
     self.btnGetStarted.layer.cornerRadius = 15;
+    
     
     
 }

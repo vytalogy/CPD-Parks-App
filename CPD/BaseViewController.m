@@ -1346,6 +1346,15 @@
 }
 
 
+-(int)totalPoints {
+    
+    
+    return [self.park1Level1Score intValue] + [self.park1Level2Score intValue] +
+    [self.park2Level1Score intValue] + [self.park2Level2Score intValue] +
+    [self.park3Level1Score intValue] + [self.park3Level2Score intValue];
+    
+}
+
 -(NSAttributedString *)textForScoreWithScore:(NSString *)score withLevel:(int)level withPark:(int)park
 {
     
@@ -1419,6 +1428,40 @@
     
 }
 
+
+-(NSAttributedString *)attributedTextPointsTitle {
+    int totalPoints = self.totalPoints;
+    
+    NSAttributedString *answer;
+    
+    
+    
+    
+    
+    if (totalPoints < 45) {
+        
+        
+        answer = self.revisitorText;
+        
+        
+    }
+    else if (totalPoints < 90) {
+        
+        answer = self.reSearcherText;
+        
+        
+    }
+    else {
+        
+        answer = self.Rewilder;
+        
+    }
+    
+    return answer;
+    
+    
+    
+}
 -(NSAttributedString *)requestText{
     
     
@@ -1539,4 +1582,85 @@
         return appDelegate.navBarTitle;
     
 }
+
+
+-(NSString *)park1Level1Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"1"];
+    
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
+-(NSString *)park1Level2Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"1"];
+    
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
+
+-(NSString *)park2Level1Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"2"];
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
+-(NSString *)park2Level2Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"2"];
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    if (parkInfo) {
+        return parkInfo;
+        
+    }
+    
+    return @"0";
+    
+}
+
+
+
+
+-(NSString *)park3Level1Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"3"];
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    if (parkInfo) {
+        return parkInfo;
+    }
+    
+    return @"0";
+    
+}
+
+-(NSString *)park3Level2Score {
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"2",@"3"];
+    id parkInfo = [self.userDefaults objectForKey:parkIdToSave];
+    if (parkInfo) {
+        return parkInfo;
+    }
+    
+    return @"0";
+    
+}
+
+
 @end

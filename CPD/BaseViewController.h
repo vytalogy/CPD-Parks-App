@@ -226,5 +226,18 @@
 @property (nonatomic) UILabel *navLabel;
 -(NSAttributedString *)requestTextWithText:(NSString *)text;
 -(NSAttributedString *)textForScoreWithScore:(NSString *)score withLevel:(int)level withPark:(int)park;
+@property (nonatomic) NSString * park1Level1Score;
+@property (nonatomic) NSString * park1Level2Score;
+@property (nonatomic) NSString * park2Level1Score;
+@property (nonatomic) NSString * park2Level2Score;
+@property (nonatomic) NSString * park3Level1Score;
+@property (nonatomic) NSString * park3Level2Score;
+
+
+@property (nonatomic) int totalPoints;
+
+
+
+-(NSAttributedString *)attributedTextPointsTitle;
 
 @end

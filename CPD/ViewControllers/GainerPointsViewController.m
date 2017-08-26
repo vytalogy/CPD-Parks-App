@@ -46,11 +46,10 @@
     self.lblYourScore.font = ScoreYourScoreFont;
     self.lblScore.font = ScoreScoreFont;
     self.lblYouAreA.font = ScoreYouRAFont;
-    //self.lblReSearcher.font = ScoreViewPlaceFont;
     
     
-    self.lblReSearcher.attributedText = self.reSearcherText;
-    
+    self.lblReSearcher.attributedText = self.attributedTextPointsTitle;
+ 
     
     for (UIButton *currentButton in self.allButtons) {
         

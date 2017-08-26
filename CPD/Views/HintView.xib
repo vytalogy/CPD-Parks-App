@@ -12,7 +12,7 @@
         <array key="VistaSlabOT-Bold.ttf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.otf">
+        <array key="VistaSlabOT-Reg.ttf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hint-bg" translatesAutoresizingMaskIntoConstraints="NO" id="8I3-tm-mDY">
-                    <rect key="frame" x="0.0" y="111" width="300" height="128"/>
+                    <rect key="frame" x="0.0" y="113" width="300" height="124"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="124" id="9C0-eQ-NSL"/>
                         <constraint firstAttribute="width" constant="300" id="au8-qB-rPf"/>
@@ -37,10 +37,10 @@
                     </variation>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fc5-yH-eOO">
-                    <rect key="frame" x="0.0" y="111" width="300" height="128"/>
+                    <rect key="frame" x="0.0" y="113" width="300" height="124"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HINT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdl-Sp-7ue">
-                            <rect key="frame" x="99" y="30" width="102" height="45"/>
+                            <rect key="frame" x="99" y="20" width="102" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="102" id="Dso-IP-e9M"/>
                                 <constraint firstAttribute="height" constant="45" id="Fqa-sp-ngx"/>
@@ -50,7 +50,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ede-Ic-to3">
-                            <rect key="frame" x="24" y="83" width="252" height="29"/>
+                            <rect key="frame" x="24" y="73" width="252" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="OrH-al-Tzy"/>
                             </constraints>
@@ -75,7 +75,7 @@
                         <constraint firstAttribute="trailing" secondItem="ede-Ic-to3" secondAttribute="trailing" constant="24" id="FAi-gq-cDV"/>
                         <constraint firstItem="ede-Ic-to3" firstAttribute="top" secondItem="rdl-Sp-7ue" secondAttribute="bottom" constant="8" id="Nry-wQ-UUN"/>
                         <constraint firstAttribute="trailing" secondItem="1GO-uh-H9h" secondAttribute="trailing" constant="8" id="bRQ-fA-Mmv"/>
-                        <constraint firstItem="rdl-Sp-7ue" firstAttribute="top" secondItem="fc5-yH-eOO" secondAttribute="top" constant="30" id="kWx-zM-6b5"/>
+                        <constraint firstItem="rdl-Sp-7ue" firstAttribute="top" secondItem="fc5-yH-eOO" secondAttribute="top" constant="20" id="kWx-zM-6b5"/>
                         <constraint firstItem="ede-Ic-to3" firstAttribute="leading" secondItem="fc5-yH-eOO" secondAttribute="leading" constant="24" id="o6d-12-p1N"/>
                         <constraint firstAttribute="bottom" secondItem="ede-Ic-to3" secondAttribute="bottom" constant="16" id="sR1-JV-xb4"/>
                     </constraints>

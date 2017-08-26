@@ -47,6 +47,10 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *proSpacing;
 
 @property (nonatomic,strong) RulesView * rulesViews;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleAndExplainationGap;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *TitleContraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *welcomeContstant;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @end
 
@@ -273,10 +277,21 @@
     self.lblDetail.font = SelectLevelTextFont;
     //
 
-   
+    
+    if (IS_IPHONE_6P) {
+        
+        self.viewLevel1DistanceFromLeft.constant = self.viewLevel1DistanceFromLeft.constant +10;
+        self.viewLevel2DistanceFromLeft.constant = self.viewLevel2DistanceFromLeft.constant + 10;
+        
+    }
+    else
     if (IS_IPHONE_6) {
         
         self.bottomSpacing.constant = self.bottomSpacing.constant-20;
+        
+        self.distanceFromTop.constant = self.distanceFromTop.constant - 35;
+        
+        self.lblDetail.font = [UIFont fontWithName:self.lblDetail.font.fontName size:self.lblDetail.font.pointSize -2];
         
     }
     else if(IS_IPHONE_5){
@@ -290,11 +305,20 @@
         
     
         
-        self.lblTitle.font =  [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-2];;
+        self.lblTitle.font =  [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-6];;
         
         
         self.lblDetail.font =  [UIFont fontWithName:self.lblDetail.font.fontName size:self.lblDetail.font.pointSize-3];;
     
+        self.lblWelcomeLabel.font =  [UIFont fontWithName:self.lblWelcomeLabel.font.fontName size:self.lblWelcomeLabel.font.pointSize-6];;
+        
+        
+        
+        
+        self.titleAndExplainationGap.constant = 0;
+        
+        
+        
         
         self.bottomSpacing.constant = self.bottomSpacing.constant-20;
         
@@ -302,6 +326,15 @@
         self.juniorSpacing.constant = self.juniorSpacing.constant-20;
         self.proSpacing.constant = self.proSpacing.constant - 20;
         
+
+        
+        self.TitleContraint.constant = 35;
+        
+        self.welcomeContstant.constant = 20;
+        
+        //
+        
+        //[self.backgroundImage setImage:[UIImage imageNamed:@"screen-2-where-u-will-1"]];
         
     }
     else if(IS_IPad){
@@ -334,19 +367,7 @@
     
     
     [self addTopBarButtonByCode];
-    
-    if (IS_IPHONE_6P) {
-        
-        self.viewLevel1DistanceFromLeft.constant = self.viewLevel1DistanceFromLeft.constant +10;
-        self.viewLevel2DistanceFromLeft.constant = self.viewLevel2DistanceFromLeft.constant + 10;
-        
-    }
-    else if(IS_IPHONE_6){
-        
-        
-        self.distanceFromTop.constant = self.distanceFromTop.constant - 20;
-        
-    }
+ 
     
     
     [self showLoader];

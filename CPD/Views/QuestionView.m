@@ -38,12 +38,15 @@
         
         [currentView setFrame:CGRectMake((i * (totalSize/15))-5, 15, 10, 4)];
         
-        if (self.questionNumber == 1) {
-            
-            [currentView setFrame:CGRectMake((i * (totalSize/15))+5, 15, 10, 4)];
-        
-            
+        if (IS_IPHONE_6P) {
+            if (self.questionNumber == 1) {
+                
+                [currentView setFrame:CGRectMake((i * (totalSize/15))+5, 15, 10, 4)];
+                
+                
+            }            
         }
+
         [currentView setBackgroundColor:[UIColor colorWithRed:0.5 green:0.5 blue:.5 alpha:1.0]];
         currentView.layer.cornerRadius = 2;
         

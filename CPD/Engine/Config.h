@@ -31,14 +31,13 @@
 #define FontToUserBook @"VistaSlabOT-Book"
 #define FontToUserMedium @"VistaSlabOT-Medium"
 
-#define ArboriaLight @"Arboria-Light"
-#define ArboriaBook @"Arboria-Book"
-#define ArboriaMedium @"Arboria-Medium"
+#define ArboriaSemiBold @"Raleway-SemiBold"
+#define ArboriaBook @"Raleway-Regular"
+#define ArboriaMedium @"Raleway-Medium"
 
 
 
-//
-//
+
 
 
 
@@ -53,17 +52,17 @@
 
 #define SelectLevelWelcomeToFont [UIFont fontWithName:FontToUserBlack size:29]
 #define SelectLevelNameFont [UIFont fontWithName:FontToUserBlack size:39]
-#define SelectLevelTextFont [UIFont fontWithName:ArboriaMedium size:21]
+#define SelectLevelTextFont [UIFont fontWithName:ArboriaSemiBold size:21]
 
 
-#define QuestionFont [UIFont fontWithName:ArboriaBook size:24]
+#define QuestionFont [UIFont fontWithName:ArboriaBook size:28]
 #define QuestionFontColor [UIColor colorWithRed:35.0/255.0 green:31.0/255.0 blue:32.0/255.0 alpha:1.0]
 #define QuestionViewBottomButtonFonts [UIFont fontWithName:FontToUseBold size:20]
 
 #define AnswerYouFoundFont [UIFont fontWithName:FontToUserMedium size:20]
 #define AnswerFontColor [UIColor colorWithRed:1 green:1 blue:1 alpha:1.0]
 #define AnswerTitleFont [UIFont fontWithName:FontToUserBlack size:26]
-#define AnswerDescriptionFont [UIFont fontWithName:ArboriaMedium size:18]
+#define AnswerDescriptionFont [UIFont fontWithName:ArboriaSemiBold size:18]
 
 
 #define ScoreViewCongratsFont [UIFont fontWithName:FontToUserBlack size:50]
