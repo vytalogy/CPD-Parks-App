@@ -21,6 +21,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblReSearcher;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contratsSpaceFromTop;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSpacingFromShare;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *congratsConstant;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *ScoreConstant;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *placeConmpetedConstant;
+
 @end
 
 @implementation GainerPointsViewController
@@ -81,6 +88,40 @@
     [self.navigationItem setHidesBackButton:YES];
     self.lblScore.text = [NSString stringWithFormat:@"%d/30",self.scoredPoints];;
     
+    
+    if (IS_IPHONE_5) {
+        
+        self.contratsSpaceFromTop.constant = 20;
+ 
+        self.bottomSpacingFromShare.constant = 20;
+ 
+        
+    }
+    else if(IS_IPad){
+        
+        self.contratsSpaceFromTop.constant = 10;
+        
+        self.bottomSpacingFromShare.constant = 15;
+        self.lblScore.font = [UIFont fontWithName:self.lblScore.font.fontName size:self.lblScore.font.pointSize-10];
+        
+            self.lblCongrats.font = [UIFont fontWithName:self.lblCongrats.font.fontName size:self.lblCongrats.font.pointSize-10];
+        
+        
+        self.congratsConstant.constant = 35;
+        
+        
+        self.ScoreConstant.constant = self.ScoreConstant.constant-15;
+        
+        
+        self.lblPlaceCompleted.font = [UIFont fontWithName:self.lblPlaceCompleted.font.fontName size:self.lblPlaceCompleted.font.pointSize-10];
+        
+        
+        self.placeConmpetedConstant.constant = self.placeConmpetedConstant.constant -10;
+        
+        
+        
+        
+    }
     
 }
 

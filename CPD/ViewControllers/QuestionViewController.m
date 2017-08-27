@@ -47,6 +47,11 @@
 
 
 @property (nonatomic) int scoreToBeAdded;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *btnHintConstant;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *btnFountItConstant;
+
+
 
 @end
 
@@ -239,6 +244,7 @@
     
     if (!_questionScoreView) {
         
+        
         _questionScoreView =   (QuestionScoreView *)[self.view getViewFromNibName:@"QuestionScoreView"
                                                                         withWidth:self.view.frame.size.width
                                                      withHeight:self.view.frame.size.height];
@@ -291,6 +297,9 @@
         
         //_questionView =   (QuestionView *)[self.view
           //                                 getViewFromNibName:@"QuestionView"];
+        
+        
+        
         
         _questionView =   (QuestionView *)[self.view
                                            getViewFromNibName:@"QuestionView"
@@ -460,6 +469,11 @@
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
+    if (IS_IPHONE_5 || IS_IPad) {
+        self.questionView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.9];
+        
+    }
+
     
 
     self.gameScoreView.lblScore.text = [NSString stringWithFormat:@"%d",self.scoredPoints];
@@ -475,6 +489,12 @@
         [self addTopBarButtonByCode];
     
     
+    if (IS_IPHONE_5 || IS_IPad) {
+        
+        self.btnHintConstant.constant = self.btnHintConstant.constant-20;
+        self.btnFountItConstant.constant = self.btnFountItConstant.constant -20;
+        
+    }
     self.scoreToBeAdded = 2;
     
         [self addTopBarButtonByCode];
@@ -486,12 +506,26 @@
         
         currentButton.titleLabel.font = QuestionViewBottomButtonFonts;
         
+        
+        if (IS_IPHONE_5 || IS_IPad) {
+            
+            currentButton.titleLabel.font = [UIFont fontWithName:currentButton.titleLabel.font.fontName size:currentButton.titleLabel.font.pointSize-3];
+        
+            
+        }
+        else {
+            
+        }
+
         //bottomButtons
     }
 
     self.viewTitle = self.parkSelected.parkName;
     
-    
+    if (IS_IPHONE_5 || IS_IPad) {
+        
+    }
+    else
     self.questionView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.9];
     
     

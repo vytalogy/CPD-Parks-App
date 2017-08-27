@@ -67,8 +67,13 @@
 @property (weak, nonatomic) IBOutlet UIImageView *badgeLevel2Three;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constantLevel2Three;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewLeftSpacing;
 
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *spacingLeftBadges;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollWidthConstant;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *stackViewLeftSpacing;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftSpacing1Level1;
 @end
 
 @implementation ProfileViewController
@@ -98,8 +103,19 @@
     CGPathMoveToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.imgIcon.frame.origin.y+self.imgIcon.frame.size.height-54);
     
     
-    CGPathAddLineToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.scrollView.frame.size.height+250);
+    if (IS_IPHONE_5) {
+        CGPathAddLineToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.scrollView.contentSize.height);
+        
+        
+        
+        
+    }
+    else{
+        CGPathAddLineToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.scrollView.frame.size.height+250);
     
+        
+    }
+
     [shapeLayer setPath:path];
     CGPathRelease(path);
     
@@ -302,6 +318,27 @@
     
     
    
+    
+    if (IS_IPHONE_5) {
+        
+        self.imageViewLeftSpacing.constant =self.imageViewLeftSpacing.constant-22;
+        
+        self.leftSpacing1Level1.constant = self.leftSpacing1Level1.constant-22;;
+        
+        
+        self.scrollWidthConstant.constant = self.scrollWidthConstant.constant - 55;
+        
+        self.stackViewLeftSpacing.constant = self.stackViewLeftSpacing.constant - 35;
+        
+        
+        
+        for (NSLayoutConstraint * currentItemContstant in self.spacingLeftBadges) {
+            
+            currentItemContstant.constant = currentItemContstant.constant -22;
+            
+            
+        }
+    }
     
     NSLog(@"");
         [self addTopBarButtonByCode];

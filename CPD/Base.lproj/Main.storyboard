@@ -270,7 +270,9 @@
                     <connections>
                         <outlet property="backgroundImage" destination="hai-Et-8e0" id="am6-Fx-vpR"/>
                         <outlet property="btnFoundIT" destination="KOx-Xa-6nn" id="Wg5-yV-H0O"/>
-                        <outlet property="btnHint" destination="cpm-Ns-5db" id="8fI-7G-Yr7"/>
+                        <outlet property="btnFountItConstant" destination="w57-vl-oZM" id="YXc-ft-oeK"/>
+                        <outlet property="btnHint" destination="cpm-Ns-5db" id="0Tm-Kf-9eV"/>
+                        <outlet property="btnHintConstant" destination="ThM-CY-dU1" id="2GK-1z-2rH"/>
                         <outlet property="btnSkip" destination="GKF-AN-ZxA" id="c0X-q2-Jwt"/>
                         <outlet property="scoreContainer" destination="EWe-kt-Kqg" id="In0-MZ-EfX"/>
                         <outlet property="viewQuestionContainer" destination="QVk-49-OAl" id="Toe-x8-uxq"/>
@@ -497,7 +499,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SCCRE:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-9z-gLt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SCORE:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-9z-gLt">
                                 <rect key="frame" x="0.0" y="258.5" width="375" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="M1k-Qq-rcj"/>
@@ -592,8 +594,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ScoreConstant" destination="Lh6-B0-88R" id="nPT-jL-nRR"/>
+                        <outlet property="bottomSpacingFromShare" destination="KLj-Ds-51V" id="RRY-KW-L3D"/>
                         <outlet property="btnNext" destination="09L-EE-Btn" id="vqT-c3-TC4"/>
                         <outlet property="btnShare" destination="7Qb-7w-LLS" id="OsT-dv-FcJ"/>
+                        <outlet property="congratsConstant" destination="G4v-dl-cyE" id="x8Z-jo-JdC"/>
+                        <outlet property="contratsSpaceFromTop" destination="ubp-T5-PQJ" id="y4s-1U-dKc"/>
                         <outlet property="lblCongrats" destination="Q8B-2H-sSk" id="e3E-KQ-IZ1"/>
                         <outlet property="lblPlaceCompleted" destination="0Fv-s7-0i7" id="Lce-dh-UWC"/>
                         <outlet property="lblReSearcher" destination="f6t-jb-O4F" id="Bxt-9d-IXe"/>
@@ -601,6 +607,7 @@
                         <outlet property="lblYouAreA" destination="cda-Bf-Ng2" id="DBR-bn-JUd"/>
                         <outlet property="lblYourScore" destination="Vue-9z-gLt" id="mDL-JB-SeI"/>
                         <outlet property="lblYouveCompleted" destination="Mig-O4-MzE" id="66l-9p-TsL"/>
+                        <outlet property="placeConmpetedConstant" destination="jqw-Ik-5vd" id="xFv-eM-CwR"/>
                         <outletCollection property="allButtons" destination="7Qb-7w-LLS" id="zn2-tA-kOf"/>
                         <outletCollection property="allButtons" destination="09L-EE-Btn" id="00n-tP-0l3"/>
                         <segue destination="Sg3-qI-Clq" kind="show" identifier="segueMyProfile" id="80r-Lm-iEi"/>
@@ -847,6 +854,7 @@
                         <outlet property="constantLevel2One" destination="jh1-nP-SlF" id="rJX-ai-Wu1"/>
                         <outlet property="constantLevel2Three" destination="SLG-7q-PqJ" id="Lg8-1A-TBp"/>
                         <outlet property="constantLevel2Two" destination="7ta-zh-Xes" id="trY-T4-Wrx"/>
+                        <outlet property="imageViewLeftSpacing" destination="sC5-bC-VXF" id="JhM-Ra-22I"/>
                         <outlet property="imgIcon" destination="5J2-4g-bKW" id="s5w-Se-mY4"/>
                         <outlet property="lblLevel1OneScore" destination="J2k-SS-fUt" id="7XI-S4-V19"/>
                         <outlet property="lblLevel1ThirdScore" destination="KJC-lv-Yo8" id="9o6-zG-nVK"/>
@@ -858,8 +866,16 @@
                         <outlet property="lblTotalPoints" destination="J2g-De-OsJ" id="XzO-WU-dR8"/>
                         <outlet property="lblTotalPointsLAbel" destination="byS-f5-qEP" id="20D-dp-AHb"/>
                         <outlet property="lblYouRa" destination="nSr-gh-Bkp" id="PPY-xV-tZj"/>
+                        <outlet property="leftSpacing1Level1" destination="3Mu-z9-rLI" id="TOT-TW-mia"/>
                         <outlet property="scrollView" destination="fdC-YF-oIU" id="4QY-O4-th4"/>
+                        <outlet property="scrollWidthConstant" destination="K0F-UT-tVx" id="Y9B-bV-mmK"/>
                         <outlet property="stackView" destination="xSt-ux-twg" id="UXL-zF-wZh"/>
+                        <outlet property="stackViewLeftSpacing" destination="3yd-dO-MFh" id="OSz-lc-Xpi"/>
+                        <outletCollection property="spacingLeftBadges" destination="1Qk-Pd-p9M" id="5MN-Hg-FCc"/>
+                        <outletCollection property="spacingLeftBadges" destination="AqH-DJ-jfi" id="oYb-n1-3FY"/>
+                        <outletCollection property="spacingLeftBadges" destination="j8M-zw-Axp" id="0m4-zU-VPK"/>
+                        <outletCollection property="spacingLeftBadges" destination="xTK-g8-VDL" id="Z7V-uU-BjA"/>
+                        <outletCollection property="spacingLeftBadges" destination="74b-jx-1ts" id="7p9-G6-5d8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8W-GR-65Y" userLabel="First Responder" sceneMemberID="firstResponder"/>

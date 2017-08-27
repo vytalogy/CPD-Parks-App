@@ -105,6 +105,8 @@
             <connections>
                 <outlet property="backGroundImage" destination="GGW-Av-VHb" id="jYr-3P-cel"/>
                 <outlet property="btnClose" destination="3Ll-Vg-u4e" id="qz8-Sd-XnH"/>
+                <outlet property="distanceBetween" destination="sEw-nh-H3H" id="y0N-2C-UTS"/>
+                <outlet property="labelHeightTop" destination="yOK-Ba-I9f" id="OLA-es-lK7"/>
                 <outlet property="lblRules" destination="p46-8c-eRB" id="RfD-qJ-I3v"/>
                 <outlet property="lblTitle" destination="le6-3F-Via" id="Rlg-It-0Zq"/>
             </connections>

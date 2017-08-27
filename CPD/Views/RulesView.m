@@ -39,6 +39,20 @@
         
         
     }
+    else if(IS_IPad) {
+        
+        
+        self.labelHeightTop.constant = 35;
+        
+        self.distanceBetween.constant = 0;
+        
+        self.lblRules.font = [UIFont fontWithName:self.lblRules.font.fontName size:self.lblRules.font.pointSize-6];
+        
+        self.lblTitle.font = [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-7];
+        
+        
+        
+    }
     self.backGroundImage.image = [UIImage imageNamed:@"ready-to-request-black-bg"];
     
     

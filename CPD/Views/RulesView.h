@@ -15,5 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblRules;
 @property (weak, nonatomic) IBOutlet UIImageView *backGroundImage;
 @property (weak, nonatomic) IBOutlet UIButton *btnGetStarted;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *distanceBetween;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *labelHeightTop;
 
 @end
