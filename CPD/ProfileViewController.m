@@ -110,8 +110,15 @@
         
         
     }
+    else     if (IS_IPad) {
+        CGPathAddLineToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.scrollView.contentSize.height);
+        
+        
+        
+        
+    }
     else{
-        CGPathAddLineToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.scrollView.frame.size.height+250);
+        CGPathAddLineToPoint(path, NULL, self.imgIcon.frame.origin.x+self.imgIcon.frame.size.width/2, self.scrollView.contentSize.height);
     
         
     }
@@ -338,6 +345,27 @@
             
             
         }
+    }
+    else if(IS_IPad){
+
+        self.imageViewLeftSpacing.constant =self.imageViewLeftSpacing.constant-22;
+        
+        self.leftSpacing1Level1.constant = self.leftSpacing1Level1.constant-22;;
+        
+        
+        self.scrollWidthConstant.constant = self.scrollWidthConstant.constant - 55;
+        
+        self.stackViewLeftSpacing.constant = self.stackViewLeftSpacing.constant - 35;
+        
+        
+        
+        for (NSLayoutConstraint * currentItemContstant in self.spacingLeftBadges) {
+            
+            currentItemContstant.constant = currentItemContstant.constant -22;
+            
+            
+        }
+        
     }
     
     NSLog(@"");

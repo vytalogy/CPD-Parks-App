@@ -57,6 +57,10 @@
 @property (nonatomic) NSString *hegwishMapUrl;
 
 
+@property (nonatomic) AppDelegate *sharedDelegate;
+
+@property (nonatomic) int warningScenario;
+
 @end
 
 @implementation MenuViewController
@@ -75,6 +79,33 @@
     [self.view bringSubviewToFront:self.warningView];
     
 }
+
+-(void)warningExitTapped{
+    
+    if (self.warningScenario == 1) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+            [self.delegate mainMenuButtonTapped];
+            
+            self.sharedDelegate.isPlayingGame = NO;
+        }];
+    }
+    else if (self.warningScenario == 2){
+     
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+            [self.delegate profileButtonTapped];
+
+            self.sharedDelegate.isPlayingGame = NO;
+            
+        }];
+
+        
+    }
+
+    
+    
+}
 -(WarningLeaving *)warningView {
     
     if (!_warningView) {
@@ -87,6 +118,10 @@
         
         
         [_warningView.btnCancel addTarget:self action:@selector(cancelWarningView) forControlEvents:UIControlEventTouchUpInside];
+        
+        [_warningView.btnExit addTarget:self action:@selector(warningExitTapped) forControlEvents:UIControlEventTouchUpInside];
+        
+        
         [_warningView setupView];
         [self.view addSubview:_warningView];
         
@@ -232,32 +267,79 @@
 
 -(void)mainMenuButtonTapped{
     
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-        [self.delegate mainMenuButtonTapped];
     
-    }];
+    if (self.sharedDelegate.isPlayingGame) {
+        
+        [self.warningView setHidden:NO];
+        
+        [self.view bringSubviewToFront:self.warningView];
+        
+        self.warningScenario = 1;
+        
+        
+    }
+    else{
+        
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+            [self.delegate mainMenuButtonTapped];
+            
+        }];
+    
+        
+        
+    }
+    
+    
     
     
     
 }
 -(void)yourProfileButtonTapped{
     
-    [self dismissViewControllerAnimated:YES completion:^{
+    if (self.sharedDelegate.isPlayingGame) {
         
-        [self.delegate profileButtonTapped];
+        [self.warningView setHidden:NO];
         
-    }];
+        self.warningScenario = 2;
+        
+        [self.view bringSubviewToFront:self.warningView];
+        
+        
+    }
+    else{
+        
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+            [self.delegate profileButtonTapped];
+            
+        }];
 
+        
+    }
+    
+    
+ 
     
 }
 
+-(AppDelegate *)sharedDelegate{
+    
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+}
 
 -(void)showWebSiteButtonTapped{
     
     
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.plego.com/"]];
     
-    [self.warningView setHidden:NO];
+    return;
+    
+    
+    
+    
+    return;
     
     return;
     [self.backgroundGreenView setHidden:NO];

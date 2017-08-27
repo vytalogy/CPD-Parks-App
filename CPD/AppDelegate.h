@@ -14,5 +14,7 @@
 
 @property (nonatomic,strong) UILabel *navBarTitle;
 
+@property (nonatomic) BOOL isPlayingGame;
+
 @end
 

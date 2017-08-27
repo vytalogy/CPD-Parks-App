@@ -92,6 +92,9 @@
                                         
                                         [self performSegueWithIdentifier:@"segueShowQuestion" sender:self];
                                         
+                                        self.sharedDelegate.isPlayingGame = YES;
+                                        
+                                        
                                     } withFailHander:^(int f) {
                                         
                                         [self performSegueWithIdentifier:@"segueShowQuestion" sender:self];
@@ -222,7 +225,10 @@
                          self.questionToSendForPlaying = result;
                          
                          
+                         
                          [self performSegueWithIdentifier:@"segueShowQuestion" sender:self];
+                         
+                         self.sharedDelegate.isPlayingGame = YES;
                          
                      } withFailueHandler:^{
                          
