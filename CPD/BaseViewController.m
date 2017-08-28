@@ -32,7 +32,6 @@
     [self hideLoader];
     
 
-    NSLog(@"");
 [playerViewController dismissViewControllerAnimated:YES completion:^{
     
 }];
@@ -750,7 +749,6 @@
 
     } @catch (NSException *exception) {
      
-        NSLog(@"");
         
     }
     
@@ -1014,7 +1012,7 @@
                 tmp = [@"+" stringByAppendingString:tmp];
                 currentString = tmp;
                 
-                NSLog(@"");
+
                 
             }
             
