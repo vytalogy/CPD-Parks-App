@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="VistaSlabOT-Bold.ttf">
+        <array key="VistaSlabOT-Bold.otf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.ttf">
+        <array key="VistaSlabOT-Reg.otf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -128,6 +128,7 @@
                 <outlet property="btnGetStarted" destination="xcy-62-yfn" id="Ghf-4E-Hvr"/>
                 <outlet property="lblRules" destination="p46-8c-eRB" id="RfD-qJ-I3v"/>
                 <outlet property="lblTitle" destination="le6-3F-Via" id="Rlg-It-0Zq"/>
+                <outlet property="rulesContainer" destination="neg-eU-zDm" id="OWP-8a-pZM"/>
             </connections>
             <point key="canvasLocation" x="34" y="112"/>
         </view>

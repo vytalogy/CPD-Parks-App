@@ -76,6 +76,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="btnClose" destination="3Ll-Vg-u4e" id="qpK-5R-Xyh"/>
+                <outlet property="mapContainer" destination="xfL-pP-x7z" id="ohS-aV-h9h"/>
                 <outlet property="mapHeight" destination="26h-jg-5nW" id="8y9-SG-wqq"/>
                 <outlet property="mapImageView" destination="ctU-pd-S0c" id="Y8m-pl-E6S"/>
                 <outlet property="mapWidth" destination="QCV-1f-ifi" id="kCb-p1-XHA"/>

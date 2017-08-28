@@ -275,6 +275,7 @@
 		47EB4AD41F4484E000C4674C /* VistaSlabOT-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD31F4484E000C4674C /* VistaSlabOT-Black.otf */; };
 		47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD51F44862800C4674C /* VistaSlabOT-Book.otf */; };
 		47EB4AD81F4487AA00C4674C /* VistaSlabOT-Med.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD71F4487AA00C4674C /* VistaSlabOT-Med.otf */; };
+		47EC25091F547FEA009727A8 /* UIView+RevealAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC25081F547FEA009727A8 /* UIView+RevealAnimation.m */; };
 		47ED66181F40952D00AD170E /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ED66171F40952D00AD170E /* MapView.xib */; };
 		47ED661B1F40953F00AD170E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661A1F40953F00AD170E /* MapView.m */; };
 		47ED661E1F40CE5200AD170E /* RulesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661D1F40CE5200AD170E /* RulesView.m */; };
@@ -834,6 +835,8 @@
 		47EB4AD31F4484E000C4674C /* VistaSlabOT-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Black.otf"; sourceTree = "<group>"; };
 		47EB4AD51F44862800C4674C /* VistaSlabOT-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Book.otf"; sourceTree = "<group>"; };
 		47EB4AD71F4487AA00C4674C /* VistaSlabOT-Med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Med.otf"; sourceTree = "<group>"; };
+		47EC25071F547FEA009727A8 /* UIView+RevealAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+RevealAnimation.h"; path = "Views/UIView+RevealAnimation.h"; sourceTree = "<group>"; };
+		47EC25081F547FEA009727A8 /* UIView+RevealAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+RevealAnimation.m"; path = "Views/UIView+RevealAnimation.m"; sourceTree = "<group>"; };
 		47ED66171F40952D00AD170E /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapView.xib; path = Views/MapView.xib; sourceTree = "<group>"; };
 		47ED66191F40953F00AD170E /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapView.h; path = Views/MapView.h; sourceTree = "<group>"; };
 		47ED661A1F40953F00AD170E /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapView.m; path = Views/MapView.m; sourceTree = "<group>"; };
@@ -1831,6 +1834,8 @@
 		478F12B91F23B7A7007415C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47EC25071F547FEA009727A8 /* UIView+RevealAnimation.h */,
+				47EC25081F547FEA009727A8 /* UIView+RevealAnimation.m */,
 				470732951F471DA3003E899C /* RulesViewWithButton.xib */,
 				478F12C21F23B916007415C6 /* InGameScoreView.xib */,
 				478F12BA1F23B7D1007415C6 /* ScoreView.h */,
@@ -2135,6 +2140,7 @@
 				4706DCD81F4C8840002A0E68 /* IQMediaPickerControllerConstants.m in Sources */,
 				47305BC91F1A2264001CAE54 /* UIImage+UzysExtension.m in Sources */,
 				47305CD51F1A2390001CAE54 /* NBPhoneMetaDataGenerator.m in Sources */,
+				47EC25091F547FEA009727A8 /* UIView+RevealAnimation.m in Sources */,
 				47305CD61F1A2390001CAE54 /* NBPhoneNumber.m in Sources */,
 				47305BBF1F1A2264001CAE54 /* AFURLResponseSerialization.m in Sources */,
 				47305CEC1F1A2390001CAE54 /* LeftMenuViewController.m in Sources */,

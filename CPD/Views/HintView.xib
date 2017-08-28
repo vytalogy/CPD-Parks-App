@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="VistaSlabOT-Bold.ttf">
+        <array key="VistaSlabOT-Bold.otf">
             <string>VistaSlabOT-Bold</string>
         </array>
-        <array key="VistaSlabOT-Reg.ttf">
+        <array key="VistaSlabOT-Reg.otf">
             <string>VistaSlabOT-Reg</string>
         </array>
     </customFonts>
@@ -100,7 +100,9 @@
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="backImag" destination="8I3-tm-mDY" id="tBP-PP-iSr"/>
                 <outlet property="btnCross" destination="1GO-uh-H9h" id="CIE-MS-wae"/>
+                <outlet property="containerView" destination="fc5-yH-eOO" id="MOL-0c-TJx"/>
                 <outlet property="lblDetail" destination="ede-Ic-to3" id="yK8-Bm-t7a"/>
                 <outlet property="lblHint" destination="rdl-Sp-7ue" id="BfM-Wu-ptj"/>
             </connections>

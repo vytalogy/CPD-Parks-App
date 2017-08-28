@@ -36,6 +36,20 @@
     return tmp;
 }
 
+-(void)addShadow{
+    
+  
+    
+    self.layer.masksToBounds = NO;
+    self.layer.shadowOffset = CGSizeMake(-1, 5);
+    self.layer.shadowRadius = 5;
+    self.layer.shadowOpacity = .5;
+    
+   
+ 
+    
+}
+
 -(UIView *)getViewFromNibName:(NSString *)nibName
 {
     

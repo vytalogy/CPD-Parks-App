@@ -17,5 +17,6 @@
 -(void)roundTheView;
 -(void)RemoveAllStuffFromView;
 -(void)makeCornerRadius:(float)radius borderColor:(UIColor *)bColor borderWidth:(float)bWidth;
+-(void)addShadow;
 
 @end

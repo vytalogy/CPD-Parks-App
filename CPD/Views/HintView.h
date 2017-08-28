@@ -14,5 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblDetail;
 -(void)setupView;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *backImag;
 @end

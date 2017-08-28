@@ -7,11 +7,23 @@
 //
 
 #import "RulesView.h"
+#import "UIView+MyUIView.h"
 
 @implementation RulesView
 
 -(void)setUpView{
     
+    
+
+
+    [self.rulesContainer addShadow];
+    
+    
+    /*self.layer.shadowColor = UIColor.gray.cgColor
+    self.layer.shadowOpacity = 1
+    self.layer.shadowOffset = CGSize.zero
+    self.layer.shadowRadius = 2
+    self.layer.cornerRadius = 2*/
     
     
 

@@ -14,6 +14,7 @@
 #import "BonusQuestionViewController.h"
 #import "QuestionScoreView.h"
 #import "RulesView.h"
+#import "UIView+RevealAnimation.h"
 
 @interface QuestionViewController ()
 @property (weak, nonatomic) IBOutlet UIView *scoreContainer;
@@ -628,14 +629,92 @@
     
     self.otherContainerView = containerViewShowing;
 
-    [UIView animateWithDuration:0.8f
-                     animations:^{
-                         self.questionScoreView.imgDottedImage.alpha = 1.0;
-                         
-                     } completion:^(BOOL finished) {
-                         //Done
-                     }];
     
+    
+    /*
+     [UIView transitionWithView:textFieldimageView
+     duration:0.2f
+     options:UIViewAnimationOptionTransitionCrossDissolve
+     animations:^{
+     imageView.image = newImage;
+     } completion:nil];
+     
+     */
+    
+
+    
+    
+    if (self.questionIndex == 0) {
+        [UIView animateWithDuration:0.8f
+                         animations:^{
+                           
+                             self.questionScoreView.imgDottedImage.alpha = 1.0;
+                             
+                         } completion:^(BOOL finished) {
+                             //Done
+                         }];
+        
+    }
+    else if (self.questionIndex % 2 == 1) {
+            
+        
+        
+/*
+ 
+ 
+ [UIView transitionWithView:self.questionScoreView
+ duration:0.8f
+ options:UIViewAnimationOptionCurveLinear
+ animations:^{
+ 
+ 
+ 
+ NSLog(@"");
+ self.questionScoreView.imgDottedImage.alpha = 1.0;
+ 
+ 
+ } completion:^(BOOL finished) {
+ 
+ 
+ 
+ 
+ }];
+  */
+        
+        
+        
+        [UIView animateWithDuration:0.8f
+                         animations:^{
+                             self.questionScoreView.imgDottedImage.alpha = 1.0;
+                             
+                         } completion:^(BOOL finished) {
+                             //Done
+                         }];
+        
+
+        
+        
+        
+        
+        }
+        else
+        {
+
+            [UIView animateWithDuration:0.8f
+                             animations:^{
+                                 self.questionScoreView.imgDottedImage.alpha = 1.0;
+                                 
+                             } completion:^(BOOL finished) {
+                                 //Done
+                             }];
+    
+            
+            
+            //greenColorBG
+        }
+        
+
+
  
     
     

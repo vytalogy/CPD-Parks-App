@@ -22,5 +22,6 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *mapWidth;
 @property (weak, nonatomic) IBOutlet UIImageView *mapImageView;
+@property (weak, nonatomic) IBOutlet UIView *mapContainer;
 
 @end

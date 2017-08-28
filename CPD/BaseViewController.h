@@ -37,7 +37,7 @@
 #import "MenuViewController.h"
 #import "UIView+MyUIView.h"
 #import <CoreText/CoreText.h>
-
+#import "UIView+RevealAnimation.h"
 
 
 

@@ -15,6 +15,8 @@
 
 -(void)setupView{
   
+
+    [self.backImag addShadow];
     
     self.lblHint.font = HintBoldFont;
     

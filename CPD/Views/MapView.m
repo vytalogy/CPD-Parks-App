@@ -112,6 +112,8 @@
 -(void)setUpView{
     
     
+    [self.mapContainer addShadow];
+    
     self.lblText.font = MapRegularTextFont;
     
     

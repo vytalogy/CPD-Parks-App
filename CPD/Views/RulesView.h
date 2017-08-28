@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnGetStarted;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *distanceBetween;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *labelHeightTop;
+@property (weak, nonatomic) IBOutlet UIView *rulesContainer;
 
 @end
