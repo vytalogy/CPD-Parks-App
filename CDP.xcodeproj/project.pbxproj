@@ -39,8 +39,6 @@
 		4706DCD81F4C8840002A0E68 /* IQMediaPickerControllerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCAC1F4C883F002A0E68 /* IQMediaPickerControllerConstants.m */; };
 		4706DCDB1F4C8BAF002A0E68 /* CropImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCDA1F4C8BAF002A0E68 /* CropImage.m */; };
 		470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470732951F471DA3003E899C /* RulesViewWithButton.xib */; };
-		470732991F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */; };
-		4707329A1F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */; };
 		470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470CF6E41F24A6BC0074A81C /* QuestionView.xib */; };
 		470CF6E81F24A6CF0074A81C /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6E71F24A6CF0074A81C /* QuestionView.m */; };
 		470CF6EB1F24BD100074A81C /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6EA1F24BD100074A81C /* HintView.m */; };
@@ -268,12 +266,6 @@
 		47D888A21F2389480068D304 /* SelectQuizTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D888A11F2389480068D304 /* SelectQuizTypeViewController.m */; };
 		47E449EC1F4B37DD0090C117 /* WarningLeaving.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E449EB1F4B37DD0090C117 /* WarningLeaving.m */; };
 		47E449EE1F4B37ED0090C117 /* WarningLeaving.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47E449ED1F4B37ED0090C117 /* WarningLeaving.xib */; };
-		47EB4AB51F4479F500C4674C /* VistaSlabOT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */; };
-		47EB4AB61F4479F500C4674C /* VistaSlabOT-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */; };
-		47EB4AB71F4479F500C4674C /* VistaSlabOT-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */; };
-		47EB4AB81F4479F500C4674C /* VistaSlabOT-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB21F4479F500C4674C /* VistaSlabOT-Reg.ttf */; };
-		47EB4AB91F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB31F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf */; };
-		47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AB41F4479F500C4674C /* VistaSlabOT-RegItalic.ttf */; };
 		47EB4AC11F447C2500C4674C /* VistaSlabOT-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABB1F447C2500C4674C /* VistaSlabOT-Bold.otf */; };
 		47EB4AC21F447C2500C4674C /* VistaSlabOT-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABC1F447C2500C4674C /* VistaSlabOT-BoldItalic.otf */; };
 		47EB4AC31F447C2500C4674C /* VistaSlabOT-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ABD1F447C2500C4674C /* VistaSlabOT-Light.otf */; };
@@ -283,9 +275,6 @@
 		47EB4AD41F4484E000C4674C /* VistaSlabOT-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD31F4484E000C4674C /* VistaSlabOT-Black.otf */; };
 		47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD51F44862800C4674C /* VistaSlabOT-Book.otf */; };
 		47EB4AD81F4487AA00C4674C /* VistaSlabOT-Med.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD71F4487AA00C4674C /* VistaSlabOT-Med.otf */; };
-		47EB4ADB1F44A20D00C4674C /* Arboria-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4AD91F44A20D00C4674C /* Arboria-Book.otf */; };
-		47EB4ADC1F44A20D00C4674C /* Arboria-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ADA1F44A20D00C4674C /* Arboria-Light.otf */; };
-		47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47EB4ADD1F44A36F00C4674C /* Arboria-Medium.otf */; };
 		47ED66181F40952D00AD170E /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ED66171F40952D00AD170E /* MapView.xib */; };
 		47ED661B1F40953F00AD170E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661A1F40953F00AD170E /* MapView.m */; };
 		47ED661E1F40CE5200AD170E /* RulesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ED661D1F40CE5200AD170E /* RulesView.m */; };
@@ -362,8 +351,6 @@
 		4706DCD91F4C8BAF002A0E68 /* CropImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImage.h; sourceTree = "<group>"; };
 		4706DCDA1F4C8BAF002A0E68 /* CropImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImage.m; sourceTree = "<group>"; };
 		470732951F471DA3003E899C /* RulesViewWithButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RulesViewWithButton.xib; path = Views/RulesViewWithButton.xib; sourceTree = "<group>"; };
-		470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aktivgrotesk_trial_md-webfont2.ttf"; sourceTree = "<group>"; };
-		470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aktivgrotesk_trial_rg-webfont.ttf"; sourceTree = "<group>"; };
 		470CF6E41F24A6BC0074A81C /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionView.xib; path = Views/QuestionView.xib; sourceTree = "<group>"; };
 		470CF6E61F24A6CF0074A81C /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionView.h; path = Views/QuestionView.h; sourceTree = "<group>"; };
 		470CF6E71F24A6CF0074A81C /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionView.m; path = Views/QuestionView.m; sourceTree = "<group>"; };
@@ -838,12 +825,6 @@
 		47E449EA1F4B37DD0090C117 /* WarningLeaving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WarningLeaving.h; path = Views/WarningLeaving.h; sourceTree = "<group>"; };
 		47E449EB1F4B37DD0090C117 /* WarningLeaving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WarningLeaving.m; path = Views/WarningLeaving.m; sourceTree = "<group>"; };
 		47E449ED1F4B37ED0090C117 /* WarningLeaving.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WarningLeaving.xib; path = Views/WarningLeaving.xib; sourceTree = "<group>"; };
-		47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Bold.ttf"; sourceTree = "<group>"; };
-		47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Light.ttf"; sourceTree = "<group>"; };
-		47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-LightItalic.ttf"; sourceTree = "<group>"; };
-		47EB4AB21F4479F500C4674C /* VistaSlabOT-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Reg.ttf"; sourceTree = "<group>"; };
-		47EB4AB31F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-BoldItalic.ttf"; sourceTree = "<group>"; };
-		47EB4AB41F4479F500C4674C /* VistaSlabOT-RegItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-RegItalic.ttf"; sourceTree = "<group>"; };
 		47EB4ABB1F447C2500C4674C /* VistaSlabOT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Bold.otf"; sourceTree = "<group>"; };
 		47EB4ABC1F447C2500C4674C /* VistaSlabOT-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-BoldItalic.otf"; sourceTree = "<group>"; };
 		47EB4ABD1F447C2500C4674C /* VistaSlabOT-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Light.otf"; sourceTree = "<group>"; };
@@ -853,9 +834,6 @@
 		47EB4AD31F4484E000C4674C /* VistaSlabOT-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Black.otf"; sourceTree = "<group>"; };
 		47EB4AD51F44862800C4674C /* VistaSlabOT-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Book.otf"; sourceTree = "<group>"; };
 		47EB4AD71F4487AA00C4674C /* VistaSlabOT-Med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VistaSlabOT-Med.otf"; sourceTree = "<group>"; };
-		47EB4AD91F44A20D00C4674C /* Arboria-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arboria-Book.otf"; sourceTree = "<group>"; };
-		47EB4ADA1F44A20D00C4674C /* Arboria-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arboria-Light.otf"; sourceTree = "<group>"; };
-		47EB4ADD1F44A36F00C4674C /* Arboria-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arboria-Medium.otf"; sourceTree = "<group>"; };
 		47ED66171F40952D00AD170E /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapView.xib; path = Views/MapView.xib; sourceTree = "<group>"; };
 		47ED66191F40953F00AD170E /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapView.h; path = Views/MapView.h; sourceTree = "<group>"; };
 		47ED661A1F40953F00AD170E /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapView.m; path = Views/MapView.m; sourceTree = "<group>"; };
@@ -1153,11 +1131,6 @@
 				47FD73F51F50A65C00194E02 /* Raleway-Light.ttf */,
 				47FD73F61F50A65C00194E02 /* Raleway-Regular.ttf */,
 				47FD73F31F50A45F00194E02 /* Raleway-Medium.ttf */,
-				470732971F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf */,
-				470732981F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf */,
-				47EB4ADD1F44A36F00C4674C /* Arboria-Medium.otf */,
-				47EB4AD91F44A20D00C4674C /* Arboria-Book.otf */,
-				47EB4ADA1F44A20D00C4674C /* Arboria-Light.otf */,
 				47EB4AD71F4487AA00C4674C /* VistaSlabOT-Med.otf */,
 				47EB4AD51F44862800C4674C /* VistaSlabOT-Book.otf */,
 				47EB4AD31F4484E000C4674C /* VistaSlabOT-Black.otf */,
@@ -1167,12 +1140,6 @@
 				47EB4ABE1F447C2500C4674C /* VistaSlabOT-LightItalic.otf */,
 				47EB4ABF1F447C2500C4674C /* VistaSlabOT-Reg.otf */,
 				47EB4AC01F447C2500C4674C /* VistaSlabOT-RegItalic.otf */,
-				47EB4AAF1F4479F500C4674C /* VistaSlabOT-Bold.ttf */,
-				47EB4AB01F4479F500C4674C /* VistaSlabOT-Light.ttf */,
-				47EB4AB11F4479F500C4674C /* VistaSlabOT-LightItalic.ttf */,
-				47EB4AB21F4479F500C4674C /* VistaSlabOT-Reg.ttf */,
-				47EB4AB31F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf */,
-				47EB4AB41F4479F500C4674C /* VistaSlabOT-RegItalic.ttf */,
 				47305A8C1F19EA5A001CAE54 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -2047,21 +2014,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47EB4AB91F4479F500C4674C /* VistaSlabOT-BoldItalic.ttf in Resources */,
 				47EB4AC51F447C2500C4674C /* VistaSlabOT-Reg.otf in Resources */,
 				47EB4AC11F447C2500C4674C /* VistaSlabOT-Bold.otf in Resources */,
-				47EB4AB51F4479F500C4674C /* VistaSlabOT-Bold.ttf in Resources */,
 				47EB4AC41F447C2500C4674C /* VistaSlabOT-LightItalic.otf in Resources */,
 				47EB4AD81F4487AA00C4674C /* VistaSlabOT-Med.otf in Resources */,
-				47EB4ABA1F4479F500C4674C /* VistaSlabOT-RegItalic.ttf in Resources */,
-				470732991F473E84003E899C /* aktivgrotesk_trial_md-webfont2.ttf in Resources */,
 				47305C141F1A2264001CAE54 /* TGCameraAuthorizationViewController.xib in Resources */,
-				47EB4ADE1F44A36F00C4674C /* Arboria-Medium.otf in Resources */,
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
 				47FD73F71F50A65C00194E02 /* Raleway-Light.ttf in Resources */,
 				470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */,
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
-				47EB4ADB1F44A20D00C4674C /* Arboria-Book.otf in Resources */,
 				47ED66181F40952D00AD170E /* MapView.xib in Resources */,
 				470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */,
 				47FD73FA1F50A9C700194E02 /* Raleway-SemiBold.ttf in Resources */,
@@ -2075,7 +2036,6 @@
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
 				47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */,
 				478F12C31F23B916007415C6 /* InGameScoreView.xib in Resources */,
-				4707329A1F473E84003E899C /* aktivgrotesk_trial_rg-webfont.ttf in Resources */,
 				47305A9B1F19EA5A001CAE54 /* LaunchScreen.storyboard in Resources */,
 				470CF6ED1F24BD1E0074A81C /* HintView.xib in Resources */,
 				47F1FCA11F2E295B00246DD9 /* QuestionScoreView.xib in Resources */,
@@ -2084,13 +2044,9 @@
 				47305A981F19EA5A001CAE54 /* Assets.xcassets in Resources */,
 				47593C601F28EA260086E27F /* BonusPointsView.xib in Resources */,
 				47305C161F1A2264001CAE54 /* TGPhotoViewController.xib in Resources */,
-				47EB4ADC1F44A20D00C4674C /* Arboria-Light.otf in Resources */,
 				475E66811F26691D002FBD29 /* BonusAnswerView.xib in Resources */,
 				47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */,
 				47EB4AC21F447C2500C4674C /* VistaSlabOT-BoldItalic.otf in Resources */,
-				47EB4AB81F4479F500C4674C /* VistaSlabOT-Reg.ttf in Resources */,
-				47EB4AB61F4479F500C4674C /* VistaSlabOT-Light.ttf in Resources */,
-				47EB4AB71F4479F500C4674C /* VistaSlabOT-LightItalic.ttf in Resources */,
 				47305C171F1A2264001CAE54 /* TOCropViewControllerLocalizable.strings in Resources */,
 				47EB4AC31F447C2500C4674C /* VistaSlabOT-Light.otf in Resources */,
 			);
@@ -2492,8 +2448,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2501,8 +2457,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
-				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
+				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
+				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
 			};
 			name = Debug;
 		};
@@ -2510,8 +2466,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2519,8 +2475,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
-				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
+				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
+				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
 			};
 			name = Release;
 		};

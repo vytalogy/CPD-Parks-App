@@ -17,7 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.1</string>
 	<key>CFBundleVersion</key>
-	<string>20</string>
+	<string>21</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationCategoryType</key>
@@ -48,12 +48,7 @@
 		<string>VistaSlabOT-Black.otf</string>
 		<string>VistaSlabOT-Book.otf</string>
 		<string>VistaSlabOT-Med.otf</string>
-		<string>Arboria-Book.otf</string>
-		<string>Arboria-Light.otf</string>
-		<string>Arboria-Medium.otf</string>
-		<string>aktivgrotesk_trial_rg-webfont.ttf</string>
 		<string>Raleway-Medium.ttf</string>
-		<string>aktivgrotesk_trial_md-webfont2.ttf</string>
 		<string>Raleway-Regular.ttf</string>
 		<string>Raleway-Light.ttf</string>
 		<string>Raleway-SemiBold.ttf</string>
