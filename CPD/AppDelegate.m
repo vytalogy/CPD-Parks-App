@@ -18,6 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+    
     /*
      
     for (NSString *familyName in [UIFont familyNames]){
@@ -28,6 +31,10 @@
     }
      
      */
+    
+ 
+    
+    
     
     
     return YES;

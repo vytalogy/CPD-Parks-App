@@ -275,6 +275,9 @@
         
     }
    
+  //  [[UINavigationBar appearance] setBarTintColor:[UIColor blueColor]];
+
+    
     
     
     
