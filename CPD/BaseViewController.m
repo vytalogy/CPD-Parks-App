@@ -17,13 +17,7 @@
 @import AVKit;
 
 
-@interface BaseViewController ()<MBProgressHUDDelegate,AVPlayerViewControllerDelegate,UISearchBarDelegate>{
-    
-    MBProgressHUD *hud;
-}
 
-
-@end
 
 @implementation BaseViewController
 
@@ -234,19 +228,6 @@
     
     
 }
-- (void)openMapsWithDirectionsTo:(CLLocationCoordinate2D)to latitude:(double)latitude longitude:(double)longitude{
-    
-    CLLocationCoordinate2D myLocation;
-    myLocation.latitude = latitude;
-    myLocation.longitude = longitude;
-    
-    NSMutableString *mapURL = [NSMutableString stringWithString:@"http://maps.google.com/maps?"];
-    [mapURL appendFormat:@"saddr=%f,%f", myLocation.latitude, myLocation.longitude];
-    [mapURL appendFormat:@"&daddr=%f,%f", to.latitude, to.longitude];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[mapURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
-    
-    
-}
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
@@ -254,46 +235,8 @@
 
 
 
--(void)restartLaoder{
-    [self createNewLoader];
-    
-}
--(void)stopLoader{
-    
-    [hud removeFromSuperview];
-}
 
--(void)createNewLoaderForModal{
-    
-    id c = self.navigationController.view;
-    
-    if (!c) {
-        c = self.view;
-    }
-    hud = [[MBProgressHUD alloc] initWithView:c];
-    
-    
-    [self.view addSubview:hud];
-    hud.labelText = @"Posting";
-    
-    [hud show:YES];
-    
-}
-- (void)createNewLoader{
-    
-    id c = self.navigationController.view;
-    
-    if (!c) {
-        c = self.view;
-    }
-	hud = [[MBProgressHUD alloc] initWithView:c];
-    
-    
-	[self.navigationController.view addSubview:hud];
-	hud.labelText = @"Loading";
-	
-    [hud show:YES];
-}
+
 
 
 
@@ -465,20 +408,6 @@
 }
 
 
-+ (NSString *) makeMd5:(NSString *) input
-{
-    const char *cStr = [input UTF8String];
-    unsigned char digest[16];
-    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
-    
-    NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
-        [output appendFormat:@"%02x", digest[i]];
-    
-    return  output;
-    
-}
 
 
 - (IBAction)btnBackTapped {
@@ -589,14 +518,6 @@
 
 
 
--(RestCall *)serviceCallObject{
-    
-    if (!_serviceCallObject) {
-        _serviceCallObject = [RestCall new];
-        _serviceCallObject.delegate =self;
-    }
-    return _serviceCallObject;
-}
 
 
 -(void)slideUp:(int)scale{
@@ -625,15 +546,32 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",number]]];;
 }
 
-
--(void)callNotificationWithTitle:(NSString *)title withInformation:(NSString *)info
-{
+-(void)profileButtonTapped{
     
-    [[TWMessageBarManager sharedInstance] showMessageWithTitle:title
-                                                   description:info
-                                                          type:TWMessageBarMessageTypeInfo
-                                               statusBarHidden:YES
-                                                      callback:nil];
+    
+    
+    
+    
+    
+    
+    [self showMyProfileView];
+    
+    
+    
+}
+
+-(void)showMyProfileView{
+    
+    
+    
+    ProfileViewController *destination = [self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"ProfileViewController"];
+    
+    
+    
+    [self.navigationController pushViewController:destination animated:YES];
+    
+    
+    
 }
 
 
@@ -643,32 +581,6 @@
 
 
 
-#pragma mark AAShareBubbles
-
-
--(BOOL)checkForAnonymous{
-    
-    if ([[self myJid] isEqualToString:@"anonymous"]) {
-        
-        return NO;
-    }
-    else
-        return YES;
-    
-    return NO;
-    
-}
-
-
-
-
--(UIDocumentInteractionController *) setupControllerWithURL: (NSURL*) fileURL usingDelegate: (id <UIDocumentInteractionControllerDelegate>) interactionDelegate {
-    
-    UIDocumentInteractionController *interactionController = [UIDocumentInteractionController
-                                                              interactionControllerWithURL: fileURL];
-    interactionController.delegate = interactionDelegate;
-    return interactionController;
-}
 
 
 
@@ -792,146 +704,8 @@
 
 }
 
--(void)addSearchToTableView:(UITableView *)tableView isHiddenIneditally:(BOOL)isHidden{
-    
-    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-    self.searchBar.delegate = self;
-    
-    
-    UISearchController *searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar
-                                                                             contentsController:self];
-    
-    searchController.delegate = self;
-    
-    if (!isHidden) {
-        
-        tableView.tableHeaderView = self.searchBar;
-    }
-}
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
-    
-    return YES;
-}
-
--(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
-    
-    self.isSearching = NO;
-    
-}
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
-    //isSearching = YES;
-    
-}
 
 
--(void)profileButtonTapped{
-    
-   
-    
-    [self showMyProfileView];
-    
-}
--(void)showMyProfileView{
-    
-    ProfileViewController *destination = [self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"ProfileViewController"];
-    
-    [self.navigationController pushViewController:destination animated:YES];
-    
-}
-
--(UIToolbar *)makeToolCarWithWithSelectorWith:(UIBarButtonItem *)barButtonDone
-{
-    
-    UIToolbar *toolbar = [[UIToolbar alloc] init];
-    [toolbar setBarStyle:UIBarStyleBlackTranslucent];
-    [toolbar sizeToFit];
-    
-    UIBarButtonItem *buttonflexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    
-    
-    [toolbar setItems:[NSArray arrayWithObjects:buttonflexible,barButtonDone, nil]];
-    _defaultFirstToolBar = toolbar;
-    
-    [toolbar sizeToFit];
-    
-    
-    
-    return toolbar;
-    
-}
-
-
-- (void)btnPlayIntroVideoTapped:(NSString *)sender {
-    
-    NSString *introMediaUrl = sender;
-    
-    
-    
-    if(!introMediaUrl)
-        return;
-    
-    NSURL *url;
-        AVPlayer *player;
-    if ([sender isKindOfClass:[AVURLAsset class]]) {
-        //tmp
-        
-        AVURLAsset * tmp = sender;
-        [tmp.URL path];
-        url = [NSURL fileURLWithPath:[tmp.URL path]];
-     
-   
-        player  = [AVPlayer playerWithURL:url];
-        
-    }
-    else if ([sender contains:@"/var/mobile/"]){
-        
-        
-        url = [NSURL fileURLWithPath:introMediaUrl];
-        
-        
-        player  = [AVPlayer playerWithURL:url];
-        
-        
-    }
-    else{
-        url=[[NSURL alloc] initWithString:introMediaUrl];
-        player  = [AVPlayer playerWithURL:url];
-        
-    }
-
-
-    
-    _moviePlayer = [[AVPlayerViewController alloc] init];
-    _moviePlayer.delegate = self;
-    
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(videoDidFinish:)
-                                                 name:AVPlayerItemDidPlayToEndTimeNotification
-                                               object:[_moviePlayer.player currentItem]];
-    
-    
-    _moviePlayer.showsPlaybackControls = YES;
-    
-
-    
-
-    _moviePlayer.player = player;
-
-    [self presentViewController:_moviePlayer animated:YES completion:nil];
-
-    [player play];
-    
-}
-
-- (void)videoDidFinish:(id)notification
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [self hideLoader];
-    
-    //fade out / remove subview
-}
 
 
 
@@ -961,97 +735,7 @@
     
 }
 
--(NSString*)stringByCleaningPhoneNumber: (NSString*) countryPrefix{
-    
-    NSString *clean = [countryPrefix stringByReplacingOccurrencesOfString:@" " withString:@""];
-    clean = [clean stringByReplacingOccurrencesOfString:@"\u00a0" withString:@""];
-    clean = [clean stringByReplacingOccurrencesOfString:@" " withString:@""];
-    clean = [clean stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    clean = [clean stringByReplacingOccurrencesOfString:@"(" withString:@""];
-    clean = [clean stringByReplacingOccurrencesOfString:@")" withString:@""];
-    clean = [clean stringByReplacingOccurrencesOfString:@"." withString:@""];
-    
-    if(countryPrefix){
-        NSString *totalPrefix = [NSString stringWithFormat:@"+%@", countryPrefix];
-        if([clean hasPrefix:totalPrefix]){
-            clean = [clean substringFromIndex:totalPrefix.length];
-        }
-    }
-    return clean;
-}
 
--(NSString *)converRawPhoneNumberToInternational:(NSString *)givenNumber currentCountryCode:(NSString *)countryCode
-{
-    NSString * currentString = [[givenNumber componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] componentsJoinedByString:@""];
-    
-    @try {
-        
-        
-        
-        
-        if ([currentString length] < 11) return currentString;
-        
-        if ([[currentString substringToIndex:1] isEqualToString:@"0"] || [[currentString substringToIndex:1] isEqualToString:@"+"])
-        {
-            
-            if ([[currentString substringFromIndex:1] isEqualToString:@"0"]
-                && [[currentString substringFromIndex:2] isEqualToString:@"0"])
-            {
-                
-                NSLog(@"");
-                
-            }
-            else if([[currentString substringToIndex:2] isEqualToString:@"00"])
-            {
-                currentString = [currentString stringByReplacingOccurrencesOfString:@"(" withString:@""];
-                currentString =[currentString stringByReplacingOccurrencesOfString:@")" withString:@""];
-                currentString = [currentString stringByReplacingOccurrencesOfString:@"-" withString:@""];
-                
-                NSString *tmp = [currentString substringFromIndex:2];
-                
-                tmp = [@"+" stringByAppendingString:tmp];
-                currentString = tmp;
-                
-
-                
-            }
-            
-            else if([[currentString substringToIndex:1] isEqualToString:@"+"])
-            {
-                //currentString = [currentString substringFromIndex:1];
-                //currentString = [@"+" stringByAppendingString:currentString];
-                
-            }
-            else{
-                currentString = [currentString substringFromIndex:1];
-                if ([countryCode contains:@"+"]) {
-                    
-                    countryCode =   [countryCode stringByReplacingOccurrencesOfString:@"+" withString:@""];
-                }
-                currentString = [[@"+" stringByAppendingString:countryCode]
-                                 stringByAppendingString:currentString ];
-                
-            }
-        }
-        
-        
-        
-        
-        
-        currentString = [self stringByCleaningPhoneNumber:currentString];
-        
-        
-        return currentString;
-        
-    }
-    
-    @catch (NSException *exception) {
-        
-        return currentString;
-        
-    }
-    
-}
 
 -(NSString *)contactsJSON{
     
@@ -1179,139 +863,6 @@
 
 
 
-- (void)videoOutput
-{
-    // 1 - Early exit if there's no video file selected
-    if (!self.videoAsset) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please Load a Video Asset First"
-                                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
-        return;
-    }
-    
-    // 2 - Create AVMutableComposition object. This object will hold your AVMutableCompositionTrack instances.
-    AVMutableComposition *mixComposition = [[AVMutableComposition alloc] init];
-    
-    // 3 - Video track
-    AVMutableCompositionTrack *videoTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo
-                                                                        preferredTrackID:kCMPersistentTrackID_Invalid];
-    
-    [videoTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, self.videoAsset.duration)
-                        ofTrack:[[self.videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0]
-                         atTime:kCMTimeZero error:nil];
-    
-    
-    AVMutableCompositionTrack *audioTrack;
-    
-    audioTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio
-                                             preferredTrackID:kCMPersistentTrackID_Invalid];
-    
-    
-    [audioTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero,self.videoAsset.duration)
-                        ofTrack:[[self.videoAsset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0]
-                         atTime:kCMTimeZero error:nil];
-    
-    
-    // 3.1 - Create AVMutableVideoCompositionInstruction
-    AVMutableVideoCompositionInstruction *mainInstruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
-    mainInstruction.timeRange = CMTimeRangeMake(kCMTimeZero, self.videoAsset.duration);
-    
-    // 3.2 - Create an AVMutableVideoCompositionLayerInstruction for the video track and fix the orientation.
-    AVMutableVideoCompositionLayerInstruction *videolayerInstruction = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
-    AVAssetTrack *videoAssetTrack = [[self.videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
-    UIImageOrientation videoAssetOrientation_  = UIImageOrientationUp;
-    BOOL isVideoAssetPortrait_  = NO;
-    CGAffineTransform videoTransform = videoAssetTrack.preferredTransform;
-    if (videoTransform.a == 0 && videoTransform.b == 1.0 && videoTransform.c == -1.0 && videoTransform.d == 0) {
-        videoAssetOrientation_ = UIImageOrientationRight;
-        isVideoAssetPortrait_ = YES;
-    }
-    if (videoTransform.a == 0 && videoTransform.b == -1.0 && videoTransform.c == 1.0 && videoTransform.d == 0) {
-        videoAssetOrientation_ =  UIImageOrientationLeft;
-        isVideoAssetPortrait_ = YES;
-    }
-    if (videoTransform.a == 1.0 && videoTransform.b == 0 && videoTransform.c == 0 && videoTransform.d == 1.0) {
-        videoAssetOrientation_ =  UIImageOrientationUp;
-    }
-    if (videoTransform.a == -1.0 && videoTransform.b == 0 && videoTransform.c == 0 && videoTransform.d == -1.0) {
-        videoAssetOrientation_ = UIImageOrientationDown;
-    }
-    [videolayerInstruction setTransform:videoAssetTrack.preferredTransform atTime:kCMTimeZero];
-    [videolayerInstruction setOpacity:0.0 atTime:self.videoAsset.duration];
-    
-    // 3.3 - Add instructions
-    mainInstruction.layerInstructions = [NSArray arrayWithObjects:videolayerInstruction,nil];
-    
-    AVMutableVideoComposition *mainCompositionInst = [AVMutableVideoComposition videoComposition];
-    
-    CGSize naturalSize;
-    if(isVideoAssetPortrait_){
-        naturalSize = CGSizeMake(videoAssetTrack.naturalSize.height, videoAssetTrack.naturalSize.width);
-    } else {
-        naturalSize = videoAssetTrack.naturalSize;
-    }
-    
-    float renderWidth, renderHeight;
-    renderWidth = naturalSize.width;
-    renderHeight = naturalSize.height;
-    mainCompositionInst.renderSize = CGSizeMake(renderWidth, renderHeight);
-    mainCompositionInst.instructions = [NSArray arrayWithObject:mainInstruction];
-    mainCompositionInst.frameDuration = CMTimeMake(1, 30);
-    
-    [self applyVideoEffectsToComposition:mainCompositionInst size:naturalSize];
-    
-    // 4 - Get path
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *myPathDocs =  [documentsDirectory stringByAppendingPathComponent:
-                             [NSString stringWithFormat:@"FinalVideo-%d.mov",arc4random() % 1000]];
-    NSURL *url = [NSURL fileURLWithPath:myPathDocs];
-    
-    // 5 - Create exporter
-    AVAssetExportSession *exporter = [[AVAssetExportSession alloc] initWithAsset:mixComposition
-                                                                      presetName:AVAssetExportPresetHighestQuality];
-    exporter.outputURL=url;
-    exporter.outputFileType = AVFileTypeQuickTimeMovie;
-    exporter.shouldOptimizeForNetworkUse = YES;
-    exporter.videoComposition = mainCompositionInst;
-    [exporter exportAsynchronouslyWithCompletionHandler:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self exportDidFinish:exporter];
-        });
-    }];
-}
-
-- (void)applyVideoEffectsToComposition:(AVMutableVideoComposition *)composition size:(CGSize)size
-{
-    // 1 - Set up the text layer
-    
-    
-    // 2 - The usual overlay
-    
-    CALayer *parentLayer = [CALayer layer];
-    CALayer *videoLayer = [CALayer layer];
-    parentLayer.frame = CGRectMake(0, 0, size.width, size.height);
-    videoLayer.frame = CGRectMake(0, 0, size.width, size.height);
-    [parentLayer addSublayer:videoLayer];
-    
-    
-    UIImage *animationImage =self.overLayImageUsing;
-    
-    CALayer *overlayLayer1 = [CALayer layer];
-    [overlayLayer1 setContents:(id)[animationImage CGImage]];
-    
-    
-    overlayLayer1.frame = CGRectMake(0, 0,
-                                     self.overLayImageUsing.size.width,
-                                     self.overLayImageUsing.size.height);
-    [overlayLayer1 setMasksToBounds:YES];
-    
-    [parentLayer addSublayer:overlayLayer1];
-    
-    composition.animationTool = [AVVideoCompositionCoreAnimationTool
-                                 videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayer:videoLayer inLayer:parentLayer];
-    
-}
 
 
 -(UIColor *)transperancyColor{

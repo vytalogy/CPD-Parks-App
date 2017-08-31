@@ -224,7 +224,6 @@
 		47305D051F1A2390001CAE54 /* TWMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305CB51F1A2390001CAE54 /* TWMessageBarManager.m */; };
 		47305D061F1A2390001CAE54 /* UUInputFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305CB71F1A2390001CAE54 /* UUInputFunctionView.m */; };
 		47305D071F1A2390001CAE54 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305CB91F1A2390001CAE54 /* Validator.m */; };
-		47305D081F1A2390001CAE54 /* VideoMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305CBB1F1A2390001CAE54 /* VideoMaker.m */; };
 		47305D091F1A2390001CAE54 /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305CBD1F1A2390001CAE54 /* Wrapper.m */; };
 		47305D0A1F1A2390001CAE54 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305CBF1F1A2390001CAE54 /* XMLDictionary.m */; };
 		47305D0B1F1A2390001CAE54 /* YLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305CC11F1A2390001CAE54 /* YLTextView.m */; };
@@ -745,8 +744,6 @@
 		47305CB71F1A2390001CAE54 /* UUInputFunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUInputFunctionView.m; sourceTree = "<group>"; };
 		47305CB81F1A2390001CAE54 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
 		47305CB91F1A2390001CAE54 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
-		47305CBA1F1A2390001CAE54 /* VideoMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMaker.h; sourceTree = "<group>"; };
-		47305CBB1F1A2390001CAE54 /* VideoMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMaker.m; sourceTree = "<group>"; };
 		47305CBC1F1A2390001CAE54 /* Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
 		47305CBD1F1A2390001CAE54 /* Wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
 		47305CBE1F1A2390001CAE54 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
@@ -1619,8 +1616,6 @@
 				47305CB71F1A2390001CAE54 /* UUInputFunctionView.m */,
 				47305CB81F1A2390001CAE54 /* Validator.h */,
 				47305CB91F1A2390001CAE54 /* Validator.m */,
-				47305CBA1F1A2390001CAE54 /* VideoMaker.h */,
-				47305CBB1F1A2390001CAE54 /* VideoMaker.m */,
 				47305CBC1F1A2390001CAE54 /* Wrapper.h */,
 				47305CBD1F1A2390001CAE54 /* Wrapper.m */,
 				47305CBE1F1A2390001CAE54 /* XMLDictionary.h */,
@@ -2240,7 +2235,6 @@
 				47305CDC1F1A2390001CAE54 /* EMCCountryManager.m in Sources */,
 				4706DCCE1F4C8840002A0E68 /* IQVideoSettingsContainerView.m in Sources */,
 				47ED661B1F40953F00AD170E /* MapView.m in Sources */,
-				47305D081F1A2390001CAE54 /* VideoMaker.m in Sources */,
 				47305BF81F1A2264001CAE54 /* View+MASAdditions.m in Sources */,
 				47305A901F19EA5A001CAE54 /* AppDelegate.m in Sources */,
 				47305BEE1F1A2264001CAE54 /* LMDropdownView.m in Sources */,
@@ -2454,8 +2448,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2463,8 +2457,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
-				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
+				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
+				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
 			};
 			name = Debug;
 		};
@@ -2472,8 +2466,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2481,8 +2475,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
-				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
+				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
+				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
 			};
 			name = Release;
 		};

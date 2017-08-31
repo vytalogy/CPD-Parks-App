@@ -397,7 +397,7 @@
     
     
     self.lblLevel1TwoScore.attributedText = [self textForScoreWithScore:self.park2Level1Score withLevel:1 withPark:2];
-    self.lblLevel2TwoScore.attributedText = [self textForScoreWithScore:self.park2Level1Score withLevel:2 withPark:2];
+    self.lblLevel2TwoScore.attributedText = [self textForScoreWithScore:self.park2Level2Score withLevel:2 withPark:2];
     
     
     

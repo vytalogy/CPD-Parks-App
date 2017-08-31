@@ -584,7 +584,6 @@
 
 -(void)moveToNextView{
     
-    self.scoreToBeAdded = 2;
     
     [self.btnHint setHidden:YES];
     [self.btnSkip setHidden:YES];
@@ -659,7 +658,7 @@
             
         
         
-/*
+/*=
  
  
  [UIView transitionWithView:self.questionScoreView
@@ -725,6 +724,9 @@
         
         
     });
+    
+    self.scoreToBeAdded = 2;
+    
     
     
 }

@@ -331,9 +331,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PURPLE MARTIN HOUSE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmI-OW-QeS">
-                                <rect key="frame" x="0.0" y="24" width="375" height="44"/>
+                                <rect key="frame" x="11" y="24" width="353" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="har-0f-CiG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="har-0f-CiG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="25"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -391,7 +391,7 @@
                             <constraint firstItem="Fv8-La-BzG" firstAttribute="top" secondItem="FRV-iI-bDr" secondAttribute="bottom" constant="30" id="3Sx-QV-J8S"/>
                             <constraint firstItem="14Z-TJ-Tn4" firstAttribute="centerX" secondItem="Onk-GV-QfS" secondAttribute="centerX" id="7zj-qW-5kY"/>
                             <constraint firstItem="ls6-Yp-j27" firstAttribute="leading" secondItem="Onk-GV-QfS" secondAttribute="leading" id="BmK-gh-KZf"/>
-                            <constraint firstItem="ZmI-OW-QeS" firstAttribute="leading" secondItem="Onk-GV-QfS" secondAttribute="leading" id="CP2-tF-rfo"/>
+                            <constraint firstItem="ZmI-OW-QeS" firstAttribute="leading" secondItem="Onk-GV-QfS" secondAttribute="leading" constant="11" id="CP2-tF-rfo"/>
                             <constraint firstItem="ls6-Yp-j27" firstAttribute="top" secondItem="44a-NX-jTU" secondAttribute="bottom" id="HuZ-jQ-TG0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Kph-yl-Tj3" secondAttribute="trailing" constant="11" id="Kc0-ha-Md2"/>
                             <constraint firstItem="Kph-yl-Tj3" firstAttribute="leading" secondItem="Onk-GV-QfS" secondAttribute="leadingMargin" constant="11" id="O9M-BX-eno"/>
@@ -409,7 +409,7 @@
                             <constraint firstItem="14Z-TJ-Tn4" firstAttribute="top" secondItem="z12-Ym-oIX" secondAttribute="bottom" constant="8" id="hIE-C7-IJu"/>
                             <constraint firstItem="ZmI-OW-QeS" firstAttribute="top" secondItem="dBk-8g-5OP" secondAttribute="bottom" id="iQm-ya-S9p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FRV-iI-bDr" secondAttribute="trailing" constant="11" id="jjW-CZ-XnO"/>
-                            <constraint firstAttribute="trailing" secondItem="ZmI-OW-QeS" secondAttribute="trailing" id="mtl-5Q-S3P"/>
+                            <constraint firstAttribute="trailing" secondItem="ZmI-OW-QeS" secondAttribute="trailing" constant="11" id="mtl-5Q-S3P"/>
                             <constraint firstItem="Fv8-La-BzG" firstAttribute="top" secondItem="AH2-gv-5Yf" secondAttribute="bottom" constant="22" id="nFj-fK-7ct"/>
                             <constraint firstAttribute="trailingMargin" secondItem="z12-Ym-oIX" secondAttribute="trailing" constant="11" id="sYG-xJ-1Py"/>
                             <constraint firstItem="z12-Ym-oIX" firstAttribute="top" secondItem="ZmI-OW-QeS" secondAttribute="bottom" constant="8" id="wJD-b6-jZv"/>
@@ -626,11 +626,11 @@
                         <viewControllerLayoutGuide type="bottom" id="s7v-uh-oJB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWF-1Y-TFj">
-                        <rect key="frame" x="0.0" y="64" width="375" height="807"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="871"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdC-YF-oIU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="806"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="850"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large-background" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-bT-8j0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="882"/>
@@ -1733,6 +1733,6 @@
         <image name="star-icon" width="74" height="74"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kFb-Lm-Rf3"/>
+        <segue reference="ovV-5O-zkJ"/>
     </inferredMetricsTieBreakers>
 </document>

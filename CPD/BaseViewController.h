@@ -4,7 +4,6 @@
 
 #import <UIKit/UIKit.h>
 #import <AddressBook/AddressBook.h>
-#import "MBProgressHUD.h"
 #import "AppDelegate.h"
 #import "Config.h"
 #import "RestCall.h"
@@ -12,22 +11,17 @@
 #import "SlideNavigationController.h"
 #import "Validator.h"
 #import "NSString+JS.h"
-#import <CommonCrypto/CommonDigest.h>
 #import "FileManager.h"
 #import "NSDate+Utilities.h"
-#import "TWMessageBarManager.h"
 #import "NSString+HTML.h"
-#import "ZFModalTransitionAnimator.h"
-#import "CoreLocationController.h"
 #import "Reachability.h"
 #import "UIView+Toast.h"
 #import "UITextField+MyTextField.h"
-#import <MediaPlayer/MediaPlayer.h>
 #import "DYAlertPickView.h"
 #import "ESImageViewController.h"
 #import "JTSImageViewController.h"
 #import "JTSImageInfo.h"
-#import "VideoMaker.h"
+
 #import "Parks.h"
 #import "Level.h"
 #import "Question.h"
@@ -59,7 +53,6 @@
 @property (weak, nonatomic) IBOutlet UIView *viewTitleContainer;
 -(void)showAlert:(NSString *)title message:(NSString *)currentMessage;
 -(void)showAlert:(NSString *)title message:(NSString *)currentMessage customTag:(int)currentTag;
-@property(nonatomic, strong) AVAsset *videoAsset;
 -(void)stopLoader;
 -(void)restartLaoder;
 -(void)createNewLoaderForModal;
@@ -111,7 +104,6 @@
 
 @property (nonatomic, strong) NSMutableArray *contactList;
 
-@property (nonatomic, strong) ZFModalTransitionAnimator *animator;
 
 @property (nonatomic,strong) id objectSharing;
 
@@ -124,7 +116,6 @@
 
 @property (nonatomic,strong) NSString *countryCodeForFeeds;
 
-@property (nonatomic, retain) CoreLocationController *locationController;
 
 @property (nonatomic) BOOL isLocationErrorMessageSlidedUp;
 - (BOOL) isInternetConnectionAvailable;
@@ -138,10 +129,8 @@
 
 
 
-@property (nonatomic,strong) CLLocation * myCurrentLocation;
 
 -(void)setMyMap;
-- (void)openMapsWithDirectionsTo:(CLLocationCoordinate2D)to latitude:(double)latitude longitude:(double)longitude;
 
 @property (nonatomic) BOOL doSlideUpForLocationError;
 @property (nonatomic) BOOL doSlidUpForNoInternetError;

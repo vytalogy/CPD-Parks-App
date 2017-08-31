@@ -137,6 +137,8 @@
                                                         withHeight:self.view.frame.size.height];
         
         
+                [_rulesViews setUpView];
+        
         
         
         [_rulesViews.btnClose addTarget:self action:@selector(closeRulesView) forControlEvents:UIControlEventTouchUpInside];
@@ -155,6 +157,9 @@
             
             result = [result stringByReplacingOccurrencesOfString:_rulesViews.lblTitle.text withString:@""];
             
+            result = [result stringByReplacingOccurrencesOfString:_rulesViews.lblTitle.text withString:@""];
+            
+            
             result = [result stringByReplacingOccurrencesOfString:@"\n" withString:@"\n\n"];
             
             
@@ -166,7 +171,7 @@
             
         }];
         
-        [_rulesViews setUpView];
+
         
         
         
