@@ -36,7 +36,7 @@
 -(NSAttributedString *)requestText{
     
     
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"You are about to exit request.\nThis will cause you yo lose any points\nfrom unfinished quizzes.\n\nAre you sure you to exit?"];
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"You are about to exit request.\nThis will cause you to lose any points\nfrom unfinished quizzes.\n\nAre you sure you want to exit?"];
     id boldFontName = [UIFont fontWithName:FontToUseBold size:20];
     id normalFont = [UIFont fontWithName:FontToUserMedium size:18];
     
@@ -47,7 +47,7 @@
 
     NSRange normalRange3 = NSMakeRange(30, 64);
     
-    NSRange normalRange4 = NSMakeRange(96, 25);
+    NSRange normalRange4 = NSMakeRange(96, 30);
     
     
     [attrString addAttribute:kCTFontAttributeName

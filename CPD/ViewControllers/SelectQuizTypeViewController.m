@@ -12,6 +12,7 @@
 #import "FileManager.h"
 #import "RulesView.h"
 #import "Rules.h"
+#import "HintView.h"
 
 
 @interface SelectQuizTypeViewController ()
@@ -51,6 +52,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *TitleContraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *welcomeContstant;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic,strong) HintView *hintView;
 
 @end
 
@@ -144,10 +146,6 @@
         [_rulesViews.btnClose addTarget:self action:@selector(closeRulesView) forControlEvents:UIControlEventTouchUpInside];
         
         [_rulesViews.btnGetStarted addTarget:self action:@selector(getStarted) forControlEvents:UIControlEventTouchUpInside];
-        
-        
-        
-        //_rulesViews.center = self.view.center;
         
         
         
@@ -260,12 +258,65 @@
     }
 }
 
+-(void)hintCloseButtonTapped{
+    
+    
+    self.hintView.hidden = YES;
+    
+    [self.hintView removeFromSuperview];
+    
+    
+}
+
+-(HintView *)hintView {
+    
+    if (!_hintView) {
+        
+        _hintView =   (HintView *)[self.view getViewFromNibName:@"HintView" withWidth:self.view.frame.size.width-30
+                                                     withHeight:297];
+        [_hintView setupView];
+        
+        [self.view addSubview:_hintView];
+        
+        _hintView.center = self.view.center;
+        [_hintView setFrame:CGRectMake(_hintView.frame.origin.x, _hintView.frame.origin.y-75, _hintView.frame.size.width, _hintView.frame.size.height)];
+        
+        
+        [_hintView.btnCross addTarget:self action:@selector(hintCloseButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+        
+        _hintView.lblDetail.text = @"This ReQuest starts at the parking lot on 122nd St on the south side of Indian Ridge Marsh. If you’re at the lot on Torrence Ave, you’re in the wrong spot! We’ll move here later in the quest.";
+        
+        [_hintView.lblHint setHidden:YES];
+        _hintView.HintHeight.constant = 20;
+        
+    }
+    else {
+        
+        //_hintView.hidden = NO;
+        
+    }
+    return _hintView;
+    
+}
 
 
 
 -(void)viewDidAppear:(BOOL)animated{
     
     
+            /*
+
+             */
+    
+    
+    [super viewDidAppear:animated];
+    
+    
+    if (self.selectedPark.itemId == 3) {
+    [self.hintView setHidden:NO];
+    }
+    
+
     
     
     

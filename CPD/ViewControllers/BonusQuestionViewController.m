@@ -346,8 +346,7 @@
    
     
     
-    self.lblAnswerTitle.text = self.questionDoingOn.expTitle.uppercaseString;
-   
+    
     
 
     
@@ -419,7 +418,9 @@
     [super viewDidLoad];
     
     
-    self.lblAnswerTitle.text = @"";
+    
+    
+    
     
     
     
@@ -497,8 +498,8 @@
         
     }
     
+    self.lblAnswerTitle.text = self.questionDoingOn.expTitle.uppercaseString;
     
-
     
 }
 
@@ -548,11 +549,24 @@
     
     
     
+    
+    /*
     CATransition* transition = [CATransition animation];
     transition.duration = 0.5;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     transition.type = kCATransitionFade; //kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
     //transition.subtype = kCATransitionFromTop; //kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
+    */
+    
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.5;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromRight;
+    //[self.view.window.layer addAnimation:transition forKey:nil];
+
+    
     [self.navigationController.view.layer addAnimation:transition forKey:nil];
     [[self navigationController] popViewControllerAnimated:NO];
     

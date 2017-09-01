@@ -564,14 +564,23 @@
     
     
     
-    ProfileViewController *destination = [self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"ProfileViewController"];
+    ProfileViewController *destination = (ProfileViewController *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"ProfileViewController"];
     
     
     
-    [self.navigationController pushViewController:destination animated:YES];
+    CATransition* transition = [CATransition animation];
+    transition.duration = 0.5;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    
+    [self.view.window.layer addAnimation:transition forKey:nil];
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+
+    [self.navigationController pushViewController:destination animated:NO];
     
     
     
+
 }
 
 

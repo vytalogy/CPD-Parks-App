@@ -100,6 +100,7 @@
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="HintHeight" destination="Fqa-sp-ngx" id="Bbi-k0-5vK"/>
                 <outlet property="backImag" destination="8I3-tm-mDY" id="tBP-PP-iSr"/>
                 <outlet property="btnCross" destination="1GO-uh-H9h" id="CIE-MS-wae"/>
                 <outlet property="containerView" destination="fc5-yH-eOO" id="MOL-0c-TJx"/>
