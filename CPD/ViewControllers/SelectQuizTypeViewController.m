@@ -54,6 +54,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic,strong) HintView *hintView;
 
+@property (nonatomic,strong) CAShapeLayer *secondLayer;
+
 @end
 
 @implementation SelectQuizTypeViewController
@@ -265,6 +267,53 @@
     
     [self.hintView removeFromSuperview];
     
+    [self.lblTitle setHidden:NO];
+    
+    [self.lblDetail setHidden:NO];
+    [self.lblWelcomeLabel setHidden:NO];
+    [self.viewContainerTypeOne setHidden:NO];
+    [self.viewContainerTypeTwo setHidden:NO];
+ 
+    
+    
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(23, 63)]; // bottom left corner
+    [path addLineToPoint:CGPointMake(0, 0)]; // top middle
+    
+    [path addLineToPoint:CGPointMake(self.viewContainerTypeOne.frame.size.width, 0)]; // top right corner
+    [path addLineToPoint:CGPointMake(self.viewContainerTypeOne.frame.size.width, 63)]; // bottom right corner
+    [path closePath];
+    
+    
+    
+    layer.path = path.CGPath;
+    layer.fillColor = self.transperancyColor.CGColor;
+    layer.strokeColor =  nil;
+    [self.viewContainerTypeOne.layer insertSublayer:layer atIndex:0];
+    
+    
+    
+    CAShapeLayer *layer2 = [CAShapeLayer layer];
+    
+    UIBezierPath * path2 = [UIBezierPath bezierPath];
+    [path2 moveToPoint:CGPointMake(23, 63)]; // bottom left corner
+    [path2 addLineToPoint:CGPointMake(0, 0)]; // top middle
+    [path2 addLineToPoint:CGPointMake(_viewContainerTypeTwo.frame.size.width, 0)]; // top right corner-
+    [path2 addLineToPoint:CGPointMake(_viewContainerTypeTwo.frame.size.width, 63)]; // bottom right corner
+    [path2 closePath];
+    
+    layer2.path = path2.CGPath;
+    layer2.fillColor = self.transperancyColor.CGColor;
+    layer2.strokeColor =  nil;
+    [self.viewContainerTypeTwo.layer insertSublayer:layer2 atIndex:0];
+    
+    
+    
+    self.secondLayer =layer2;
+    
+    //[self.viewContainerTypeTwo setBackgroundColor:[UIColor greenColor]];
     
 }
 
@@ -299,7 +348,16 @@
     
 }
 
-
+-(void)viewWillAppear:(BOOL)animated{
+    
+    
+    [super viewWillAppear:animated];
+    
+    
+    
+ 
+    
+}
 
 -(void)viewDidAppear:(BOOL)animated{
     
@@ -309,12 +367,7 @@
              */
     
     
-    [super viewDidAppear:animated];
-    
-    
-    if (self.selectedPark.itemId == 3) {
-    [self.hintView setHidden:NO];
-    }
+
     
 
     
@@ -324,6 +377,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    if (self.selectedPark.itemId == 3) {
+        [self.lblTitle setHidden:YES];
+        
+        [self.lblDetail setHidden:YES];
+        [self.lblWelcomeLabel setHidden:YES];
+        [self.viewContainerTypeOne setHidden:YES];
+        [self.viewContainerTypeTwo setHidden:YES];
+        [self.hintView setHidden:NO];
+    }
+    
     for (UILabel * allLabels in self.levelLabels) {
         
         [allLabels setFont:ParkAndLevelFont];
@@ -505,6 +568,10 @@
     
     [super viewDidLayoutSubviews];
     
+    if (self.selectedPark.itemId == 3) {
+        
+        return;
+    }
     CAShapeLayer *layer = [CAShapeLayer layer];
     
     UIBezierPath *path = [UIBezierPath bezierPath];
@@ -540,7 +607,7 @@
     
     
     
-
+    self.secondLayer =layer2;
     
     
     

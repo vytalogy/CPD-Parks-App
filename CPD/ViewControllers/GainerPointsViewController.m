@@ -133,11 +133,15 @@
     self.navLabel.textColor = [UIColor whiteColor];
     
     
+    self.sharedDelegate.isPlayingGame = NO;
+    
 }
 - (IBAction)btnNext:(id)sender {
     
     
-    [self performSegueWithIdentifier:@"segueMyProfile" sender:self];
+    [self showMyProfileView];
+    
+    //[self performSegueWithIdentifier:@"segueMyProfile" sender:self];
     
 }
 
