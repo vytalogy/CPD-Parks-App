@@ -316,10 +316,19 @@
         [self.viewQuestionContainer setBackgroundColor:[UIColor clearColor]];
         [self.viewQuestionContainer addSubview:_questionView];
         
+        //textView.adjustsFontSizeToFitWidth = YES;
+
+        _questionView.lblQuestionText.adjustsFontSizeToFitWidth = YES;
+        
         _questionView.lblQuestionText.text = self.allQuestion[self.questionIndex].question;
+  //      [_questionView.lblQuestionText sizeToFit];
+        
+//        _questionView.lblQuestionText.backgroundColor = [UIColor yellowColor];
         
 
 
+        
+        
         
         NSLayoutConstraint *trailing =[NSLayoutConstraint
                                        constraintWithItem:_questionView
