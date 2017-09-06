@@ -62,6 +62,11 @@
     
     tmpResult.expTitle =
     [sourceItem objectForKey:@"Exp_Title"];
+    NSString *trimmedString = [tmpResult.expTitle stringByTrimmingCharactersInSet:
+                               [NSCharacterSet whitespaceCharacterSet]];
+    
+    tmpResult.expTitle = trimmedString;
+    
     
     tmpResult.expDesc =
     [sourceItem objectForKey:@"Exp_Desc"];
