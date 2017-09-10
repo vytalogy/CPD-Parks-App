@@ -545,30 +545,55 @@
         return;
         
     }
-    [self.questionViewController setupViewNextQuestion];
     
     
+    [self showLoader];
     
+    [FileManager loadProfileImageUrl:self.allQuestion[self.questionIndex+1].imageURL
+                          withLoader:nil
+               withComplitionHandler:^(id c) {
+                   
+                   [self hideLoader];
+                   
+                   [self.questionViewController setupViewNextQuestion];
+                   
+                   
+                   CATransition *transition = [CATransition animation];
+                   transition.duration = 0.5;
+                   transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+                   transition.type = kCATransitionPush;
+                   transition.subtype = kCATransitionFromRight;
+                   //[self.view.window.layer addAnimation:transition forKey:nil];
+                   
+                   
+                   [self.navigationController.view.layer addAnimation:transition forKey:nil];
+                   [[self navigationController] popViewControllerAnimated:NO];
     
-    /*
-    CATransition* transition = [CATransition animation];
-    transition.duration = 0.5;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionFade; //kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
-    //transition.subtype = kCATransitionFromTop; //kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
-    */
+                   
+                   
+               } withFailHander:^(int d) {
+                   
+                   [self hideLoader];
+                   
+                   [self.questionViewController setupViewNextQuestion];
+                   
+                   
+                   CATransition *transition = [CATransition animation];
+                   transition.duration = 0.5;
+                   transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+                   transition.type = kCATransitionPush;
+                   transition.subtype = kCATransitionFromRight;
+                   //[self.view.window.layer addAnimation:transition forKey:nil];
+                   
+                   
+                   [self.navigationController.view.layer addAnimation:transition forKey:nil];
+                   [[self navigationController] popViewControllerAnimated:NO];
     
+                   
+                   
+                   
+               }];
     
-    CATransition *transition = [CATransition animation];
-    transition.duration = 0.5;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromRight;
-    //[self.view.window.layer addAnimation:transition forKey:nil];
-
-    
-    [self.navigationController.view.layer addAnimation:transition forKey:nil];
-    [[self navigationController] popViewControllerAnimated:NO];
     
     
     

@@ -926,7 +926,7 @@
     NSString *parkString = @"";
     
     
-    NSString *scoreStinrg = [NSString stringWithFormat:@"(%@/35)\n",score];
+    NSString *scoreStinrg = [NSString stringWithFormat:@"(%@/30)\n",score];
     
     
     if (level == 1) {

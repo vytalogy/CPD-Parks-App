@@ -34,6 +34,11 @@
 #define ArboriaSemiBold @"Raleway-SemiBold"
 #define ArboriaBook @"Raleway-Regular"
 #define ArboriaMedium @"Raleway-Medium"
+#define ArboriaBold @"Raleway-Bold"
+#define ArboriaBlack @"Raleway-ExtraBold"
+
+
+//
 
 
 
@@ -62,7 +67,7 @@
 #define AnswerYouFoundFont [UIFont fontWithName:FontToUserMedium size:20]
 #define AnswerFontColor [UIColor colorWithRed:1 green:1 blue:1 alpha:1.0]
 #define AnswerTitleFont [UIFont fontWithName:FontToUserBlack size:26]
-#define AnswerDescriptionFont [UIFont fontWithName:ArboriaSemiBold size:18]
+#define AnswerDescriptionFont [UIFont fontWithName:ArboriaBold size:18]
 
 
 #define ScoreViewCongratsFont [UIFont fontWithName:FontToUserBlack size:50]
@@ -98,6 +103,7 @@
 
 #define BonusPointsCongratsViewNumberFont [UIFont fontWithName:FontToUseBold size:68]
 #define BonusPointsCongratsViewCongratsFont [UIFont fontWithName:FontToUseBold size:26]
+
 
 //
 

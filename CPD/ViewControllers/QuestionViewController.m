@@ -156,7 +156,6 @@
         
 
         
-        
         tmpDestination.questionViewController = self;
         tmpDestination.currentLevel = self.levelSelected;
         
@@ -166,6 +165,18 @@
             tmpDestination.currentScore = self.scoredPoints;
             
         }
+        
+        
+        tmpDestination.questionIndex = self.questionIndex;
+        tmpDestination.allQuestion = self.allQuestion;
+        
+        
+        /*
+
+         @property (nonatomic,strong) NSMutableArray <Question *>* allQuestion;
+         */
+        
+        
         
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         
@@ -594,6 +605,8 @@
 -(void)moveToNextView{
     
     
+    [self.hintView setHidden:YES];
+    
     [self.btnHint setHidden:YES];
     [self.btnSkip setHidden:YES];
     [self.btnFoundIT setHidden:YES];
@@ -639,15 +652,6 @@
 
     
     
-    /*
-     [UIView transitionWithView:textFieldimageView
-     duration:0.2f
-     options:UIViewAnimationOptionTransitionCrossDissolve
-     animations:^{
-     imageView.image = newImage;
-     } completion:nil];
-     
-     */
     
 
     
@@ -666,28 +670,6 @@
     else if (self.questionIndex % 2 == 1) {
             
         
-        
-/*=
- 
- 
- [UIView transitionWithView:self.questionScoreView
- duration:0.8f
- options:UIViewAnimationOptionCurveLinear
- animations:^{
- 
- 
- 
- NSLog(@"");
- self.questionScoreView.imgDottedImage.alpha = 1.0;
- 
- 
- } completion:^(BOOL finished) {
- 
- 
- 
- 
- }];
-  */
         
         
         
@@ -728,8 +710,28 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         
+        [self showLoader];
+    
         
-        [self performSegueWithIdentifier:@"segueHint" sender:self];
+        [FileManager loadProfileImageUrl:self.allQuestion[self.questionIndex].successImageUrl
+                              withLoader:nil
+                   withComplitionHandler:^(id c) {
+        
+                                          [self hideLoader];
+                       
+                       [self performSegueWithIdentifier:@"segueHint" sender:self];
+                       
+        
+                       
+                   } withFailHander:^(int d) {
+        
+                                          [self hideLoader];
+                       
+                       [self performSegueWithIdentifier:@"segueHint" sender:self];
+                       
+        
+                       
+                   }];
         
         
     });
@@ -744,8 +746,52 @@
     
     self.skipping  = YES;
     
-
-    [self performSegueWithIdentifier:@"segueHint" sender:self];
+    [self.hintView setHidden:YES];
+    
+    
+    [self showLoader];
+    
+    
+    
+    if (self.questionIndex == 14) {
+                           [self performSegueWithIdentifier:@"segueHint" sender:self];
+        return;
+    }
+    [FileManager loadProfileImageUrl:self.allQuestion[self.questionIndex+1].imageURL
+                          withLoader:nil
+               withComplitionHandler:^(id c) {
+                   
+                   [self hideLoader];
+    
+                   
+                   [self performSegueWithIdentifier:@"segueHint" sender:self];
+                   
+               } withFailHander:^(int d) {
+    
+                   [self hideLoader];
+    
+                   
+                   [self performSegueWithIdentifier:@"segueHint" sender:self];
+    
+                   
+               }];
+    
+    /*
+    [FileManager loadProfileImageUrl:self.allQuestion[self.questionIndex+1].successImageUrl
+                          withLoader:nil
+               withComplitionHandler:^(id c) {
+                   
+                   
+               } withFailHander:^(int d) {
+                   
+               }];
+    
+    */
+    
+    
+    
+    
+    
     
     
 

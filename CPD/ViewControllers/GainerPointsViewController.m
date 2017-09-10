@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *ScoreConstant;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *placeConmpetedConstant;
 
+@property (weak, nonatomic) IBOutlet UIImageView *dottedBgImage;
 @end
 
 @implementation GainerPointsViewController
@@ -135,6 +136,22 @@
     
     self.sharedDelegate.isPlayingGame = NO;
     
+    self.dottedBgImage.alpha = 0.0;
+    [self.dottedBgImage setHidden:NO];
+    
+    
+    
+    [UIView animateWithDuration:1.0f
+                     animations:^{
+                         
+                         self.dottedBgImage.alpha = 1.0;
+                         
+                     } completion:^(BOOL finished) {
+ 
+                        self.dottedBgImage.alpha = .7;
+                         //Done
+                     }];
+    
 }
 - (IBAction)btnNext:(id)sender {
     
@@ -142,6 +159,16 @@
     [self showMyProfileView];
     
     //[self performSegueWithIdentifier:@"segueMyProfile" sender:self];
+    
+}
+- (IBAction)btnShareTapped:(id)sender {
+    
+    NSString *formattedString = [NSString stringWithFormat:@"I just scored %d points. Visit http://www.chicagoparkdistrict.com/ to download the app.",self.scoredPoints];
+    
+    NSArray* sharedObjects=[NSArray arrayWithObjects:formattedString,  nil];
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc]                                                                initWithActivityItems:sharedObjects applicationActivities:nil];
+    activityViewController.popoverPresentationController.sourceView = self.view;
+    [self presentViewController:activityViewController animated:YES completion:nil];
     
 }
 

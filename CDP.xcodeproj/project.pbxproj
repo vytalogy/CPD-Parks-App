@@ -233,6 +233,9 @@
 		4737E10E1F2C8F1F0010955D /* Parks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4737E10D1F2C8F1F0010955D /* Parks.m */; };
 		4737E1111F2C9D140010955D /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 4737E1101F2C9D140010955D /* Level.m */; };
 		4737E1141F2CA3CD0010955D /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 4737E1131F2CA3CD0010955D /* Question.m */; };
+		4744A39D1F6190D600012831 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4744A39C1F6190D600012831 /* Raleway-Bold.ttf */; };
+		4744A39F1F61990B00012831 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4744A39E1F61990B00012831 /* Raleway-Black.ttf */; };
+		4744A3A11F619F0A00012831 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4744A3A01F619F0A00012831 /* Raleway-ExtraBold.ttf */; };
 		47593C601F28EA260086E27F /* BonusPointsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47593C5F1F28EA260086E27F /* BonusPointsView.xib */; };
 		47593C631F28EA4A0086E27F /* BonusPointsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47593C621F28EA4A0086E27F /* BonusPointsView.m */; };
 		475E667F1F26690F002FBD29 /* BonusAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 475E667E1F26690F002FBD29 /* BonusAnswerView.m */; };
@@ -762,6 +765,9 @@
 		4737E1101F2C9D140010955D /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = Model/Level.m; sourceTree = "<group>"; };
 		4737E1121F2CA3CD0010955D /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = Model/Question.h; sourceTree = "<group>"; };
 		4737E1131F2CA3CD0010955D /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = Model/Question.m; sourceTree = "<group>"; };
+		4744A39C1F6190D600012831 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		4744A39E1F61990B00012831 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		4744A3A01F619F0A00012831 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
 		47593C5F1F28EA260086E27F /* BonusPointsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BonusPointsView.xib; path = Views/BonusPointsView.xib; sourceTree = "<group>"; };
 		47593C611F28EA4A0086E27F /* BonusPointsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BonusPointsView.h; path = Views/BonusPointsView.h; sourceTree = "<group>"; };
 		47593C621F28EA4A0086E27F /* BonusPointsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BonusPointsView.m; path = Views/BonusPointsView.m; sourceTree = "<group>"; };
@@ -1127,6 +1133,9 @@
 		47305A8B1F19EA5A001CAE54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4744A3A01F619F0A00012831 /* Raleway-ExtraBold.ttf */,
+				4744A39E1F61990B00012831 /* Raleway-Black.ttf */,
+				4744A39C1F6190D600012831 /* Raleway-Bold.ttf */,
 				47FD73F91F50A9C700194E02 /* Raleway-SemiBold.ttf */,
 				47FD73F51F50A65C00194E02 /* Raleway-Light.ttf */,
 				47FD73F61F50A65C00194E02 /* Raleway-Regular.ttf */,
@@ -2015,6 +2024,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EB4AC51F447C2500C4674C /* VistaSlabOT-Reg.otf in Resources */,
+				4744A39F1F61990B00012831 /* Raleway-Black.ttf in Resources */,
 				47EB4AC11F447C2500C4674C /* VistaSlabOT-Bold.otf in Resources */,
 				47EB4AC41F447C2500C4674C /* VistaSlabOT-LightItalic.otf in Resources */,
 				47EB4AD81F4487AA00C4674C /* VistaSlabOT-Med.otf in Resources */,
@@ -2033,6 +2043,7 @@
 				47E449EE1F4B37ED0090C117 /* WarningLeaving.xib in Resources */,
 				47305C181F1A2264001CAE54 /* Info.plist in Resources */,
 				4706DCC31F4C8840002A0E68 /* IQMediaCaptureController.xcassets in Resources */,
+				4744A39D1F6190D600012831 /* Raleway-Bold.ttf in Resources */,
 				47ED66201F40CE8C00AD170E /* RulesView.xib in Resources */,
 				47EB4AD61F44862800C4674C /* VistaSlabOT-Book.otf in Resources */,
 				478F12C31F23B916007415C6 /* InGameScoreView.xib in Resources */,
@@ -2046,6 +2057,7 @@
 				47305C161F1A2264001CAE54 /* TGPhotoViewController.xib in Resources */,
 				475E66811F26691D002FBD29 /* BonusAnswerView.xib in Resources */,
 				47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */,
+				4744A3A11F619F0A00012831 /* Raleway-ExtraBold.ttf in Resources */,
 				47EB4AC21F447C2500C4674C /* VistaSlabOT-BoldItalic.otf in Resources */,
 				47305C171F1A2264001CAE54 /* TOCropViewControllerLocalizable.strings in Resources */,
 				47EB4AC31F447C2500C4674C /* VistaSlabOT-Light.otf in Resources */,
@@ -2448,8 +2460,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2457,8 +2469,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
-				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
+				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
+				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
 			};
 			name = Debug;
 		};
@@ -2466,8 +2478,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Plego Technologies, LLC (75975U3UB4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Saad Yusuf (WDTGDQ3WCV)";
 				DEVELOPMENT_TEAM = 75975U3UB4;
 				GCC_PREFIX_HEADER = "CPD/Support/CDP-Prefix.pch";
 				INFOPLIST_FILE = CPD/Info.plist;
@@ -2475,8 +2487,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plego.CPD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d6ce91c9-844e-42d2-8f06-52511184713c";
-				PROVISIONING_PROFILE_SPECIFIER = "CPD Distribution";
+				PROVISIONING_PROFILE = "f676fbaa-40e3-4af5-992f-4f9e7ad7a8a9";
+				PROVISIONING_PROFILE_SPECIFIER = CPD_Development;
 			};
 			name = Release;
 		};

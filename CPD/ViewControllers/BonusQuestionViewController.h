@@ -33,4 +33,10 @@
 
 @property (nonatomic,strong) Level *currentLevel;
 
+
+@property (nonatomic) int questionIndex;
+
+@property (nonatomic,strong) NSMutableArray <Question *>* allQuestion;
+
+
 @end
