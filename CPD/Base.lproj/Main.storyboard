@@ -616,7 +616,7 @@
                             <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenColorBG" translatesAutoresizingMaskIntoConstraints="NO" id="25k-h4-YLR">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dotted-bg" translatesAutoresizingMaskIntoConstraints="NO" id="MNC-W5-wRn">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="MNC-W5-wRn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09L-EE-Btn">
@@ -669,7 +669,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SCORE:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-9z-gLt">
-                                <rect key="frame" x="0.0" y="322.5" width="375" height="31"/>
+                                <rect key="frame" x="0.0" y="316" width="375" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="M1k-Qq-rcj"/>
                                 </constraints>
@@ -687,7 +687,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/30" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzo-q6-ma9">
-                                <rect key="frame" x="0.0" y="361.5" width="375" height="69.5"/>
+                                <rect key="frame" x="0.0" y="355" width="375" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Lh6-B0-88R"/>
                                 </constraints>
@@ -1896,9 +1896,9 @@
         <image name="ReQuest_Badges_Hegewish" width="232" height="232"/>
         <image name="ReQuest_Badges_Indian Ridge" width="232" height="232"/>
         <image name="ReQuest_Badges_Indian Ridge Jr" width="232" height="232"/>
+        <image name="Untitled-1" width="320" height="569"/>
         <image name="answer1" width="370" height="469"/>
         <image name="closeIcon" width="26" height="26"/>
-        <image name="dotted-bg" width="375" height="638"/>
         <image name="greenColorBG" width="375" height="667"/>
         <image name="large-background" width="320" height="882"/>
         <image name="mainBG" width="375" height="667"/>
