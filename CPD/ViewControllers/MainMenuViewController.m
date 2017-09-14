@@ -102,6 +102,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString* Identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString]; // IOS 6+
+
     
     [Rules callRulesWithComplitionHandler:^(id result) {
     
@@ -295,7 +297,7 @@
     [[[UIApplication sharedApplication] keyWindow] addSubview:splashScreen];
     
     
-    [UIView animateWithDuration:4
+    [UIView animateWithDuration:5
                      animations:^{splashScreen.alpha = 0.0;}
                      completion:(void (^)(BOOL)) ^{
                          [splashScreen removeFromSuperview];

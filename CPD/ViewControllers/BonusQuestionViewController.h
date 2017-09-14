@@ -38,5 +38,6 @@
 
 @property (nonatomic,strong) NSMutableArray <Question *>* allQuestion;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstViewWidth;
 
 @end

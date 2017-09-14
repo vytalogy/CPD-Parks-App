@@ -34,7 +34,13 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *containerSpace1;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageWidth;
+
+@property (weak, nonatomic) IBOutlet UIView *finalImageContainer;
+@property (nonatomic,strong) UIImageView *tmpImageView;
 @end
 
 @implementation BonusQuestionViewController
@@ -352,15 +358,84 @@
     
  //   ;
     
-        UIImage *fistImage = self.answerImage.image;
+        UIImage *fistImage = self.tmpImageView.image;
     
     
     
-    [self.answerImage setImage:[self imageWithImage:fistImage scaledToWidth:self.answerImage.frame.size.width]];
+
     
     NSLog(@"");
     
+    
+
+
+    
+    NSLog(@"");
+    
+    [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width*2,
+                                               self.scrollView.frame.size.height)];
+    
+    
+    
+    
+    self.firstViewWidth.constant = self.scrollView.frame.size.width;
+ 
+    self.containerSpace1.constant = self.scrollView.frame.size.width;
+    
+    
+    self.imageWidth.constant = self.scrollView.frame.size.width;
+    
+    
+    
+    
+    UIImage *tmpImage=[UIImage imageWithCGImage:[fistImage CGImage] scale:2.0 orientation:UIImageOrientationUp];
+    
+    
+    
+    UIImage * image = [self imageWithHeightWithImage:tmpImage heihgt:self.scrollView.frame.size.height];
+    
+    
+    
+    
+   //[self.answerImage setImage:image];
+    
+    
+    NSLog(@"");
+    
+    
+    [self.tmpImageView setImage:image];
+    
+    [self.tmpImageView setFrame:CGRectMake(8, 8, self.scrollView.frame.size.width-16, self.scrollView.frame.size.height-8)];
+    
+    
+    
+    [self.finalImageContainer addSubview:self.tmpImageView];
+    
+    self.tmpImageView.contentMode = UIViewContentModeCenter;
+
+    
+    
+    [self.scrollView setHidden:NO];
+    
+    
+
+    
+    
+    
 }
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
+    
+    CGFloat width = scrollView.frame.size.width;
+    int currentPage = floor(((scrollView.contentOffset.x-width/2)/width))+1;
+    self.pager.currentPage = currentPage;
+    
+
+    
+    
+}
+
 
 
 
@@ -406,8 +481,10 @@
     
     
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+
     
-    
+    [self.scrollView setHidden:YES];
     
     
     
@@ -434,7 +511,9 @@
         [self addTopBarButtonByCode];
     
     
-    [FileManager loadProfileImage:self.answerImage url:self.questionDoingOn.successImageUrl];
+    self.tmpImageView = [UIImageView new];
+    
+    [FileManager loadProfileImage:self.tmpImageView url:self.questionDoingOn.successImageUrl];
     
     
     [FileManager loadProfileImage:self.viewBackGround url:self.questionDoingOn.imageURL];;
@@ -456,8 +535,8 @@
     
     UISwipeGestureRecognizer * swiperight=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swiperight)];
     swiperight.direction=UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:swiperight];
-    
+  //  [self.view addGestureRecognizer:swiperight];
+  //
     
     UISwipeGestureRecognizer * swipe2=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeLeft)];
     swipe2.direction=UISwipeGestureRecognizerDirectionRight;
@@ -485,7 +564,6 @@
     
     if (self.isQuestion2) {
         
-        [self.answerImage setImage:[UIImage imageNamed:@"compassplant-yellow"]];
         
     
         [self.bonusContainerView setHidden:YES];

@@ -1240,5 +1240,24 @@
 }
 
 
+-(UIImage*)imageWithHeightWithImage: (UIImage*) sourceImage heihgt: (float) height
+{
+    float oldHeight = sourceImage.size.height;
+    float scaleFactor = height / oldHeight;
+    
+    float newWidth = sourceImage.size.width * scaleFactor;
+    
+    float newHeihgt = oldHeight * scaleFactor;
+    
+    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeihgt));
+    [sourceImage drawInRect:CGRectMake(0, 0, newWidth, newHeihgt)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+    
+}
+
+
+
 
 @end

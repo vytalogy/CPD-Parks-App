@@ -229,4 +229,7 @@
 
 -(NSAttributedString *)attributedTextPointsTitle;
 -(UIImage*)imageWithImage: (UIImage*) sourceImage scaledToWidth: (float) i_width;
+
+-(UIImage*)imageWithHeightWithImage: (UIImage*) sourceImage heihgt: (float) height;
+
 @end
