@@ -241,16 +241,6 @@
         [request2 setHTTPMethod:@"GET"];
         
     }
-    
-    //[request2 setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
-    //[request2 setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-    
-    //[request2 setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-  //  NSCharacterSet* set = [NSCharacterSet characterSetWithCharactersInString:@"!*'();@&=+$,?%#[]"];
-
-//    NSString *encodedParam = [postString stringByAddingPercentEncodingWithAllowedCharacters:[set invertedSet]];
-
-    
     [request2 setHTTPBody:[postString dataUsingEncoding:NSUTF8StringEncoding]];
 
     

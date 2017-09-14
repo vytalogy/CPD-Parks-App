@@ -240,6 +240,7 @@
 		47593C631F28EA4A0086E27F /* BonusPointsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47593C621F28EA4A0086E27F /* BonusPointsView.m */; };
 		475E667F1F26690F002FBD29 /* BonusAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 475E667E1F26690F002FBD29 /* BonusAnswerView.m */; };
 		475E66811F26691D002FBD29 /* BonusAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475E66801F26691D002FBD29 /* BonusAnswerView.xib */; };
+		47748FA01F69A31200729B33 /* HintView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47748F9F1F69A31200729B33 /* HintView2.xib */; };
 		478F12B81F239E6F007415C6 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478F12B71F239E6F007415C6 /* QuestionViewController.m */; };
 		478F12BC1F23B7D1007415C6 /* ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 478F12BB1F23B7D1007415C6 /* ScoreView.m */; };
 		478F12C11F23B904007415C6 /* InGameScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 478F12C01F23B904007415C6 /* InGameScoreView.m */; };
@@ -774,6 +775,7 @@
 		475E667D1F26690F002FBD29 /* BonusAnswerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusAnswerView.h; sourceTree = "<group>"; };
 		475E667E1F26690F002FBD29 /* BonusAnswerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusAnswerView.m; sourceTree = "<group>"; };
 		475E66801F26691D002FBD29 /* BonusAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BonusAnswerView.xib; path = Views/BonusAnswerView.xib; sourceTree = "<group>"; };
+		47748F9F1F69A31200729B33 /* HintView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HintView2.xib; path = Views/HintView2.xib; sourceTree = "<group>"; };
 		478F12B61F239E6F007415C6 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionViewController.h; path = ViewControllers/QuestionViewController.h; sourceTree = "<group>"; };
 		478F12B71F239E6F007415C6 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionViewController.m; path = ViewControllers/QuestionViewController.m; sourceTree = "<group>"; };
 		478F12BA1F23B7D1007415C6 /* ScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreView.h; path = Views/ScoreView.h; sourceTree = "<group>"; };
@@ -1838,6 +1840,7 @@
 		478F12B91F23B7A7007415C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				47748F9F1F69A31200729B33 /* HintView2.xib */,
 				47EC25071F547FEA009727A8 /* UIView+RevealAnimation.h */,
 				47EC25081F547FEA009727A8 /* UIView+RevealAnimation.m */,
 				470732951F471DA3003E899C /* RulesViewWithButton.xib */,
@@ -2060,6 +2063,7 @@
 				4744A3A11F619F0A00012831 /* Raleway-ExtraBold.ttf in Resources */,
 				47EB4AC21F447C2500C4674C /* VistaSlabOT-BoldItalic.otf in Resources */,
 				47305C171F1A2264001CAE54 /* TOCropViewControllerLocalizable.strings in Resources */,
+				47748FA01F69A31200729B33 /* HintView2.xib in Resources */,
 				47EB4AC31F447C2500C4674C /* VistaSlabOT-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

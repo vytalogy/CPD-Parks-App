@@ -266,15 +266,49 @@
     
     
 }
+- (IBAction)btnShowImagePicker:(id)sender {
+
+    self.pickerHasAlreadyBeenShown = YES;
+    IQMediaPickerController *controller = [[IQMediaPickerController alloc] init];
+    controller.delegate = self;
+    
+    [controller setSourceType:IQMediaPickerControllerSourceTypeLibrary];
+    
+    NSMutableArray *mediaTypes = [[NSMutableArray alloc] init];
+    
+    
+    
+    
+    [mediaTypes addObject:@(IQMediaPickerControllerMediaTypePhoto)];
+    
+    [controller setMediaTypes:mediaTypes];
+    controller.captureDevice = IQMediaPickerControllerCameraDeviceFront;
+    
+    
+    controller.allowsPickingMultipleItems = NO;
+    controller.maximumItemCount = 1;
+    
+    
+    [self presentViewController:controller animated:YES completion:nil];
+    
+
+    
+    
+}
+
 
 - (void) imageCropedInCircle : (UIImage *) Croppedimage{
     
     
+    UIImage *tmp = [self imageWithImage:Croppedimage scaledToWidth:self.imgIcon.frame.size.height*2];
     
-    [self.imgIcon setImage:Croppedimage];
+    if (IS_IPHONE_6P) {
+        tmp = [self imageWithImage:Croppedimage scaledToWidth:self.imgIcon.frame.size.height*3];
+    }
+    [self.imgIcon setImage:tmp];
     
     
-    NSData *imageData = UIImagePNGRepresentation(Croppedimage);
+    NSData *imageData = UIImagePNGRepresentation(tmp);
 
     
     [FileManager saveProfileImageToDisk:imageData fileName:@"Photo"];
@@ -365,6 +399,13 @@
             
             
         }
+        
+    }
+    else if(IS_IPHONE_6){
+        
+        
+        self.scrollWidthConstant.constant = self.scrollWidthConstant.constant - 30;
+        
         
     }
     

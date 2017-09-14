@@ -295,7 +295,8 @@
     [[[UIApplication sharedApplication] keyWindow] addSubview:splashScreen];
     
     
-    [UIView animateWithDuration:2 animations:^{splashScreen.alpha = 0.0;}
+    [UIView animateWithDuration:4
+                     animations:^{splashScreen.alpha = 0.0;}
                      completion:(void (^)(BOOL)) ^{
                          [splashScreen removeFromSuperview];
                      }

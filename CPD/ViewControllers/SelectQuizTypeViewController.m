@@ -276,6 +276,8 @@
  
     
     
+    return;
+    
     CAShapeLayer *layer = [CAShapeLayer layer];
     
     UIBezierPath *path = [UIBezierPath bezierPath];
@@ -321,14 +323,13 @@
     
     if (!_hintView) {
         
-        _hintView =   (HintView *)[self.view getViewFromNibName:@"HintView" withWidth:self.view.frame.size.width-30
-                                                     withHeight:297];
+        _hintView =   (HintView *)[self.view getViewFromNibName:@"HintView2" withWidth:self.view.frame.size.width
+                                                     withHeight:self.view.frame.size.height];
         [_hintView setupView];
         
         [self.view addSubview:_hintView];
         
-        _hintView.center = self.view.center;
-        [_hintView setFrame:CGRectMake(_hintView.frame.origin.x, _hintView.frame.origin.y-75, _hintView.frame.size.width, _hintView.frame.size.height)];
+
         
         
         [_hintView.btnCross addTarget:self action:@selector(hintCloseButtonTapped) forControlEvents:UIControlEventTouchUpInside];
@@ -377,15 +378,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    if (self.selectedPark.itemId == 3) {
-        [self.lblTitle setHidden:YES];
-        
-        [self.lblDetail setHidden:YES];
-        [self.lblWelcomeLabel setHidden:YES];
-        [self.viewContainerTypeOne setHidden:YES];
-        [self.viewContainerTypeTwo setHidden:YES];
-        [self.hintView setHidden:NO];
-    }
+
     
     for (UILabel * allLabels in self.levelLabels) {
         
@@ -523,24 +516,7 @@
     self.lblTitle.text = self.selectedPark.parkName;
     
     self.lblDetail.text = self.selectedPark.parkDescription;
-//    self.lblDetail.text =@"ipsum dolor sit amet, consec-tetuer";
 
-
-    /*
-    NSString *string = self.selectedPark.parkDescription;
-    
-    NSMutableAttributedString* attrString = [[NSMutableAttributedString  alloc] initWithString:string];
-    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-    [style setLineSpacing:+10];
-    
-    [attrString addAttribute:NSParagraphStyleAttributeName
-                       value:style
-                       range:NSMakeRange(0, string.length)];
-    
-    
-    self.lblDetail.attributedText = attrString;
-    
-    */
     
     self.viewContainerTypeOne.backgroundColor = [UIColor clearColor];
     self.viewContainerTypeTwo.backgroundColor = [UIColor clearColor];
@@ -568,10 +544,11 @@
     
     [super viewDidLayoutSubviews];
     
-    if (self.selectedPark.itemId == 3) {
+/*    if (self.selectedPark.itemId == 3) {
         
         return;
-    }
+    }*/
+    
     CAShapeLayer *layer = [CAShapeLayer layer];
     
     UIBezierPath *path = [UIBezierPath bezierPath];
@@ -608,6 +585,12 @@
     
     
     self.secondLayer =layer2;
+    
+    
+    if (self.selectedPark.itemId == 3) {
+
+        [self.hintView setHidden:NO];
+    }
     
     
     

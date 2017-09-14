@@ -228,5 +228,5 @@
 
 
 -(NSAttributedString *)attributedTextPointsTitle;
-
+-(UIImage*)imageWithImage: (UIImage*) sourceImage scaledToWidth: (float) i_width;
 @end

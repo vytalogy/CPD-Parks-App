@@ -367,20 +367,7 @@
 
 
 
--(UIImage*)imageWithImage: (UIImage*) sourceImage scaledToWidth: (float) i_width
-{
-    float oldWidth = sourceImage.size.width;
-    float scaleFactor = i_width / oldWidth;
-    
-    float newHeight = sourceImage.size.height * scaleFactor;
-    float newWidth = oldWidth * scaleFactor;
-    
-    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
-    [sourceImage drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
-}
+
 
 -(void)swipeLeft{
 
@@ -479,6 +466,20 @@
     self.bonusContainerView.backgroundColor = [UIColor clearColor];
     [self drawDashedBorderAroundView:self.bonusContainerView];
     self.btnNext.layer.cornerRadius = 15;
+    
+    self.btnNext.titleLabel.font = QuestionViewBottomButtonFonts;
+    
+    
+    if (IS_IPHONE_5 || IS_IPad) {
+        
+        self.btnNext.titleLabel.font = [UIFont fontWithName:self.btnNext.titleLabel.font.fontName size:self.btnNext.titleLabel.font.pointSize-3];
+        
+        
+    }
+    else {
+        
+    }
+    
     self.btnBonus.layer.cornerRadius = 15;
     
     
