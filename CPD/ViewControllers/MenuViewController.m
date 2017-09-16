@@ -332,7 +332,7 @@
 -(void)showWebSiteButtonTapped{
     
     
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.chicagoparkdistrict.com/"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://southeastside.plego.us/"]];
     
     return;
     
