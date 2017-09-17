@@ -392,7 +392,7 @@
     
     
     
-    UIImage * image = [self imageWithHeightWithImage:tmpImage heihgt:self.scrollView.frame.size.height];
+    //
     
     
     
@@ -402,8 +402,10 @@
     
     NSLog(@"");
     
+    UIImage * image2 = [self imageWithImage:tmpImage scaledToWidth:self.view.frame.size.width];
     
-    [self.tmpImageView setImage:image];
+    
+    [self.tmpImageView setImage:tmpImage];
     
     [self.tmpImageView setFrame:CGRectMake(8, 8, self.scrollView.frame.size.width-16, self.scrollView.frame.size.height-8)];
     
@@ -413,8 +415,7 @@
     
     self.tmpImageView.contentMode = UIViewContentModeCenter;
 
-    
-    
+
     [self.scrollView setHidden:NO];
     
     
@@ -432,6 +433,15 @@
     self.pager.currentPage = currentPage;
     
 
+    if (self.pager.currentPage == 1) {
+        
+        [self.tmpImageView setHidden:YES];
+        
+    }
+    else {
+        [self.tmpImageView setHidden:NO];
+        
+    }
     
     
 }
@@ -447,6 +457,7 @@
 -(void)swipeLeft{
 
     if (self.pager.currentPage == 0) {
+     
         
     }
     else

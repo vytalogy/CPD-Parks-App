@@ -102,8 +102,62 @@
         
         completionHandler(parsedObject);
         
+
+        [RestCall callWebServiceWithTheseParams:nil
+                          withSignatureSequence:nil
+                                     urlCalling:
+         [baseServiceUrl stringByAppendingString: [NSString stringWithFormat:@"Getquestions/%d/%d",parkId,levelId]]
+                                  isPostService:NO
+                          withComplitionHandler:^(id result) {
+                              
+                              @try {
+                                  id message = [result objectForKey:@"message"];
+                                  
+                                  if ([[message objectForKey:@"status"] isEqualToString:@"Success"]) {
+                                      
+                                      id data = [message objectForKey:@"Questions"];
+                                      
+                                      id bonus = [message objectForKey:@"Bonus"];
+                                      
+                                      [userDefaults setObject:data forKey:currentLevelQuestions];
+                                      
+                                      
+                                      if (bonus) {
+                                          
+                                          [userDefaults setObject:bonus forKey:bonusItemName];
+                                          
+                                          //bonusItemName
+                                          
+                                      }
+                                      
+                                  }
+                                  
+                                  else{
+                                      
+                                      failureHandler();
+                                  }
+                                  
+                                  
+                                  
+                                  
+                              }
+                              @catch (NSException *exception) {
+                                  
+                                  failureHandler();
+                                  
+                              }
+                              
+                              
+                          } failureComlitionHandler:^{
+                              
+                              failureHandler();
+                              
+                          }];
         
         return;
+    }
+    else {
+        
     }
     
     

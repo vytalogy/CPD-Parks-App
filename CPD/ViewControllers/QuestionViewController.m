@@ -263,8 +263,6 @@
        
         
         
-        [FileManager loadProfileImage:_questionScoreView.backGround
-                                  url:self.allQuestion[self.questionIndex].imageURL];
 
         [FileManager loadProfileImage:_questionScoreView.backGround
                                   url:self.allQuestion[self.questionIndex].successImageUrl];
@@ -281,7 +279,6 @@
         [FileManager loadProfileImage:_questionScoreView.backGround url:self.allQuestion[self.questionIndex].imageURL];
 
         
-        [FileManager loadProfileImage:_questionScoreView.backGround url:self.allQuestion[self.questionIndex].successImageUrl];
         
         
         //_hintView.hidden = NO;
