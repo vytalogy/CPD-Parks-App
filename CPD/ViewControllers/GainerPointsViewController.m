@@ -7,6 +7,8 @@
 //
 
 #import "GainerPointsViewController.h"
+#import "HintView.h"
+
 
 @interface GainerPointsViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btnShare;
@@ -163,7 +165,7 @@
 }
 - (IBAction)btnShareTapped:(id)sender {
     
-    NSString *formattedString = [NSString stringWithFormat:@"I just scored %d points. Visit http://www.chicagoparkdistrict.com/ to download the app.",self.scoredPoints];
+    NSString *formattedString = [NSString stringWithFormat:@"I just scored %d points. Visit http://www.chicagosesideparks.com/ to download the app.",self.scoredPoints];
     
     NSArray* sharedObjects=[NSArray arrayWithObjects:formattedString,  nil];
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc]                                                                initWithActivityItems:sharedObjects applicationActivities:nil];

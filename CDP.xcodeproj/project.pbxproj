@@ -39,6 +39,7 @@
 		4706DCD81F4C8840002A0E68 /* IQMediaPickerControllerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCAC1F4C883F002A0E68 /* IQMediaPickerControllerConstants.m */; };
 		4706DCDB1F4C8BAF002A0E68 /* CropImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4706DCDA1F4C8BAF002A0E68 /* CropImage.m */; };
 		470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470732951F471DA3003E899C /* RulesViewWithButton.xib */; };
+		4709E95B1F71916E0013414F /* RulesViewWithButton2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4709E95A1F71916E0013414F /* RulesViewWithButton2.xib */; };
 		470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470CF6E41F24A6BC0074A81C /* QuestionView.xib */; };
 		470CF6E81F24A6CF0074A81C /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6E71F24A6CF0074A81C /* QuestionView.m */; };
 		470CF6EB1F24BD100074A81C /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6EA1F24BD100074A81C /* HintView.m */; };
@@ -355,6 +356,7 @@
 		4706DCD91F4C8BAF002A0E68 /* CropImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImage.h; sourceTree = "<group>"; };
 		4706DCDA1F4C8BAF002A0E68 /* CropImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImage.m; sourceTree = "<group>"; };
 		470732951F471DA3003E899C /* RulesViewWithButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RulesViewWithButton.xib; path = Views/RulesViewWithButton.xib; sourceTree = "<group>"; };
+		4709E95A1F71916E0013414F /* RulesViewWithButton2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RulesViewWithButton2.xib; path = Views/RulesViewWithButton2.xib; sourceTree = "<group>"; };
 		470CF6E41F24A6BC0074A81C /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionView.xib; path = Views/QuestionView.xib; sourceTree = "<group>"; };
 		470CF6E61F24A6CF0074A81C /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionView.h; path = Views/QuestionView.h; sourceTree = "<group>"; };
 		470CF6E71F24A6CF0074A81C /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionView.m; path = Views/QuestionView.m; sourceTree = "<group>"; };
@@ -1840,6 +1842,7 @@
 		478F12B91F23B7A7007415C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4709E95A1F71916E0013414F /* RulesViewWithButton2.xib */,
 				47748F9F1F69A31200729B33 /* HintView2.xib */,
 				47EC25071F547FEA009727A8 /* UIView+RevealAnimation.h */,
 				47EC25081F547FEA009727A8 /* UIView+RevealAnimation.m */,
@@ -2035,6 +2038,7 @@
 				47305C151F1A2264001CAE54 /* TGCameraViewController.xib in Resources */,
 				47FD73F71F50A65C00194E02 /* Raleway-Light.ttf in Resources */,
 				470CF6E51F24A6BC0074A81C /* QuestionView.xib in Resources */,
+				4709E95B1F71916E0013414F /* RulesViewWithButton2.xib in Resources */,
 				47305C0B1F1A2264001CAE54 /* TGCameraViewController.bundle in Resources */,
 				47ED66181F40952D00AD170E /* MapView.xib in Resources */,
 				470732961F471DA3003E899C /* RulesViewWithButton.xib in Resources */,

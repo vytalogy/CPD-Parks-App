@@ -13,6 +13,9 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "IQImagePreviewViewController.h"
 #import "CropImage.h"
+#import "RulesView.h"
+
+
 
 @interface ProfileViewController ()<IQMediaPickerControllerDelegate,UINavigationControllerDelegate,CropImageDelegate>
 
@@ -74,6 +77,11 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *stackViewLeftSpacing;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftSpacing1Level1;
+@property (weak, nonatomic) IBOutlet UIButton *btnReset;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *resetXConst;
+@property (nonatomic,strong) RulesView *hintView;
+
+
 @end
 
 @implementation ProfileViewController
@@ -127,6 +135,15 @@
     CGPathRelease(path);
     
     [self.scrollView.layer addSublayer:shapeLayer];
+    
+    
+    
+    
+    
+    [self.btnReset.titleLabel setFont:QuestionViewBottomButtonFonts];
+    
+    self.btnReset.layer.cornerRadius = 15;
+    
     
     
 
@@ -304,6 +321,8 @@
     
     if (IS_IPHONE_6P) {
         tmp = [self imageWithImage:Croppedimage scaledToWidth:self.imgIcon.frame.size.height*3];
+        
+        
     }
     [self.imgIcon setImage:tmp];
     
@@ -351,7 +370,125 @@
     
 }
 
+-(void)closeRulesView{
+    [self.view sendSubviewToBack:self.hintView];
+    
+    self.hintView.hidden = YES;
+    
+    
+    
+    
+}
+-(void)getStarted{
+    
+    [self.view sendSubviewToBack:self.hintView];
+    
+    self.hintView.hidden = YES;
+    
+    
+    [self.scrollView setContentOffset:
+     CGPointMake(0, -self.scrollView.contentInset.top) animated:YES];
+    
+    
+    
+    // CGRect toVisible = CGRectMake(0, 0, self, height);
+    
+    //[scrollView scrollRectToVisible:toVisible animated:YES];
+    
+    
+    NSString *parkIdToSave =  [NSString stringWithFormat:@"Park%@%@",@"1",@"1"];
+    NSString *parkIdToSave2 =  [NSString stringWithFormat:@"Park%@%@",@"2",@"1"];
+    NSString *parkIdToSave3 =  [NSString stringWithFormat:@"Park%@%@",@"1",@"2"];
+    NSString *parkIdToSave4 =  [NSString stringWithFormat:@"Park%@%@",@"2",@"2"];
+    NSString *parkIdToSave5 =  [NSString stringWithFormat:@"Park%@%@",@"1",@"3"];
+    NSString *parkIdToSave6 =  [NSString stringWithFormat:@"Park%@%@",@"2",@"3"];
+    
+    
+    
+    [self.userDefaults setObject:nil forKey:parkIdToSave];
+    [self.userDefaults setObject:nil forKey:parkIdToSave2];
+    
+    [self.userDefaults setObject:nil forKey:parkIdToSave3];
+    [self.userDefaults setObject:nil forKey:parkIdToSave4];
+    [self.userDefaults setObject:nil forKey:parkIdToSave5];
+    [self.userDefaults setObject:nil forKey:parkIdToSave6];
+    
+    
+    [self.badgeLevel1One setHidden:YES];
+    [self.badgeLevel2One setHidden:YES];
+    
+    [self.badgeLevel1Two setHidden:YES];
+    [self.badgeLevel2Two setHidden:YES];
+    
+    [self.badgeLevel1Three setHidden:YES];
+    [self.badgeLevel2Three setHidden:YES];
+    
+    
+    [self doLoadingStuff];
+    
+    
+    
+}
+-(RulesView *)hintView {
+    //@property (nonatomic,strong) RulesView * rulesViews;
+    if (!_hintView) {
+        
+        _hintView =   (RulesView *)[self.view getViewFromNibName:@"RulesViewWithButton2"
+                                                         withWidth:self.view.frame.size.width
+                                                        withHeight:self.view.frame.size.height];
+        
+        
+        [_hintView setUpView];
+        
+        
+        
+        
+        [_hintView.btnClose addTarget:self action:@selector(closeRulesView) forControlEvents:UIControlEventTouchUpInside];
+        
+        [_hintView.btnGetStarted addTarget:self action:@selector(getStarted) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        _hintView.labelHeightTop.constant =0;
+        
+        _hintView.lblTitle.text = @"Are you sure you want to Reset?";
+        _hintView.lblRules.text = @"This action will remove your previous scores.";
+        
+        [_hintView.btnGetStarted setTitle:@"OK" forState:UIControlStateNormal];
+        
+        [self.view addSubview:_hintView];
+        
+        
+    }
+    else {
+        
+        //_hintView.hidden = NO;
+        
+    }
+    return _hintView;
+    
+}
 
+- (IBAction)btnRestTapped:(id)sender {
+    
+    self.hintView.hidden = NO;
+    
+    [self.view bringSubviewToFront:self.hintView];
+    
+    return;
+    
+    
+    [self callAlertViewControllerWithTitle:@"Are you sure you want to reset?" withMessage:@"It will delete all your saved progress." withOkButtonTitle:@"Ok" withCancleTitle:@"Cancel" withOKHandler:^{
+        
+      
+
+        
+        
+        
+    } withCancelHandler:^{
+        
+    }];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -361,6 +498,9 @@
    
     
     if (IS_IPHONE_5) {
+        
+        self.resetXConst.constant = 15;
+        
         
         self.imageViewLeftSpacing.constant =self.imageViewLeftSpacing.constant-22;
         
@@ -381,7 +521,8 @@
         }
     }
     else if(IS_IPad){
-
+        self.resetXConst.constant = 15;
+        
         self.imageViewLeftSpacing.constant =self.imageViewLeftSpacing.constant-22;
         
         self.leftSpacing1Level1.constant = self.leftSpacing1Level1.constant-22;;
@@ -405,6 +546,7 @@
         
         
         self.scrollWidthConstant.constant = self.scrollWidthConstant.constant - 30;
+        self.resetXConst.constant = 23;
         
         
     }
@@ -415,15 +557,42 @@
         [self.navigationItem setHidesBackButton:YES];
  
     
+
+    
+    
+    
+
+    
+    
+   
     self.lblReaSeacher.attributedText = self.reSearcherText;
     
     self.lblYouRa.font = ProfileViewYouAreA;
     
     self.lblTotalPointsLAbel.font = ProfileViewTotalPointsLabelFont;
-    self.lblTotalPoints.font =ProfileViewTotalPointsScoreFont;
     
     self.lblTotalPoints.textColor = LightGreenTextColor;
     
+   
+    
+    
+
+    
+    
+
+    
+    
+ 
+    [self doLoadingStuff];
+    
+    
+
+    
+}
+
+-(void)doLoadingStuff{
+    self.lblTotalPoints.font =ProfileViewTotalPointsScoreFont;
+  
     
     NSString *labelText = @"TOTAL\nPOINTS";
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:labelText];
@@ -431,7 +600,7 @@
     [paragraphStyle setLineSpacing:-10];
     
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [labelText length])];
-   
+    
     self.lblLevel1OneScore.attributedText = [self textForScoreWithScore:self.park1Level1Score withLevel:1 withPark:1];
     self.lblLevel2OneScore.attributedText = [self textForScoreWithScore:self.park1Level2Score withLevel:2 withPark:1];
     
@@ -447,23 +616,18 @@
     
     
     
-    
-    
-
-    
-    
     if ([self.park1Level1Score isEqualToString: @"0"]) {
-
+        
         self.lblLevel1OneScore.textColor = ProfileViewGrayColor;
         
         
         
     }
     else {
-
-
+        
+        
         self.lblLevel1OneScore.textColor = LightGreenTextColor;
-    
+        
         
     }
     
@@ -482,13 +646,14 @@
         
     }
     
-
+    
+    
     
     
     
     if ([self.park2Level1Score isEqualToString: @"0"]) {
         
-
+        
         self.lblLevel1TwoScore.textColor = ProfileViewGrayColor;
         
     }
@@ -507,19 +672,19 @@
         self.lblLevel2TwoScore.textColor = LightGreenTextColor;
     }
     
-
-
+    
+    
     
     if ([self.park3Level1Score isEqualToString: @"0"]) {
         
-
+        
         self.lblLevel1ThirdScore.textColor = ProfileViewGrayColor;
         
         
     }
     else {
         
-
+        
         self.lblLevel1ThirdScore.textColor = LightGreenTextColor;
         
     }
@@ -540,10 +705,6 @@
     }
     
     
-
-    
-
-    
     
 
     
@@ -557,9 +718,15 @@
     
     self.lblTotalPointsLAbel.text = @"TOTAL\nPOINTS";
  
- 
-    
-
+    if (IS_IPHONE_6P) {
+        
+    }
+    else
+    if (totalPoints > 99) {
+        
+        self.lblTotalPoints.font = [UIFont fontWithName:self.lblTotalPoints.font.fontName size:self.lblTotalPoints.font.pointSize -20];
+        
+    }
     
 }
 
