@@ -620,6 +620,15 @@
     self.questionScoreView.lblScore.text = [NSString stringWithFormat:@"+%d",self.scoreToBeAdded];
     
     
+    if (self.scoreToBeAdded == 1) {
+       
+        self.questionScoreView.lblPoints.text = @"POINT";
+        
+    }
+    else {
+       self.questionScoreView.lblPoints.text = @"POINTS";
+        //
+    }
     
     if (self.questionIndex > 0) {
         

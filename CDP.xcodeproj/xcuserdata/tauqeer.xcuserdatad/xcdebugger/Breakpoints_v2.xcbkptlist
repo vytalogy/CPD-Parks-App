@@ -1000,11 +1000,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/QuestionViewController.m"
-            timestampString = "527346368.149751"
+            timestampString = "527623026.328585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "757"
-            endingLineNumber = "757"
+            startingLineNumber = "766"
+            endingLineNumber = "766"
             landmarkName = "-btnSkipButtonTapped"
             landmarkType = "7">
          </BreakpointContent>
@@ -1016,11 +1016,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/QuestionViewController.m"
-            timestampString = "527346368.149751"
+            timestampString = "527623026.328585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "761"
-            endingLineNumber = "761"
+            startingLineNumber = "770"
+            endingLineNumber = "770"
             landmarkName = "-btnSkipButtonTapped"
             landmarkType = "7">
          </BreakpointContent>
@@ -1308,6 +1308,38 @@
             startingLineNumber = "414"
             endingLineNumber = "414"
             landmarkName = "-viewDidAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CPD/ProfileViewController.m"
+            timestampString = "527619223.965544"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "327"
+            endingLineNumber = "327"
+            landmarkName = "-imageCropedInCircle:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CPD/ProfileViewController.m"
+            timestampString = "527619322.683025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
+            landmarkName = "-imageCropedInCircle:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

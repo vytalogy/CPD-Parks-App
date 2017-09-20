@@ -942,7 +942,7 @@
     
     if (park == 1) {
      
-        parkString = @"Hegewish\n";
+        parkString = @"Hegewisch\n";
         
     }
     else if (park == 2) {
