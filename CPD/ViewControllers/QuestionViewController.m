@@ -24,6 +24,7 @@
 
 @property (nonatomic,strong) HintView *hintView;
 
+@property (nonatomic,strong) HintView *popUpView;
 
 @property (nonatomic,strong) QuestionScoreView *questionScoreView;
 
@@ -223,6 +224,44 @@
         
     }
 }
+
+-(void)hidePopUpView{
+    
+    
+    [self.popUpView setHidden:YES];
+    [self.popUpView removeFromSuperview];
+    
+}
+-(HintView *)popUpView {
+    
+    if (!_popUpView) {
+        
+        _popUpView =   (HintView *)[self.view getViewFromNibName:@"HintView2" withWidth:self.view.frame.size.width
+                                                     withHeight:self.view.frame.size.height];
+        [_popUpView setupView];
+        
+        [self.view addSubview:_popUpView];
+        
+        
+        
+        
+        [_popUpView.btnCross addTarget:self action:@selector(hidePopUpView) forControlEvents:UIControlEventTouchUpInside];
+        
+        _popUpView.lblDetail.text = @"The rest of this ReQuest takes place in the northern part of Indian Ridge Marsh. Make your way to the entrance at 11740 S. Torrence Ave.";
+        
+        [_popUpView.lblHint setHidden:YES];
+        _popUpView.HintHeight.constant = 20;
+        
+    }
+    else {
+        
+        //_hintView.hidden = NO;
+        
+    }
+    return _popUpView;
+    
+}
+
 -(HintView *)hintView {
     
     if (!_hintView) {
@@ -497,6 +536,12 @@
     self.gameScoreView.lblScore.text = [NSString stringWithFormat:@"%d",self.scoredPoints];
     
 
+    if (self.parkSelected.itemId == 3 & self.questionIndex == 9) {
+    [self.popUpView setHidden:NO];
+        
+    }
+
+    
     
     
 
@@ -760,7 +805,7 @@
     
     
     if (self.questionIndex == 14) {
-                           [self performSegueWithIdentifier:@"segueHint" sender:self];
+                           [self performSegueWithIdentifier:@"segueNonAmin" sender:self];
         return;
     }
     [FileManager loadProfileImageUrl:self.allQuestion[self.questionIndex+1].imageURL
@@ -770,14 +815,14 @@
                    [self hideLoader];
     
                    
-                   [self performSegueWithIdentifier:@"segueHint" sender:self];
+                   [self performSegueWithIdentifier:@"segueNonAmin" sender:self];
                    
                } withFailHander:^(int d) {
     
                    [self hideLoader];
     
                    
-                   [self performSegueWithIdentifier:@"segueHint" sender:self];
+                   [self performSegueWithIdentifier:@"segueNonAmin" sender:self];
     
                    
                }];

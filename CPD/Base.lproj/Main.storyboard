@@ -280,6 +280,7 @@
                         <outletCollection property="bottomButtons" destination="GKF-AN-ZxA" id="vMf-sp-UxQ"/>
                         <outletCollection property="bottomButtons" destination="cpm-Ns-5db" id="IoQ-yn-jXk"/>
                         <segue destination="i4e-ZS-RDW" kind="show" identifier="segueHint" id="V8z-it-bx2"/>
+                        <segue destination="i4e-ZS-RDW" kind="show" identifier="segueNonAmin" animates="NO" id="7J7-ba-mXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zab-QJ-s3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -984,11 +985,11 @@
                         <viewControllerLayoutGuide type="bottom" id="s7v-uh-oJB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWF-1Y-TFj">
-                        <rect key="frame" x="0.0" y="64" width="375" height="807"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="871"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdC-YF-oIU">
-                                <rect key="frame" x="0.0" y="0.0" width="376" height="808"/>
+                                <rect key="frame" x="0.0" y="20" width="376" height="852"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large-background" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-bT-8j0">
                                         <rect key="frame" x="0.0" y="0.0" width="376" height="942"/>
@@ -1247,11 +1248,11 @@
                         <outlet property="imageViewLeftSpacing" destination="sC5-bC-VXF" id="JhM-Ra-22I"/>
                         <outlet property="imgIcon" destination="5J2-4g-bKW" id="s5w-Se-mY4"/>
                         <outlet property="lblLevel1OneScore" destination="J2k-SS-fUt" id="7XI-S4-V19"/>
-                        <outlet property="lblLevel1ThirdScore" destination="KJC-lv-Yo8" id="9o6-zG-nVK"/>
-                        <outlet property="lblLevel1TwoScore" destination="1DO-mn-ZO7" id="Ejv-fg-cQc"/>
+                        <outlet property="lblLevel1ThirdScore" destination="1DO-mn-ZO7" id="pmF-PI-8Gc"/>
+                        <outlet property="lblLevel1TwoScore" destination="KJC-lv-Yo8" id="g0o-gB-gt6"/>
                         <outlet property="lblLevel2OneScore" destination="dcB-0J-xwq" id="1fB-ry-gY5"/>
-                        <outlet property="lblLevel2ThirdScore" destination="9an-84-Bau" id="uSh-oA-Va3"/>
-                        <outlet property="lblLevel2TwoScore" destination="Nid-f1-TBQ" id="VJ5-TU-tQB"/>
+                        <outlet property="lblLevel2ThirdScore" destination="Nid-f1-TBQ" id="hpW-RM-BlK"/>
+                        <outlet property="lblLevel2TwoScore" destination="9an-84-Bau" id="bnA-Xw-WGC"/>
                         <outlet property="lblReaSeacher" destination="GhU-oR-at1" id="MwQ-pE-8O7"/>
                         <outlet property="lblTotalPoints" destination="J2g-De-OsJ" id="XzO-WU-dR8"/>
                         <outlet property="lblTotalPointsLAbel" destination="byS-f5-qEP" id="20D-dp-AHb"/>
@@ -2404,6 +2405,7 @@
         <image name="star-icon" width="74" height="74"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kFb-Lm-Rf3"/>
+        <segue reference="ovV-5O-zkJ"/>
+        <segue reference="7J7-ba-mXh"/>
     </inferredMetricsTieBreakers>
 </document>
