@@ -408,54 +408,32 @@
     else
     if (IS_IPHONE_6) {
         
-        self.bottomSpacing.constant = self.bottomSpacing.constant-20;
+        //self.bottomSpacing.constant = self.bottomSpacing.constant-20;
         
-        self.distanceFromTop.constant = self.distanceFromTop.constant - 35;
+        //self.distanceFromTop.constant = self.distanceFromTop.constant - 35;
         
         self.lblDetail.font = [UIFont fontWithName:self.lblDetail.font.fontName size:self.lblDetail.font.pointSize -2];
         
     }
-    else if(IS_IPHONE_5){
+    else if(IS_IPHONE_5 || IS_IPOD){
+      
         
-        self.topSpace.constant = 5;
-        
+        self.topSpace.constant = 8;
         self.descriptionLeftSpacing.constant = 5;
-        
         self.descriptionRightSpacing.constant = 5;
         
-        
-    
-        
         self.lblTitle.font =  [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-6];;
-        
-        
         self.lblDetail.font =  [UIFont fontWithName:self.lblDetail.font.fontName size:self.lblDetail.font.pointSize-3];;
-    
         self.lblWelcomeLabel.font =  [UIFont fontWithName:self.lblWelcomeLabel.font.fontName size:self.lblWelcomeLabel.font.pointSize-6];;
         
-        
-        
-        
-        self.titleAndExplainationGap.constant = 0;
-        
-        
-        
+        self.titleAndExplainationGap.constant = 8;
         
         self.bottomSpacing.constant = self.bottomSpacing.constant-20;
-        
-        
         self.juniorSpacing.constant = self.juniorSpacing.constant-20;
         self.proSpacing.constant = self.proSpacing.constant - 20;
-        
-
-        
         self.TitleContraint.constant = 35;
-        
         self.welcomeContstant.constant = 20;
         
-        //
-        
-        //[self.backgroundImage setImage:[UIImage imageNamed:@"screen-2-where-u-will-1"]];
         
     }
     else if(IS_IPad){

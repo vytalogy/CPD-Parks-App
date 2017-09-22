@@ -120,7 +120,10 @@
     
     
     if (IS_IPHONE_6) {
-     
+
+        
+        
+        
         
         self.bottomSpacing.constant = self.bottomSpacing.constant - 40;
         
@@ -165,11 +168,7 @@
         
         self.topTextBottomSpacing.constant = 0;
         
-    //    [self.lblTitle setFont:HomeViewQuestionFont];
-        
-      
-        self.lblTitle.font = [UIFont fontWithName:self.lblTitle.font.fontName size:self.lblTitle.font.pointSize-10];
-        
+    
         
     }
     
@@ -180,7 +179,22 @@
         
         
         [allLabels setFont:ParkAndLevelFont];
+    
+        
+        
         allLabels.textColor = ParkAndLevelFontColor;
+    
+        
+        
+        if (IS_IPHONE_5 || IS_IPOD) {
+            
+            [allLabels setFont:[UIFont fontWithName:allLabels.font.fontName size:allLabels.font.pointSize-4]];
+            
+        }
+        
+    
+        
+        
     }
     
     

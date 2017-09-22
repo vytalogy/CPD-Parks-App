@@ -942,17 +942,17 @@
     
     if (park == 1) {
      
-        parkString = @"Hegewisch\n";
+        parkString = @"Hegewisch\nMarsh\n";
         
     }
     else if (park == 2) {
         
-        parkString = @"Big Marsh\n";
+        parkString = @"Big\nMarsh\n";
         
     }
     else if (park == 3) {
         
-        parkString = @"Indian Ridge\n";
+        parkString = @"Indian Ridge\nMarsh\n";
         
     }
     
