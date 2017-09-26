@@ -335,7 +335,17 @@
     
     [super viewDidAppear:animated];
     
-    if (self.skipping) {
+    if (self.questionIndex == 14) {
+        
+        if (self.skipping) {
+            
+            return;
+            
+            
+        }
+
+    }
+    else if (self.skipping) {
      
         [self segueShowPoiints:self];
         
@@ -346,31 +356,16 @@
         
         [self.answerImage setHidden:NO];
         [self.lblAnswerTitle setHidden:NO];
-     //   [self.lblDescribtion setHidden:NO];
+        
     }
     [self.bonusView setHidden:YES];
    
-    
-    
-    
-    
-
-    
- //   ;
-    
-        UIImage *fistImage = self.tmpImageView.image;
+    UIImage *fistImage = self.tmpImageView.image;
     
     
     
 
-    
-    NSLog(@"");
-    
-    
 
-
-    
-    NSLog(@"");
     
     [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width*2,
                                                self.scrollView.frame.size.height)];
@@ -490,7 +485,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    if (self.questionIndex == 14) {
+        
+        if (self.skipping) {
+            
+            [self segueShowPoiints:self];
+            
+            [self.answerImage setHidden:NO];
+            [self.lblAnswerTitle setHidden:NO];
+
+            if (self.skipping) {
+                
+                return;
+            }
+
+        }
+        else {
+            
+            [self.answerImage setHidden:NO];
+            [self.lblAnswerTitle setHidden:NO];
+
+        }
+        
+    }
     
     self.automaticallyAdjustsScrollViewInsets = NO;
 
@@ -637,6 +654,19 @@
     }
     
     
+    
+    
+    //[self.navigationController popViewControllerAnimated:YES];
+    
+    
+
+
+    
+    
+    //[self.navigationController popViewControllerAnimated:YES];
+    
+
+    
     [self showLoader];
     
     [FileManager loadProfileImageUrl:self.allQuestion[self.questionIndex+1].imageURL
@@ -657,8 +687,14 @@
                    
                    
                    [self.navigationController.view.layer addAnimation:transition forKey:nil];
-                   [[self navigationController] popViewControllerAnimated:NO];
-    
+                  
+                   dispatch_async(dispatch_get_main_queue(), ^{
+                       [[self navigationController] popViewControllerAnimated:NO];
+                       
+                       
+                   });
+                   
+                   
                    
                    
                } withFailHander:^(int d) {

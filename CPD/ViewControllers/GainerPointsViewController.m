@@ -51,6 +51,7 @@
     
     self.lblPlaceCompleted.font = ScoreViewPlaceFont;
     self.lblPlaceCompleted.textColor = AnswerFontColor;
+    self.lblPlaceCompleted.text = self.currentPark.parkName;
     
     
     self.lblYourScore.font = ScoreYourScoreFont;

@@ -91,9 +91,67 @@
     self.circleLayer.path = [path CGPath];
 }
 
+
+-(void)showAlert:(NSString *)title message:(NSString *)currentMessage
+{
+    
+    if ([currentMessage isKindOfClass:[NSArray class]]) {
+        
+        NSString * result = [[currentMessage valueForKey:@"id"] componentsJoinedByString:@","];
+        currentMessage = result;
+        
+    }
+    if (IS_IOS8) {
+        UIAlertView *ErrorAlert = [[UIAlertView alloc]
+                                   initWithTitle:title
+                                   message:currentMessage
+                                   delegate:nil
+                                   cancelButtonTitle:@"OK"
+                                   otherButtonTitles:nil, nil];
+        ErrorAlert.tag = 0;
+        ErrorAlert.delegate = self;
+        [ErrorAlert show];
+        return;
+    }
+    
+    UIAlertController *myAlertController = [UIAlertController alertControllerWithTitle:title
+                                                                               message: currentMessage
+                                                                        preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* ok = [UIAlertAction
+                         actionWithTitle:@"OK"
+                         style:UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action)
+                         {
+                             [myAlertController dismissViewControllerAnimated:YES completion:nil];
+                             
+                         }];
+    [myAlertController addAction: ok];
+    [self presentViewController:myAlertController animated:YES completion:nil];
+    
+}
+
 - (IBAction)didTouchUpInsideSaveButton:(id)sender {
     CGFloat scale  = [[self.imageView.window screen] scale];
     CGFloat radius = self.circleRadius * scale;
+    
+
+    
+    CGFloat noMore = self.view.frame.size.width/2;
+    
+    double noMoreWidth = self.view.frame.size.width*scale;
+    double noMoreHeight = self.view.frame.size.height*scale;
+    
+    if (self.circleRadius > noMore) {
+        
+        [self showAlert:@"" message:@"Please select the image within boundary"];
+        return;
+        
+    }
+    
+    
+    
+    
     CGPoint center = CGPointMake(self.circleCenter.x * scale, self.circleCenter.y * scale);
     
     CGRect frame = CGRectMake(center.x - radius,
@@ -101,6 +159,38 @@
                               radius * 2.0,
                               radius * 2.0);
     
+    
+    
+    double size22 = frame.origin.x + frame.size.width;
+    
+    double size33 = frame.origin.x + frame.size.height;
+    if (frame.origin.x < 0) {
+        
+                [self showAlert:@"" message:@"Please select the image within boundary"];
+        
+        return;
+        
+    }
+    else if(size22 > noMoreWidth)
+    {
+                [self showAlert:@"" message:@"Please select the image within boundary"];
+        
+        return;
+        
+    }
+    else if (frame.origin.y < 0) {
+        
+                [self showAlert:@"" message:@"Please select the image within boundary"];
+        return;
+        
+    }
+    else if(size33 > noMoreHeight)
+    {
+                [self showAlert:@"" message:@"Please select the image within boundary"];
+        
+        return;
+        
+    }
     CALayer *circleLayer = self.circleLayer;
     [self.circleLayer removeFromSuperlayer];
     

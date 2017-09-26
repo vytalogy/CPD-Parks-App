@@ -14,7 +14,7 @@
 #import "IQImagePreviewViewController.h"
 #import "CropImage.h"
 #import "RulesView.h"
-
+#import "CropImageViewController.h"
 
 
 @interface ProfileViewController ()<IQMediaPickerControllerDelegate,UINavigationControllerDelegate,CropImageDelegate>
@@ -161,7 +161,7 @@
     
     if (!self.pickerHasAlreadyBeenShown) {
         
-        [self callAlertViewControllerWithTitle:@"" withMessage:@"Select your avator Picture" withOkButtonTitle:@"OK" withCancleTitle:nil withOKHandler:^{
+        [self callAlertViewControllerWithTitle:@"" withMessage:@"Choose a profile picture" withOkButtonTitle:@"OK" withCancleTitle:nil withOKHandler:^{
             
             self.pickerHasAlreadyBeenShown = YES;
             IQMediaPickerController *controller = [[IQMediaPickerController alloc] init];
@@ -356,16 +356,25 @@
     
     
     [self dismissViewControllerAnimated:YES completion:^{
-        CropImage *destination = (CropImage *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"CropImage"];
+        
+        
+        CropImageViewController *cropImageViewController = [[CropImageViewController alloc]initWithNibName:@"CropImageViewController" bundle:nil];
+        cropImageViewController.image = image;
+        
+        [self presentViewController:cropImageViewController animated:YES completion:^{
+            
+            
+        }];
+        
+        
+ /*       CropImage *destination = (CropImage *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"CropImage"];
         
         [destination setOrigionalImage:image];
         destination.delegate= self;
         
         
-        [self presentViewController:destination animated:YES completion:^{
-            
-            
-        }];
+;*/
+        
     }];
     
 }

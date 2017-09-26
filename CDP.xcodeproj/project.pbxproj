@@ -241,6 +241,9 @@
 		47593C631F28EA4A0086E27F /* BonusPointsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47593C621F28EA4A0086E27F /* BonusPointsView.m */; };
 		475E667F1F26690F002FBD29 /* BonusAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 475E667E1F26690F002FBD29 /* BonusAnswerView.m */; };
 		475E66811F26691D002FBD29 /* BonusAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475E66801F26691D002FBD29 /* BonusAnswerView.xib */; };
+		4770792B1F7ADDFF00245494 /* TKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4770792A1F7ADDFE00245494 /* TKImageView.m */; };
+		4770792F1F7ADE6200245494 /* CropImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4770792C1F7ADE6100245494 /* CropImageViewController.xib */; };
+		477079301F7ADE6200245494 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4770792D1F7ADE6200245494 /* CropImageViewController.m */; };
 		47748FA01F69A31200729B33 /* HintView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47748F9F1F69A31200729B33 /* HintView2.xib */; };
 		478F12B81F239E6F007415C6 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478F12B71F239E6F007415C6 /* QuestionViewController.m */; };
 		478F12BC1F23B7D1007415C6 /* ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 478F12BB1F23B7D1007415C6 /* ScoreView.m */; };
@@ -777,6 +780,11 @@
 		475E667D1F26690F002FBD29 /* BonusAnswerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonusAnswerView.h; sourceTree = "<group>"; };
 		475E667E1F26690F002FBD29 /* BonusAnswerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonusAnswerView.m; sourceTree = "<group>"; };
 		475E66801F26691D002FBD29 /* BonusAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BonusAnswerView.xib; path = Views/BonusAnswerView.xib; sourceTree = "<group>"; };
+		477079291F7ADDFE00245494 /* TKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKImageView.h; sourceTree = "<group>"; };
+		4770792A1F7ADDFE00245494 /* TKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKImageView.m; sourceTree = "<group>"; };
+		4770792C1F7ADE6100245494 /* CropImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CropImageViewController.xib; path = ViewControllers/CropImageViewController.xib; sourceTree = "<group>"; };
+		4770792D1F7ADE6200245494 /* CropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CropImageViewController.m; path = ViewControllers/CropImageViewController.m; sourceTree = "<group>"; };
+		4770792E1F7ADE6200245494 /* CropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CropImageViewController.h; path = ViewControllers/CropImageViewController.h; sourceTree = "<group>"; };
 		47748F9F1F69A31200729B33 /* HintView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HintView2.xib; path = Views/HintView2.xib; sourceTree = "<group>"; };
 		478F12B61F239E6F007415C6 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionViewController.h; path = ViewControllers/QuestionViewController.h; sourceTree = "<group>"; };
 		478F12B71F239E6F007415C6 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionViewController.m; path = ViewControllers/QuestionViewController.m; sourceTree = "<group>"; };
@@ -1161,6 +1169,7 @@
 		47305AAA1F1A2263001CAE54 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				477079281F7ADDFE00245494 /* TKImageView */,
 				4706DCD91F4C8BAF002A0E68 /* CropImage.h */,
 				4706DCDA1F4C8BAF002A0E68 /* CropImage.m */,
 				4706DC3C1F4C883F002A0E68 /* IQMediaPickerController */,
@@ -1839,6 +1848,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		477079281F7ADDFE00245494 /* TKImageView */ = {
+			isa = PBXGroup;
+			children = (
+				477079291F7ADDFE00245494 /* TKImageView.h */,
+				4770792A1F7ADDFE00245494 /* TKImageView.m */,
+			);
+			path = TKImageView;
+			sourceTree = "<group>";
+		};
 		478F12B91F23B7A7007415C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1933,6 +1951,9 @@
 		47D888991F2338220068D304 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4770792E1F7ADE6200245494 /* CropImageViewController.h */,
+				4770792D1F7ADE6200245494 /* CropImageViewController.m */,
+				4770792C1F7ADE6100245494 /* CropImageViewController.xib */,
 				4737E1081F2C8E020010955D /* BaseViewController.h */,
 				4737E1091F2C8E020010955D /* BaseViewController.m */,
 				47D8889A1F2338570068D304 /* MainMenuViewController.h */,
@@ -2060,6 +2081,7 @@
 				47FD73F81F50A65C00194E02 /* Raleway-Regular.ttf in Resources */,
 				47FD73F41F50A45F00194E02 /* Raleway-Medium.ttf in Resources */,
 				47305A981F19EA5A001CAE54 /* Assets.xcassets in Resources */,
+				4770792F1F7ADE6200245494 /* CropImageViewController.xib in Resources */,
 				47593C601F28EA260086E27F /* BonusPointsView.xib in Resources */,
 				47305C161F1A2264001CAE54 /* TGPhotoViewController.xib in Resources */,
 				475E66811F26691D002FBD29 /* BonusAnswerView.xib in Resources */,
@@ -2205,6 +2227,7 @@
 				4706DCC71F4C8840002A0E68 /* IQBottomContainerView.m in Sources */,
 				470CF6F01F24DDC70074A81C /* BonusQuestionViewController.m in Sources */,
 				47305CD41F1A2390001CAE54 /* NBPhoneMetaData.m in Sources */,
+				477079301F7ADE6200245494 /* CropImageViewController.m in Sources */,
 				47305CE51F1A2390001CAE54 /* HJImagesToVideo.m in Sources */,
 				47305C0A1F1A2264001CAE54 /* TGAssetImageFile.m in Sources */,
 				47305BD51F1A2264001CAE54 /* HRBrightnessSlider.m in Sources */,
@@ -2303,6 +2326,7 @@
 				47305BEB1F1A2264001CAE54 /* UIApplication+JTSImageViewController.m in Sources */,
 				47305CDA1F1A2390001CAE54 /* DYAlertPickView.m in Sources */,
 				47305BC81F1A2264001CAE54 /* UIWebView+AFNetworking.m in Sources */,
+				4770792B1F7ADDFF00245494 /* TKImageView.m in Sources */,
 				47305CD81F1A2390001CAE54 /* NBPhoneNumberUtil.m in Sources */,
 				470CF6E81F24A6CF0074A81C /* QuestionView.m in Sources */,
 				47305C101F1A2264001CAE54 /* TGCameraSlideUpView.m in Sources */,

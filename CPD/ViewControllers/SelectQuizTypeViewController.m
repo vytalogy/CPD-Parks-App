@@ -360,21 +360,6 @@
     
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    
-    
-            /*
-
-             */
-    
-    
-
-    
-
-    
-    
-    
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
