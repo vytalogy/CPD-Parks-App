@@ -155,6 +155,9 @@
         self.pickerHasAlreadyBeenShown = true;
         
         [self.imgIcon setImage:c];
+     
+        [self.imgIcon roundTheView];
+        
         
     }
 
@@ -317,6 +320,9 @@
 - (void) imageCropedInCircle : (UIImage *) Croppedimage{
     
     
+    [self.imgIcon roundTheView];
+    
+    
     UIImage *tmp = [self imageWithImage:Croppedimage scaledToWidth:self.imgIcon.frame.size.height*2];
     
     if (IS_IPHONE_6P) {
@@ -360,6 +366,7 @@
         
         CropImageViewController *cropImageViewController = [[CropImageViewController alloc]initWithNibName:@"CropImageViewController" bundle:nil];
         cropImageViewController.image = image;
+        cropImageViewController.delegate = self;
         
         [self presentViewController:cropImageViewController animated:YES completion:^{
             
