@@ -53,6 +53,7 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *btnFountItConstant;
 
+@property (weak, nonatomic) IBOutlet UIView *otherContainer;
 
 
 @end
@@ -332,6 +333,9 @@
     self.hintView.hidden = YES;
     
     
+    [self.otherContainer setHidden:YES];
+    [self.view sendSubviewToBack:self.otherContainer];
+    
     
 }
 
@@ -546,10 +550,28 @@
     
 
 }
+
+-(void)otherTopContainerTApped{
+    
+    [self.otherContainer setHidden:YES];
+    [self.view sendSubviewToBack:self.otherContainer];
+    
+    [self.hintView setHidden:YES];
+   // [self.view sendSubviewToBack:self.hintView];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-        [self addTopBarButtonByCode];
+    
+    
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(otherTopContainerTApped)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [self.otherContainer addGestureRecognizer:tapGestureRecognizer];
+    
+    
+    [self addTopBarButtonByCode];
+    
     
     
     if (IS_IPHONE_5 || IS_IPad) {
@@ -620,8 +642,14 @@
 - (IBAction)btnHintTapped:(id)sender {
  
 
+    [self.otherContainer setHidden:NO];
+    [self.view bringSubviewToFront:self.otherContainer];
+    
     [self.hintView setHidden:NO];
  
+
+    
+    [self.view bringSubviewToFront:self.hintView];
     
     self.scoreToBeAdded = 1;
     

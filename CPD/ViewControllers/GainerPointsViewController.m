@@ -161,7 +161,6 @@
     
     [self showMyProfileView];
     
-    //[self performSegueWithIdentifier:@"segueMyProfile" sender:self];
     
 }
 - (IBAction)btnShareTapped:(id)sender {
