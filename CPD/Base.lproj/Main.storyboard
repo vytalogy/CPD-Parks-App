@@ -869,7 +869,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SCORE:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-9z-gLt">
-                                <rect key="frame" x="0.0" y="329.5" width="375" height="31"/>
+                                <rect key="frame" x="0.0" y="323" width="375" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="M1k-Qq-rcj"/>
                                 </constraints>
@@ -887,7 +887,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/30" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzo-q6-ma9">
-                                <rect key="frame" x="0.0" y="368.5" width="375" height="69.5"/>
+                                <rect key="frame" x="0.0" y="362" width="375" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Lh6-B0-88R"/>
                                 </constraints>
@@ -898,7 +898,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hagewisch Marsh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fv-s7-0i7">
                                 <rect key="frame" x="0.0" y="182" width="375" height="47"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="jqw-Ik-5vd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="jqw-Ik-5vd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="35"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -1048,7 +1048,7 @@
                                         <rect key="frame" x="99" y="151" width="278" height="110"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byS-f5-qEP">
-                                                <rect key="frame" x="62.5" y="36" width="117" height="38"/>
+                                                <rect key="frame" x="69" y="27" width="117" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="9PO-co-FoO"/>
                                                     <constraint firstAttribute="height" constant="38" id="cd3-Ft-xFx"/>
@@ -1064,7 +1064,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2g-De-OsJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="109"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="61" height="109"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="taj-1a-kHw"/>
                                                 </constraints>
@@ -1346,7 +1346,7 @@
                                         <rect key="frame" x="99" y="151" width="278" height="110"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-3P-HhP">
-                                                <rect key="frame" x="62.5" y="36" width="117" height="38"/>
+                                                <rect key="frame" x="69" y="27" width="117" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="38" id="IeT-M8-hdE"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="NDw-kn-UMA"/>
@@ -1362,7 +1362,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqe-PX-2oo">
-                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="109"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="61" height="109"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="ljr-Dh-SxF"/>
                                                 </constraints>
@@ -1645,7 +1645,7 @@
                                         <rect key="frame" x="99" y="151" width="278" height="110"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iz9-o5-ZmJ">
-                                                <rect key="frame" x="62.5" y="36" width="117" height="38"/>
+                                                <rect key="frame" x="69" y="27" width="117" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="474-2z-YAG"/>
                                                     <constraint firstAttribute="width" constant="117" id="JZE-7L-fD1"/>
@@ -1661,7 +1661,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2o-uI-GHg">
-                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="109"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="61" height="109"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="ffP-Zs-laC"/>
                                                 </constraints>
@@ -1894,7 +1894,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hE7-gT-EnD">
                                         <rect key="frame" x="97" y="110" width="278" height="110"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN4-xS-q0H">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN4-xS-q0H">
                                                 <rect key="frame" x="63" y="36" width="207" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="LSI-Dl-xWN"/>
@@ -1903,7 +1903,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUr-f3-FAU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUr-f3-FAU">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="109"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="mWA-wf-lB7"/>
@@ -2093,13 +2093,13 @@
                                         <rect key="frame" x="97" y="146" width="278" height="141"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygT-lc-OUF">
-                                                <rect key="frame" x="83" y="0.0" width="187" height="141"/>
+                                                <rect key="frame" x="89" y="0.0" width="181" height="141"/>
                                                 <fontDescription key="fontDescription" name="VistaSlabOT-Bold" family="Vista Slab OT" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9L-Xi-E7r">
-                                                <rect key="frame" x="20" y="0.0" width="55" height="140"/>
+                                                <rect key="frame" x="20" y="0.0" width="61" height="140"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="5IL-Gq-NJx"/>
                                                     <constraint firstAttribute="height" constant="140" id="6fK-FX-id2"/>
@@ -2199,7 +2199,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="researcher" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fm-yQ-2nz">
-                                        <rect key="frame" x="127" y="86" width="170" height="33.5"/>
+                                        <rect key="frame" x="127" y="86" width="170" height="36.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="pld-Di-vCJ"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="yAV-2s-0Iy"/>

@@ -45,6 +45,10 @@
 
 @implementation BonusQuestionViewController
 
+/*
+ //
+ //
+ */
 -(void)textFieldDidChange :(UITextField *)theTextField{
     
     if (theTextField.tag == 0) {
@@ -383,21 +387,10 @@
     
     
     
-    UIImage *tmpImage=[UIImage imageWithCGImage:[fistImage CGImage] scale:2.0 orientation:UIImageOrientationUp];
+    UIImage *tmpImage = [UIImage imageWithCGImage:[fistImage CGImage] scale:2.0 orientation:UIImageOrientationUp];
     
     
     
-    //
-    
-    
-    
-    
-   //[self.answerImage setImage:image];
-    
-    
-    NSLog(@"");
-    
-    UIImage * image2 = [self imageWithImage:tmpImage scaledToWidth:self.view.frame.size.width];
     
     
     [self.tmpImageView setImage:tmpImage];
@@ -410,6 +403,21 @@
     
     self.tmpImageView.contentMode = UIViewContentModeCenter;
 
+    if (IS_IPHONE5) {
+  
+        UIImage *tmpImage2 = [self imageWithHeightWithImage:self.tmpImageView.image heihgt:self.tmpImageView.frame.size.height];
+        
+
+        UIImage *tmpImage3 = [self imageWithImage:self.tmpImageView.image scaledToWidth:self.tmpImageView.frame.size.width];
+        
+        
+        
+        [self.tmpImageView setImage:tmpImage3];
+        
+        
+        // self.tmpImageView.contentMode = UIViewContentModeTop;
+        
+    }
 
     [self.scrollView setHidden:NO];
     
@@ -475,7 +483,6 @@
     
     
     if (self.isQuestion2) {
-    ///    [self performSegueWithIdentifier:@"segueShowPoints" sender:self];
     
         
     }
@@ -534,7 +541,13 @@
     [self.navigationItem setHidesBackButton:YES];
     
     self.lblDescribtion.text = self.questionDoingOn.expDesc;
+
     
+    if (IS_IPHONE5) {
+    
+        [self.lblDescribtion setFont:[UIFont fontWithName:self.lblDescribtion.font.fontName size:self.lblDescribtion.font.pointSize-3]];
+        
+    }
 
         [self addTopBarButtonByCode];
     

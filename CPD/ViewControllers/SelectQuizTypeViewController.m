@@ -326,14 +326,8 @@
         _hintView =   (HintView *)[self.view getViewFromNibName:@"HintView2" withWidth:self.view.frame.size.width
                                                      withHeight:self.view.frame.size.height];
         [_hintView setupView];
-        
         [self.view addSubview:_hintView];
-        
-
-        
-        
         [_hintView.btnCross addTarget:self action:@selector(hintCloseButtonTapped) forControlEvents:UIControlEventTouchUpInside];
-        
         _hintView.lblDetail.text = @"This ReQuest starts at the parking lot on 122nd St on the south side of Indian Ridge Marsh. If you’re at the lot on Torrence Ave, you’re in the wrong spot! We’ll move here later in the quest.";
         
         [_hintView.lblHint setHidden:YES];

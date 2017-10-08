@@ -373,14 +373,7 @@
             
         }];
         
-        
- /*       CropImage *destination = (CropImage *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"CropImage"];
-        
-        [destination setOrigionalImage:image];
-        destination.delegate= self;
-        
-        
-;*/
+
         
     }];
     

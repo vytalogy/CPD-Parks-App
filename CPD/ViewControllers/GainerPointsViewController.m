@@ -99,6 +99,10 @@
  
         self.bottomSpacingFromShare.constant = 20;
  
+        self.lblCongrats.font = [UIFont fontWithName:self.lblCongrats.font.fontName size:self.lblCongrats.font.pointSize-3];
+        
+        self.lblPlaceCompleted.font = [UIFont fontWithName:self.lblPlaceCompleted.font.fontName size:self.lblPlaceCompleted.font.pointSize-2];
+        
         
     }
     else if(IS_IPad){

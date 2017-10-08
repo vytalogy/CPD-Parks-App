@@ -55,7 +55,7 @@
     
     if (_currentMapShowing == 0) {
         
-
+//HegewischMarsh-Map
         
         if ([[UIApplication sharedApplication] canOpenURL:
              [NSURL URLWithString:@"comgooglemaps://"]]) {
@@ -74,7 +74,7 @@
     else if (_currentMapShowing == 1) {
         
         
-        
+        //BigMarshMap
         if ([[UIApplication sharedApplication] canOpenURL:
              [NSURL URLWithString:@"comgooglemaps://"]]) {
             [[UIApplication sharedApplication] openURL:
@@ -87,10 +87,12 @@
         }
         
         
+        
     }
     else if (_currentMapShowing == 2) {
         
         
+        //IndianRidgeMarshMap
         
         if ([[UIApplication sharedApplication] canOpenURL:
              [NSURL URLWithString:@"comgooglemaps://"]]) {
@@ -129,13 +131,13 @@
     _btnExit.layer.cornerRadius = 18;
     
     
-    ;
+
     
     self.mapWidth.constant = [UIScreen mainScreen].bounds.size.width;
     self.mapHeight.constant = [UIScreen mainScreen].bounds.size.width;;
     
     
-    
+//HegewischMarsh-Map
     [FileManager loadProfileImage:self.mapImageView url:self.hegwishMapUrl];
     
     

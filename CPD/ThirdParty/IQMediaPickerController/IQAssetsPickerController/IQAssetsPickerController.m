@@ -109,7 +109,8 @@
         
         // Group Enumerator Failure Block
         void (^assetGroupEnumberatorFailure)(NSError *) = ^(NSError *error) {
-            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Error!" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Photo access required. Go to Settings to change."
+                                                            delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
             [alert show];
         };
         
