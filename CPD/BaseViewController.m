@@ -158,27 +158,7 @@
     
     
     
-    /*
-   
-    UIImageView *topImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-1"]];
-    [topImageView setFrame:CGRectMake(0, 0, 84, 26)];
-    
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(topImageViewTapped)];
-    singleTap.numberOfTapsRequired = 1;
-    [topImageView setUserInteractionEnabled:YES];
-   [topImageView addGestureRecognizer:singleTap];
 
-    
-    //337 × 102
-    //84 x 26
-    [self.navigationController.navigationItem.titleView addSubview:topImageView];
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
-    label.text = @"Title";
-    [label sizeToFit];
-    self.navigationItem.titleView = topImageView;
-    [self.navigationController setNavigationBarHidden:NO animated:YES];*/
-    
 }
 
 
@@ -557,20 +537,18 @@
 
 -(void)mapButtonTapped{
 
-    MapViewController *destination = (MapViewController *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"MapViewController"];
+    [self dismissViewControllerAnimated:YES completion:^{
+
+        MapViewController *destination = (MapViewController *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"MapViewController"];
+        
+        
+        
+        
+        [self.navigationController pushViewController:destination animated:YES];
+        
+    }];
     
-    
-    
-    CATransition* transition = [CATransition animation];
-    transition.duration = 0.5;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionFade;
-    
-    [self.view.window.layer addAnimation:transition forKey:nil];
-    [self.navigationController.view.layer addAnimation:transition forKey:nil];
-    
-    [self.navigationController pushViewController:destination animated:NO];
-    
+        
     
 }
 -(void)showMyProfileView{

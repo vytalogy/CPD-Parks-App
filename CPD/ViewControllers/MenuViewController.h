@@ -14,6 +14,7 @@
 -(void)mainMenuButtonTapped;
 -(void)profileButtonTapped;
 
+-(void)mapButtonTapped;
 
 @end
 

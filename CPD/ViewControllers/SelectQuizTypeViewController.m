@@ -366,17 +366,12 @@
         
     }
    
-  //  [[UINavigationBar appearance] setBarTintColor:[UIColor blueColor]];
 
-    
-    
     
     
     self.lblWelcomeLabel.font = SelectLevelWelcomeToFont;
     self.lblTitle.font = SelectLevelNameFont;
     self.lblDetail.font = SelectLevelTextFont;
-    //
-
     
     if (IS_IPHONE_6P) {
         
@@ -387,9 +382,6 @@
     else
     if (IS_IPHONE_6) {
         
-        //self.bottomSpacing.constant = self.bottomSpacing.constant-20;
-        
-        //self.distanceFromTop.constant = self.distanceFromTop.constant - 35;
         
         self.lblDetail.font = [UIFont fontWithName:self.lblDetail.font.fontName size:self.lblDetail.font.pointSize -2];
         
@@ -500,11 +492,6 @@
 -(void)viewDidLayoutSubviews{
     
     [super viewDidLayoutSubviews];
-    
-/*    if (self.selectedPark.itemId == 3) {
-        
-        return;
-    }*/
     
     CAShapeLayer *layer = [CAShapeLayer layer];
     

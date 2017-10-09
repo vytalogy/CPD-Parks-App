@@ -366,6 +366,11 @@
 
 -(void)mapButtonTapped{
     
+    //
+    
+    [self.delegate mapButtonTapped];
+    
+    return;
     [self.backgroundGreenView setHidden:NO];
     [self.view bringSubviewToFront:self.backgroundGreenView];
     [self.mapView setHidden:NO];

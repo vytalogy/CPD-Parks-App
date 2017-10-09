@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface MapViewController : BaseViewController
+
+@interface MapViewController : UIViewController
 
 @end
