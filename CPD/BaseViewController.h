@@ -32,6 +32,7 @@
 #import "UIView+MyUIView.h"
 #import <CoreText/CoreText.h>
 #import "UIView+RevealAnimation.h"
+#import "MapViewController.h"
 
 
 
@@ -232,4 +233,5 @@
 
 -(UIImage*)imageWithHeightWithImage: (UIImage*) sourceImage heihgt: (float) height;
 
+-(void)mapButtonTapped;
 @end

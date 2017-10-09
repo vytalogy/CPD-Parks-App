@@ -549,17 +549,30 @@
 -(void)profileButtonTapped{
     
     
-    
-    
-    
-    
-    
     [self showMyProfileView];
     
     
     
 }
 
+-(void)mapButtonTapped{
+
+    MapViewController *destination = (MapViewController *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"MapViewController"];
+    
+    
+    
+    CATransition* transition = [CATransition animation];
+    transition.duration = 0.5;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    
+    [self.view.window.layer addAnimation:transition forKey:nil];
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    
+    [self.navigationController pushViewController:destination animated:NO];
+    
+    
+}
 -(void)showMyProfileView{
     
     

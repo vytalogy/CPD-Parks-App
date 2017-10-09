@@ -46,6 +46,7 @@
 		470CF6ED1F24BD1E0074A81C /* HintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 470CF6EC1F24BD1E0074A81C /* HintView.xib */; };
 		470CF6F01F24DDC70074A81C /* BonusQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6EF1F24DDC70074A81C /* BonusQuestionViewController.m */; };
 		470D51891F45EC4F004F74C4 /* Rules.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D51881F45EC4F004F74C4 /* Rules.m */; };
+		47148A9D1F8BE025009E64CF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47148A9C1F8BE025009E64CF /* MapViewController.m */; };
 		47305A8D1F19EA5A001CAE54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305A8C1F19EA5A001CAE54 /* main.m */; };
 		47305A901F19EA5A001CAE54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305A8F1F19EA5A001CAE54 /* AppDelegate.m */; };
 		47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47305A941F19EA5A001CAE54 /* Main.storyboard */; };
@@ -370,6 +371,8 @@
 		470CF6EF1F24DDC70074A81C /* BonusQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BonusQuestionViewController.m; path = ViewControllers/BonusQuestionViewController.m; sourceTree = "<group>"; };
 		470D51871F45EC4F004F74C4 /* Rules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rules.h; path = Model/Rules.h; sourceTree = "<group>"; };
 		470D51881F45EC4F004F74C4 /* Rules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rules.m; path = Model/Rules.m; sourceTree = "<group>"; };
+		47148A9B1F8BE025009E64CF /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ViewControllers/MapViewController.h; sourceTree = "<group>"; };
+		47148A9C1F8BE025009E64CF /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ViewControllers/MapViewController.m; sourceTree = "<group>"; };
 		47305A881F19EA5A001CAE54 /* CDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47305A8C1F19EA5A001CAE54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47305A8E1F19EA5A001CAE54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1970,6 +1973,8 @@
 				47988ECD1F2A3C71009F9A70 /* GainerPointsViewController.m */,
 				47978C381F35FD8E0091EAD7 /* ProfileViewController.h */,
 				47978C391F35FD8F0091EAD7 /* ProfileViewController.m */,
+				47148A9B1F8BE025009E64CF /* MapViewController.h */,
+				47148A9C1F8BE025009E64CF /* MapViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -2212,6 +2217,7 @@
 				4706DCDB1F4C8BAF002A0E68 /* CropImage.m in Sources */,
 				47305BBC1F1A2264001CAE54 /* AFSecurityPolicy.m in Sources */,
 				47BABC2C1F30CC3C00EC6335 /* RTSpinKitWanderingCubesAnimation.m in Sources */,
+				47148A9D1F8BE025009E64CF /* MapViewController.m in Sources */,
 				47305BD31F1A2264001CAE54 /* StyleKit.m in Sources */,
 				47BABC291F30CC3C00EC6335 /* RTSpinKitPlaneAnimation.m in Sources */,
 				47305D071F1A2390001CAE54 /* Validator.m in Sources */,
