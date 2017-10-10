@@ -23,12 +23,16 @@
     self.lblDetail.font = RulesRegularTextFont;
     
     
-    /*
-     HintBoldFont [UIFont fontWithName:FontToUseRegular size:30]
-     #define HintRegularFont [UIFont fontWithName:FontToUseBold size:18]
-
-     */
+}
+-(void)setupForThreeButtons{
     
+    //
+    [self.backImag addShadow];
+    
+    
+    self.btnFirstPark.layer.cornerRadius = 15;
+       self.btnSecondPark.layer.cornerRadius = 15;
+        self.btnThridPark.layer.cornerRadius = 15;
 }
 
 @end

@@ -18,4 +18,10 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *backImag;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *HintHeight;
+
+-(void)setupForThreeButtons;
+@property (weak, nonatomic) IBOutlet UIButton *btnFirstPark;
+@property (weak, nonatomic) IBOutlet UIButton *btnSecondPark;
+@property (weak, nonatomic) IBOutlet UIButton *btnThridPark;
+
 @end

@@ -47,6 +47,7 @@
 		470CF6F01F24DDC70074A81C /* BonusQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470CF6EF1F24DDC70074A81C /* BonusQuestionViewController.m */; };
 		470D51891F45EC4F004F74C4 /* Rules.m in Sources */ = {isa = PBXBuildFile; fileRef = 470D51881F45EC4F004F74C4 /* Rules.m */; };
 		47148A9D1F8BE025009E64CF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47148A9C1F8BE025009E64CF /* MapViewController.m */; };
+		471E13A81F8D252B00A633B0 /* HintView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471E13A71F8D252A00A633B0 /* HintView3.xib */; };
 		47305A8D1F19EA5A001CAE54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305A8C1F19EA5A001CAE54 /* main.m */; };
 		47305A901F19EA5A001CAE54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47305A8F1F19EA5A001CAE54 /* AppDelegate.m */; };
 		47305A961F19EA5A001CAE54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47305A941F19EA5A001CAE54 /* Main.storyboard */; };
@@ -373,6 +374,7 @@
 		470D51881F45EC4F004F74C4 /* Rules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rules.m; path = Model/Rules.m; sourceTree = "<group>"; };
 		47148A9B1F8BE025009E64CF /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ViewControllers/MapViewController.h; sourceTree = "<group>"; };
 		47148A9C1F8BE025009E64CF /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ViewControllers/MapViewController.m; sourceTree = "<group>"; };
+		471E13A71F8D252A00A633B0 /* HintView3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HintView3.xib; path = Views/HintView3.xib; sourceTree = "<group>"; };
 		47305A881F19EA5A001CAE54 /* CDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47305A8C1F19EA5A001CAE54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47305A8E1F19EA5A001CAE54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1863,6 +1865,7 @@
 		478F12B91F23B7A7007415C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				471E13A71F8D252A00A633B0 /* HintView3.xib */,
 				4709E95A1F71916E0013414F /* RulesViewWithButton2.xib */,
 				47748F9F1F69A31200729B33 /* HintView2.xib */,
 				47EC25071F547FEA009727A8 /* UIView+RevealAnimation.h */,
@@ -2074,6 +2077,7 @@
 				47305BCB1F1A2264001CAE54 /* UzysAssetPickerController.bundle in Resources */,
 				47EB4AC61F447C2500C4674C /* VistaSlabOT-RegItalic.otf in Resources */,
 				47E449EE1F4B37ED0090C117 /* WarningLeaving.xib in Resources */,
+				471E13A81F8D252B00A633B0 /* HintView3.xib in Resources */,
 				47305C181F1A2264001CAE54 /* Info.plist in Resources */,
 				4706DCC31F4C8840002A0E68 /* IQMediaCaptureController.xcassets in Resources */,
 				4744A39D1F6190D600012831 /* Raleway-Bold.ttf in Resources */,

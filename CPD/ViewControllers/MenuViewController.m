@@ -11,6 +11,7 @@
 #import "Rules.h"
 #import "RulesView.h"
 #import "WarningLeaving.h"
+#import "HintView.h"
 
 @interface MenuViewController ()
 
@@ -60,10 +61,77 @@
 @property (nonatomic) AppDelegate *sharedDelegate;
 
 @property (nonatomic) int warningScenario;
+@property (nonatomic,strong) HintView *hintView;
+
 
 @end
 
 @implementation MenuViewController
+
+-(void)hideWepPopUp{
+    
+    [self.hintView setHidden:YES];
+    [self.view bringSubviewToFront:self.hintView];
+    
+}
+
+-(void)firstParkTapped{
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.chicagoparkdistrict.com/"]];
+    
+    
+    [self hideWepPopUp];
+    
+}
+
+-(void)secondParkTapped{
+    
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.chicagosesideparks.com/"]];
+    [self hideWepPopUp];
+    
+    
+
+}
+
+-(void)thirdParkTapped{
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.chiparkpoints.com/"]];
+    
+    
+    [self hideWepPopUp];
+    
+}
+-(HintView *)hintView {
+    
+    if (!_hintView) {
+        
+        _hintView =   (HintView *)[self.view getViewFromNibName:@"HintView3" withWidth:self.view.frame.size.width
+                                                      withHeight:self.view.frame.size.height];
+       
+        [_hintView setupForThreeButtons];
+        
+        [self.view addSubview:_hintView];
+        
+        
+        
+        
+        [_hintView.btnCross addTarget:self action:@selector(hideWepPopUp) forControlEvents:UIControlEventTouchUpInside];
+        
+        [_hintView.btnFirstPark addTarget:self action:@selector(firstParkTapped) forControlEvents:UIControlEventTouchUpInside];
+        [_hintView.btnSecondPark addTarget:self action:@selector(secondParkTapped) forControlEvents:UIControlEventTouchUpInside];
+        [_hintView.btnThridPark addTarget:self action:@selector(thirdParkTapped) forControlEvents:UIControlEventTouchUpInside];
+        
+    }
+    else {
+        
+        //_hintView.hidden = NO;
+        
+    }
+    return _hintView;
+    
+}
+
 
 -(void)closeRulesView{
     
@@ -332,6 +400,12 @@
 -(void)showWebSiteButtonTapped{
     
     
+    [self.hintView setHidden:NO];
+    
+    [self.hintView bringSubviewToFront:self.hintView];
+    
+    
+    return;
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.chicagosesideparks.com/"]];
     
     return;

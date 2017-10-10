@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "AppDelegate.h"
 #import "MenuViewController.h"
+#import "ProfileViewController.h"
 
 @interface MapViewController ()
 
@@ -17,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnThree;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
 @property (weak, nonatomic) IBOutlet UIImageView *mapImage;
+
+@property (nonatomic) int currentSelectedImage;
 
 @end
 
@@ -33,6 +36,7 @@
 }
 - (IBAction)btnHegewishMarchTapped:(UIButton *)sender {
     
+    self.currentSelectedImage = 0;
     
     //
     
@@ -55,9 +59,13 @@
     
     [self.mapImage setImage:[UIImage imageNamed:@"IndianRidgeMarshMap"]];
     
+    self.currentSelectedImage = 1;
+    
     
 }
 - (IBAction)btnBigMarshTapped:(UIButton *)sender {
+    
+    self.currentSelectedImage = 2;
     
     [self makeAllButtonsNormal];
     
@@ -80,11 +88,66 @@
     
 }
 
+-(void)tapDetected{
+    
+
+    if (self.currentSelectedImage == 0) {
+     
+        if ([[UIApplication sharedApplication] canOpenURL:
+             [NSURL URLWithString:@"comgooglemaps://"]]) {
+            [[UIApplication sharedApplication] openURL:
+             [NSURL URLWithString:@"comgooglemaps://?center=41.655496,-87.564370&zoom=15"]];
+        } else {
+            NSLog(@"Can't use comgooglemaps://");
+            NSString* directionsURL = [NSString stringWithFormat:@"http://maps.apple.com/?saddr=%f,%f",41.655496, -87.564370];
+            [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURL]];
+            
+        }
+        
+    }
+    else if (self.currentSelectedImage == 1) {
+        
+        if ([[UIApplication sharedApplication] canOpenURL:
+             [NSURL URLWithString:@"comgooglemaps://"]]) {
+            [[UIApplication sharedApplication] openURL:
+             [NSURL URLWithString:@"comgooglemaps://?center=41.6800257,-87.5606165&zoom=15"]];
+        } else {
+            NSLog(@"Can't use comgooglemaps://");
+            NSString* directionsURL = [NSString stringWithFormat:@"http://maps.apple.com/?saddr=%f,%f",41.6800257,-87.5606165];
+            [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURL]];
+            
+        }
+        
+    }
+    else if (self.currentSelectedImage == 2) {
+        
+        if ([[UIApplication sharedApplication] canOpenURL:
+             [NSURL URLWithString:@"comgooglemaps://"]]) {
+            [[UIApplication sharedApplication] openURL:
+             [NSURL URLWithString:@"comgooglemaps://?center=41.690329,-87.5705071&zoom=15"]];
+        } else {
+            NSLog(@"Can't use comgooglemaps://");
+            NSString* directionsURL = [NSString stringWithFormat:@"http://maps.apple.com/?saddr=%f,%f",41.690329,-87.5705071];
+            [[UIApplication sharedApplication] openURL: [NSURL URLWithString: directionsURL]];
+            
+        }
+        
+    }
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self.navigationItem setHidesBackButton:YES];
+ 
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetected)];
+    singleTap.numberOfTapsRequired = 1;
+    [self.mapImage setUserInteractionEnabled:YES];
+    [self.mapImage addGestureRecognizer:singleTap];
+    
+    
     
  
     AppDelegate * currentApp = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -173,6 +236,47 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)mapButtonTapped{
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+    
+}
+
+-(void)profileButtonTapped{
+    
+    
+    [self showMyProfileView];
+    
+    
+    
+}
+
+-(void)showMyProfileView{
+    
+    
+    
+    ProfileViewController *destination = (ProfileViewController *)[self viewControllerFromStoryBoard:@"Main" withViewControllerName:@"ProfileViewController"];
+    
+    
+    
+    CATransition* transition = [CATransition animation];
+    transition.duration = 0.5;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    
+    [self.view.window.layer addAnimation:transition forKey:nil];
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    
+    [self.navigationController pushViewController:destination animated:NO];
+    
+    
+    
+    
+}
+
 
 /*
 #pragma mark - Navigation
