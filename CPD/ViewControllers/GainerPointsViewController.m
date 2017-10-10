@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnShare;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnNext;
+@property (weak, nonatomic) IBOutlet UIButton *btnRedeem;
 @property (weak, nonatomic) IBOutlet UILabel *lblScore;
 @property (weak, nonatomic) IBOutlet UILabel *lblCongrats;
 @property (weak, nonatomic) IBOutlet UILabel *lblYouveCompleted;
@@ -31,15 +32,51 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *placeConmpetedConstant;
 
 @property (weak, nonatomic) IBOutlet UIImageView *dottedBgImage;
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *buttonSizes;
 @end
 
 @implementation GainerPointsViewController
+- (IBAction)btnRedeemTapped:(id)sender {
+    
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.chiparkpoints.com/"]];
+    
+    
+}
+
+-(NSAttributedString *)reConnectText{
+    
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"RECONNECT"];
+    id boldFontName = [UIFont fontWithName:FontToUserBlack size:45];
+    
+    [attrString beginEditing];
+    
+    NSRange boldedRange = NSMakeRange(0, [attrString length] );
+    
+    [attrString addAttribute:kCTFontAttributeName
+                       value:boldFontName
+                       range:boldedRange];
+    
+
+    
+    [attrString endEditing];
+    
+    return attrString;
+    
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+    self.lblYouAreA.text = @"Redeem your Park Points\nusing code";
+    if (IS_IPHONE5) {
+        self.lblYouAreA.text = @"Redeem your Park Points using code";
+        
+    }
     self.lblCongrats.font = ScoreViewCongratsFont;
     self.lblCongrats.textColor = AnswerFontColor;
     
@@ -59,8 +96,10 @@
     self.lblYouAreA.font = ScoreYouRAFont;
     
     
-    self.lblReSearcher.attributedText = self.attributedTextPointsTitle;
+    self.lblReSearcher.attributedText = [self reConnectText];
+    
  
+    
     
     for (UIButton *currentButton in self.allButtons) {
         
@@ -69,6 +108,24 @@
         [currentButton.titleLabel setFont:QuestionViewBottomButtonFonts];
         
         currentButton.layer.cornerRadius = 15;
+        
+        
+        if (IS_IPHONE5) {
+            
+            currentButton.titleLabel.font = [UIFont fontWithName:currentButton.titleLabel.font.fontName size:currentButton.titleLabel.font.pointSize-2];
+        
+            
+            
+            
+            for (NSLayoutConstraint *currentConstant  in self.buttonSizes) {
+                
+                
+                currentConstant.constant = currentConstant.constant -5;
+                
+                
+            }
+            
+        }
         
     }
     
@@ -99,9 +156,9 @@
  
         self.bottomSpacingFromShare.constant = 20;
  
-        self.lblCongrats.font = [UIFont fontWithName:self.lblCongrats.font.fontName size:self.lblCongrats.font.pointSize-3];
+        self.lblCongrats.font = [UIFont fontWithName:self.lblCongrats.font.fontName size:self.lblCongrats.font.pointSize-5];
         
-        self.lblPlaceCompleted.font = [UIFont fontWithName:self.lblPlaceCompleted.font.fontName size:self.lblPlaceCompleted.font.pointSize-2];
+        self.lblPlaceCompleted.font = [UIFont fontWithName:self.lblPlaceCompleted.font.fontName size:self.lblPlaceCompleted.font.pointSize-4];
         
         
     }
