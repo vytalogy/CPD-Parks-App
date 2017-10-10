@@ -12,9 +12,63 @@
 
 @interface MapViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *btnOne;
+@property (weak, nonatomic) IBOutlet UIButton *btnTwo;
+@property (weak, nonatomic) IBOutlet UIButton *btnThree;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
+@property (weak, nonatomic) IBOutlet UIImageView *mapImage;
+
 @end
 
 @implementation MapViewController
+
+-(void)makeAllButtonsNormal{
+ 
+    for (UIButton * currentButton in self.allButtons) {
+    
+        [currentButton setBackgroundColor:[UIColor whiteColor]];
+        [currentButton setTitleColor:[UIColor colorWithRed:43.0/255.0 green:43.0/255.0 blue:43.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+        
+    }
+}
+- (IBAction)btnHegewishMarchTapped:(UIButton *)sender {
+    
+    
+    //
+    
+    [self makeAllButtonsNormal];
+    
+    [sender setBackgroundColor:[UIColor colorWithRed:43.0/255.0 green:43.0/255.0 blue:43.0/255.0 alpha:1.0]];
+    [sender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    
+    [self.mapImage setImage:[UIImage imageNamed:@"HegewischMarsh-Map"]];
+    
+    
+}
+- (IBAction)btnIndianRidgeTapped:(UIButton *)sender {
+    //
+    [self makeAllButtonsNormal];
+    [sender setBackgroundColor:[UIColor colorWithRed:43.0/255.0 green:43.0/255.0 blue:43.0/255.0 alpha:1.0]];
+    [sender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+
+    
+    [self.mapImage setImage:[UIImage imageNamed:@"IndianRidgeMarshMap"]];
+    
+    
+}
+- (IBAction)btnBigMarshTapped:(UIButton *)sender {
+    
+    [self makeAllButtonsNormal];
+    
+    [sender setBackgroundColor:[UIColor colorWithRed:43.0/255.0 green:43.0/255.0 blue:43.0/255.0 alpha:1.0]];
+    [sender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//
+ 
+    [self.mapImage setImage:[UIImage imageNamed:@"BigMarshMap"]];
+    
+    
+}
 
 -(UIViewController *)viewControllerFromStoryBoard:(NSString *)storyboardName withViewControllerName:(NSString *)viewId{
     
@@ -33,13 +87,27 @@
     [self.navigationItem setHidesBackButton:YES];
     
  
-    AppDelegate * currentApp = [[UIApplication sharedApplication] delegate];
-    
+    AppDelegate * currentApp = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     currentApp.navBarTitle.attributedText = [self requestText];
     
     [self addTopBarButtonByCode];
     
-    
+    if (IS_IPHONE_6) {
+        
+        for (UIButton * currentButton in self.allButtons) {
+        
+            [currentButton.titleLabel setFont:[UIFont fontWithName:currentButton.titleLabel.font.fontName size:currentButton.titleLabel.font.pointSize-1]];
+            
+        }
+    }
+    else     if (IS_IPHONE5 || IS_IPad || IS_IPOD) {
+        
+        for (UIButton * currentButton in self.allButtons) {
+            
+            [currentButton.titleLabel setFont:[UIFont fontWithName:currentButton.titleLabel.font.fontName size:currentButton.titleLabel.font.pointSize-3]];
+            
+        }
+    }
     
 }
 
