@@ -562,7 +562,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SCORE:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-9z-gLt">
-                                <rect key="frame" x="0.0" y="219" width="375" height="31"/>
+                                <rect key="frame" x="0.0" y="232" width="375" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="M1k-Qq-rcj"/>
                                 </constraints>
@@ -570,8 +570,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem your Park Points using code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cda-Bf-Ng2">
-                                <rect key="frame" x="0.0" y="350" width="375" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn your 200 Park Points now with code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cda-Bf-Ng2">
+                                <rect key="frame" x="0.0" y="356.5" width="375" height="68.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="pZv-dV-lFF"/>
                                 </constraints>
@@ -580,7 +580,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/30" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzo-q6-ma9">
-                                <rect key="frame" x="0.0" y="258" width="375" height="76"/>
+                                <rect key="frame" x="0.0" y="271" width="375" height="69.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Lh6-B0-88R"/>
                                 </constraints>
@@ -764,7 +764,7 @@
                                         <rect key="frame" x="99" y="151" width="278" height="110"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byS-f5-qEP">
-                                                <rect key="frame" x="69" y="27" width="117" height="56"/>
+                                                <rect key="frame" x="62.5" y="36" width="117" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="9PO-co-FoO"/>
                                                     <constraint firstAttribute="height" constant="38" id="cd3-Ft-xFx"/>
@@ -780,7 +780,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2g-De-OsJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="61" height="109"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="109"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="taj-1a-kHw"/>
                                                 </constraints>
@@ -1062,7 +1062,7 @@
                                         <rect key="frame" x="99" y="151" width="278" height="110"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="YOU ARE A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-3P-HhP">
-                                                <rect key="frame" x="69" y="27" width="117" height="56"/>
+                                                <rect key="frame" x="62.5" y="36" width="117" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="38" id="IeT-M8-hdE"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="NDw-kn-UMA"/>
@@ -1078,7 +1078,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqe-PX-2oo">
-                                                <rect key="frame" x="0.0" y="0.0" width="61" height="109"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="109"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="ljr-Dh-SxF"/>
                                                 </constraints>

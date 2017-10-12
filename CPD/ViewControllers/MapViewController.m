@@ -88,6 +88,14 @@
     
 }
 
+-(void)mainMenuButtonTapped{
+    
+    
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
+
 -(void)tapDetected{
     
 

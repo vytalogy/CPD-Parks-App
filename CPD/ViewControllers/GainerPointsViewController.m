@@ -33,6 +33,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *dottedBgImage;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *buttonSizes;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpaceFromSCore;
 @end
 
 @implementation GainerPointsViewController
@@ -44,10 +45,11 @@
     
 }
 
--(NSAttributedString *)reConnectText{
+-(NSAttributedString *)reConnectTextWithString:(NSString *)text{
     
     
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:@"RECONNECT"];
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:text];
+    
     id boldFontName = [UIFont fontWithName:FontToUserBlack size:45];
     
     [attrString beginEditing];
@@ -70,11 +72,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    self.lblYouAreA.text = @"Redeem your Park Points\nusing code";
+    //Earn your 200 Park Points now with code
+    
+    self.lblYouAreA.text = @"Earn your 200 Park Points now with code";
     if (IS_IPHONE5) {
-        self.lblYouAreA.text = @"Redeem your Park Points using code";
+        self.lblYouAreA.text = @"Earn your 200 Park Points now with code";
         
     }
     self.lblCongrats.font = ScoreViewCongratsFont;
@@ -96,7 +99,21 @@
     self.lblYouAreA.font = ScoreYouRAFont;
     
     
-    self.lblReSearcher.attributedText = [self reConnectText];
+    if (self.currentPark.itemId == 1) {
+        self.lblReSearcher.attributedText = [self reConnectTextWithString:@"RECAPTURE"];
+        
+    }
+    else if (self.currentPark.itemId == 2) {
+        self.lblReSearcher.attributedText = [self reConnectTextWithString:@"REDISCOVER"];
+        
+        
+    }
+    else if (self.currentPark.itemId == 3) {
+        self.lblReSearcher.attributedText = [self reConnectTextWithString:@"RECONNECT"];
+        
+        
+    }
+    
     
  
     
@@ -149,7 +166,20 @@
     [self.navigationItem setHidesBackButton:YES];
     self.lblScore.text = [NSString stringWithFormat:@"%d/30",self.scoredPoints];;
     
-    
+    if (IS_IPHONE_6P) {
+      //170  170
+     
+     //   self.topSpaceFromSCore.constant = self.topSpaceFromSCore.constant+140;
+       
+                self.bottomSpacingFromShare.constant = 90;
+        
+    }
+    else if(IS_IPHONE_6){
+        
+        self.bottomSpacingFromShare.constant = 50;
+        
+    }
+    else
     if (IS_IPHONE_5) {
         
         self.contratsSpaceFromTop.constant = 20;
@@ -159,6 +189,9 @@
         self.lblCongrats.font = [UIFont fontWithName:self.lblCongrats.font.fontName size:self.lblCongrats.font.pointSize-5];
         
         self.lblPlaceCompleted.font = [UIFont fontWithName:self.lblPlaceCompleted.font.fontName size:self.lblPlaceCompleted.font.pointSize-4];
+        
+        
+        self.lblYouAreA.font = [UIFont fontWithName:self.lblYouAreA.font.fontName size:self.lblYouAreA.font.pointSize -2];
         
         
     }
