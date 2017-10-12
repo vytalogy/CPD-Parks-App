@@ -95,7 +95,6 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
     
 }
-
 -(void)tapDetected{
     
 

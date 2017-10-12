@@ -388,12 +388,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/MenuViewController.m"
-            timestampString = "529348585.675197"
+            timestampString = "529505898.087659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "390"
-            endingLineNumber = "390"
-            landmarkName = "-mainMenuButtonTapped"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
+            landmarkName = "-yourProfileButtonTapped"
             landmarkType = "7">
             <Locations>
                <Location
@@ -436,7 +436,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/GainerPointsViewController.m"
-            timestampString = "529505169.564098"
+            timestampString = "529505898.090057"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "167"
@@ -606,12 +606,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/MenuViewController.m"
-            timestampString = "529348585.680323"
+            timestampString = "529505898.091924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
-            landmarkName = "-warningView"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "-rulesViews"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -622,13 +622,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/MenuViewController.m"
-            timestampString = "529348585.681669"
+            timestampString = "529505898.093186"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
             endingLineNumber = "138"
-            landmarkName = "MenuViewController"
-            landmarkType = "3">
+            landmarkName = "-closeRulesView"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -638,7 +638,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/GainerPointsViewController.m"
-            timestampString = "529505169.56516"
+            timestampString = "529505898.094269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
@@ -840,12 +840,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/MenuViewController.m"
-            timestampString = "529348585.683979"
+            timestampString = "529505898.095453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "153"
             endingLineNumber = "153"
-            landmarkName = "-hintView"
+            landmarkName = "-warningExitTapped"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -936,13 +936,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/MenuViewController.m"
-            timestampString = "529348585.685374"
+            timestampString = "529505898.096925"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "368"
-            endingLineNumber = "368"
-            landmarkName = "MenuViewController"
-            landmarkType = "3">
+            startingLineNumber = "378"
+            endingLineNumber = "378"
+            landmarkName = "-yourProfileButtonTapped"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -952,12 +952,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/MenuViewController.m"
-            timestampString = "529348585.687276"
+            timestampString = "529505898.098317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "382"
-            endingLineNumber = "382"
-            landmarkName = "-mainMenuButtonTapped"
+            startingLineNumber = "392"
+            endingLineNumber = "392"
+            landmarkName = "-yourProfileButtonTapped"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1638,11 +1638,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CPD/ViewControllers/MapViewController.m"
-            timestampString = "529505169.567586"
+            timestampString = "529505898.100658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "-tapDetected"
             landmarkType = "7">
          </BreakpointContent>

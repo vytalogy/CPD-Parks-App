@@ -170,6 +170,18 @@
 
         
     }
+    else if (self.warningScenario == 3){
+        
+            
+            [self.delegate mapButtonTapped];
+            
+            self.sharedDelegate.isPlayingGame = NO;
+            
+
+        
+        
+    }
+    
 
     
     
@@ -339,9 +351,7 @@
     if (self.sharedDelegate.isPlayingGame) {
         
         [self.warningView setHidden:NO];
-        
         [self.view bringSubviewToFront:self.warningView];
-        
         self.warningScenario = 1;
         
         
@@ -442,13 +452,30 @@
     
     //
     
-    [self.delegate mapButtonTapped];
     
-    return;
-    [self.backgroundGreenView setHidden:NO];
-    [self.view bringSubviewToFront:self.backgroundGreenView];
-    [self.mapView setHidden:NO];
-    [self.view bringSubviewToFront:self.mapView];
+    
+    if (self.sharedDelegate.isPlayingGame) {
+        
+        [self.warningView setHidden:NO];
+        
+        self.warningScenario = 3;
+        
+        [self.view bringSubviewToFront:self.warningView];
+        
+        
+    }
+    else{
+        
+        
+            [self.delegate mapButtonTapped];
+            
+
+        
+        
+    }
+    
+
+    
     
 }
 
